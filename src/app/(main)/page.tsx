@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"; // Added ScrollArea
 import { Landmark, Target, Eye, Users, History, Handshake, Briefcase, Shield } from "lucide-react";
 
 const teamMembers = [
@@ -39,8 +40,8 @@ export default function HomePage() {
         <Image
           src="https://placehold.co/1920x1080.png"
           alt="Panoramic view of a significant historical site in Lebanon, bathed in golden hour light"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="brightness-50"
           priority
           data-ai-hint="lebanon heritage sunset"
@@ -53,7 +54,7 @@ export default function HomePage() {
             Association for the Protection of Natural Sites and Old Buildings in Lebanon. Join us in our mission to safeguard these irreplaceable treasures for future generations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link href="/gallery">Explore Our Work</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
@@ -77,8 +78,8 @@ export default function HomePage() {
           <section className="mb-20 md:mb-24">
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="order-2 md:order-1">
-                <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-3">
-                  <History className="h-10 w-10 text-accent" /> Our History
+                <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-4">
+                  <History className="h-12 w-12 text-accent" /> Our History
                 </h3>
                 <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
                   <p>
@@ -102,7 +103,7 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section className="mb-20 md:mb-24 py-12 md:py-16 bg-secondary/10 rounded-xl shadow-lg">
+          <section className="mb-20 md:mb-24 py-16 md:py-20 bg-secondary/10 rounded-xl shadow-lg">
             <div className="container max-w-5xl mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="rounded-xl overflow-hidden shadow-2xl aspect-video">
@@ -116,8 +117,8 @@ export default function HomePage() {
                         />
                     </div>
                     <div>
-                        <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-3">
-                        <Shield className="h-10 w-10 text-accent" /> Our Mission
+                        <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-4">
+                        <Shield className="h-12 w-12 text-accent" /> Our Mission
                         </h3>
                         <p className="text-lg text-muted-foreground leading-relaxed">
                         APSAD is committed to the identification, protection, conservation, and promotion of cultural and natural heritage in Lebanon. We strive to ensure that these invaluable assets are preserved for future generations, fostering a deeper understanding and appreciation of our collective history and identity through research, education, and community engagement.
@@ -131,8 +132,8 @@ export default function HomePage() {
              <div className="container max-w-5xl mx-auto px-6">
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="order-2 md:order-1">
-                        <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-3">
-                        <Eye className="h-10 w-10 text-accent" /> Our Vision
+                        <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-4">
+                        <Eye className="h-12 w-12 text-accent" /> Our Vision
                         </h3>
                         <p className="text-lg text-muted-foreground leading-relaxed">
                         We envision a Lebanon where cultural and natural heritage is universally valued, meticulously protected, and serves as a dynamic source of knowledge, inspiration, and sustainable development for all communities, enriching lives and strengthening national identity.
@@ -154,8 +155,8 @@ export default function HomePage() {
 
           <section className="mb-20 md:mb-24">
             <div className="container max-w-5xl mx-auto px-6">
-                <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-12 md:mb-16 text-center flex items-center justify-center gap-3">
-                <Target className="h-10 w-10 text-accent" /> Our Goals
+                <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-12 md:mb-16 text-center flex items-center justify-center gap-4">
+                <Target className="h-12 w-12 text-accent" /> Our Goals
                 </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {[
@@ -166,8 +167,8 @@ export default function HomePage() {
                     { title: "Advocacy & Policy", description: "Advocate for stronger legal frameworks supporting heritage protection at all levels concerning Lebanon." },
                     { title: "Sustainable Practices", description: "Promote sustainable tourism and site management benefiting both heritage and local economies in Lebanon." },
                 ].map((goal, index) => (
-                    <Card key={index} className="bg-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
-                        <CardHeader>
+                    <Card key={index} className="bg-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col p-2">
+                        <CardHeader className="pb-3 pt-4">
                             <CardTitle className="text-xl font-semibold text-accent">{goal.title}</CardTitle>
                         </CardHeader>
                         <CardContent className="flex-grow">
@@ -179,32 +180,32 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section className="mb-20 md:mb-24 py-12 md:py-16 bg-secondary/10 rounded-xl shadow-lg">
+          <section className="mb-20 md:mb-24 py-16 md:py-20 bg-secondary/10 rounded-xl shadow-lg">
             <div className="container max-w-5xl mx-auto px-6">
-              <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-12 md:mb-16 text-center flex items-center justify-center gap-3">
-                <Users className="h-10 w-10 text-accent" /> Our Team
+              <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-12 md:mb-16 text-center flex items-center justify-center gap-4">
+                <Users className="h-12 w-12 text-accent" /> Our Team
               </h3>
               <Accordion type="single" collapsible className="w-full space-y-6">
                 {teamMembers.map((member, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="bg-card border-border rounded-lg shadow-md hover:shadow-lg transition-shadow">
                     <AccordionTrigger className="p-6 text-left hover:no-underline">
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-6">
                         <Image
                           src={member.imageUrl}
                           alt={member.name}
-                          width={80}
-                          height={80}
-                          className="rounded-full object-cover"
+                          width={100}
+                          height={100}
+                          className="rounded-full object-cover aspect-square"
                           data-ai-hint={member.aiHint}
                         />
                         <div>
-                          <h4 className="text-xl font-semibold text-primary">{member.name}</h4>
-                          <p className="text-sm text-accent">{member.title}</p>
+                          <h4 className="text-2xl font-semibold text-primary">{member.name}</h4>
+                          <p className="text-md text-accent font-medium">{member.title}</p>
                         </div>
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className="p-6 pt-0">
-                      <p className="text-muted-foreground leading-relaxed">{member.bio}</p>
+                    <AccordionContent className="p-6 pt-2">
+                      <p className="text-muted-foreground leading-relaxed text-base">{member.bio}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
@@ -223,73 +224,76 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-16 md:mb-20">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl">
-              <div className="relative w-full h-64">
-                <Image
-                    src="https://placehold.co/600x400.png"
-                    alt="Restoration of Historical Building in Lebanon"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 hover:scale-105"
-                    data-ai-hint="lebanon architecture restoration"
-                />
-              </div>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-2xl">Old Souk Rehabilitation</CardTitle>
-                <CardDescription className="mt-1 text-md">Revitalizing a traditional marketplace.</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-muted-foreground leading-relaxed">
-                  This project focuses on structural repairs and preserving the authentic character of a historic souk in Lebanon, ensuring its continued role in community life.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl">
-              <div className="relative w-full h-64">
-                <Image
-                    src="https://placehold.co/600x400.png"
-                    alt="Natural Site Conservation in Lebanon"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 hover:scale-105"
-                    data-ai-hint="lebanon nature conservation"
-                />
-              </div>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-2xl">Cedar Reserve Protection</CardTitle>
-                <CardDescription className="mt-1 text-md">Conserving a vital natural heritage site.</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-muted-foreground leading-relaxed">
-                  Working to protect ancient cedar forests through sustainable management, reforestation efforts, and community involvement in ecological preservation.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl">
-              <div className="relative w-full h-64">
-                <Image
-                    src="https://placehold.co/600x400.png"
-                    alt="Community Heritage Workshops in Lebanon"
-                    layout="fill"
-                    objectFit="cover"
-                    className="transition-transform duration-500 hover:scale-105"
-                    data-ai-hint="lebanon community workshop"
-                />
-              </div>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-2xl">Heritage Awareness Program</CardTitle>
-                <CardDescription className="mt-1 text-md">Engaging youth in Lebanese heritage.</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <p className="text-muted-foreground leading-relaxed">
-                  Educational initiatives and interactive workshops designed to foster appreciation and stewardship for local heritage sites among young Lebanese.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          <ScrollArea className="w-full pb-6">
+            <div className="flex space-x-6 px-1 py-2">
+              <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
+                <div className="relative w-full h-64">
+                  <Image
+                      src="https://placehold.co/600x400.png"
+                      alt="Restoration of Historical Building in Lebanon"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-500 hover:scale-105"
+                      data-ai-hint="lebanon architecture restoration"
+                  />
+                </div>
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-2xl">Old Souk Rehabilitation</CardTitle>
+                  <CardDescription className="mt-1 text-md">Revitalizing a traditional marketplace.</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground leading-relaxed">
+                    This project focuses on structural repairs and preserving the authentic character of a historic souk in Lebanon, ensuring its continued role in community life.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
+                <div className="relative w-full h-64">
+                  <Image
+                      src="https://placehold.co/600x400.png"
+                      alt="Natural Site Conservation in Lebanon"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-500 hover:scale-105"
+                      data-ai-hint="lebanon nature conservation"
+                  />
+                </div>
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-2xl">Cedar Reserve Protection</CardTitle>
+                  <CardDescription className="mt-1 text-md">Conserving a vital natural heritage site.</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Working to protect ancient cedar forests through sustainable management, reforestation efforts, and community involvement in ecological preservation.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
+                <div className="relative w-full h-64">
+                  <Image
+                      src="https://placehold.co/600x400.png"
+                      alt="Community Heritage Workshops in Lebanon"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-500 hover:scale-105"
+                      data-ai-hint="lebanon community workshop"
+                  />
+                </div>
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-2xl">Heritage Awareness Program</CardTitle>
+                  <CardDescription className="mt-1 text-md">Engaging youth in Lebanese heritage.</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Educational initiatives and interactive workshops designed to foster appreciation and stewardship for local heritage sites among young Lebanese.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            <ScrollBar orientation="horizontal" className="mt-4" />
+          </ScrollArea>
            <div className="text-center mt-16 md:mt-20">
-            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-base px-8 py-6">
               <Link href="/gallery">See More of Our Work</Link>
             </Button>
           </div>
@@ -299,14 +303,14 @@ export default function HomePage() {
       {/* Call to Action: Get Involved */}
       <section className="py-16 lg:py-24 bg-secondary/10">
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <Briefcase className="h-16 w-16 text-accent mx-auto mb-8" />
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+          <Briefcase className="h-20 w-20 text-accent mx-auto mb-8" />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8">
             Make a Difference with APSAD
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Your support is crucial to our efforts in Lebanon. Whether you volunteer, become a member, or advocate for our cause, you can play a part in preserving our shared heritage for generations to come.
           </p>
-          <Button asChild size="lg" variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-10 py-7">
             <Link href="/get-involved">Join Our Cause</Link>
           </Button>
         </div>
