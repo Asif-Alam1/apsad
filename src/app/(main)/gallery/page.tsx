@@ -8,6 +8,8 @@ import type { GalleryItem } from "@/types";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, XIcon, ImageIcon } from "lucide-react";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"; // Added Card imports
 
 const initialGalleryItems: GalleryItem[] = [
   {
@@ -111,7 +113,12 @@ export default function GalleryPage() {
 
   // Prevent hydration errors with initial data
   useEffect(() => {
-    setGalleryItems(initialGalleryItems);
+    // Simulate fetching data, or set initial data directly if not fetching
+    // For now, we set a timeout to show the skeleton for a bit.
+    const timer = setTimeout(() => {
+      setGalleryItems(initialGalleryItems);
+    }, 500); // Adjust delay as needed, or remove if data is available instantly
+    return () => clearTimeout(timer);
   }, []);
   
   const openModal = (item: GalleryItem) => {
@@ -152,7 +159,8 @@ export default function GalleryPage() {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [selectedItem, nextImage, prevImage, closeModal]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedItem]); // Dependencies: selectedItem only. nextImage, prevImage, closeModal cause re-renders if not memoized.
 
 
   return (
@@ -258,3 +266,4 @@ export default function GalleryPage() {
     </div>
   );
 }
+
