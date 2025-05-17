@@ -9,7 +9,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from "@
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, XIcon, ImageIcon } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"; // Added Card imports
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
 const initialGalleryItems: GalleryItem[] = [
   {
@@ -20,7 +20,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x601.png",
       "https://placehold.co/800x602.png"
     ],
-    description: "Magnificent Roman temple complex in Lebanon's Beqaa Valley, showcasing some of the largest and best-preserved Roman architecture.",
+    description: "Magnificent Roman temple complex in Lebanon's Beqaa Valley, showcasing some of the largest and best-preserved Roman architecture. This site includes towering columns, grand courtyards, and intricate carvings that speak to the power and artistry of the Roman Empire.",
     historicalContext: "Flourished during the Roman Empire, particularly from the 1st to 3rd centuries CE. Dedicated to Jupiter, Venus, and Bacchus.",
     aiHints: ["roman temple lebanon", "ancient ruins beqaa", "historical architecture"]
   },
@@ -31,7 +31,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x603.png",
       "https://placehold.co/800x604.png"
     ],
-    description: "One of the oldest continuously inhabited cities, with layers of history from Neolithic times through the Crusades.",
+    description: "One of the oldest continuously inhabited cities, with layers of history from Neolithic times through the Crusades. Explore the ancient harbor, Crusader castle, and royal tombs.",
     historicalContext: "A major Phoenician port city, crucial for trade (especially cedar wood and papyrus) throughout antiquity.",
     aiHints: ["ancient port ruins", "phoenician city byblos"]
   },
@@ -44,7 +44,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x607.png",
       "https://placehold.co/800x608.png"
     ],
-    description: "The unique ruins of an 8th-century Umayyad inland city, displaying a fortified layout with Roman-inspired Sasanian influences.",
+    description: "The unique ruins of an 8th-century Umayyad inland city, displaying a fortified layout with Roman-inspired Sasanian influences. Its well-preserved structures offer a glimpse into early Islamic urban planning.",
     historicalContext: "Built by Caliph Walid I in the early 8th century CE, it served as a commercial and palace center before being abandoned.",
     aiHints: ["islamic ruins city", "umayyad architecture anjar", "archaeological site lebanon"]
   },
@@ -55,7 +55,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x609.png",
       "https://placehold.co/800x610.png"
     ],
-    description: "A rugged, sacred valley housing some of the earliest Christian monastic communities in the world, carved into cliffs.",
+    description: "A rugged, sacred valley housing some of the earliest Christian monastic communities in the world, carved into cliffs. The valley is also home to the Cedars of God forest.",
     historicalContext: "A refuge for Christian communities since the early centuries of Christianity, particularly for Maronite monks.",
     aiHints: ["cliff monastery lebanon", "sacred valley qadisha"]
   },
@@ -67,7 +67,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x612.png",
       "https://placehold.co/800x613.png"
     ],
-    description: "Extensive archaeological site of the ancient Phoenician island city of Tyre, featuring Roman colonnades, a triumphal arch, and a vast necropolis.",
+    description: "Extensive archaeological site of the ancient Phoenician island city of Tyre, featuring Roman colonnades, a triumphal arch, and a vast necropolis. Discover the Roman hippodrome and harbor remains.",
     historicalContext: "A dominant Phoenician city-state, famed for its purple dye and maritime power. Later a significant Roman colony.",
     aiHints: ["roman ruins coast", "phoenician tyre lebanon", "archaeology south lebanon"]
   },
@@ -78,7 +78,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x614.png",
       "https://placehold.co/800x615.png"
     ],
-    description: "Preservation projects focusing on vernacular architecture, characterized by stone walls, triple arches, and red-tiled roofs.",
+    description: "Preservation projects focusing on vernacular architecture, characterized by stone walls, triple arches, and red-tiled roofs. These houses are an integral part of Lebanon's cultural fabric and landscape.",
     historicalContext: "Reflects centuries of adaptation to local climate and materials, forming a key part of Lebanon's cultural landscape.",
     aiHints: ["traditional lebanese house", "vernacular architecture middle east"]
   },
@@ -88,7 +88,7 @@ const initialGalleryItems: GalleryItem[] = [
     imageUrls: [
       "https://placehold.co/800x616.png"
     ],
-    description: "Remains of a Roman-era aqueduct that once supplied water to ancient Berytus (Beirut).",
+    description: "Remains of a Roman-era aqueduct that once supplied water to ancient Berytus (Beirut). This impressive feat of engineering highlights Roman infrastructural prowess.",
     historicalContext: "Part of the extensive infrastructure built during Roman rule in Lebanon to support urban centers.",
     aiHints: ["roman aqueduct lebanon"]
   },
@@ -100,7 +100,7 @@ const initialGalleryItems: GalleryItem[] = [
       "https://placehold.co/800x618.png",
       "https://placehold.co/800x619.png"
     ],
-    description: "A historic caravanserai (khan) from the Mamluk or Ottoman era, reflecting Tripoli's importance as a trading city.",
+    description: "A historic caravanserai (khan) from the Mamluk or Ottoman era, reflecting Tripoli's importance as a trading city. These khans were vital hubs for merchants and travelers.",
     historicalContext: "Khans provided lodging and commercial space for merchants along trade routes, vital for economic activity.",
     aiHints: ["ottoman architecture khan", "tripoli lebanon history", "mamluk caravanserai"]
   },
@@ -111,13 +111,10 @@ export default function GalleryPage() {
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Prevent hydration errors with initial data
   useEffect(() => {
-    // Simulate fetching data, or set initial data directly if not fetching
-    // For now, we set a timeout to show the skeleton for a bit.
     const timer = setTimeout(() => {
       setGalleryItems(initialGalleryItems);
-    }, 500); // Adjust delay as needed, or remove if data is available instantly
+    }, 500); 
     return () => clearTimeout(timer);
   }, []);
   
@@ -142,7 +139,6 @@ export default function GalleryPage() {
     }
   };
 
-  // Keyboard navigation for modal
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (selectedItem) {
@@ -160,7 +156,7 @@ export default function GalleryPage() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedItem]); // Dependencies: selectedItem only. nextImage, prevImage, closeModal cause re-renders if not memoized.
+  }, [selectedItem]); 
 
 
   return (
@@ -223,7 +219,7 @@ export default function GalleryPage() {
                 layout="fill"
                 objectFit="contain"
                 className="transition-opacity duration-300 ease-in-out"
-                key={selectedItem.imageUrls[currentImageIndex]} // For re-triggering transition on src change
+                key={selectedItem.imageUrls[currentImageIndex]} 
                 data-ai-hint={selectedItem.aiHints[currentImageIndex] || selectedItem.aiHints[0] || "historical detail"}
               />
               {selectedItem.imageUrls.length > 1 && (
@@ -256,7 +252,8 @@ export default function GalleryPage() {
                   Image {currentImageIndex + 1} of {selectedItem.imageUrls.length}
                 </p>
               )}
-              <ScrollArea className="max-h-24">
+              {/* Increased max-h for the description scroll area */}
+              <ScrollArea className="max-h-40 sm:max-h-48 md:max-h-56">
                 <p className="text-sm text-muted-foreground leading-relaxed">{selectedItem.description}</p>
               </ScrollArea>
             </div>
@@ -266,4 +263,3 @@ export default function GalleryPage() {
     </div>
   );
 }
-
