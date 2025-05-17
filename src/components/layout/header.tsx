@@ -5,7 +5,6 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navItems = [
-  { href: '/', label: 'Home & About APSAD' },
   { href: '/gallery', label: 'Our Work' },
   { href: '/get-involved', label: 'Get Involved' },
 ];
