@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Heritage Hub - Preserving Our Past, Inspiring Our Future',
-  description: 'Explore the rich history and cultural heritage protected by APSAD. Discover our projects, sites, and how you can get involved.',
-  keywords: ['heritage', 'preservation', 'APSAD', 'history', 'culture', 'archaeology'],
+  title: 'APSAD - Association pour la Protection des Sites et Anciennes Demeures',
+  description: 'APSAD (Association for the Protection of Natural Sites and Old Buildings in Lebanon) is dedicated to preserving Lebanon\'s cultural and natural heritage. Discover our projects, sites, and how you can get involved.',
+  keywords: ['APSAD', 'Lebanon', 'heritage', 'preservation', 'NGO', 'cultural heritage', 'natural sites', 'old buildings', 'archaeology'],
 };
 
 export default function RootLayout({

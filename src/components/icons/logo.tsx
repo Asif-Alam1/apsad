@@ -8,7 +8,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Heritage Hub Logo"
+      aria-label="APSAD Logo"
       {...props}
     >
       <path

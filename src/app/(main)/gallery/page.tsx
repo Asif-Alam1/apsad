@@ -4,67 +4,67 @@ import type { GalleryItem } from "@/types";
 const galleryItems: GalleryItem[] = [
   {
     id: "1",
-    title: "The Citadel of Ankor",
+    title: "Baalbek Temples",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "A magnificent temple complex renowned for its intricate carvings and grand scale, representing the zenith of ancient Khmer architecture.",
-    historicalContext: "Built in the 12th century as a state temple and capital city. It later transformed into a Buddhist temple.",
-    aiHint: "ancient temple"
+    description: "Magnificent Roman temple complex in Lebanon's Beqaa Valley, showcasing some of the largest and best-preserved Roman architecture.",
+    historicalContext: "Flourished during the Roman Empire, particularly from the 1st to 3rd centuries CE. Dedicated to Jupiter, Venus, and Bacchus.",
+    aiHint: "roman temple lebanon"
   },
   {
     id: "2",
-    title: "Lost City of Eldoria",
+    title: "Byblos Ancient Port",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "Ruins of an advanced civilization mysteriously abandoned centuries ago, featuring unique astronomical observatories.",
-    historicalContext: "Flourished between 500 BCE and 200 CE. Known for its advanced understanding of mathematics and astronomy.",
-    aiHint: "ruins city"
+    description: "One of the oldest continuously inhabited cities, with layers of history from Neolithic times through the Crusades.",
+    historicalContext: "A major Phoenician port city, crucial for trade (especially cedar wood and papyrus) throughout antiquity.",
+    aiHint: "ancient port ruins"
   },
   {
     id: "3",
-    title: "The Sunken Library of Maris",
+    title: "Anjar Umayyad Ruins",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "An underwater archaeological site containing preserved scrolls and artifacts from a legendary coastal library.",
-    historicalContext: "Lost to the sea in a cataclysmic earthquake around 300 CE. Yielded remarkably preserved organic materials.",
-    aiHint: "underwater ruins"
+    description: "The unique ruins of an 8th-century Umayyad inland city, displaying a fortified layout with Roman-inspired Sasanian influences.",
+    historicalContext: "Built by Caliph Walid I in the early 8th century CE, it served as a commercial and palace center before being abandoned.",
+    aiHint: "islamic ruins city"
   },
   {
     id: "4",
-    title: "Sky Peaks Monastery",
+    title: "Qadisha Valley Monasteries",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "A remote mountain monastery accessible only by a treacherous path, home to ancient spiritual traditions.",
-    historicalContext: "Established in the 8th century by ascetic monks seeking solitude and enlightenment. Contains rare manuscripts.",
-    aiHint: "mountain monastery"
+    description: "A rugged, sacred valley housing some of the earliest Christian monastic communities in the world, carved into cliffs.",
+    historicalContext: "A refuge for Christian communities since the early centuries of Christianity, particularly for Maronite monks.",
+    aiHint: "cliff monastery lebanon"
   },
   {
     id: "5",
-    title: "Iron Hills Fortress",
+    title: "Tyre Al-Mina Site",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "A formidable medieval fortress that withstood numerous sieges, showcasing advanced defensive architecture of its time.",
-    historicalContext: "Constructed in the 14th century during a period of intense regional conflict. Key strategic military point.",
-    aiHint: "medieval fortress"
+    description: "Extensive archaeological site of the ancient Phoenician island city of Tyre, featuring Roman colonnades, a triumphal arch, and a vast necropolis.",
+    historicalContext: "A dominant Phoenician city-state, famed for its purple dye and maritime power. Later a significant Roman colony.",
+    aiHint: "roman ruins coast"
   },
   {
     id: "6",
-    title: "Whispering Caves Art",
+    title: "Traditional Lebanese House",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "A network of caves containing prehistoric paintings depicting daily life, rituals, and extinct fauna.",
-    historicalContext: "Paintings dated to be over 15,000 years old, offering insights into early human culture and environment.",
-    aiHint: "cave paintings"
+    description: "Preservation projects focusing on vernacular architecture, characterized by stone walls, triple arches, and red-tiled roofs.",
+    historicalContext: "Reflects centuries of adaptation to local climate and materials, forming a key part of Lebanon's cultural landscape.",
+    aiHint: "traditional lebanese house"
   },
    {
     id: "7",
-    title: "The Grand Aqueduct",
+    title: "Roman Aqueduct of Zouk Mosbeh",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "An engineering marvel of the ancient world, this aqueduct supplied water to a bustling metropolis for centuries.",
-    historicalContext: "Constructed around 100 CE, showcasing Roman engineering principles adapted to local materials and terrain.",
-    aiHint: "roman aqueduct"
+    description: "Remains of a Roman-era aqueduct that once supplied water to ancient Berytus (Beirut).",
+    historicalContext: "Part of the extensive infrastructure built during Roman rule in Lebanon to support urban centers.",
+    aiHint: "roman aqueduct lebanon"
   },
   {
     id: "8",
-    title: "Silk Route Oasis City",
+    title: "Silk Khan in Tripoli",
     imageUrl: "https://placehold.co/600x400.png",
-    description: "Remains of a vibrant trading hub along the ancient Silk Route, reflecting a confluence of cultures.",
-    historicalContext: "A key stopover from the 2nd century BCE to the 15th century CE, facilitating East-West trade and cultural exchange.",
-    aiHint: "desert oasis"
+    description: "A historic caravanserai (khan) from the Mamluk or Ottoman era, reflecting Tripoli's importance as a trading city.",
+    historicalContext: "Khans provided lodging and commercial space for merchants along trade routes, vital for economic activity.",
+    aiHint: "ottoman architecture khan"
   },
 ];
 
@@ -73,9 +73,9 @@ export default function GalleryPage() {
     <div className="py-12 md:py-20 bg-background">
       <div className="container mx-auto px-6">
         <header className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Work</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Gallery of Our Work</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore the diverse range of heritage sites and projects APSAD is dedicated to preserving. Each tells a unique story of our past.
+            Explore the diverse range of Lebanese heritage sites and projects APSAD is dedicated to preserving. Each tells a unique story of our past.
           </p>
         </header>
 

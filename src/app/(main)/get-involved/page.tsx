@@ -7,30 +7,30 @@ const involvementOptions = [
   {
     icon: Users,
     title: "Volunteer Your Time",
-    description: "Lend your skills and passion to our projects. From field work to archival research, there are many ways to contribute directly.",
+    description: "Lend your skills and passion to our projects in Lebanon. From field work to archival research, there are many ways to contribute directly.",
     details: "We welcome volunteers with diverse backgrounds. Opportunities include site maintenance, event support, research assistance, and administrative tasks. Check our current needs or propose how you can help!",
-    aiHint: "people volunteering"
+    aiHint: "people volunteering lebanon"
   },
   {
     icon: Handshake,
     title: "Become a Member",
-    description: "Join the APSAD family and enjoy exclusive benefits while supporting our ongoing conservation efforts.",
+    description: "Join the APSAD family and enjoy exclusive benefits while supporting our ongoing conservation efforts in Lebanon.",
     details: "Membership provides vital regular funding and comes with perks like newsletters, event invitations, and discounts on publications. Various membership tiers are available.",
-    aiHint: "group handshake"
+    aiHint: "group handshake support"
   },
   {
     icon: ShieldCheck,
     title: "Advocate for Heritage",
-    description: "Use your voice to raise awareness about the importance of heritage preservation and support our advocacy campaigns.",
-    details: "Help us influence policy and public opinion. Share our stories, participate in campaigns, and contact your representatives about heritage issues.",
-    aiHint: "person speaking"
+    description: "Use your voice to raise awareness about the importance of Lebanese heritage preservation and support our advocacy campaigns.",
+    details: "Help us influence policy and public opinion. Share our stories, participate in campaigns, and contact your representatives about heritage issues in Lebanon.",
+    aiHint: "person speaking advocacy"
   },
   {
     icon: Briefcase,
     title: "Partner With Us",
-    description: "Collaborate with APSAD on projects, sponsor initiatives, or explore corporate social responsibility opportunities.",
-    details: "We seek partnerships with institutions, corporations, and other NGOs that share our commitment to heritage. Let's discuss how we can work together.",
-    aiHint: "business meeting"
+    description: "Collaborate with APSAD on projects, sponsor initiatives, or explore corporate social responsibility opportunities for Lebanon's heritage.",
+    details: "We seek partnerships with institutions, corporations, and other NGOs that share our commitment to heritage. Let's discuss how we can work together for Lebanon.",
+    aiHint: "business meeting lebanon"
   },
 ];
 
@@ -39,9 +39,9 @@ export default function GetInvolvedPage() {
     <div className="py-12 md:py-20 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
         <header className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Get Involved</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Get Involved with APSAD</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Your support is vital to preserving our shared heritage. Discover how you can make a difference with APSAD.
+            Your support is vital to preserving Lebanon's shared heritage. Discover how you can make a difference with APSAD.
           </p>
         </header>
 
@@ -83,7 +83,7 @@ export default function GetInvolvedPage() {
                 <h2 className="text-3xl font-semibold text-primary text-center">Contact APSAD</h2>
             </div>
             <p className="text-center text-muted-foreground mb-10">
-              Whether you have questions about our work, want to discuss involvement opportunities, or simply wish to learn more, we'd love to hear from you.
+              Whether you have questions about our work in Lebanon, want to discuss involvement opportunities, or simply wish to learn more, we'd love to hear from you.
             </p>
             <ContactForm />
           </div>

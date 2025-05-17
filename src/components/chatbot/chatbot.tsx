@@ -21,7 +21,7 @@ export function Chatbot() {
         {
           id: Date.now().toString(),
           sender: "bot",
-          text: "Hello! I'm the APSAD assistant. How can I help you learn more about our work and heritage preservation?",
+          text: "Hello! I'm the APSAD assistant. How can I help you learn more about our work and heritage preservation in Lebanon?",
           timestamp: Date.now(),
         },
       ]);

@@ -5,8 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About APSAD' },
+  { href: '/', label: 'Home & About APSAD' },
   { href: '/gallery', label: 'Our Work' },
   { href: '/get-involved', label: 'Get Involved' },
 ];
@@ -15,10 +14,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
-        <Link href="/" className="flex items-center gap-2" aria-label="Heritage Hub Home">
+        <Link href="/" className="flex items-center gap-2" aria-label="APSAD Home">
           <Logo className="h-8 w-8 text-primary" />
           <span className="font-serif text-xl font-semibold tracking-tight text-primary">
-            Heritage Hub
+            APSAD
           </span>
         </Link>
 
