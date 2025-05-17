@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -77,7 +78,7 @@ export function Chatbot() {
         <SheetContent
           side="right"
           className="w-full max-w-md p-0 flex flex-col h-full"
-          aria-describedby="chatbot-title"
+          aria-labelledby="chatbot-title" // Changed from aria-describedby
         >
           <SheetHeader className="p-4 border-b">
             <SheetTitle id="chatbot-title" className="flex items-center gap-2 text-lg">
@@ -92,3 +93,4 @@ export function Chatbot() {
     </>
   );
 }
+
