@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"; // Added ScrollArea
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Landmark, Target, Eye, Users, History, Handshake, Briefcase, Shield } from "lucide-react";
 
 const teamMembers = [
@@ -12,21 +12,21 @@ const teamMembers = [
     name: "Dr. Layla Hassan",
     title: "President & Lead Archaeologist",
     imageUrl: "https://placehold.co/400x400.png",
-    aiHint: "professional woman portrait",
+    aiHint: "archaeologist portrait",
     bio: "Dr. Hassan has dedicated over 20 years to uncovering and preserving Lebanon's rich archaeological heritage. Her expertise in Roman and Phoenician sites has guided many of APSAD's key restoration projects, contributing significantly to the understanding and safeguarding of ancient civilizations in the region. She is also a published author and frequent speaker at international heritage conferences.",
   },
   {
     name: "Mr. Karim Nader",
     title: "Director of Operations & Community Outreach",
     imageUrl: "https://placehold.co/400x400.png",
-    aiHint: "professional man portrait",
+    aiHint: "director portrait",
     bio: "Mr. Nader manages APSAD's field operations and fosters crucial relationships with local communities, ensuring that preservation efforts are collaborative and sustainable. He has a background in project management and social development, and is passionate about empowering local stakeholders in the heritage conservation process.",
   },
   {
     name: "Ms. Rania Khoury",
     title: "Chief Architect & Conservation Specialist",
     imageUrl: "https://placehold.co/400x400.png",
-    aiHint: "female architect portrait",
+    aiHint: "architect portrait",
     bio: "Ms. Khoury brings a wealth of knowledge in historical building conservation and sustainable architectural practices. She oversees the structural integrity and authentic restoration of APSAD's diverse projects, from ancient ruins to traditional dwellings, ensuring adherence to international conservation standards.",
   },
 ];
@@ -44,7 +44,7 @@ export default function HomePage() {
           style={{ objectFit: "cover" }}
           className="brightness-50"
           priority
-          data-ai-hint="lebanon heritage sunset"
+          data-ai-hint="Lebanon heritage"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-6 bg-black/50">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-shadow-lg">
@@ -65,7 +65,7 @@ export default function HomePage() {
       </section>
 
       {/* Main Content Section */}
-      <div className="py-16 md:py-24 bg-background">
+      <div className="py-20 md:py-28 bg-background">
         <div className="container max-w-6xl mx-auto px-4 sm:px-6">
           
           <header className="text-center mb-20 md:mb-24">
@@ -97,7 +97,7 @@ export default function HomePage() {
                   width={600}
                   height={450}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  data-ai-hint="historical archive lebanon"
+                  data-ai-hint="APSAD archive"
                 />
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function HomePage() {
                         width={600}
                         height={450}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                        data-ai-hint="heritage preservation planning"
+                        data-ai-hint="heritage diagram"
                         />
                     </div>
                     <div>
@@ -146,7 +146,7 @@ export default function HomePage() {
                         width={600}
                         height={450}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                        data-ai-hint="future lebanon heritage"
+                        data-ai-hint="site sunrise"
                         />
                     </div>
                 </div>
@@ -167,11 +167,11 @@ export default function HomePage() {
                     { title: "Advocacy & Policy", description: "Advocate for stronger legal frameworks supporting heritage protection at all levels concerning Lebanon." },
                     { title: "Sustainable Practices", description: "Promote sustainable tourism and site management benefiting both heritage and local economies in Lebanon." },
                 ].map((goal, index) => (
-                    <Card key={index} className="bg-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col p-2">
-                        <CardHeader className="pb-3 pt-4">
+                    <Card key={index} className="bg-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col p-6">
+                        <CardHeader className="pb-3 pt-0 px-0">
                             <CardTitle className="text-xl font-semibold text-accent">{goal.title}</CardTitle>
                         </CardHeader>
-                        <CardContent className="flex-grow">
+                        <CardContent className="flex-grow px-0 pb-0">
                             <p className="text-muted-foreground leading-relaxed">{goal.description}</p>
                         </CardContent>
                     </Card>
@@ -234,10 +234,10 @@ export default function HomePage() {
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="lebanon architecture restoration"
+                      data-ai-hint="souk restoration"
                   />
                 </div>
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-3 pt-5">
                   <CardTitle className="text-2xl">Old Souk Rehabilitation</CardTitle>
                   <CardDescription className="mt-1 text-md">Revitalizing a traditional marketplace.</CardDescription>
                 </CardHeader>
@@ -255,10 +255,10 @@ export default function HomePage() {
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="lebanon nature conservation"
+                      data-ai-hint="cedar trees"
                   />
                 </div>
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-3 pt-5">
                   <CardTitle className="text-2xl">Cedar Reserve Protection</CardTitle>
                   <CardDescription className="mt-1 text-md">Conserving a vital natural heritage site.</CardDescription>
                 </CardHeader>
@@ -276,10 +276,10 @@ export default function HomePage() {
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="lebanon community workshop"
+                      data-ai-hint="children learning"
                   />
                 </div>
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-3 pt-5">
                   <CardTitle className="text-2xl">Heritage Awareness Program</CardTitle>
                   <CardDescription className="mt-1 text-md">Engaging youth in Lebanese heritage.</CardDescription>
                 </CardHeader>
@@ -318,5 +318,4 @@ export default function HomePage() {
     </>
   );
 }
-
     
