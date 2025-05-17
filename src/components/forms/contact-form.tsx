@@ -1,11 +1,18 @@
+
 "use client";
 
 import { useEffect } from "react";
 import { useFormState, useFormStatus } from "react-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { contactFormSchema, type ContactFormState, submitContactForm } from "@/app/actions/contact";
-import type { z } from "zod";
+import { 
+  contactFormSchema, 
+  type ContactFormData,
+  type ContactFormState, 
+  initialContactFormState 
+} from "@/lib/validators/contact";
+import { submitContactForm } from "@/app/actions/contact";
+
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -16,13 +23,6 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-type ContactFormData = z.infer<typeof contactFormSchema>;
-
-const initialFormState: ContactFormState = {
-  message: "",
-  success: false,
-  errors: {},
-};
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -35,7 +35,7 @@ function SubmitButton() {
 }
 
 export function ContactForm() {
-  const [state, formAction] = useFormState(submitContactForm, initialFormState);
+  const [state, formAction] = useFormState(submitContactForm, initialContactFormState);
   const { toast } = useToast();
 
   const form = useForm<ContactFormData>({
