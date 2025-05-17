@@ -76,7 +76,7 @@ export default function GetInvolvedPage() {
           </div>
         </section>
 
-        <section className="py-12 bg-secondary/20 rounded-lg shadow-md">
+        <section id="contact-section" className="py-12 bg-secondary/20 rounded-lg shadow-md scroll-mt-20">
           <div className="max-w-3xl mx-auto px-6">
             <div className="flex items-center justify-center gap-3 mb-6">
                 <Mail className="h-10 w-10 text-accent" />
