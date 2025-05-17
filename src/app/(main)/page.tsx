@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -37,17 +38,17 @@ export default function HomePage() {
       </section>
 
       {/* Main Content Section */}
-      <div className="py-12 md:py-20 bg-background">
+      <div className="py-16 md:py-24 bg-background">
         <div className="container max-w-5xl mx-auto px-6">
           
-          <header className="text-center mb-16">
+          <header className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Welcome to APSAD</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               APSAD - Association pour la Protection des Sites et Anciennes Demeures (Association for the Protection of Natural Sites and Old Buildings in Lebanon), is a non-governmental organization dedicated to the identification, protection, preservation, and promotion of Lebanon's cultural and natural heritage.
             </p>
           </header>
 
-          <section className="mb-16">
+          <section className="mb-20">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-3xl font-semibold text-primary mb-6 flex items-center gap-3">
@@ -78,7 +79,7 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section className="mb-16 p-8 bg-secondary/20 rounded-lg shadow-md">
+          <section className="mb-20 p-10 md:p-12 bg-secondary/20 rounded-lg shadow-md">
             <h3 className="text-3xl font-semibold text-primary mb-8 text-center flex items-center justify-center gap-3">
               <Landmark className="h-8 w-8 text-accent" /> Our Mission
             </h3>
@@ -87,7 +88,7 @@ export default function HomePage() {
             </p>
           </section>
 
-          <section className="mb-16">
+          <section className="mb-20">
             <h3 className="text-3xl font-semibold text-primary mb-8 text-center flex items-center justify-center gap-3">
               <Eye className="h-8 w-8 text-accent" /> Our Vision
             </h3>
@@ -96,11 +97,11 @@ export default function HomePage() {
             </p>
           </section>
 
-          <section className="mb-16">
-            <h3 className="text-3xl font-semibold text-primary mb-10 text-center flex items-center justify-center gap-3">
+          <section className="mb-24">
+            <h3 className="text-3xl font-semibold text-primary mb-12 text-center flex items-center justify-center gap-3">
               <Target className="h-8 w-8 text-accent" /> Our Goals
             </h3>
-            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-10">
               {[
                 { title: "Site Preservation", description: "To implement effective conservation measures for endangered heritage sites in Lebanon, utilizing best practices and innovative technologies." },
                 { title: "Research & Documentation", description: "To conduct and support scholarly research that enhances understanding of Lebanese heritage, and to meticulously document sites and artifacts." },
@@ -109,15 +110,15 @@ export default function HomePage() {
                 { title: "Advocacy & Policy", description: "To advocate for stronger legal frameworks and policies that support heritage protection at local, national, and international levels concerning Lebanon." },
                 { title: "Sustainable Practices", description: "To promote sustainable tourism and site management practices that benefit both heritage and local economies in Lebanon." },
               ].map((goal, index) => (
-                <div key={index} className="p-6 bg-card rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <h4 className="text-xl font-semibold text-accent mb-2">{goal.title}</h4>
+                <div key={index} className="p-8 bg-card rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <h4 className="text-xl font-semibold text-accent mb-3">{goal.title}</h4>
                   <p className="text-muted-foreground leading-relaxed">{goal.description}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          <section className="mb-16">
+          <section className="mb-20">
             <h3 className="text-3xl font-semibold text-primary mb-8 text-center flex items-center justify-center gap-3">
               <Users className="h-8 w-8 text-accent" /> Our Team
             </h3>
@@ -131,11 +132,11 @@ export default function HomePage() {
       {/* Featured Projects/Sites */}
       <section className="py-16 lg:py-24 bg-secondary/30">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-16">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
                 src="https://placehold.co/600x400.png"
                 alt="Restoration of Historical Building in Lebanon"
@@ -144,17 +145,17 @@ export default function HomePage() {
                 className="w-full h-56 object-cover"
                 data-ai-hint="lebanon architecture restoration"
               />
-              <CardHeader>
-                <CardTitle>Old Souk Rehabilitation</CardTitle>
-                <CardDescription>Revitalizing a traditional marketplace.</CardDescription>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl">Old Souk Rehabilitation</CardTitle>
+                <CardDescription className="mt-1">Revitalizing a traditional marketplace.</CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">
+              <CardContent className="flex-grow">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   This project focuses on structural repairs and preserving the authentic character of a historic souk in Lebanon.
                 </p>
               </CardContent>
             </Card>
-            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
                 src="https://placehold.co/600x400.png"
                 alt="Natural Site Conservation in Lebanon"
@@ -163,17 +164,17 @@ export default function HomePage() {
                 className="w-full h-56 object-cover"
                 data-ai-hint="lebanon nature conservation"
               />
-              <CardHeader>
-                <CardTitle>Cedar Reserve Protection</CardTitle>
-                <CardDescription>Conserving a vital natural heritage site.</CardDescription>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl">Cedar Reserve Protection</CardTitle>
+                <CardDescription className="mt-1">Conserving a vital natural heritage site.</CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">
+              <CardContent className="flex-grow">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Working to protect ancient cedar forests through sustainable management and community involvement.
                 </p>
               </CardContent>
             </Card>
-            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <Image
                 src="https://placehold.co/600x400.png"
                 alt="Community Heritage Workshops in Lebanon"
@@ -182,19 +183,19 @@ export default function HomePage() {
                 className="w-full h-56 object-cover"
                 data-ai-hint="lebanon community workshop"
               />
-              <CardHeader>
-                <CardTitle>Heritage Awareness Program</CardTitle>
-                <CardDescription>Engaging youth in Lebanese heritage preservation.</CardDescription>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-xl">Heritage Awareness Program</CardTitle>
+                <CardDescription className="mt-1">Engaging youth in Lebanese heritage preservation.</CardDescription>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">
+              <CardContent className="flex-grow">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Educational initiatives and workshops designed to foster appreciation and stewardship for local heritage sites among young Lebanese.
                 </p>
               </CardContent>
             </Card>
           </div>
-           <div className="text-center mt-12">
-            <Button asChild variant="link" className="text-lg text-accent">
+           <div className="text-center mt-16">
+            <Button asChild variant="link" className="text-lg text-accent hover:text-accent/80">
               <Link href="/gallery">See More of Our Work</Link>
             </Button>
           </div>
