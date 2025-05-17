@@ -2,14 +2,14 @@
 "use client";
 
 import { useEffect } from "react";
-import { useActionState, useFormStatus } from "react"; // Changed from "react-dom" for useFormState
+import { useActionState } from "react"; // For useActionState
+import { useFormStatus } from "react-dom"; // For useFormStatus
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { 
-  contactFormSchema, 
+import {
+  contactFormSchema,
   type ContactFormData,
-  type ContactFormState, 
-  initialContactFormState 
+  initialContactFormState
 } from "@/lib/validators/contact";
 import { submitContactForm } from "@/app/actions/contact";
 
@@ -35,8 +35,7 @@ function SubmitButton() {
 }
 
 export function ContactForm() {
-  // Updated to use React.useActionState
-  const [state, formAction] = useActionState(submitContactForm, initialContactFormState); 
+  const [state, formAction] = useActionState(submitContactForm, initialContactFormState);
   const { toast } = useToast();
 
   const form = useForm<ContactFormData>({
@@ -151,7 +150,7 @@ export function ContactForm() {
                  <p id="message-server-error" className="text-sm text-destructive">{state.errors.message[0]}</p>
               )}
           </div>
-          
+
           {state.errors?._form && (
             <Alert variant="destructive">
               <AlertCircle className="h-4 w-4" />
