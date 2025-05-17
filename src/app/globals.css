@@ -4,94 +4,100 @@
 
 @layer base {
   :root {
-    --background: 60 56% 91%; /* #F5F5DC light beige */
-    --foreground: 30 25% 20%; /* #4C4236 dark brown text */
+    --background: 40 30% 97%; /* Very light cream */
+    --foreground: 30 25% 18%; /* Dark rich brown */
 
-    --muted: 51 31% 87%; /* #EAE7D1 muted beige */
-    --muted-foreground: 32 15% 41%; /* #796B5B muted brown text */
+    --muted: 40 25% 93%; /* Muted cream */
+    --muted-foreground: 30 15% 40%; /* Muted brown text */
 
-    --popover: 50 40% 94%; /* #F3F1EC */
-    --popover-foreground: 30 25% 20%; /* #4C4236 */
+    --popover: 40 30% 98%; /* Almost white popover */
+    --popover-foreground: 30 25% 18%; /* Dark rich brown */
 
-    --card: 50 40% 94%; /* #F3F1EC */
-    --card-foreground: 30 25% 20%; /* #4C4236 */
+    --card: 40 30% 98%; /* Almost white card */
+    --card-foreground: 30 25% 18%; /* Dark rich brown */
 
-    --border: 43 29% 73%; /* #D1C4A4 gold-ish beige border */
-    --input: 44 32% 85%; /* #E3DBC4 input background */
+    --border: 40 20% 88%; /* Subtle cream-ish border */
+    --input: 40 25% 94%; /* Clean input background */
 
-    --primary: 43 33% 52%; /* #B1945A soft gold */
-    --primary-foreground: 30 25% 10%; /* #332A1B dark brown text on gold */
+    --primary: 43 45% 50%; /* Richer gold */
+    --primary-foreground: 40 50% 98%; /* Very light text on gold */
 
-    --secondary: 44 43% 75%; /* #D9CB9E lighter gold */
-    --secondary-foreground: 30 25% 10%; /* #332A1B */
+    --secondary: 43 30% 75%; /* Lighter desaturated gold */
+    --secondary-foreground: 30 25% 18%; /* Dark text on secondary */
 
-    --accent: 25 70% 30%; /* #8B4513 deep brown */
-    --accent-foreground: 60 56% 91%; /* #F5F5DC light beige text on deep brown */
+    --accent: 30 50% 28%; /* Deep, rich chocolate brown */
+    --accent-foreground: 40 30% 97%; /* Light cream text on accent */
 
     --destructive: 0 63% 51%; /* #E54848 destructive red */
     --destructive-foreground: 0 0% 98%; /* #FAFAFA */
 
-    --ring: 43 33% 52%; /* #B1945A soft gold */
+    --ring: 43 45% 50%; /* Richer gold for ring */
 
     --radius: 0.5rem;
 
     /* Sidebar specific theme variables */
-    --sidebar-background: 42 50% 95%; /* #FAF6ED very light gold/off-white */
-    --sidebar-foreground: 30 25% 20%; /* #4C4236 */
-    --sidebar-primary: 43 33% 52%; /* #B1945A */
-    --sidebar-primary-foreground: 30 25% 10%; /* #332A1B */
-    --sidebar-accent: 43 36% 90%; /* #F0EADF lighter gold accent */
-    --sidebar-accent-foreground: 30 25% 15%; /* #403222 */
-    --sidebar-border: 43 34% 83%; /* #E5DBC5 */
-    --sidebar-ring: 43 33% 52%; /* #B1945A */
+    --sidebar-background: 38 35% 96%; /* Slightly different light cream for sidebar */
+    --sidebar-foreground: 30 25% 18%;
+    --sidebar-primary: 43 45% 50%;
+    --sidebar-primary-foreground: 40 50% 98%;
+    --sidebar-accent: 40 25% 92%; /* Lighter accent for sidebar internal elements */
+    --sidebar-accent-foreground: 30 20% 25%;
+    --sidebar-border: 40 20% 85%;
+    --sidebar-ring: 43 45% 50%;
 
-    --chart-1: 43 33% 52%; /* soft gold */
-    --chart-2: 25 70% 30%; /* deep brown */
-    --chart-3: 44 43% 65%; /* medium gold */
+    --chart-1: 43 45% 50%; /* primary */
+    --chart-2: 30 50% 28%; /* accent */
+    --chart-3: 43 30% 65%; /* lighter gold/secondary variant */
     --chart-4: 30 25% 40%; /* medium brown */
-    --chart-5: 51 31% 70%; /* light muted beige */
+    --chart-5: 40 20% 75%; /* light muted cream */
   }
 
   .dark {
-    /* Dark theme (example, adjust to match gold/brown aesthetic if needed) */
-    --background: 30 25% 10%; /* #332A1B very dark brown */
-    --foreground: 60 56% 91%; /* #F5F5DC light beige text */
+    --background: 30 15% 12%; /* Very dark, slightly warm brown/charcoal */
+    --foreground: 40 30% 92%; /* Light cream/off-white for text */
 
-    --muted: 30 25% 15%; /* #403222 */
-    --muted-foreground: 43 29% 73%; /* #D1C4A4 */
+    --muted: 30 15% 18%; /* Darker muted tone */
+    --muted-foreground: 40 20% 70%; /* Muted light text */
 
-    --popover: 30 25% 8%; /* #261F14 */
-    --popover-foreground: 60 56% 91%; /* #F5F5DC */
+    --popover: 30 15% 10%; /* Even darker for popover */
+    --popover-foreground: 40 30% 92%;
 
-    --card: 30 25% 8%; /* #261F14 */
-    --card-foreground: 60 56% 91%; /* #F5F5DC */
+    --card: 30 15% 10%; /* Even darker for card */
+    --card-foreground: 40 30% 92%;
 
-    --border: 30 25% 20%; /* #4C4236 */
-    --input: 30 25% 22%; /* #534030 */
+    --border: 30 15% 25%; /* Dark border */
+    --input: 30 15% 22%; /* Dark input */
 
-    --primary: 43 33% 52%; /* #B1945A soft gold */
-    --primary-foreground: 30 25% 10%; /* #332A1B */
+    --primary: 43 50% 55%; /* Gold, slightly brighter in dark mode */
+    --primary-foreground: 30 25% 10%; /* Dark text on gold */
 
-    --secondary: 25 70% 30%; /* #8B4513 deep brown */
-    --secondary-foreground: 60 56% 91%; /* #F5F5DC */
+    --secondary: 30 40% 30%; /* Darker, desaturated brown as secondary */
+    --secondary-foreground: 40 30% 85%; /* Lighter text on dark secondary */
 
-    --accent: 43 33% 60%; /* #C5AC74 lighter gold for accent */
-    --accent-foreground: 30 25% 10%; /* #332A1B */
-
+    --accent: 43 40% 65%; /* Lighter gold/bronze for accent */
+    --accent-foreground: 30 15% 12%; /* Dark text on light gold accent */
+    
     --destructive: 0 63% 51%; /* #E54848 */
     --destructive-foreground: 0 0% 98%; /* #FAFAFA */
 
-    --ring: 43 33% 52%; /* #B1945A */
+    --ring: 43 50% 55%; /* Brighter gold for ring */
 
     /* Sidebar specific theme variables - Dark */
-    --sidebar-background: 30 25% 12%; /* #3B3121 dark brown */
-    --sidebar-foreground: 43 36% 90%; /* #F0EADF */
-    --sidebar-primary: 43 33% 52%; /* #B1945A */
-    --sidebar-primary-foreground: 30 25% 10%; /* #332A1B */
-    --sidebar-accent: 30 25% 18%; /* #473A2A */
-    --sidebar-accent-foreground: 43 36% 90%; /* #F0EADF */
-    --sidebar-border: 30 25% 25%; /* #594A3A */
-    --sidebar-ring: 43 33% 52%; /* #B1945A */
+    --sidebar-background: 30 15% 14%; /* Slightly different dark for sidebar */
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 43 50% 55%;
+    --sidebar-primary-foreground: 30 25% 10%;
+    --sidebar-accent: 30 15% 20%; /* Darker accent for sidebar elements */
+    --sidebar-accent-foreground: 40 30% 88%;
+    --sidebar-border: 30 15% 28%;
+    --sidebar-ring: 43 50% 55%;
+
+    /* Chart colors for dark theme */
+    --chart-1: 43 50% 55%; /* primary (dark theme) */
+    --chart-2: 43 40% 65%; /* accent (dark theme) */
+    --chart-3: 43 30% 45%; /* darker gold variant */
+    --chart-4: 40 20% 60%; /* medium light cream */
+    --chart-5: 30 15% 35%; /* medium dark muted */
   }
 }
 
