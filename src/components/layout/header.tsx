@@ -20,18 +20,20 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-x-6 lg:gap-x-8 text-sm pr-4"> {/* Added pr-4 here */}
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-foreground/70 transition-colors hover:text-foreground"
+              className="font-medium text-foreground/70 transition-colors hover:text-foreground hover:text-opacity-100"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
+        {/* Mobile Navigation Trigger */}
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
@@ -40,13 +42,19 @@ export function Header() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background/95 backdrop-blur">
               <nav className="flex flex-col gap-6 pt-8">
+                <Link href="/" className="flex items-center gap-2 mb-4 px-4" aria-label="APSAD Home">
+                  <Logo className="h-8 w-8 text-primary" />
+                  <span className="font-serif text-xl font-semibold tracking-tight text-primary">
+                    APSAD
+                  </span>
+                </Link>
                 {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
+                    className="px-4 py-2 text-lg font-medium text-foreground/80 transition-colors hover:text-foreground rounded-md hover:bg-secondary/50"
                   >
                     {item.label}
                   </Link>
