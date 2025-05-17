@@ -78,10 +78,11 @@ export function Chatbot() {
         <SheetContent
           side="right"
           className="w-full max-w-md p-0 flex flex-col h-full"
-          aria-labelledby="chatbot-title" // Changed from aria-describedby
+          aria-label="APSAD Assistant Chatbot" // Changed from aria-labelledby to aria-label
         >
           <SheetHeader className="p-4 border-b">
-            <SheetTitle id="chatbot-title" className="flex items-center gap-2 text-lg">
+            {/* id="chatbot-title" is no longer strictly necessary for aria-labelledby here, but can be kept for other purposes if any */}
+            <SheetTitle className="flex items-center gap-2 text-lg">
               <Bot className="h-6 w-6 text-primary" />
               APSAD Assistant
             </SheetTitle>
