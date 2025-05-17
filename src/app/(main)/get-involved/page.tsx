@@ -1,89 +1,110 @@
+
 import Image from "next/image";
 import { ContactForm } from "@/components/forms/contact-form";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, Handshake, ShieldCheck, Briefcase, Mail } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { Users, Handshake, ShieldCheck, Briefcase, Mail, HeartHandshake, MessageSquareQuote, SearchCheck, Building } from "lucide-react";
 
 const involvementOptions = [
   {
     icon: Users,
     title: "Volunteer Your Time",
+    imageSrc: "https://placehold.co/600x400.png",
+    imageAlt: "Diverse group of people collaborating on a project",
     description: "Lend your skills and passion to our projects in Lebanon. From field work to archival research, there are many ways to contribute directly.",
-    details: "We welcome volunteers with diverse backgrounds. Opportunities include site maintenance, event support, research assistance, and administrative tasks. Check our current needs or propose how you can help!",
-    aiHint: "people volunteering lebanon"
+    details: "We welcome volunteers with diverse backgrounds. Opportunities include site maintenance, event support, research assistance, and administrative tasks. Your time and expertise are invaluable to our mission.",
+    aiHint: "people volunteering project"
   },
   {
-    icon: Handshake,
+    icon: HeartHandshake, // Changed from Handshake
     title: "Become a Member",
+    imageSrc: "https://placehold.co/600x400.png",
+    imageAlt: "Stylized representation of community and support",
     description: "Join the APSAD family and enjoy exclusive benefits while supporting our ongoing conservation efforts in Lebanon.",
-    details: "Membership provides vital regular funding and comes with perks like newsletters, event invitations, and discounts on publications. Various membership tiers are available.",
-    aiHint: "group handshake support"
+    details: "Membership provides vital regular funding and comes with perks like newsletters, event invitations, and discounts on publications. Various membership tiers are available to suit your level of support.",
+    aiHint: "community support membership"
   },
   {
-    icon: ShieldCheck,
+    icon: MessageSquareQuote, // Changed from ShieldCheck to something more advocacy related
     title: "Advocate for Heritage",
+    imageSrc: "https://placehold.co/600x400.png",
+    imageAlt: "Person passionately speaking at a podium",
     description: "Use your voice to raise awareness about the importance of Lebanese heritage preservation and support our advocacy campaigns.",
-    details: "Help us influence policy and public opinion. Share our stories, participate in campaigns, and contact your representatives about heritage issues in Lebanon.",
-    aiHint: "person speaking advocacy"
+    details: "Help us influence policy and public opinion. Share our stories on social media, participate in our campaigns, and contact your representatives about the critical heritage issues facing Lebanon.",
+    aiHint: "advocacy public speaking"
   },
   {
-    icon: Briefcase,
+    icon: Building, // Changed from Briefcase to represent institutions/corporations
     title: "Partner With Us",
+    imageSrc: "https://placehold.co/600x400.png",
+    imageAlt: "Modern office building symbolizing corporate partnership",
     description: "Collaborate with APSAD on projects, sponsor initiatives, or explore corporate social responsibility opportunities for Lebanon's heritage.",
-    details: "We seek partnerships with institutions, corporations, and other NGOs that share our commitment to heritage. Let's discuss how we can work together for Lebanon.",
-    aiHint: "business meeting lebanon"
+    details: "We seek impactful partnerships with institutions, corporations, and other NGOs that share our commitment to heritage. Let's discuss how we can work together for the future of Lebanon's past.",
+    aiHint: "corporate partnership modern"
   },
 ];
 
 export default function GetInvolvedPage() {
   return (
-    <div className="py-12 md:py-20 bg-background">
-      <div className="container max-w-6xl mx-auto px-6">
-        <header className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Get Involved with APSAD</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Your support is vital to preserving Lebanon's shared heritage. Discover how you can make a difference with APSAD.
+    <div className="py-16 md:py-24 bg-background text-foreground">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6">
+        <header className="text-center mb-20 md:mb-24">
+          <div className="inline-block p-4 bg-primary/10 rounded-full mb-6">
+            <Handshake className="h-16 w-16 text-primary" />
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6">
+            Join Our Mission
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Preserving Lebanon's rich tapestry of history and culture is a collective endeavor. APSAD offers diverse avenues for you to contribute your unique skills, passion, and support. Discover how you can become an integral part of safeguarding our shared heritage for generations to come.
           </p>
         </header>
 
-        <section className="mb-20">
-          <h2 className="text-3xl font-semibold text-primary mb-10 text-center">Ways to Contribute</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+        <section className="mb-20 md:mb-24">
+          <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-16 text-center">
+            Ways You Can Make a Difference
+          </h2>
+          <div className="grid md:grid-cols-2 gap-x-10 gap-y-12 lg:gap-x-12 lg:gap-y-16">
             {involvementOptions.map((option) => (
-              <Card key={option.title} className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
-                <CardHeader className="flex-row items-start gap-4 space-y-0 pb-4">
-                    <div className="p-3 rounded-full bg-primary/10 text-primary">
-                         <option.icon className="h-8 w-8" />
-                    </div>
-                    <div>
-                        <CardTitle className="text-xl text-primary">{option.title}</CardTitle>
-                        <CardDescription className="mt-1">{option.description}</CardDescription>
-                    </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground leading-relaxed">{option.details}</p>
-                </CardContent>
-                <div className="relative h-40 mt-auto rounded-b-lg overflow-hidden">
+              <Card key={option.title} className="flex flex-col bg-card rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out overflow-hidden group">
+                <div className="relative w-full h-64 md:h-72">
                   <Image
-                    src={`https://placehold.co/600x250.png`}
-                    alt={option.title}
+                    src={option.imageSrc}
+                    alt={option.imageAlt}
                     layout="fill"
                     objectFit="cover"
+                    className="transition-transform duration-500 group-hover:scale-105"
                     data-ai-hint={option.aiHint}
                   />
+                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 </div>
+                <CardHeader className="pt-6 pb-3">
+                  <div className="flex items-center gap-4 mb-2">
+                    <div className="p-3 rounded-full bg-accent/10 text-accent flex-shrink-0">
+                         <option.icon className="h-7 w-7" />
+                    </div>
+                    <CardTitle className="text-2xl font-semibold text-primary group-hover:text-accent transition-colors">{option.title}</CardTitle>
+                  </div>
+                  <CardDescription className="text-md text-muted-foreground pt-1">{option.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow pt-0 pb-5">
+                  <p className="text-sm text-muted-foreground/90 leading-relaxed">{option.details}</p>
+                </CardContent>
+                 <CardFooter className="p-5 bg-muted/30 border-t">
+                    <p className="text-xs text-accent italic">Learn more by contacting us below.</p>
+                </CardFooter>
               </Card>
             ))}
           </div>
         </section>
 
-        <section id="contact-section" className="py-12 bg-secondary/20 rounded-lg shadow-md scroll-mt-20">
-          <div className="max-w-3xl mx-auto px-6">
-            <div className="flex items-center justify-center gap-3 mb-6">
-                <Mail className="h-10 w-10 text-accent" />
-                <h2 className="text-3xl font-semibold text-primary text-center">Contact APSAD</h2>
+        <section id="contact-section" className="py-16 md:py-24 bg-gradient-to-br from-secondary/20 to-primary/5 rounded-xl shadow-2xl scroll-mt-20">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <div className="inline-block p-3 bg-background rounded-full shadow-md mb-6">
+                <Mail className="h-12 w-12 text-accent" /> {/* Corrected icon size to w-12 */}
             </div>
-            <p className="text-center text-muted-foreground mb-10">
-              Whether you have questions about our work in Lebanon, want to discuss involvement opportunities, or simply wish to learn more, we'd love to hear from you.
+            <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-5">Connect With APSAD</h2>
+            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
+              Whether you have questions about our projects in Lebanon, wish to explore involvement opportunities, or simply want to share your thoughts on heritage preservation, we are eager to hear from you. Please reach out using the form below.
             </p>
             <ContactForm />
           </div>
@@ -92,3 +113,5 @@ export default function GetInvolvedPage() {
     </div>
   );
 }
+
+    
