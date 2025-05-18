@@ -10,6 +10,16 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, XIcon, ImageIcon } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import type { Metadata } from 'next';
+
+// Note: Page-specific metadata in client components is not directly supported.
+// This metadata would ideally be in a parent server component or layout.
+// For demonstration, if this were a server component:
+// export const metadata: Metadata = {
+//   title: 'Gallery - APSAD\'s Heritage Preservation Projects',
+//   description: 'Explore a visual gallery of APSAD\'s diverse projects across Lebanon, showcasing the preservation of ancient ruins, traditional architecture, and natural sites.',
+// };
+
 
 const initialGalleryItems: GalleryItem[] = [
   {
@@ -112,6 +122,7 @@ export default function GalleryPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
+    // Simulate fetching data
     const timer = setTimeout(() => {
       setGalleryItems(initialGalleryItems);
     }, 500); 
@@ -215,7 +226,7 @@ export default function GalleryPage() {
             <div className="relative aspect-[4/3] w-full bg-black/10">
               <Image
                 src={selectedItem.imageUrls[currentImageIndex]}
-                alt={`${selectedItem.title} - Image ${currentImageIndex + 1}`}
+                alt={`${selectedItem.title} - Image ${currentImageIndex + 1} of ${selectedItem.imageUrls.length}. ${selectedItem.description.substring(0,50)}...`}
                 layout="fill"
                 objectFit="contain"
                 className="transition-opacity duration-300 ease-in-out"

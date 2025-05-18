@@ -2,10 +2,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Landmark, Target, Eye, Users, History, Handshake, Briefcase, Shield } from "lucide-react";
+import { Target, Eye, Users, History, Briefcase, Shield } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'APSAD - Preserving Lebanon\'s Heritage | Home',
+  description: 'Welcome to APSAD (Association for the Protection of Natural Sites and Old Buildings in Lebanon). Learn about our 60+ year mission to protect, preserve, and promote Lebanon\'s cultural and natural heritage.',
+};
+
 
 const teamMembers = [
   {
@@ -39,7 +46,7 @@ export default function HomePage() {
       <section className="relative h-[60vh] min-h-[450px] md:h-[70vh] w-full">
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="Panoramic view of a significant historical site in Lebanon, bathed in golden hour light"
+          alt="Panoramic view of a significant historical site in Lebanon at sunset, an APSAD preservation focus"
           fill
           style={{ objectFit: "cover" }}
           className="brightness-50"
@@ -93,7 +100,7 @@ export default function HomePage() {
               <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl aspect-video">
                 <Image
                   src="https://placehold.co/600x450.png"
-                  alt="Historical photo of APSAD founders or an early project in Lebanon"
+                  alt="Vintage photograph representing APSAD's early work or founders in Lebanon"
                   width={600}
                   height={450}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -109,7 +116,7 @@ export default function HomePage() {
                     <div className="rounded-xl overflow-hidden shadow-2xl aspect-video">
                         <Image
                         src="https://placehold.co/600x450.png"
-                        alt="Conceptual image representing heritage preservation and planning"
+                        alt="Conceptual image illustrating APSAD's strategic approach to heritage planning and preservation"
                         width={600}
                         height={450}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -142,7 +149,7 @@ export default function HomePage() {
                     <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl aspect-video">
                         <Image
                         src="https://placehold.co/600x450.png"
-                        alt="Inspirational image of a preserved heritage site in Lebanon, looking towards the future"
+                        alt="Inspirational view of a preserved Lebanese heritage site under a hopeful sunrise"
                         width={600}
                         height={450}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
@@ -192,7 +199,7 @@ export default function HomePage() {
                       <div className="flex items-center gap-6">
                         <Image
                           src={member.imageUrl}
-                          alt={member.name}
+                          alt={`Portrait of ${member.name}, ${member.title} at APSAD`}
                           width={100}
                           height={100}
                           className="rounded-full object-cover aspect-square"
@@ -230,7 +237,7 @@ export default function HomePage() {
                 <div className="relative w-full h-64">
                   <Image
                       src="https://placehold.co/600x400.png"
-                      alt="Restoration of Historical Building in Lebanon"
+                      alt="Rehabilitation project of an Old Souk in Lebanon by APSAD"
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
@@ -251,7 +258,7 @@ export default function HomePage() {
                 <div className="relative w-full h-64">
                   <Image
                       src="https://placehold.co/600x400.png"
-                      alt="Natural Site Conservation in Lebanon"
+                      alt="APSAD's Cedar Reserve Protection project in Lebanon"
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
@@ -272,7 +279,7 @@ export default function HomePage() {
                 <div className="relative w-full h-64">
                   <Image
                       src="https://placehold.co/600x400.png"
-                      alt="Community Heritage Workshops in Lebanon"
+                      alt="APSAD's Heritage Awareness Program engaging youth in Lebanon"
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"

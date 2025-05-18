@@ -2,14 +2,20 @@
 import Image from "next/image";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Users, Handshake, ShieldCheck, Briefcase, Mail, HeartHandshake, MessageSquareQuote, SearchCheck, Building } from "lucide-react";
+import { Users, Handshake, Mail, HeartHandshake, MessageSquareQuote, Building } from "lucide-react";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Get Involved - Support APSAD\'s Mission in Lebanon',
+  description: 'Join APSAD in protecting Lebanon\'s heritage. Discover various ways to get involved, from volunteering and membership to advocacy and partnerships. Contact us to make a difference.',
+};
 
 const involvementOptions = [
   {
     icon: Users,
     title: "Volunteer Your Time",
     imageSrc: "https://placehold.co/600x400.png",
-    imageAlt: "Diverse group of people collaborating on a project",
+    imageAlt: "Diverse group of people collaborating on an APSAD heritage project",
     description: "Lend your skills and passion to our projects in Lebanon. From field work to archival research, there are many ways to contribute directly.",
     details: "We welcome volunteers with diverse backgrounds. Opportunities include site maintenance, event support, research assistance, and administrative tasks. Your time and expertise are invaluable to our mission.",
     aiHint: "volunteering hands"
@@ -18,7 +24,7 @@ const involvementOptions = [
     icon: HeartHandshake, 
     title: "Become a Member",
     imageSrc: "https://placehold.co/600x400.png",
-    imageAlt: "Stylized representation of community and support",
+    imageAlt: "Symbolic representation of APSAD community support and membership benefits",
     description: "Join the APSAD family and enjoy exclusive benefits while supporting our ongoing conservation efforts in Lebanon.",
     details: "Membership provides vital regular funding and comes with perks like newsletters, event invitations, and discounts on publications. Various membership tiers are available to suit your level of support.",
     aiHint: "support network"
@@ -27,7 +33,7 @@ const involvementOptions = [
     icon: MessageSquareQuote, 
     title: "Advocate for Heritage",
     imageSrc: "https://placehold.co/600x400.png",
-    imageAlt: "Person passionately speaking at a podium",
+    imageAlt: "Person passionately advocating for Lebanese heritage preservation",
     description: "Use your voice to raise awareness about the importance of Lebanese heritage preservation and support our advocacy campaigns.",
     details: "Help us influence policy and public opinion. Share our stories on social media, participate in our campaigns, and contact your representatives about the critical heritage issues facing Lebanon.",
     aiHint: "speaking podium"
@@ -36,7 +42,7 @@ const involvementOptions = [
     icon: Building, 
     title: "Partner With Us",
     imageSrc: "https://placehold.co/600x400.png",
-    imageAlt: "Modern office building symbolizing corporate partnership",
+    imageAlt: "Professional handshake symbolizing corporate partnership with APSAD for Lebanon's heritage",
     description: "Collaborate with APSAD on projects, sponsor initiatives, or explore corporate social responsibility opportunities for Lebanon's heritage.",
     details: "We seek impactful partnerships with institutions, corporations, and other NGOs that share our commitment to heritage. Let's discuss how we can work together for the future of Lebanon's past.",
     aiHint: "office handshake"
@@ -69,7 +75,7 @@ export default function GetInvolvedPage() {
                 <div className="relative w-full h-64 md:h-72">
                   <Image
                     src={option.imageSrc}
-                    alt={option.imageAlt}
+                    alt={option.imageAlt} // Updated alt text
                     layout="fill"
                     objectFit="cover"
                     className="transition-transform duration-500 group-hover:scale-105"

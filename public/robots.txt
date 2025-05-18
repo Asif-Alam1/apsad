@@ -1,0 +1,10 @@
+
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# Allow all crawlers access to all content
+User-agent: *
+Allow: /
+
+# Sitemap location (optional, but recommended)
+# Replace with your actual sitemap URL when available
+# Sitemap: https://apsad.org/sitemap.xml

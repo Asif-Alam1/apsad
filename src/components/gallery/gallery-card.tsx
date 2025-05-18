@@ -16,11 +16,14 @@ export function GalleryCard({ item, onClick }: GalleryCardProps) {
     <Card 
       className="flex flex-col overflow-hidden h-full shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out rounded-xl cursor-pointer group bg-card"
       onClick={onClick}
+      role="button"
+      tabIndex={0}
+      aria-label={`View details for ${item.title}`}
     >
       <div className="relative w-full h-72 sm:h-80 md:h-96 overflow-hidden">
         <Image
           src={item.imageUrls[0]} 
-          alt={item.title}
+          alt={`Preview of ${item.title} - ${item.description.substring(0, 70)}...`} // More descriptive alt
           layout="fill"
           objectFit="cover"
           className="transition-transform duration-500 group-hover:scale-110"
@@ -40,13 +43,11 @@ export function GalleryCard({ item, onClick }: GalleryCardProps) {
         <CardTitle className="text-xl font-semibold text-primary group-hover:text-accent transition-colors duration-300">{item.title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow pb-3">
-        {/* Use line-clamp for the description on the card */}
         <p className="text-sm text-muted-foreground leading-relaxed line-clamp-3">
           {item.description}
         </p>
       </CardContent>
       <CardFooter className="pt-2 pb-4">
-        {/* Historical context can remain as is, or also be clamped if it tends to be long */}
         <p className="text-xs text-muted-foreground/70 italic line-clamp-2">
           <strong>Context:</strong> {item.historicalContext}
         </p>
