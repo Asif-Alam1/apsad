@@ -24,94 +24,94 @@ import type { Metadata } from 'next';
 const initialGalleryItems: GalleryItem[] = [
   {
     id: "1",
-    title: "Baalbek Temples",
+    title: "Project 1",
     imageUrls: [
       "https://placehold.co/800x600.png",
       "https://placehold.co/800x601.png",
       "https://placehold.co/800x602.png"
     ],
-    description: "Magnificent Roman temple complex in Lebanon's Beqaa Valley, showcasing some of the largest and best-preserved Roman architecture. This site includes towering columns, grand courtyards, and intricate carvings that speak to the power and artistry of the Roman Empire. It is a UNESCO World Heritage site and a testament to Lebanon's rich historical tapestry, attracting visitors and scholars from around the globe.",
-    historicalContext: "Flourished during the Roman Empire, particularly from the 1st to 3rd centuries CE. Dedicated to Jupiter, Venus, and Bacchus.",
+    description: "Project 1 description",
+    historicalContext: "Project 1 context",
     aiHints: ["Baalbek temple", "Jupiter columns", "Roman carving"]
   },
   {
     id: "2",
-    title: "Byblos Ancient Port",
+    title: "Project 2",
     imageUrls: [
       "https://placehold.co/800x603.png",
       "https://placehold.co/800x604.png"
     ],
-    description: "One of the oldest continuously inhabited cities, with layers of history from Neolithic times through the Crusades. Explore the ancient harbor, Crusader castle, and royal tombs. Byblos is renowned for its role in the development of the alphabet and its extensive trade links across the Mediterranean.",
-    historicalContext: "A major Phoenician port city, crucial for trade (especially cedar wood and papyrus) throughout antiquity.",
+    description: "Project 2 description",
+    historicalContext: "Project 2 context",
     aiHints: ["Byblos port", "Crusader castle"]
   },
   {
     id: "3",
-    title: "Anjar Umayyad Ruins",
+    title: "Project 3",
     imageUrls: [
       "https://placehold.co/800x605.png",
       "https://placehold.co/800x606.png",
       "https://placehold.co/800x607.png",
       "https://placehold.co/800x608.png"
     ],
-    description: "The unique ruins of an 8th-century Umayyad inland city, displaying a fortified layout with Roman-inspired Sasanian influences. Its well-preserved structures offer a glimpse into early Islamic urban planning and architecture, distinct from coastal settlements of the era.",
-    historicalContext: "Built by Caliph Walid I in the early 8th century CE, it served as a commercial and palace center before being abandoned.",
+    description: "Project 3 description",
+    historicalContext: "Project 3 context",
     aiHints: ["Anjar ruins", "Umayyad city", "Islamic architecture", "Anjar arches"]
   },
   {
     id: "4",
-    title: "Qadisha Valley Monasteries",
+    title: "Project 4",
     imageUrls: [
       "https://placehold.co/800x609.png",
       "https://placehold.co/800x610.png"
     ],
-    description: "A rugged, sacred valley housing some of the earliest Christian monastic communities in the world, carved into cliffs. The valley is also home to the Cedars of God forest, ancient trees that are a symbol of Lebanon. This UNESCO site is a place of spiritual retreat and natural beauty.",
-    historicalContext: "A refuge for Christian communities since the early centuries of Christianity, particularly for Maronite monks.",
+    description: "Project 4 description",
+    historicalContext: "Project 4 context",
     aiHints: ["Qadisha monastery", "cliff dwelling"]
   },
   {
     id: "5",
-    title: "Tyre Al-Mina Site",
+    title: "Project 5",
     imageUrls: [
       "https://placehold.co/800x611.png",
       "https://placehold.co/800x612.png",
       "https://placehold.co/800x613.png"
     ],
-    description: "Extensive archaeological site of the ancient Phoenician island city of Tyre, featuring Roman colonnades, a triumphal arch, and a vast necropolis. Discover the Roman hippodrome and harbor remains, indicative of Tyre's importance in maritime trade and Roman provincial life.",
-    historicalContext: "A dominant Phoenician city-state, famed for its purple dye and maritime power. Later a significant Roman colony.",
+    description: "Project 5 description",
+    historicalContext: "Project 5 context",
     aiHints: ["Tyre ruins", "Roman hippodrome", "Phoenician city"]
   },
   {
     id: "6",
-    title: "Traditional Lebanese House",
+    title: "Project 6",
     imageUrls: [
       "https://placehold.co/800x614.png",
       "https://placehold.co/800x615.png"
     ],
-    description: "Preservation projects focusing on vernacular architecture, characterized by stone walls, triple arches, and red-tiled roofs. These houses are an integral part of Lebanon's cultural fabric and landscape, representing centuries of local building traditions and adaptation to the environment.",
-    historicalContext: "Reflects centuries of adaptation to local climate and materials, forming a key part of Lebanon's cultural landscape.",
+    description: "Project 6 description",
+    historicalContext: "Project 6 context",
     aiHints: ["Lebanese house", "triple arch"]
   },
    {
     id: "7",
-    title: "Roman Aqueduct of Zouk Mosbeh",
+    title: "Project 7",
     imageUrls: [
       "https://placehold.co/800x616.png"
     ],
-    description: "Remains of a Roman-era aqueduct that once supplied water to ancient Berytus (Beirut). This impressive feat of engineering highlights Roman infrastructural prowess and their impact on the development of urban centers throughout the Levant.",
-    historicalContext: "Part of the extensive infrastructure built during Roman rule in Lebanon to support urban centers.",
+    description: "Project 7 description",
+    historicalContext: "Project 7 context",
     aiHints: ["Roman aqueduct"]
   },
   {
     id: "8",
-    title: "Silk Khan in Tripoli",
+    title: "Project 8",
     imageUrls: [
       "https://placehold.co/800x617.png",
       "https://placehold.co/800x618.png",
       "https://placehold.co/800x619.png"
     ],
-    description: "A historic caravanserai (khan) from the Mamluk or Ottoman era, reflecting Tripoli's importance as a trading city. These khans were vital hubs for merchants and travelers, providing lodging, storage, and commercial space along ancient trade routes.",
-    historicalContext: "Khans provided lodging and commercial space for merchants along trade routes, vital for economic activity.",
+    description: "Project 8 description",
+    historicalContext: "Project 8 context",
     aiHints: ["Tripoli khan", "Ottoman architecture", "Mamluk caravanserai"]
   },
 ];
