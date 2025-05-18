@@ -18,21 +18,21 @@ const teamMembers = [
   {
     name: "Mrs. Raya Daouk",
     title: "President",
-    imageUrl: "https://placehold.co/400x400.png",
+    imageUrl: "/Raya.jpg",
     aiHint: "President Portrait",
     bio: "bio would go here",
   },
   {
     name: "Mr. Costa Doumani",
     title: "Director of Operations",
-    imageUrl: "https://placehold.co/400x400.png",
+    imageUrl: "/Costa.jpg",
     aiHint: "director portrait",
     bio: "bio would go here",
   },
   {
     name: "Dr. Yasmine Makaroun",
     title: "Chief Architect & Conservation Specialist",
-    imageUrl: "https://placehold.co/400x400.png",
+    imageUrl: "/yasmine.jpeg",
     aiHint: "architect portrait",
     bio: "bio would go herea",
   },
@@ -45,7 +45,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[450px] md:h-[70vh] w-full">
         <Image
-          src="https://placehold.co/1920x1080.png"
+          src="/hero.jpeg"
           alt="Panoramic view of a significant historical site in Lebanon at sunset, an APSAD preservation focus"
           fill
           style={{ objectFit: "cover" }}
@@ -99,7 +99,7 @@ export default function HomePage() {
               </div>
               <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl aspect-video">
                 <Image
-                  src="https://placehold.co/600x450.png"
+                  src="/history.jpeg"
                   alt="Vintage photograph representing APSAD's early work or founders in Lebanon"
                   width={600}
                   height={450}
@@ -115,7 +115,7 @@ export default function HomePage() {
                 <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div className="rounded-xl overflow-hidden shadow-2xl aspect-video">
                         <Image
-                        src="https://placehold.co/600x450.png"
+                        src="/mission.jpeg"
                         alt="Conceptual image illustrating APSAD's strategic approach to heritage planning and preservation"
                         width={600}
                         height={450}
@@ -148,7 +148,7 @@ export default function HomePage() {
                     </div>
                     <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl aspect-video">
                         <Image
-                        src="https://placehold.co/600x450.png"
+                        src="/vision.jpeg"
                         alt="Inspirational view of a preserved Lebanese heritage site under a hopeful sunrise"
                         width={600}
                         height={450}
@@ -236,7 +236,7 @@ export default function HomePage() {
               <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
                 <div className="relative w-full h-64">
                   <Image
-                      src="https://placehold.co/600x400.png"
+                      src="/image-1.jpeg"
                       alt="Project 1"
                       fill
                       style={{ objectFit: "cover" }}
@@ -257,7 +257,7 @@ export default function HomePage() {
               <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
                 <div className="relative w-full h-64">
                   <Image
-                      src="https://placehold.co/600x400.png"
+                      src="/image-2.jpeg"
                       alt="Project 2"
                       fill
                       style={{ objectFit: "cover" }}
@@ -278,7 +278,7 @@ export default function HomePage() {
               <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
                 <div className="relative w-full h-64">
                   <Image
-                      src="https://placehold.co/600x400.png"
+                      src="/image-3.jpeg"
                       alt="Project 3"
                       fill
                       style={{ objectFit: "cover" }}

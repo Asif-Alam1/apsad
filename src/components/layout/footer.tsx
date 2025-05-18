@@ -58,21 +58,16 @@ export function Footer() {
                   Contact Us
                 </Link>
               </li>
-              <li className="text-sm text-muted-foreground">Beirut, Lebanon</li>
+              <li className="text-sm text-muted-foreground">Achrafieh, Sursock Street, Aoun Building, Ground Floor, Beirut, Lebanon</li>
             </ul>
             <div className="flex space-x-4">
-              <Link href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors duration-200">
+              <Link href="https://www.facebook.com/apsad.lebanon/" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors duration-200">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors duration-200">
+              <Link href="https://www.instagram.com/apsad_lebanon/" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors duration-200">
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors duration-200">
-                <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors duration-200">
-                <Linkedin className="h-5 w-5" />
-              </Link>
+              
             </div>
           </div>
         </div>
