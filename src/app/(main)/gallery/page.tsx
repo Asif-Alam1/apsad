@@ -26,9 +26,9 @@ const initialGalleryItems: GalleryItem[] = [
     id: "1",
     title: "Project 1",
     imageUrls: [
-      "https://placehold.co/800x600.png",
-      "https://placehold.co/800x601.png",
-      "https://placehold.co/800x602.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg",
+      "/image-3.jpeg"
     ],
     description: "Project 1 description",
     historicalContext: "Project 1 context",
@@ -38,8 +38,8 @@ const initialGalleryItems: GalleryItem[] = [
     id: "2",
     title: "Project 2",
     imageUrls: [
-      "https://placehold.co/800x603.png",
-      "https://placehold.co/800x604.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg"
     ],
     description: "Project 2 description",
     historicalContext: "Project 2 context",
@@ -49,10 +49,10 @@ const initialGalleryItems: GalleryItem[] = [
     id: "3",
     title: "Project 3",
     imageUrls: [
-      "https://placehold.co/800x605.png",
-      "https://placehold.co/800x606.png",
-      "https://placehold.co/800x607.png",
-      "https://placehold.co/800x608.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg",
+      "/image-3.jpeg",
+      "/image-4.jpeg"
     ],
     description: "Project 3 description",
     historicalContext: "Project 3 context",
@@ -62,8 +62,8 @@ const initialGalleryItems: GalleryItem[] = [
     id: "4",
     title: "Project 4",
     imageUrls: [
-      "https://placehold.co/800x609.png",
-      "https://placehold.co/800x610.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg"
     ],
     description: "Project 4 description",
     historicalContext: "Project 4 context",
@@ -73,9 +73,9 @@ const initialGalleryItems: GalleryItem[] = [
     id: "5",
     title: "Project 5",
     imageUrls: [
-      "https://placehold.co/800x611.png",
-      "https://placehold.co/800x612.png",
-      "https://placehold.co/800x613.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg",
+      "/image-3.jpeg"
     ],
     description: "Project 5 description",
     historicalContext: "Project 5 context",
@@ -85,8 +85,8 @@ const initialGalleryItems: GalleryItem[] = [
     id: "6",
     title: "Project 6",
     imageUrls: [
-      "https://placehold.co/800x614.png",
-      "https://placehold.co/800x615.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg"
     ],
     description: "Project 6 description",
     historicalContext: "Project 6 context",
@@ -96,7 +96,7 @@ const initialGalleryItems: GalleryItem[] = [
     id: "7",
     title: "Project 7",
     imageUrls: [
-      "https://placehold.co/800x616.png"
+      "/image-1.jpeg"
     ],
     description: "Project 7 description",
     historicalContext: "Project 7 context",
@@ -106,9 +106,9 @@ const initialGalleryItems: GalleryItem[] = [
     id: "8",
     title: "Project 8",
     imageUrls: [
-      "https://placehold.co/800x617.png",
-      "https://placehold.co/800x618.png",
-      "https://placehold.co/800x619.png"
+      "/image-1.jpeg",
+      "/image-2.jpeg",
+      "/image-3.jpeg"
     ],
     description: "Project 8 description",
     historicalContext: "Project 8 context",

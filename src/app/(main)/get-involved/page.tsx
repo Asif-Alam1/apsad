@@ -14,7 +14,7 @@ const involvementOptions = [
   {
     icon: Users,
     title: "Volunteer Your Time",
-    imageSrc: "https://placehold.co/600x400.png",
+    imageSrc: "/volunteer.jpg",
     imageAlt: "Diverse group of people collaborating on an APSAD heritage project",
     description: "Lend your skills and passion to our projects in Lebanon. From field work to archival research, there are many ways to contribute directly.",
     details: "We welcome volunteers with diverse backgrounds. Opportunities include site maintenance, event support, research assistance, and administrative tasks. Your time and expertise are invaluable to our mission.",
@@ -23,7 +23,7 @@ const involvementOptions = [
   {
     icon: HeartHandshake, 
     title: "Become a Member",
-    imageSrc: "https://placehold.co/600x400.png",
+    imageSrc: "/members.jpg",
     imageAlt: "Symbolic representation of APSAD community support and membership benefits",
     description: "Join the APSAD family and enjoy exclusive benefits while supporting our ongoing conservation efforts in Lebanon.",
     details: "Membership provides vital regular funding and comes with perks like newsletters, event invitations, and discounts on publications. Various membership tiers are available to suit your level of support.",
@@ -32,7 +32,7 @@ const involvementOptions = [
   {
     icon: MessageSquareQuote, 
     title: "Advocate for Heritage",
-    imageSrc: "https://placehold.co/600x400.png",
+    imageSrc: "/heritage.jpg",
     imageAlt: "Person passionately advocating for Lebanese heritage preservation",
     description: "Use your voice to raise awareness about the importance of Lebanese heritage preservation and support our advocacy campaigns.",
     details: "Help us influence policy and public opinion. Share our stories on social media, participate in our campaigns, and contact your representatives about the critical heritage issues facing Lebanon.",
@@ -41,7 +41,7 @@ const involvementOptions = [
   {
     icon: Building, 
     title: "Partner With Us",
-    imageSrc: "https://placehold.co/600x400.png",
+    imageSrc: "/partner.jpg",
     imageAlt: "Professional handshake symbolizing corporate partnership with APSAD for Lebanon's heritage",
     description: "Collaborate with APSAD on projects, sponsor initiatives, or explore corporate social responsibility opportunities for Lebanon's heritage.",
     details: "We seek impactful partnerships with institutions, corporations, and other NGOs that share our commitment to heritage. Let's discuss how we can work together for the future of Lebanon's past.",
