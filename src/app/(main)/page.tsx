@@ -16,25 +16,25 @@ export const metadata: Metadata = {
 
 const teamMembers = [
   {
-    name: "Dr. Layla Hassan",
-    title: "President & Lead Archaeologist",
+    name: "Mrs. Raya Daouk",
+    title: "President",
     imageUrl: "https://placehold.co/400x400.png",
-    aiHint: "archaeologist portrait",
-    bio: "Dr. Hassan has dedicated over 20 years to uncovering and preserving Lebanon's rich archaeological heritage. Her expertise in Roman and Phoenician sites has guided many of APSAD's key restoration projects, contributing significantly to the understanding and safeguarding of ancient civilizations in the region. She is also a published author and frequent speaker at international heritage conferences.",
+    aiHint: "President Portrait",
+    bio: "bio would go here",
   },
   {
-    name: "Mr. Karim Nader",
-    title: "Director of Operations & Community Outreach",
+    name: "Mr. Costa Doumani",
+    title: "Director of Operations",
     imageUrl: "https://placehold.co/400x400.png",
     aiHint: "director portrait",
-    bio: "Mr. Nader manages APSAD's field operations and fosters crucial relationships with local communities, ensuring that preservation efforts are collaborative and sustainable. He has a background in project management and social development, and is passionate about empowering local stakeholders in the heritage conservation process.",
+    bio: "bio would go here",
   },
   {
-    name: "Ms. Rania Khoury",
+    name: "Dr. Yasmine Makaroun",
     title: "Chief Architect & Conservation Specialist",
     imageUrl: "https://placehold.co/400x400.png",
     aiHint: "architect portrait",
-    bio: "Ms. Khoury brings a wealth of knowledge in historical building conservation and sustainable architectural practices. She oversees the structural integrity and authentic restoration of APSAD's diverse projects, from ancient ruins to traditional dwellings, ensuring adherence to international conservation standards.",
+    bio: "bio would go herea",
   },
 ];
 
@@ -237,20 +237,20 @@ export default function HomePage() {
                 <div className="relative w-full h-64">
                   <Image
                       src="https://placehold.co/600x400.png"
-                      alt="Rehabilitation project of an Old Souk in Lebanon by APSAD"
+                      alt="Project 1"
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="souk restoration"
+                      data-ai-hint="Project 1"
                   />
                 </div>
                 <CardHeader className="pb-3 pt-5">
-                  <CardTitle className="text-2xl">Old Souk Rehabilitation</CardTitle>
-                  <CardDescription className="mt-1 text-md">Revitalizing a traditional marketplace.</CardDescription>
+                  <CardTitle className="text-2xl">Project 1</CardTitle>
+                  <CardDescription className="mt-1 text-md">Project 1 description</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground leading-relaxed">
-                    This project focuses on structural repairs and preserving the authentic character of a historic souk in Lebanon, ensuring its continued role in community life.
+                 Project 1 content
                   </p>
                 </CardContent>
               </Card>
@@ -258,20 +258,20 @@ export default function HomePage() {
                 <div className="relative w-full h-64">
                   <Image
                       src="https://placehold.co/600x400.png"
-                      alt="APSAD's Cedar Reserve Protection project in Lebanon"
+                      alt="Project 2"
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="cedar trees"
+                      data-ai-hint="project 2"
                   />
                 </div>
                 <CardHeader className="pb-3 pt-5">
-                  <CardTitle className="text-2xl">Cedar Reserve Protection</CardTitle>
-                  <CardDescription className="mt-1 text-md">Conserving a vital natural heritage site.</CardDescription>
+                  <CardTitle className="text-2xl">Project 2</CardTitle>
+                  <CardDescription className="mt-1 text-md">Project 2 description</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground leading-relaxed">
-                    Working to protect ancient cedar forests through sustainable management, reforestation efforts, and community involvement in ecological preservation.
+                    Project 2 content
                   </p>
                 </CardContent>
               </Card>
@@ -279,7 +279,7 @@ export default function HomePage() {
                 <div className="relative w-full h-64">
                   <Image
                       src="https://placehold.co/600x400.png"
-                      alt="APSAD's Heritage Awareness Program engaging youth in Lebanon"
+                      alt="Project 3"
                       fill
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-500 hover:scale-105"
@@ -287,12 +287,12 @@ export default function HomePage() {
                   />
                 </div>
                 <CardHeader className="pb-3 pt-5">
-                  <CardTitle className="text-2xl">Heritage Awareness Program</CardTitle>
-                  <CardDescription className="mt-1 text-md">Engaging youth in Lebanese heritage.</CardDescription>
+                  <CardTitle className="text-2xl">Project 3</CardTitle>
+                  <CardDescription className="mt-1 text-md">Project 3 description</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <p className="text-muted-foreground leading-relaxed">
-                    Educational initiatives and interactive workshops designed to foster appreciation and stewardship for local heritage sites among young Lebanese.
+                    Project 3 content
                   </p>
                 </CardContent>
               </Card>
