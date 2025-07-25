@@ -6,6 +6,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Target, Eye, Users, History, Briefcase, Shield, Sparkles, ArrowRight, Star, Globe } from "lucide-react";
 import type { Metadata } from 'next';
+import HeroSection from "@/components/HeroSection";
+import { StatsSection } from "@/components/StatSection";
+import { TeamSection } from "@/components/TeamSection";
 
 export const metadata: Metadata = {
   title: 'APSAD - Preserving Lebanon\'s Heritage | Home',
@@ -47,109 +50,10 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section with Advanced Animations */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Background */}
-        <div className="absolute inset-0">
-          <Image
-            src="/hero.jpeg"
-            alt="Panoramic view of a significant historical site in Lebanon at sunset, an APSAD preservation focus"
-            fill
-            style={{ objectFit: "cover" }}
-            className="scale-110 transition-transform duration-[20s] ease-out hover:scale-105"
-            priority
-            data-ai-hint="Lebanon heritage"
-          />
-          {/* Gradient Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10" />
-        </div>
-
-        {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-2 h-2 bg-accent/30 rounded-full animate-pulse" />
-          <div className="absolute top-40 right-20 w-1 h-1 bg-primary/40 rounded-full animate-bounce" style={{ animationDelay: '1s' }} />
-          <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
-          <div className="mb-8 transform transition-all duration-1000 ease-out">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 group hover:bg-white/20 transition-all duration-300">
-              <Sparkles className="h-4 w-4 text-accent animate-pulse" />
-              <span className="text-sm font-medium">Preserving Heritage Since 1960</span>
-              <div className="w-2 h-2 bg-accent rounded-full animate-ping" />
-            </div>
-          </div>
-
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight">
-            <span className="block transform transition-all duration-1000 ease-out">
-              <span className="bg-gradient-to-r from-white via-white to-accent bg-clip-text text-transparent">
-                APSAD
-              </span>
-            </span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 transform transition-all duration-1000 ease-out font-light">
-              Protecting Lebanon's
-              <span className="text-accent font-semibold"> Heritage</span>
-            </span>
-          </h1>
-
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-12 leading-relaxed text-white/90 transform transition-all duration-1000 ease-out">
-            Association for the Protection of Natural Sites and Old Buildings in Lebanon. 
-            <span className="text-accent font-medium"> Join us in our mission</span> to safeguard these 
-            irreplaceable treasures for future generations.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button asChild size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-primary/25 transition-all duration-500 hover:scale-105">
-              <Link href="/gallery" className="flex items-center gap-2">
-                Explore Our Work
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="group bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-md px-8 py-4 text-lg rounded-full transition-all duration-500 hover:scale-105">
-              <Link href="/get-involved" className="flex items-center gap-2">
-                Get Involved
-                <Users className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
-          <div className="flex flex-col items-center gap-2">
-            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse" />
-            </div>
-            <span className="text-xs uppercase tracking-wider">Scroll</span>
-          </div>
-        </div>
-      </section>
+   <HeroSection/>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%)]" />
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <Card key={index} className="group relative bg-white/50 backdrop-blur-sm border-white/20 hover:bg-white/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <CardContent className="p-6 text-center relative z-10">
-                  <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <stat.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <div className="text-3xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                    {stat.number}
-                  </div>
-                  <div className="text-sm text-muted-foreground font-medium">
-                    {stat.label}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+   <StatsSection/>
 
       {/* Welcome Section with Glass Morphism */}
       <div className="py-28 bg-gradient-to-br from-background via-secondary/5 to-background relative overflow-hidden">
@@ -302,61 +206,7 @@ export default function HomePage() {
           </section>
 
           {/* Team Section with Advanced Cards */}
-          <section className="py-20 bg-gradient-to-br from-secondary/10 to-primary/5 rounded-3xl shadow-2xl relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_70%)]" />
-            <div className="container max-w-5xl mx-auto px-6 relative z-10">
-              <h3 className="text-4xl font-bold text-primary mb-16 text-center flex items-center justify-center gap-4">
-                <Users className="h-10 w-10 text-accent" /> 
-                Our Leadership Team
-              </h3>
-              
-              <Accordion type="single" collapsible className="w-full space-y-6">
-                {teamMembers.map((member, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="group bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-xl border-white/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
-                    <AccordionTrigger className="p-8 text-left hover:no-underline relative">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      <div className="flex items-center gap-6 relative z-10">
-                        <div className="relative group-hover:scale-105 transition-transform duration-300">
-                          <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full p-1">
-                            <div className="w-full h-full bg-white rounded-full" />
-                          </div>
-                          <Image
-                            src={member.imageUrl}
-                            alt={`Portrait of ${member.name}, ${member.title} at APSAD`}
-                            width={120}
-                            height={120}
-                            className="relative z-10 rounded-full object-cover aspect-square border-4 border-white shadow-lg"
-                            data-ai-hint={member.aiHint}
-                          />
-                        </div>
-                        <div>
-                          <h4 className="text-3xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
-                            {member.name}
-                          </h4>
-                          <p className="text-lg text-accent font-semibold mt-2 flex items-center gap-2">
-                            {member.title}
-                            <Star className="h-4 w-4 text-yellow-500" />
-                          </p>
-                        </div>
-                      </div>
-                    </AccordionTrigger>
-                    <AccordionContent className="p-8 pt-0">
-                      <div className="ml-32 pl-6 border-l-2 border-accent/20">
-                        <p className="text-muted-foreground leading-relaxed text-lg">
-                          {member.bio}
-                        </p>
-                      </div>
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-              
-              <p className="text-center text-muted-foreground mt-16 text-lg bg-white/50 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30">
-                APSAD is also powered by numerous dedicated volunteers and a supportive board of directors, 
-                all united by a shared passion for Lebanon's heritage.
-              </p>
-            </div>
-          </section>
+        <TeamSection/>
         </div>
       </div>
       

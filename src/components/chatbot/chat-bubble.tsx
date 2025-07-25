@@ -1,130 +1,98 @@
-"use client";
-
-import type { ChatMessage } from "@/types";
-import { cn } from "@/lib/utils";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import React, { useState, useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
-import { Bot, User, Clock, CheckCheck } from "lucide-react";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Input } from "@/components/ui/input";
+import { Bot, MessageCircle, Sparkles, Zap, Star, Heart, Send, Mic, Paperclip, Smile, X, Plus, Minus } from "lucide-react";
+import type { ChatMessage } from "@/types";
 
-interface ChatBubbleProps {
-  message: ChatMessage;
-}
+const quickActions = [
+  { label: "About APSAD", icon: Star, color: "from-blue-500 to-cyan-500" },
+  { label: "How to Help", icon: Heart, color: "from-purple-500 to-pink-500" },
+  { label: "Heritage Sites", icon: MessageCircle, color: "from-green-500 to-emerald-500" },
+  { label: "Contact Info", icon: Zap, color: "from-orange-500 to-red-500" }
+];
 
-export function ChatBubble({ message }: ChatBubbleProps) {
-  const isUser = message.sender === "user";
-  const timeAgo = new Date(message.timestamp);
-  const formattedTime = timeAgo.toLocaleTimeString([], { 
-    hour: '2-digit', 
-    minute: '2-digit' 
-  });
+const ChatBubble = ({ message, isTyping = false }:any) => {
+  const isUser = message?.sender === "user";
+  const [isVisible, setIsVisible] = useState(false);
 
-  return (
-    <div
-      className={cn(
-        "flex items-start gap-3 mb-6 group",
-        isUser ? "justify-end" : "justify-start"
-      )}
-    >
-      {/* Bot Avatar */}
-      {!isUser && (
-        <div className="relative flex-shrink-0">
-          <Avatar className="h-10 w-10 bg-gradient-to-br from-primary to-accent text-white shadow-lg ring-2 ring-white/50 group-hover:scale-105 transition-transform duration-300">
-            <AvatarFallback className="bg-transparent">
-              <Bot className="h-6 w-6" />
-            </AvatarFallback>
-          </Avatar>
-          
-          {/* Online Status Indicator */}
-          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-sm">
-            <div className="w-full h-full bg-green-400 rounded-full animate-pulse" />
+  useEffect(() => {
+    setTimeout(() => setIsVisible(true), 100);
+  }, []);
+
+  if (isTyping) {
+    return (
+      <div className="flex items-start gap-3 mb-6">
+        <div className="relative">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+            <Bot className="h-6 w-6 text-white" />
           </div>
+          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse" />
         </div>
-      )}
-
-      {/* Message Container */}
-      <div className={cn(
-        "flex flex-col max-w-[75%] min-w-0",
-        isUser ? "items-end" : "items-start"
-      )}>
-        {/* Sender Label */}
-        {!isUser && (
-          <div className="flex items-center gap-2 mb-1 px-1">
-            <span className="text-xs font-medium text-primary">APSAD Assistant</span>
-            <Badge variant="outline" className="bg-green-50 border-green-200 text-green-700 text-xs px-2 py-0">
-              <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1" />
-              Online
-            </Badge>
-          </div>
-        )}
-        
-        {/* Message Bubble */}
-        <div
-          className={cn(
-            "relative rounded-2xl p-4 shadow-lg backdrop-blur-sm border transition-all duration-300 group-hover:shadow-xl",
-            isUser
-              ? "bg-gradient-to-r from-primary to-accent text-white rounded-br-md border-primary/20 shadow-primary/20"
-              : "bg-gradient-to-r from-white/90 to-white/70 text-foreground rounded-bl-md border-white/30"
-          )}
-        >
-          {/* Message Text */}
-          <p className={cn(
-            "text-sm leading-relaxed whitespace-pre-wrap",
-            isUser ? "text-white" : "text-foreground"
-          )}>
-            {message.text}
-          </p>
-          
-          {/* Message Decorations for Bot */}
-          {!isUser && (
-            <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-gradient-to-br from-primary to-accent rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300" />
-          )}
-          
-          {/* User Message Decorations */}
-          {isUser && (
-            <div className="absolute -bottom-2 -right-2 w-4 h-4 bg-white/20 rounded-full opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
-          )}
-        </div>
-        
-        {/* Message Footer */}
-        <div className={cn(
-          "flex items-center gap-2 mt-2 px-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300",
-          isUser ? "flex-row-reverse" : "flex-row"
-        )}>
-          <div className="flex items-center gap-1 text-xs text-muted-foreground">
-            <Clock className="h-3 w-3" />
-            <span>{formattedTime}</span>
-          </div>
-          
-          {isUser && (
-            <div className="flex items-center gap-1 text-xs text-muted-foreground">
-              <CheckCheck className="h-3 w-3 text-green-500" />
-              <span>Delivered</span>
+        <div className="glass-gradient backdrop-blur-sm rounded-2xl rounded-bl-md p-4 shadow-lg border border-white/30">
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-muted-foreground">APSAD Assistant is typing</span>
+            <div className="flex gap-1">
+              {[...Array(3)].map((_, i) => (
+                <div 
+                  key={i}
+                  className="w-2 h-2 bg-primary rounded-full animate-bounce"
+                  style={{ animationDelay: `${i * 0.15}s` }}
+                />
+              ))}
             </div>
-          )}
-          
-          {!isUser && (
-            <Badge variant="outline" className="bg-white/50 border-white/30 text-xs px-2 py-0">
-              AI Response
-            </Badge>
-          )}
+          </div>
         </div>
       </div>
+    );
+  }
 
-      {/* User Avatar */}
+  return (
+    <div className={`flex items-start gap-3 mb-6 ${isUser ? "justify-end" : "justify-start"} ${
+      isVisible ? "animate-slide-up-fade" : "opacity-0"
+    }`}>
+      {!isUser && (
+        <div className="relative flex-shrink-0">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+            <Bot className="h-6 w-6 text-white" />
+          </div>
+          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white">
+            <div className="w-full h-full bg-green-400 rounded-full animate-ping" />
+          </div>
+        </div>
+      )}
+      
+      <div className={`group relative max-w-[75%] ${isUser ? "order-first" : ""}`}>
+        <div className={`relative rounded-2xl p-4 shadow-lg backdrop-blur-sm border transition-all duration-300 hover:shadow-xl ${
+          isUser
+            ? "bg-gradient-to-r from-primary to-accent text-white rounded-br-md border-primary/20"
+            : "glass-gradient text-foreground rounded-bl-md border-white/30"
+        }`}>
+          <p className="text-sm leading-relaxed">{message.text}</p>
+          
+          {/* Message decorations */}
+          <div className={`absolute -bottom-2 ${isUser ? "-right-2" : "-left-2"} w-4 h-4 rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-300 ${
+            isUser ? "bg-accent" : "bg-primary"
+          }`} />
+        </div>
+        
+        <div className={`flex items-center gap-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs text-muted-foreground ${
+          isUser ? "flex-row-reverse" : ""
+        }`}>
+          <span>{new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
+        </div>
+      </div>
+      
       {isUser && (
         <div className="relative flex-shrink-0">
-          <Avatar className="h-10 w-10 bg-gradient-to-br from-accent to-primary text-white shadow-lg ring-2 ring-white/50 group-hover:scale-105 transition-transform duration-300">
-            <AvatarFallback className="bg-transparent">
-              <User className="h-6 w-6" />
-            </AvatarFallback>
-          </Avatar>
-          
-          {/* Active Status for User */}
-          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-blue-500 rounded-full border-2 border-white shadow-sm">
-            <div className="w-full h-full bg-blue-400 rounded-full" />
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+            <span className="text-white font-bold text-sm">You</span>
           </div>
         </div>
       )}
     </div>
   );
-}
+};
+

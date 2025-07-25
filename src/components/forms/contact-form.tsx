@@ -1,56 +1,58 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { useActionState } from "react";
-import { useFormStatus } from "react-dom";
+'use client'
+import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import {
-  contactFormSchema,
-  type ContactFormData,
-  initialContactFormState
-} from "@/lib/validators/contact";
-import { submitContactForm } from "@/app/actions/contact";
-
+import { contactFormSchema, type ContactFormData } from "@/lib/validators/contact";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, CheckCircle, AlertCircle, Send, User, Mail, MessageSquare, FileText, Sparkles, Heart } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { Loader2, CheckCircle, AlertCircle, Send, User, Mail, MessageSquare, FileText, Sparkles, Heart, Zap, Globe, Phone, MapPin, Clock } from "lucide-react";
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button 
-      type="submit" 
-      disabled={pending} 
-      className="group w-full sm:w-auto bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white rounded-full px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-    >
-      {pending ? (
-        <>
-          <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-          <span>Sending...</span>
-        </>
-      ) : (
-        <>
-          <Send className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-          <span>Send Message</span>
-        </>
-      )}
-    </Button>
-  );
-}
+const inputFields = [
+  {
+    name: "name",
+    label: "Full Name",
+    icon: User,
+    placeholder: "Jane Doe",
+    type: "text",
+    gradient: "from-blue-500 to-cyan-500"
+  },
+  {
+    name: "email",
+    label: "Email Address",
+    icon: Mail,
+    placeholder: "jane@example.com",
+    type: "email",
+    gradient: "from-purple-500 to-pink-500"
+  },
+  {
+    name: "subject",
+    label: "Subject",
+    icon: FileText,
+    placeholder: "How can we help?",
+    type: "text",
+    gradient: "from-green-500 to-emerald-500"
+  }
+];
 
-export function ContactForm() {
-  const [state, formAction] = useActionState(submitContactForm, initialContactFormState);
-  const [focusedField, setFocusedField] = useState<string | null>(null);
-  const { toast } = useToast();
+const contactReasons = [
+  { icon: Heart, label: "Volunteer", color: "text-red-500" },
+  { icon: Globe, label: "Partnership", color: "text-blue-500" },
+  { icon: Zap, label: "Donation", color: "text-yellow-500" },
+  { icon: MessageSquare, label: "General Inquiry", color: "text-purple-500" }
+];
 
-  const form = useForm<ContactFormData>({
+export function ContactForm({ onSubmit }:any) {
+  const [focusedField, setFocusedField] = useState(null);
+  const [selectedReason, setSelectedReason] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const formRef = useRef(null);
+
+  const form = useForm({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
@@ -61,148 +63,160 @@ export function ContactForm() {
   });
 
   useEffect(() => {
-    if (state.timestamp) {
-      if (state.success) {
-        toast({
-          title: "Message Sent Successfully! 🎉",
-          description: state.message,
-          variant: "default",
-          duration: 5000,
-        });
-        form.reset();
-      } else if (state.message && !state.success) {
-        toast({
-          title: "Oops! Something went wrong",
-          description: state.message || "An unexpected error occurred.",
-          variant: "destructive",
-          duration: 5000,
-        });
+    const handleMouseMove = (e: { clientX: number; clientY: number; }) => {
+      if (formRef.current) {
+        const rect = formRef.current.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        setMousePosition({ x: x * 20, y: y * 20 });
       }
-    }
-  }, [state, toast, form]);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  const handleSubmit = async (data: any) => {
+    setIsSubmitting(true);
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    onSubmit?.(data);
+    setIsSubmitting(false);
+    form.reset();
+  };
 
   return (
-    <Card className="relative w-full bg-white/90 backdrop-blur-xl border border-white/40 shadow-2xl rounded-3xl overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
-      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full -translate-y-16 translate-x-16" />
+    <Card ref={formRef} className="relative w-full overflow-hidden rounded-3xl border-0">
+      {/* Dynamic Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/95 to-white/85 backdrop-blur-2xl" />
+      <div 
+        className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"
+        style={{
+          transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
+          transition: 'transform 0.3s ease-out'
+        }}
+      />
       
-      <CardHeader className="relative z-10 p-8 pb-6">
-        <div className="flex items-center gap-3 mb-4">
-          <div className="p-3 rounded-full bg-gradient-to-br from-primary to-accent shadow-lg">
-            <MessageSquare className="h-6 w-6 text-white" />
+      {/* Animated Orbs */}
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl animate-morph" />
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-3xl animate-morph" style={{ animationDelay: '4s' }} />
+      
+      {/* Floating Particles */}
+      {[...Array(10)].map((_, i) => (
+        <div
+          key={i}
+          className="absolute w-1 h-1 bg-gradient-to-br from-primary to-accent rounded-full opacity-30"
+          style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animation: `float-advanced ${15 + Math.random() * 10}s ease-in-out infinite`,
+            animationDelay: `${Math.random() * 5}s`
+          }}
+        />
+      ))}
+
+      <CardHeader className="relative z-10 p-8 pb-0">
+        <div className="flex items-center gap-4 mb-6">
+          <div className="relative">
+            <div className="p-4 rounded-2xl bg-gradient-to-br from-primary to-accent shadow-2xl animate-pulse-glow">
+              <MessageSquare className="h-8 w-8 text-white" />
+            </div>
+            <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-accent rounded-full flex items-center justify-center">
+              <Sparkles className="h-3 w-3 text-white animate-pulse" />
+            </div>
           </div>
           <div>
-            <CardTitle className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Send Us a Message
+            <CardTitle className="text-3xl font-bold">
+              <span className="text-gradient-animate">Get in Touch</span>
             </CardTitle>
-            <div className="flex items-center gap-2 mt-2">
-              <Badge variant="outline" className="bg-primary/10 border-primary/20 text-primary text-xs">
-                <Sparkles className="h-3 w-3 mr-1" />
-                Quick Response
-              </Badge>
-              <Badge variant="outline" className="bg-accent/10 border-accent/20 text-accent text-xs">
-                <Heart className="h-3 w-3 mr-1" />
-                Secure
-              </Badge>
-            </div>
+            <CardDescription className="text-lg mt-1">
+              We'd love to hear from you
+            </CardDescription>
           </div>
         </div>
-        <CardDescription className="text-lg text-muted-foreground leading-relaxed">
-          Have questions or want to get in touch? We'd love to hear from you. Fill out the form below and we'll respond as soon as possible.
-        </CardDescription>
+
+        {/* Contact Reason Selector */}
+        <div className="mb-8">
+          <Label className="text-sm font-medium text-muted-foreground mb-3 block">
+            I'm interested in...
+          </Label>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {contactReasons.map((reason, index) => (
+              <button
+                key={index}
+                type="button"
+                onClick={() => setSelectedReason(index)}
+                className={`group relative p-4 rounded-2xl glass-gradient backdrop-blur-sm border transition-all duration-500 hover:scale-105 ${
+                  selectedReason === index 
+                    ? 'border-primary shadow-lg scale-105' 
+                    : 'border-white/30 hover:border-white/50'
+                }`}
+              >
+                <div className="flex flex-col items-center gap-2">
+                  <reason.icon className={`h-6 w-6 ${reason.color} transition-transform duration-300 group-hover:scale-110`} />
+                  <span className="text-xs font-medium">{reason.label}</span>
+                </div>
+                {selectedReason === index && (
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 animate-pulse" />
+                )}
+              </button>
+            ))}
+          </div>
+        </div>
       </CardHeader>
 
-      <CardContent className="relative z-10 p-8 pt-0">
-        <form action={formAction} className="space-y-8">
+      <CardContent className="relative z-10 p-8 pt-4">
+        <div className="space-y-6">
           <div className="grid sm:grid-cols-2 gap-6">
-            {/* Name Field */}
-            <div className="group space-y-3">
-              <Label 
-                htmlFor="name" 
-                className="flex items-center gap-2 text-sm font-semibold text-primary group-focus-within:text-accent transition-colors duration-300"
-              >
-                <User className="h-4 w-4" />
-                Full Name
-              </Label>
-              <div className="relative">
-                <Input
-                  id="name"
-                  {...form.register("name")}
-                  placeholder="e.g. Jane Doe"
-                  onFocus={() => setFocusedField("name")}
-                  onBlur={() => setFocusedField(null)}
-                  className={`w-full px-4 py-3 text-base bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-300 focus:bg-white/90 focus:scale-[1.02] focus:shadow-lg ${
-                    focusedField === "name" ? "border-primary shadow-lg" : "border-white/30"
-                  } ${form.formState.errors.name || state.errors?.name ? "border-red-300 focus:border-red-500" : ""}`}
-                  aria-invalid={!!form.formState.errors.name || !!state.errors?.name}
-                  aria-describedby="name-error"
-                />
-                {focusedField === "name" && (
-                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 -z-10 animate-pulse" />
+            {inputFields.slice(0, 2).map((field) => (
+              <div key={field.name} className="group relative">
+                <Label 
+                  htmlFor={field.name} 
+                  className="flex items-center gap-2 text-sm font-semibold text-primary mb-2"
+                >
+                  <field.icon className="h-4 w-4" />
+                  {field.label}
+                </Label>
+                <div className="relative">
+                  <Input
+                    id={field.name}
+                    type={field.type}
+                    {...form.register(field.name)}
+                    placeholder={field.placeholder}
+                    onFocus={() => setFocusedField(field.name)}
+                    onBlur={() => setFocusedField(null)}
+                    className={`w-full px-4 py-3 bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-500 ${
+                      focusedField === field.name 
+                        ? 'border-primary shadow-lg scale-[1.02] bg-white/90' 
+                        : 'border-white/30 hover:border-white/50'
+                    }`}
+                  />
+                  {focusedField === field.name && (
+                    <>
+                      <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${field.gradient} opacity-10 -z-10 animate-pulse`} />
+                      <div className="absolute -top-1 -right-1">
+                        <div className="w-2 h-2 bg-primary rounded-full animate-ping" />
+                      </div>
+                    </>
+                  )}
+                </div>
+                {form.formState.errors[field.name] && (
+                  <p className="text-sm text-red-500 flex items-center gap-1 mt-2 animate-fade-in">
+                    <AlertCircle className="h-3 w-3" />
+                    {form.formState.errors[field.name].message}
+                  </p>
                 )}
               </div>
-              {form.formState.errors.name && (
-                <p id="name-error" className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="h-3 w-3" />
-                  {form.formState.errors.name.message}
-                </p>
-              )}
-              {state.errors?.name && (
-                <p id="name-server-error" className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="h-3 w-3" />
-                  {state.errors.name[0]}
-                </p>
-              )}
-            </div>
-
-            {/* Email Field */}
-            <div className="group space-y-3">
-              <Label 
-                htmlFor="email" 
-                className="flex items-center gap-2 text-sm font-semibold text-primary group-focus-within:text-accent transition-colors duration-300"
-              >
-                <Mail className="h-4 w-4" />
-                Email Address
-              </Label>
-              <div className="relative">
-                <Input
-                  id="email"
-                  type="email"
-                  {...form.register("email")}
-                  placeholder="e.g. jane@example.com"
-                  onFocus={() => setFocusedField("email")}
-                  onBlur={() => setFocusedField(null)}
-                  className={`w-full px-4 py-3 text-base bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-300 focus:bg-white/90 focus:scale-[1.02] focus:shadow-lg ${
-                    focusedField === "email" ? "border-primary shadow-lg" : "border-white/30"
-                  } ${form.formState.errors.email || state.errors?.email ? "border-red-300 focus:border-red-500" : ""}`}
-                  aria-invalid={!!form.formState.errors.email || !!state.errors?.email}
-                  aria-describedby="email-error"
-                />
-                {focusedField === "email" && (
-                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 -z-10 animate-pulse" />
-                )}
-              </div>
-              {form.formState.errors.email && (
-                <p id="email-error" className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="h-3 w-3" />
-                  {form.formState.errors.email.message}
-                </p>
-              )}
-              {state.errors?.email && (
-                <p id="email-server-error" className="text-sm text-red-500 flex items-center gap-1">
-                  <AlertCircle className="h-3 w-3" />
-                  {state.errors.email[0]}
-                </p>
-              )}
-            </div>
+            ))}
           </div>
 
           {/* Subject Field */}
-          <div className="group space-y-3">
+          <div className="group relative">
             <Label 
               htmlFor="subject" 
-              className="flex items-center gap-2 text-sm font-semibold text-primary group-focus-within:text-accent transition-colors duration-300"
+              className="flex items-center gap-2 text-sm font-semibold text-primary mb-2"
             >
               <FileText className="h-4 w-4" />
               Subject
@@ -211,38 +225,26 @@ export function ContactForm() {
               <Input
                 id="subject"
                 {...form.register("subject")}
-                placeholder="e.g. Inquiry about volunteering opportunities"
+                placeholder={inputFields[2].placeholder}
                 onFocus={() => setFocusedField("subject")}
                 onBlur={() => setFocusedField(null)}
-                className={`w-full px-4 py-3 text-base bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-300 focus:bg-white/90 focus:scale-[1.02] focus:shadow-lg ${
-                  focusedField === "subject" ? "border-primary shadow-lg" : "border-white/30"
-                } ${form.formState.errors.subject || state.errors?.subject ? "border-red-300 focus:border-red-500" : ""}`}
-                aria-invalid={!!form.formState.errors.subject || !!state.errors?.subject}
-                aria-describedby="subject-error"
+                className={`w-full px-4 py-3 bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-500 ${
+                  focusedField === "subject" 
+                    ? 'border-primary shadow-lg scale-[1.01] bg-white/90' 
+                    : 'border-white/30 hover:border-white/50'
+                }`}
               />
               {focusedField === "subject" && (
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 -z-10 animate-pulse" />
+                <div className={`absolute inset-0 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 opacity-10 -z-10 animate-pulse`} />
               )}
             </div>
-            {form.formState.errors.subject && (
-              <p id="subject-error" className="text-sm text-red-500 flex items-center gap-1">
-                <AlertCircle className="h-3 w-3" />
-                {form.formState.errors.subject.message}
-              </p>
-            )}
-            {state.errors?.subject && (
-              <p id="subject-server-error" className="text-sm text-red-500 flex items-center gap-1">
-                <AlertCircle className="h-3 w-3" />
-                {state.errors.subject[0]}
-              </p>
-            )}
           </div>
 
           {/* Message Field */}
-          <div className="group space-y-3">
+          <div className="group relative">
             <Label 
               htmlFor="message" 
-              className="flex items-center gap-2 text-sm font-semibold text-primary group-focus-within:text-accent transition-colors duration-300"
+              className="flex items-center gap-2 text-sm font-semibold text-primary mb-2"
             >
               <MessageSquare className="h-4 w-4" />
               Your Message
@@ -251,79 +253,93 @@ export function ContactForm() {
               <Textarea
                 id="message"
                 {...form.register("message")}
-                placeholder="Tell us about your interest in APSAD's work, questions about heritage preservation, or how you'd like to get involved..."
+                placeholder="Tell us about your interest in APSAD's work..."
                 rows={6}
                 onFocus={() => setFocusedField("message")}
                 onBlur={() => setFocusedField(null)}
-                className={`w-full px-4 py-3 text-base bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-300 focus:bg-white/90 focus:scale-[1.01] focus:shadow-lg resize-none ${
-                  focusedField === "message" ? "border-primary shadow-lg" : "border-white/30"
-                } ${form.formState.errors.message || state.errors?.message ? "border-red-300 focus:border-red-500" : ""}`}
-                aria-invalid={!!form.formState.errors.message || !!state.errors?.message}
-                aria-describedby="message-error"
+                className={`w-full px-4 py-3 bg-white/70 backdrop-blur-sm border-2 rounded-xl transition-all duration-500 resize-none ${
+                  focusedField === "message" 
+                    ? 'border-primary shadow-lg scale-[1.01] bg-white/90' 
+                    : 'border-white/30 hover:border-white/50'
+                }`}
               />
               {focusedField === "message" && (
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 -z-10 animate-pulse" />
+                <>
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-orange-500 to-red-500 opacity-10 -z-10 animate-pulse" />
+                  <div className="absolute top-2 right-2 flex gap-1">
+                    {[...Array(3)].map((_, i) => (
+                      <div 
+                        key={i} 
+                        className="w-1 h-1 bg-primary rounded-full animate-bounce"
+                        style={{ animationDelay: `${i * 0.1}s` }}
+                      />
+                    ))}
+                  </div>
+                </>
               )}
             </div>
-            {form.formState.errors.message && (
-              <p id="message-error" className="text-sm text-red-500 flex items-center gap-1">
-                <AlertCircle className="h-3 w-3" />
-                {form.formState.errors.message.message}
-              </p>
-            )}
-            {state.errors?.message && (
-              <p id="message-server-error" className="text-sm text-red-500 flex items-center gap-1">
-                <AlertCircle className="h-3 w-3" />
-                {state.errors.message[0]}
-              </p>
-            )}
           </div>
-
-          {/* Form Errors */}
-          {state.errors?._form && (
-            <Alert variant="destructive" className="bg-red-50/50 backdrop-blur-sm border-red-200 rounded-xl">
-              <AlertCircle className="h-4 w-4" />
-              <AlertTitle className="text-red-800">Form Error</AlertTitle>
-              <AlertDescription className="text-red-700">
-                {state.errors._form.join(", ")}
-              </AlertDescription>
-            </Alert>
-          )}
 
           {/* Submit Section */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/20">
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <CheckCircle className="h-4 w-4 text-green-500" />
-              <span>We typically respond within 24 hours</span>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6">
+            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <div className="flex items-center gap-1">
+                <Clock className="h-4 w-4 text-green-500" />
+                <span>Response within 24 hours</span>
+              </div>
+              <div className="w-1 h-1 bg-muted-foreground rounded-full" />
+              <div className="flex items-center gap-1">
+                <CheckCircle className="h-4 w-4 text-blue-500" />
+                <span>100% Secure</span>
+              </div>
             </div>
-            <SubmitButton />
+            
+            <Button 
+              type="button"
+              onClick={form.handleSubmit(handleSubmit)}
+              disabled={isSubmitting} 
+              className="group relative overflow-hidden bg-gradient-to-r from-primary to-accent text-white rounded-full px-8 py-3 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105"
+            >
+              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+              {isSubmitting ? (
+                <div className="relative z-10 flex items-center gap-2">
+                  <Loader2 className="h-5 w-5 animate-spin" />
+                  <span>Sending...</span>
+                </div>
+              ) : (
+                <div className="relative z-10 flex items-center gap-2">
+                  <Send className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                  <span className="font-semibold">Send Message</span>
+                  <Zap className="h-4 w-4 text-yellow-300 animate-pulse" />
+                </div>
+              )}
+            </Button>
           </div>
-        </form>
+        </div>
 
-        {/* Additional Info */}
-        <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl border border-white/20">
-          <div className="flex items-center gap-3 mb-3">
-            <Heart className="h-5 w-5 text-accent" />
-            <h4 className="font-semibold text-primary">Why Contact Us?</h4>
-          </div>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
-              <span>Learn about volunteer opportunities</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
-              <span>Explore partnership possibilities</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
-              <span>Get heritage preservation guidance</span>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
-              <span>Schedule site visits</span>
-            </li>
-          </ul>
+        {/* Contact Info Cards */}
+        <div className="grid sm:grid-cols-3 gap-4 mt-12 pt-8 border-t border-white/20">
+          {[
+            { icon: Phone, label: "Call Us", value: "+961-1-XXXXXX", color: "from-blue-500 to-cyan-500" },
+            { icon: Mail, label: "Email Us", value: "info@apsad.org", color: "from-purple-500 to-pink-500" },
+            { icon: MapPin, label: "Visit Us", value: "Beirut, Lebanon", color: "from-green-500 to-emerald-500" }
+          ].map((info, index) => (
+            <div 
+              key={index}
+              className="group relative p-4 rounded-2xl glass-gradient backdrop-blur-sm border border-white/30 hover:border-white/50 transition-all duration-500 hover:scale-105 cursor-pointer"
+            >
+              <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${info.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+              <div className="relative z-10 flex items-center gap-3">
+                <div className={`p-2 rounded-lg bg-gradient-to-br ${info.color} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <info.icon className="h-4 w-4 text-white" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground">{info.label}</p>
+                  <p className="text-sm font-medium text-primary">{info.value}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </CardContent>
     </Card>
