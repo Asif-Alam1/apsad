@@ -1,11 +1,10 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { Target, Eye, Users, History, Briefcase, Shield } from "lucide-react";
+import { Target, Eye, Users, History, Briefcase, Shield, Sparkles, ArrowRight, Star, Globe } from "lucide-react";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,316 +12,469 @@ export const metadata: Metadata = {
   description: 'Welcome to APSAD (Association for the Protection of Natural Sites and Old Buildings in Lebanon). Learn about our 60+ year mission to protect, preserve, and promote Lebanon\'s cultural and natural heritage.',
 };
 
-
 const teamMembers = [
   {
     name: "Mrs. Raya Daouk",
     title: "President",
     imageUrl: "/Raya.jpg",
     aiHint: "President Portrait",
-    bio: "bio would go here",
+    bio: "Leading APSAD with vision and dedication to preserve Lebanon's cultural heritage for future generations.",
   },
   {
     name: "Mr. Costa Doumani",
     title: "Director of Operations",
     imageUrl: "/Costa.jpg",
     aiHint: "director portrait",
-    bio: "bio would go here",
+    bio: "Orchestrating field operations and ensuring sustainable preservation practices across all APSAD projects.",
   },
   {
     name: "Dr. Yasmine Makaroun",
     title: "Chief Architect & Conservation Specialist",
     imageUrl: "/yasmine.jpeg",
     aiHint: "architect portrait",
-    bio: "bio would go herea",
+    bio: "Bringing architectural expertise and innovative conservation techniques to Lebanon's most precious heritage sites.",
   },
 ];
 
+const stats = [
+  { number: "60+", label: "Years of Heritage Protection", icon: History },
+  { number: "150+", label: "Sites Preserved", icon: Shield },
+  { number: "500+", label: "Community Members", icon: Users },
+  { number: "25+", label: "Active Projects", icon: Target },
+];
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[450px] md:h-[70vh] w-full">
-        <Image
-          src="/hero.jpeg"
-          alt="Panoramic view of a significant historical site in Lebanon at sunset, an APSAD preservation focus"
-          fill
-          style={{ objectFit: "cover" }}
-          className="brightness-50"
-          priority
-          data-ai-hint="Lebanon heritage"
-        />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-6 bg-black/50">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 text-shadow-lg">
-            APSAD: Protecting Lebanon's Heritage
+      {/* Hero Section with Advanced Animations */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated Background */}
+        <div className="absolute inset-0">
+          <Image
+            src="/hero.jpeg"
+            alt="Panoramic view of a significant historical site in Lebanon at sunset, an APSAD preservation focus"
+            fill
+            style={{ objectFit: "cover" }}
+            className="scale-110 transition-transform duration-[20s] ease-out hover:scale-105"
+            priority
+            data-ai-hint="Lebanon heritage"
+          />
+          {/* Gradient Overlays */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-accent/10" />
+        </div>
+
+        {/* Floating Elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-2 h-2 bg-accent/30 rounded-full animate-pulse" />
+          <div className="absolute top-40 right-20 w-1 h-1 bg-primary/40 rounded-full animate-bounce" style={{ animationDelay: '1s' }} />
+          <div className="absolute bottom-32 left-1/4 w-3 h-3 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 text-center text-white px-6 max-w-6xl mx-auto">
+          <div className="mb-8 transform transition-all duration-1000 ease-out">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 group hover:bg-white/20 transition-all duration-300">
+              <Sparkles className="h-4 w-4 text-accent animate-pulse" />
+              <span className="text-sm font-medium">Preserving Heritage Since 1960</span>
+              <div className="w-2 h-2 bg-accent rounded-full animate-ping" />
+            </div>
+          </div>
+
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 leading-tight">
+            <span className="block transform transition-all duration-1000 ease-out">
+              <span className="bg-gradient-to-r from-white via-white to-accent bg-clip-text text-transparent">
+                APSAD
+              </span>
+            </span>
+            <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 transform transition-all duration-1000 ease-out font-light">
+              Protecting Lebanon's
+              <span className="text-accent font-semibold"> Heritage</span>
+            </span>
           </h1>
-          <p className="text-lg md:text-xl max-w-3xl mb-10 text-shadow">
-            Association for the Protection of Natural Sites and Old Buildings in Lebanon. Join us in our mission to safeguard these irreplaceable treasures for future generations.
+
+          <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-12 leading-relaxed text-white/90 transform transition-all duration-1000 ease-out">
+            Association for the Protection of Natural Sites and Old Buildings in Lebanon. 
+            <span className="text-accent font-medium"> Join us in our mission</span> to safeguard these 
+            irreplaceable treasures for future generations.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/gallery">Explore Our Work</Link>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Button asChild size="lg" className="group bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg rounded-full shadow-2xl hover:shadow-primary/25 transition-all duration-500 hover:scale-105">
+              <Link href="/gallery" className="flex items-center gap-2">
+                Explore Our Work
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
-              <Link href="/get-involved">Get Involved</Link>
+            <Button asChild size="lg" variant="outline" className="group bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-md px-8 py-4 text-lg rounded-full transition-all duration-500 hover:scale-105">
+              <Link href="/get-involved" className="flex items-center gap-2">
+                Get Involved
+                <Users className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+              </Link>
             </Button>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+          <div className="flex flex-col items-center gap-2">
+            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse" />
+            </div>
+            <span className="text-xs uppercase tracking-wider">Scroll</span>
           </div>
         </div>
       </section>
 
-      {/* Main Content Section */}
-      <div className="py-20 md:py-28 bg-background">
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6">
-          
-          <header className="text-center mb-20 md:mb-24">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Welcome to APSAD</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              APSAD - Association pour la Protection des Sites et Anciennes Demeures (Association for the Protection of Natural Sites and Old Buildings in Lebanon), is a non-governmental organization founded in 1960. We are dedicated to the identification, protection, preservation, and promotion of Lebanon's rich cultural and natural heritage.
+      {/* Stats Section */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.1),transparent_50%)]" />
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <Card key={index} className="group relative bg-white/50 backdrop-blur-sm border-white/20 hover:bg-white/70 transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <CardContent className="p-6 text-center relative z-10">
+                  <div className="mx-auto w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <stat.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <div className="text-3xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm text-muted-foreground font-medium">
+                    {stat.label}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Welcome Section with Glass Morphism */}
+      <div className="py-28 bg-gradient-to-br from-background via-secondary/5 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(120,119,198,0.05),transparent_50%)]" />
+        
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <header className="text-center mb-24">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 group hover:bg-primary/20 transition-all duration-300">
+              <Globe className="h-4 w-4 text-primary animate-pulse" />
+              <span className="text-sm font-medium text-primary">Heritage Preservation Excellence</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent mb-8">
+              Welcome to APSAD
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              APSAD - Association pour la Protection des Sites et Anciennes Demeures, is a non-governmental organization founded in 1960. 
+              We are dedicated to the identification, protection, preservation, and promotion of Lebanon's rich cultural and natural heritage.
             </p>
           </header>
 
-          <section className="mb-20 md:mb-24">
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="order-2 md:order-1">
-                <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-4">
-                  <History className="h-12 w-12 text-accent" /> Our History
-                </h3>
-                <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
-                  <p>
-                    Founded in 1960, APSAD emerged from a collective desire among historians, archaeologists, architects, and community leaders to address the growing concerns over the neglect and degradation of significant heritage sites in Lebanon.
-                  </p>
-                  <p>
-                    Over the decades, APSAD has grown into a leading non-governmental organization, spearheading numerous successful preservation projects, advocating for policy changes, and fostering public awareness about the importance of our shared past. Our journey has been marked by collaboration, dedication, and an unwavering commitment to protecting the legacies entrusted to us.
-                  </p>
+          {/* Mission & Vision Cards */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-24">
+            {/* Mission Card */}
+            <Card className="group relative bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-xl border-white/30 hover:from-white/90 hover:to-white/70 transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700" />
+              
+              <CardHeader className="pb-6 relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-4 rounded-full bg-gradient-to-br from-primary to-accent shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Shield className="h-8 w-8 text-white" />
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                    Our Mission
+                  </CardTitle>
                 </div>
-              </div>
-              <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl aspect-video">
-                <Image
-                  src="/history.jpeg"
-                  alt="Vintage photograph representing APSAD's early work or founders in Lebanon"
-                  width={600}
-                  height={450}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  data-ai-hint="APSAD archive"
-                />
-              </div>
-            </div>
-          </section>
+              </CardHeader>
+              <CardContent className="relative z-10">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  APSAD is committed to the identification, protection, conservation, and promotion of cultural and natural heritage in Lebanon. 
+                  We strive to ensure that these invaluable assets are preserved for future generations, fostering a deeper understanding 
+                  and appreciation of our collective history and identity through research, education, and community engagement.
+                </p>
+              </CardContent>
+            </Card>
 
-          <section className="mb-20 md:mb-24 py-16 md:py-20 bg-secondary/10 rounded-xl shadow-lg">
-            <div className="container max-w-5xl mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    <div className="rounded-xl overflow-hidden shadow-2xl aspect-video">
-                        <Image
-                        src="/mission.jpeg"
-                        alt="Conceptual image illustrating APSAD's strategic approach to heritage planning and preservation"
-                        width={600}
-                        height={450}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                        data-ai-hint="heritage diagram"
-                        />
-                    </div>
-                    <div>
-                        <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-4">
-                        <Shield className="h-12 w-12 text-accent" /> Our Mission
-                        </h3>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                        APSAD is committed to the identification, protection, conservation, and promotion of cultural and natural heritage in Lebanon. We strive to ensure that these invaluable assets are preserved for future generations, fostering a deeper understanding and appreciation of our collective history and identity through research, education, and community engagement.
-                        </p>
-                    </div>
+            {/* Vision Card */}
+            <Card className="group relative bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-xl border-white/30 hover:from-white/90 hover:to-white/70 transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full -translate-y-16 -translate-x-16 group-hover:scale-150 transition-transform duration-700" />
+              
+              <CardHeader className="pb-6 relative z-10">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-4 rounded-full bg-gradient-to-br from-accent to-primary shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Eye className="h-8 w-8 text-white" />
+                  </div>
+                  <CardTitle className="text-3xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                    Our Vision
+                  </CardTitle>
                 </div>
-            </div>
-          </section>
+              </CardHeader>
+              <CardContent className="relative z-10">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  We envision a Lebanon where cultural and natural heritage is universally valued, meticulously protected, and serves as a 
+                  dynamic source of knowledge, inspiration, and sustainable development for all communities, enriching lives and strengthening 
+                  national identity.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
 
-          <section className="mb-20 md:mb-24">
-             <div className="container max-w-5xl mx-auto px-6">
-                <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    <div className="order-2 md:order-1">
-                        <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-6 flex items-center gap-4">
-                        <Eye className="h-12 w-12 text-accent" /> Our Vision
-                        </h3>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                        We envision a Lebanon where cultural and natural heritage is universally valued, meticulously protected, and serves as a dynamic source of knowledge, inspiration, and sustainable development for all communities, enriching lives and strengthening national identity.
-                        </p>
-                    </div>
-                    <div className="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl aspect-video">
-                        <Image
-                        src="/vision.jpeg"
-                        alt="Inspirational view of a preserved Lebanese heritage site under a hopeful sunrise"
-                        width={600}
-                        height={450}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                        data-ai-hint="site sunrise"
-                        />
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <section className="mb-20 md:mb-24">
-            <div className="container max-w-5xl mx-auto px-6">
-                <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-12 md:mb-16 text-center flex items-center justify-center gap-4">
-                <Target className="h-12 w-12 text-accent" /> Our Goals
-                </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[
-                    { title: "Site Preservation", description: "Implement effective conservation for endangered Lebanese heritage sites using best practices and innovative tech." },
-                    { title: "Research & Documentation", description: "Conduct and support research enhancing understanding of Lebanese heritage; meticulously document sites." },
-                    { title: "Community Engagement", description: "Actively involve local communities, empowering them as custodians of their history and culture in Lebanon." },
-                    { title: "Education & Awareness", description: "Raise public awareness of Lebanese heritage's significance and conservation importance via education and outreach." },
-                    { title: "Advocacy & Policy", description: "Advocate for stronger legal frameworks supporting heritage protection at all levels concerning Lebanon." },
-                    { title: "Sustainable Practices", description: "Promote sustainable tourism and site management benefiting both heritage and local economies in Lebanon." },
-                ].map((goal, index) => (
-                    <Card key={index} className="bg-card rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col p-6">
-                        <CardHeader className="pb-3 pt-0 px-0">
-                            <CardTitle className="text-xl font-semibold text-accent">{goal.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent className="flex-grow px-0 pb-0">
-                            <p className="text-muted-foreground leading-relaxed">{goal.description}</p>
-                        </CardContent>
-                    </Card>
-                ))}
-                </div>
-            </div>
-          </section>
-
-          <section className="mb-20 md:mb-24 py-16 md:py-20 bg-secondary/10 rounded-xl shadow-lg">
-            <div className="container max-w-5xl mx-auto px-6">
-              <h3 className="text-3xl lg:text-4xl font-semibold text-primary mb-12 md:mb-16 text-center flex items-center justify-center gap-4">
-                <Users className="h-12 w-12 text-accent" /> Our Team
+          {/* Goals Grid */}
+          <section className="mb-24">
+            <div className="text-center mb-16">
+              <h3 className="text-4xl font-bold text-primary mb-6 flex items-center justify-center gap-4">
+                <Target className="h-10 w-10 text-accent" /> 
+                Our Strategic Goals
               </h3>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Six pillars that guide our mission to preserve Lebanon's invaluable heritage
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { 
+                  title: "Site Preservation", 
+                  description: "Implement effective conservation for endangered Lebanese heritage sites using best practices and innovative technology.",
+                  icon: Shield,
+                  gradient: "from-blue-500 to-cyan-500"
+                },
+                { 
+                  title: "Research & Documentation", 
+                  description: "Conduct and support research enhancing understanding of Lebanese heritage; meticulously document sites.",
+                  icon: History,
+                  gradient: "from-purple-500 to-pink-500"
+                },
+                { 
+                  title: "Community Engagement", 
+                  description: "Actively involve local communities, empowering them as custodians of their history and culture in Lebanon.",
+                  icon: Users,
+                  gradient: "from-green-500 to-emerald-500"
+                },
+                { 
+                  title: "Education & Awareness", 
+                  description: "Raise public awareness of Lebanese heritage's significance and conservation importance via education.",
+                  icon: Target,
+                  gradient: "from-orange-500 to-red-500"
+                },
+                { 
+                  title: "Advocacy & Policy", 
+                  description: "Advocate for stronger legal frameworks supporting heritage protection at all levels concerning Lebanon.",
+                  icon: Globe,
+                  gradient: "from-indigo-500 to-purple-500"
+                },
+                { 
+                  title: "Sustainable Practices", 
+                  description: "Promote sustainable tourism and site management benefiting both heritage and local economies.",
+                  icon: Sparkles,
+                  gradient: "from-teal-500 to-blue-500"
+                },
+              ].map((goal, index) => (
+                <Card key={index} className="group relative bg-gradient-to-br from-white/70 to-white/50 backdrop-blur-xl border-white/30 hover:from-white/90 hover:to-white/70 transition-all duration-700 hover:scale-105 hover:shadow-2xl overflow-hidden cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className={`absolute -top-10 -right-10 w-20 h-20 bg-gradient-to-br ${goal.gradient} rounded-full opacity-10 group-hover:opacity-20 group-hover:scale-150 transition-all duration-700`} />
+                  
+                  <CardHeader className="pb-4 relative z-10">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className={`p-3 rounded-xl bg-gradient-to-br ${goal.gradient} shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                        <goal.icon className="h-6 w-6 text-white" />
+                      </div>
+                      <CardTitle className="text-xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                        {goal.title}
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="relative z-10">
+                    <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                      {goal.description}
+                    </p>
+                  </CardContent>
+                  
+                  {/* Hover Arrow */}
+                  <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                    <ArrowRight className="h-5 w-5 text-accent" />
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </section>
+
+          {/* Team Section with Advanced Cards */}
+          <section className="py-20 bg-gradient-to-br from-secondary/10 to-primary/5 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_70%)]" />
+            <div className="container max-w-5xl mx-auto px-6 relative z-10">
+              <h3 className="text-4xl font-bold text-primary mb-16 text-center flex items-center justify-center gap-4">
+                <Users className="h-10 w-10 text-accent" /> 
+                Our Leadership Team
+              </h3>
+              
               <Accordion type="single" collapsible className="w-full space-y-6">
                 {teamMembers.map((member, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-card border-border rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <AccordionTrigger className="p-6 text-left hover:no-underline">
-                      <div className="flex items-center gap-6">
-                        <Image
-                          src={member.imageUrl}
-                          alt={`Portrait of ${member.name}, ${member.title} at APSAD`}
-                          width={100}
-                          height={100}
-                          className="rounded-full object-cover aspect-square"
-                          data-ai-hint={member.aiHint}
-                        />
+                  <AccordionItem key={index} value={`item-${index}`} className="group bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-xl border-white/30 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                    <AccordionTrigger className="p-8 text-left hover:no-underline relative">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      <div className="flex items-center gap-6 relative z-10">
+                        <div className="relative group-hover:scale-105 transition-transform duration-300">
+                          <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full p-1">
+                            <div className="w-full h-full bg-white rounded-full" />
+                          </div>
+                          <Image
+                            src={member.imageUrl}
+                            alt={`Portrait of ${member.name}, ${member.title} at APSAD`}
+                            width={120}
+                            height={120}
+                            className="relative z-10 rounded-full object-cover aspect-square border-4 border-white shadow-lg"
+                            data-ai-hint={member.aiHint}
+                          />
+                        </div>
                         <div>
-                          <h4 className="text-2xl font-semibold text-primary">{member.name}</h4>
-                          <p className="text-md text-accent font-medium">{member.title}</p>
+                          <h4 className="text-3xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                            {member.name}
+                          </h4>
+                          <p className="text-lg text-accent font-semibold mt-2 flex items-center gap-2">
+                            {member.title}
+                            <Star className="h-4 w-4 text-yellow-500" />
+                          </p>
                         </div>
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className="p-6 pt-2">
-                      <p className="text-muted-foreground leading-relaxed text-base">{member.bio}</p>
+                    <AccordionContent className="p-8 pt-0">
+                      <div className="ml-32 pl-6 border-l-2 border-accent/20">
+                        <p className="text-muted-foreground leading-relaxed text-lg">
+                          {member.bio}
+                        </p>
+                      </div>
                     </AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
-               <p className="text-center text-muted-foreground mt-12 text-lg">
-                APSAD is also powered by numerous dedicated volunteers and a supportive board of directors, all united by a shared passion for Lebanon's heritage.
+              
+              <p className="text-center text-muted-foreground mt-16 text-lg bg-white/50 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30">
+                APSAD is also powered by numerous dedicated volunteers and a supportive board of directors, 
+                all united by a shared passion for Lebanon's heritage.
               </p>
             </div>
           </section>
         </div>
       </div>
       
-      {/* Featured Projects/Sites */}
-      <section className="py-16 lg:py-24 bg-background">
-        <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-primary mb-16 md:mb-20">
-            Featured Projects
-          </h2>
+      {/* Featured Projects with Advanced Scroll Animation */}
+      <section className="py-24 bg-gradient-to-br from-background via-primary/5 to-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(120,119,198,0.1),transparent_50%)]" />
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-8">
+              <Sparkles className="h-4 w-4 text-accent animate-pulse" />
+              <span className="text-sm font-medium text-accent">Heritage in Action</span>
+            </div>
+            <h2 className="text-5xl font-bold text-center bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent mb-8">
+              Featured Projects
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Discover our most impactful preservation initiatives across Lebanon
+            </p>
+          </div>
+          
           <ScrollArea className="w-full pb-6">
-            <div className="flex space-x-6 px-1 py-2">
-              <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
-                <div className="relative w-full h-64">
-                  <Image
-                      src="/image-1.jpeg"
-                      alt="Project 1"
+            <div className="flex space-x-8 px-1 py-2">
+              {[
+                { src: "/image-1.jpeg", title: "Ancient Baalbek Restoration", desc: "Roman Temple Complex", hint: "Project 1" },
+                { src: "/image-2.jpeg", title: "Byblos Heritage Trail", desc: "Phoenician Port City", hint: "project 2" },
+                { src: "/image-3.jpeg", title: "Community Education Program", desc: "Youth Heritage Awareness", hint: "children learning" },
+              ].map((project, index) => (
+                <Card key={index} className="group relative w-96 flex-shrink-0 bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-xl border-white/30 hover:from-white/90 hover:to-white/70 transition-all duration-700 hover:scale-105 hover:shadow-2xl overflow-hidden cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  <div className="relative w-full h-72 overflow-hidden">
+                    <Image
+                      src={project.src}
+                      alt={project.title}
                       fill
                       style={{ objectFit: "cover" }}
-                      className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="Project 1"
-                  />
-                </div>
-                <CardHeader className="pb-3 pt-5">
-                  <CardTitle className="text-2xl">Project 1</CardTitle>
-                  <CardDescription className="mt-1 text-md">Project 1 description</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground leading-relaxed">
-                 Project 1 content
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
-                <div className="relative w-full h-64">
-                  <Image
-                      src="/image-2.jpeg"
-                      alt="Project 2"
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="project 2"
-                  />
-                </div>
-                <CardHeader className="pb-3 pt-5">
-                  <CardTitle className="text-2xl">Project 2</CardTitle>
-                  <CardDescription className="mt-1 text-md">Project 2 description</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Project 2 content
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col rounded-xl w-80 md:w-96 flex-shrink-0">
-                <div className="relative w-full h-64">
-                  <Image
-                      src="/image-3.jpeg"
-                      alt="Project 3"
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="transition-transform duration-500 hover:scale-105"
-                      data-ai-hint="children learning"
-                  />
-                </div>
-                <CardHeader className="pb-3 pt-5">
-                  <CardTitle className="text-2xl">Project 3</CardTitle>
-                  <CardDescription className="mt-1 text-md">Project 3 description</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground leading-relaxed">
-                    Project 3 content
-                  </p>
-                </CardContent>
-              </Card>
+                      className="transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
+                      data-ai-hint={project.hint}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+                    
+                    {/* Floating Badge */}
+                    <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md rounded-full px-3 py-1 border border-white/30">
+                      <span className="text-white text-xs font-medium">Featured</span>
+                    </div>
+                  </div>
+                  
+                  <CardHeader className="pb-3 pt-6 relative z-10">
+                    <CardTitle className="text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                      {project.title}
+                    </CardTitle>
+                    <CardDescription className="text-accent font-medium text-lg">
+                      {project.desc}
+                    </CardDescription>
+                  </CardHeader>
+                  
+                  <CardContent className="flex-grow relative z-10">
+                    <p className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                      Preserving Lebanon's invaluable cultural heritage through meticulous restoration and community engagement.
+                    </p>
+                  </CardContent>
+                  
+                  {/* Hover Effect Arrow */}
+                  <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center shadow-lg">
+                      <ArrowRight className="h-5 w-5 text-white" />
+                    </div>
+                  </div>
+                </Card>
+              ))}
             </div>
             <ScrollBar orientation="horizontal" className="mt-4" />
           </ScrollArea>
-           <div className="text-center mt-16 md:mt-20">
-            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-base px-8 py-6">
-              <Link href="/gallery">See More of Our Work</Link>
+          
+          <div className="text-center mt-20">
+            <Button asChild size="lg" variant="outline" className="group bg-white/10 border-primary/30 text-primary hover:bg-primary/10 backdrop-blur-md px-10 py-6 text-lg rounded-full transition-all duration-500 hover:scale-105 hover:shadow-xl">
+              <Link href="/gallery" className="flex items-center gap-2">
+                Explore All Projects
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Call to Action: Get Involved */}
-      <section className="py-16 lg:py-24 bg-secondary/10">
-        <div className="container max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <Briefcase className="h-20 w-20 text-accent mx-auto mb-8" />
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8">
-            Make a Difference with APSAD
-          </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Your support is crucial to our efforts in Lebanon. Whether you volunteer, become a member, or advocate for our cause, you can play a part in preserving our shared heritage for generations to come.
-          </p>
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-base px-10 py-7">
-            <Link href="/get-involved">Join Our Cause</Link>
-          </Button>
+      {/* CTA Section with Gradient Animation */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.2),transparent_70%)]" />
+        
+        <div className="container max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <div className="bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-xl border border-white/30 rounded-3xl p-12 shadow-2xl">
+            <div className="mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                <Briefcase className="h-4 w-4 text-primary animate-pulse" />
+                <span className="text-sm font-medium text-primary">Join Our Mission</span>
+              </div>
+              <Briefcase className="h-20 w-20 text-accent mx-auto mb-8 animate-pulse" />
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent mb-8">
+              Make a Difference with APSAD
+            </h2>
+            
+            <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+              Your support is crucial to our efforts in Lebanon. Whether you volunteer, become a member, or advocate for our cause, 
+              you can play a part in preserving our shared heritage for generations to come.
+            </p>
+            
+            <Button asChild size="lg" className="group bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-12 py-6 text-lg rounded-full shadow-2xl hover:shadow-primary/25 transition-all duration-500 hover:scale-105">
+              <Link href="/get-involved" className="flex items-center gap-2">
+                Join Our Cause
+                <Users className="h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </>
   );
 }
-    
