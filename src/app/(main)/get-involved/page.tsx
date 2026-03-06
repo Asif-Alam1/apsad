@@ -4,6 +4,7 @@ import { ContactForm } from "@/components/forms/contact-form";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import { Reveal } from "@/components/ui/reveal";
 
 export const metadata: Metadata = {
   title: "Get Involved - Support APSAD's Mission in Lebanon",
@@ -77,72 +78,75 @@ export default function GetInvolvedPage() {
       {/* Page Header */}
       <section className="py-24 border-b border-border">
         <div className="container max-w-6xl mx-auto px-6 text-center">
-          <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-            Join Our Mission
-          </p>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-            Get Involved
-          </h1>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Preserving Lebanon&apos;s rich tapestry of history and culture is a
-            collective endeavor. Discover how you can become an integral part of
-            safeguarding our shared heritage.
-          </p>
+          <Reveal>
+            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
+              Join Our Mission
+            </p>
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+              Get Involved
+            </h1>
+            <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Preserving Lebanon&apos;s rich tapestry of history and culture is a
+              collective endeavor. Discover how you can become an integral part of
+              safeguarding our shared heritage.
+            </p>
+          </Reveal>
         </div>
       </section>
 
       {/* Ways to Get Involved */}
       <section className="py-24">
         <div className="container max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-              How You Can Help
-            </p>
-            <h2 className="font-serif text-4xl font-bold mb-6">
-              Ways to Make a Difference
-            </h2>
-          </div>
+          <Reveal>
+            <div className="text-center mb-16">
+              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
+                How You Can Help
+              </p>
+              <h2 className="font-serif text-4xl font-bold mb-6">
+                Ways to Make a Difference
+              </h2>
+            </div>
+          </Reveal>
 
           <div className="space-y-24">
             {involvementOptions.map((option, index) => (
-              <div
-                key={option.title}
-                className={`grid lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:direction-rtl" : ""
-                }`}
-              >
-                <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={option.imageSrc}
-                      alt={option.imageAlt}
-                      fill
-                      style={{ objectFit: "cover" }}
-                    />
+              <Reveal key={option.title}>
+                <div
+                  className="grid lg:grid-cols-2 gap-12 items-center"
+                >
+                  <div className={index % 2 === 1 ? "lg:order-2" : ""}>
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <Image
+                        src={option.imageSrc}
+                        alt={option.imageAlt}
+                        fill
+                        style={{ objectFit: "cover" }}
+                      />
+                    </div>
+                  </div>
+                  <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                    <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                      {option.title}
+                    </h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                      {option.description}
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      {option.details}
+                    </p>
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="text-[13px] tracking-[0.1em] uppercase px-6 py-5"
+                    >
+                      <Link href="#contact-section" className="flex items-center gap-2">
+                        Get Started
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
                   </div>
                 </div>
-                <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
-                    {option.title}
-                  </h3>
-                  <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-                    {option.description}
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
-                    {option.details}
-                  </p>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="text-[13px] tracking-[0.1em] uppercase px-6 py-5"
-                  >
-                    <Link href="#contact-section" className="flex items-center gap-2">
-                      Get Started
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </Button>
-                </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -151,26 +155,30 @@ export default function GetInvolvedPage() {
       {/* Testimonials */}
       <section className="py-24 bg-secondary/50">
         <div className="container max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-              Community Voices
-            </p>
-            <h2 className="font-serif text-4xl font-bold mb-6">
-              What Our Community Says
-            </h2>
-          </div>
+          <Reveal>
+            <div className="text-center mb-16">
+              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
+                Community Voices
+              </p>
+              <h2 className="font-serif text-4xl font-bold mb-6">
+                What Our Community Says
+              </h2>
+            </div>
+          </Reveal>
 
           <div className="grid md:grid-cols-3 gap-px bg-border">
             {testimonials.map((t, index) => (
-              <div key={index} className="bg-secondary/50 p-8 md:p-10">
-                <blockquote className="text-foreground leading-relaxed mb-6 text-lg italic">
-                  &ldquo;{t.quote}&rdquo;
-                </blockquote>
-                <p className="font-serif font-bold">{t.name}</p>
-                <p className="text-[13px] text-primary uppercase tracking-[0.1em]">
-                  {t.role}
-                </p>
-              </div>
+              <Reveal key={index} delay={index * 120}>
+                <div className="bg-secondary/50 p-8 md:p-10 h-full">
+                  <blockquote className="text-foreground leading-relaxed mb-6 text-lg italic">
+                    &ldquo;{t.quote}&rdquo;
+                  </blockquote>
+                  <p className="font-serif font-bold">{t.name}</p>
+                  <p className="text-[13px] text-primary uppercase tracking-[0.1em]">
+                    {t.role}
+                  </p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -179,21 +187,25 @@ export default function GetInvolvedPage() {
       {/* Contact Section */}
       <section id="contact-section" className="py-24 scroll-mt-20">
         <div className="container max-w-3xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-              Get in Touch
-            </p>
-            <h2 className="font-serif text-4xl font-bold mb-6">
-              Connect With APSAD
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              Whether you have questions about our projects, wish to explore
-              involvement opportunities, or simply want to share your thoughts
-              &mdash; we are eager to hear from you.
-            </p>
-          </div>
+          <Reveal>
+            <div className="text-center mb-12">
+              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
+                Get in Touch
+              </p>
+              <h2 className="font-serif text-4xl font-bold mb-6">
+                Connect With APSAD
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed">
+                Whether you have questions about our projects, wish to explore
+                involvement opportunities, or simply want to share your thoughts
+                &mdash; we are eager to hear from you.
+              </p>
+            </div>
+          </Reveal>
 
-          <ContactForm />
+          <Reveal delay={100}>
+            <ContactForm />
+          </Reveal>
         </div>
       </section>
     </div>

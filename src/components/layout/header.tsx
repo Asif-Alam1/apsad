@@ -43,9 +43,10 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-[13px] font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 tracking-[0.1em] uppercase"
+              className="relative text-[13px] font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 tracking-[0.1em] uppercase group"
             >
               {item.label}
+              <span className="absolute left-0 -bottom-1 h-px w-0 bg-foreground transition-[width] duration-300 ease-out group-hover:w-full" />
             </Link>
           ))}
         </nav>

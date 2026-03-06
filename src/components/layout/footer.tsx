@@ -52,9 +52,10 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm opacity-60 hover:opacity-100 transition-opacity duration-300"
+                    className="text-sm opacity-60 hover:opacity-100 transition-opacity duration-300 relative group"
                   >
                     {link.label}
+                    <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-current transition-[width] duration-300 group-hover:w-full" />
                   </Link>
                 </li>
               ))}

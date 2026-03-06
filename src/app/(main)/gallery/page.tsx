@@ -265,10 +265,11 @@ export default function GalleryPage() {
             </div>
           ) : (
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredItems.map((item) => (
+              {filteredItems.map((item, index) => (
                 <div
                   key={item.id}
                   className="group cursor-pointer"
+                  style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
                   onClick={() => openModal(item)}
                 >
                   <div className="relative aspect-[4/3] overflow-hidden mb-4">
@@ -279,6 +280,7 @@ export default function GalleryPage() {
                       style={{ objectFit: "cover" }}
                       className="transition-transform duration-700 group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors duration-500" />
                     {item.imageUrls.length > 1 && (
                       <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] px-2 py-1 tracking-wide">
                         {item.imageUrls.length} images
