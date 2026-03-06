@@ -8,14 +8,12 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogClose,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   ChevronLeft,
   ChevronRight,
-  X,
   Search,
 } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -168,6 +166,59 @@ export default function GalleryPage() {
     }
   };
 
+  const renderGalleryItem = (
+    item: GalleryItem,
+    index: number,
+    featured = false
+  ) => (
+    <div
+      key={item.id}
+      className="group cursor-pointer"
+      style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
+      onClick={() => openModal(item)}
+    >
+      <ScrollZoom className="mb-4">
+        <div
+          className={`relative overflow-hidden ${
+            featured ? "aspect-[16/10]" : "aspect-[4/3]"
+          }`}
+        >
+          <Image
+            src={item.imageUrls[0]}
+            alt={item.title}
+            fill
+            style={{ objectFit: "cover" }}
+            className="transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+            <span className="text-white text-[12px] uppercase tracking-[0.15em] font-medium translate-y-3 group-hover:translate-y-0 transition-transform duration-500">
+              View Project
+            </span>
+          </div>
+          {item.imageUrls.length > 1 && (
+            <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] px-2 py-1 tracking-wide">
+              {item.imageUrls.length} images
+            </span>
+          )}
+        </div>
+      </ScrollZoom>
+      <h3
+        className={`font-serif font-bold mb-1 group-hover:text-primary transition-colors duration-300 ${
+          featured ? "text-2xl md:text-3xl" : "text-lg"
+        }`}
+      >
+        {item.title}
+      </h3>
+      <p
+        className={`text-muted-foreground leading-relaxed ${
+          featured ? "text-base md:text-lg max-w-4xl" : "text-sm line-clamp-2"
+        }`}
+      >
+        {item.description}
+      </p>
+    </div>
+  );
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (!selectedItem) return;
@@ -266,44 +317,29 @@ export default function GalleryPage() {
               </Button>
             </div>
           ) : (
-            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-              {filteredItems.map((item, index) => (
-                <div
-                  key={item.id}
-                  className={`group cursor-pointer ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}
-                  style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
-                  onClick={() => openModal(item)}
-                >
-                  <ScrollZoom className="mb-4">
-                    <div className={`relative overflow-hidden ${index === 0 ? 'aspect-[16/10]' : 'aspect-[4/3]'}`}>
-                      <Image
-                        src={item.imageUrls[0]}
-                        alt={item.title}
-                        fill
-                        style={{ objectFit: "cover" }}
-                        className="transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                        <span className="text-white text-[12px] uppercase tracking-[0.15em] font-medium translate-y-3 group-hover:translate-y-0 transition-transform duration-500">
-                          View Project
-                        </span>
-                      </div>
-                      {item.imageUrls.length > 1 && (
-                        <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] px-2 py-1 tracking-wide">
-                          {item.imageUrls.length} images
-                        </span>
-                      )}
-                    </div>
-                  </ScrollZoom>
-                  <h3 className="font-serif text-lg font-bold mb-1 group-hover:text-primary transition-colors duration-300">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
-                    {item.description}
-                  </p>
+            <>
+              <div className="grid gap-6 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] items-start">
+                <div className="min-w-0">
+                  {renderGalleryItem(filteredItems[0], 0, true)}
                 </div>
-              ))}
-            </div>
+
+                {filteredItems.length > 1 && (
+                  <div className="grid gap-6 self-start">
+                    {filteredItems.slice(1, 3).map((item, index) =>
+                      renderGalleryItem(item, index + 1)
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {filteredItems.length > 3 && (
+                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
+                  {filteredItems.slice(3).map((item, index) =>
+                    renderGalleryItem(item, index + 3)
+                  )}
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>
@@ -324,12 +360,6 @@ export default function GalleryPage() {
                     </p>
                   )}
                 </div>
-                <DialogClose asChild>
-                  <Button variant="ghost" size="icon">
-                    <X className="h-5 w-5" />
-                    <span className="sr-only">Close</span>
-                  </Button>
-                </DialogClose>
               </div>
             </DialogHeader>
 
