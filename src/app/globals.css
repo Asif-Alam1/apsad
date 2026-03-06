@@ -4,116 +4,53 @@
 
 @layer base {
   :root {
-    /* Light Theme - Elegant Heritage Colors */
-    --background: 0 0% 100%;
-    --foreground: 25 25% 15%;
+    --background: 40 20% 98%;
+    --foreground: 24 10% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 25 25% 15%;
+    --card-foreground: 24 10% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 25 25% 15%;
-    
-    /* Primary: Deep Terracotta (ancient pottery & archaeological sites) */
-    --primary: 15 55% 35%;
-    --primary-foreground: 0 0% 98%;
-    
-    /* Secondary: Warm Stone Gray */
-    --secondary: 25 15% 92%;
-    --secondary-foreground: 25 25% 15%;
-    
-    /* Muted: Sophisticated warm grays */
-    --muted: 25 10% 90%;
-    --muted-foreground: 25 15% 45%;
-    
-    /* Accent: Rich Golden Amber (precious heritage artifacts) */
-    --accent: 45 85% 55%;
-    --accent-foreground: 25 25% 15%;
-    
-    /* Destructive: Refined Heritage Burgundy */
-    --destructive: 355 65% 45%;
-    --destructive-foreground: 0 0% 98%;
-    
-    --border: 25 20% 88%;
-    --input: 25 20% 88%;
-    --ring: 15 55% 35%;
-    --radius: 0.5rem;
-    
-    /* Cedar Green for nature/heritage elements */
-    --cedar: 155 35% 35%;
-    --cedar-foreground: 0 0% 98%;
-    
-    /* Warm Sand for archaeological/desert elements */
-    --sand: 35 45% 65%;
-    --sand-foreground: 25 25% 15%;
-    
-    /* Ancient Copper for metalwork/artifacts */
-    --copper: 25 65% 45%;
-    --copper-foreground: 0 0% 98%;
-    
-    /* Papyrus for document/text elements */
-    --papyrus: 40 35% 85%;
-    --papyrus-foreground: 25 25% 15%;
-    
-    /* Olive for Mediterranean heritage */
-    --olive: 65 35% 45%;
-    --olive-foreground: 0 0% 98%;
-    
-    /* Animation variables */
-    --animation-slow: 1.5s;
-    --animation-medium: 0.8s;
-    --animation-fast: 0.3s;
-    --animation-smooth: cubic-bezier(0.4, 0, 0.2, 1);
-    --animation-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --animation-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    --popover-foreground: 24 10% 10%;
+    --primary: 37 34% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 10% 95%;
+    --secondary-foreground: 24 10% 10%;
+    --muted: 30 8% 93%;
+    --muted-foreground: 25 5% 45%;
+    --accent: 24 48% 32%;
+    --accent-foreground: 40 20% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 24 6% 90%;
+    --input: 24 6% 90%;
+    --ring: 37 34% 52%;
+    --radius: 0rem;
+    --chart-1: 37 34% 52%;
+    --chart-2: 24 48% 32%;
+    --chart-3: 30 8% 60%;
+    --chart-4: 40 20% 70%;
+    --chart-5: 24 10% 40%;
   }
 
   .dark {
-    /* Dark Theme - Sophisticated Evening Heritage */
-    --background: 25 30% 8%;
-    --foreground: 25 15% 92%;
-    --card: 25 30% 8%;
-    --card-foreground: 25 15% 92%;
-    --popover: 25 30% 8%;
-    --popover-foreground: 25 15% 92%;
-    
-    /* Primary: Lighter Terracotta for dark mode */
-    --primary: 15 65% 55%;
-    --primary-foreground: 25 25% 15%;
-    
-    /* Secondary: Dark warm stone */
-    --secondary: 25 20% 15%;
-    --secondary-foreground: 25 15% 92%;
-    
-    /* Muted: Dark sophisticated grays */
-    --muted: 25 20% 18%;
-    --muted-foreground: 25 15% 65%;
-    
-    /* Accent: Warmer golden amber for dark mode */
-    --accent: 45 90% 65%;
-    --accent-foreground: 25 25% 15%;
-    
-    /* Destructive: Softer burgundy for dark mode */
-    --destructive: 355 75% 55%;
-    --destructive-foreground: 25 25% 15%;
-    
-    --border: 25 20% 20%;
-    --input: 25 20% 20%;
-    --ring: 15 65% 55%;
-    
-    /* Dark mode heritage colors */
-    --cedar: 155 45% 55%;
-    --cedar-foreground: 25 25% 15%;
-    
-    --sand: 35 55% 75%;
-    --sand-foreground: 25 25% 15%;
-    
-    --copper: 25 75% 65%;
-    --copper-foreground: 25 25% 15%;
-    
-    --papyrus: 40 25% 25%;
-    --papyrus-foreground: 25 15% 92%;
-    
-    --olive: 65 45% 65%;
-    --olive-foreground: 25 25% 15%;
+    --background: 24 10% 7%;
+    --foreground: 40 15% 90%;
+    --card: 24 10% 10%;
+    --card-foreground: 40 15% 90%;
+    --popover: 24 10% 10%;
+    --popover-foreground: 40 15% 90%;
+    --primary: 37 40% 58%;
+    --primary-foreground: 24 10% 7%;
+    --secondary: 24 8% 14%;
+    --secondary-foreground: 40 15% 90%;
+    --muted: 24 8% 18%;
+    --muted-foreground: 30 8% 55%;
+    --accent: 24 45% 45%;
+    --accent-foreground: 40 15% 90%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 24 8% 16%;
+    --input: 24 8% 16%;
+    --ring: 37 40% 58%;
   }
 }
 
@@ -121,663 +58,50 @@
   * {
     @apply border-border;
   }
-  
+
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "liga" 1, "calt" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   ::selection {
-    background: hsl(var(--accent) / 0.2);
-    color: hsl(var(--accent-foreground));
-  }
-  
-  /* Custom scrollbar with heritage colors */
-  ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: hsl(var(--secondary) / 0.3);
-    border-radius: 100px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--accent)));
-    border-radius: 100px;
-    border: 3px solid hsl(var(--background));
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, hsl(var(--primary) / 0.8), hsl(var(--accent) / 0.8));
+    background: hsl(var(--primary) / 0.15);
   }
 }
 
-/* Heritage-specific color utilities */
-.bg-cedar {
-  background-color: hsl(var(--cedar));
-  color: hsl(var(--cedar-foreground));
+/* Section with inverted (dark) color scheme */
+.section-dark {
+  --background: 24 10% 10%;
+  --foreground: 40 20% 92%;
+  --card: 24 10% 14%;
+  --card-foreground: 40 20% 92%;
+  --muted: 24 8% 18%;
+  --muted-foreground: 30 8% 60%;
+  --border: 24 8% 18%;
+  --input: 24 8% 18%;
+  --primary: 37 40% 62%;
+  --primary-foreground: 24 10% 10%;
+  --secondary: 24 8% 16%;
+  --secondary-foreground: 40 20% 92%;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
-.bg-sand {
-  background-color: hsl(var(--sand));
-  color: hsl(var(--sand-foreground));
-}
-
-.bg-copper {
-  background-color: hsl(var(--copper));
-  color: hsl(var(--copper-foreground));
-}
-
-.bg-papyrus {
-  background-color: hsl(var(--papyrus));
-  color: hsl(var(--papyrus-foreground));
-}
-
-.bg-olive {
-  background-color: hsl(var(--olive));
-  color: hsl(var(--olive-foreground));
-}
-
-.text-cedar {
-  color: hsl(var(--cedar));
-}
-
-.text-sand {
-  color: hsl(var(--sand));
-}
-
-.text-copper {
-  color: hsl(var(--copper));
-}
-
-.text-papyrus {
-  color: hsl(var(--papyrus));
-}
-
-.text-olive {
-  color: hsl(var(--olive));
-}
-
-/* Advanced Animations with Heritage Colors */
-@keyframes float-advanced {
-  0%, 100% {
-    transform: translateY(0) translateX(0) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-20px) translateX(10px) rotate(1deg);
-  }
-  50% {
-    transform: translateY(-10px) translateX(-10px) rotate(-1deg);
-  }
-  75% {
-    transform: translateY(-15px) translateX(5px) rotate(0.5deg);
-  }
-}
-
-@keyframes morph {
-  0%, 100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-}
-
-@keyframes heritage-gradient-flow {
-  0%, 100% {
-    background-position: 0% 50%;
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    background-position: 100% 50%;
-    filter: hue-rotate(5deg);
-  }
-}
-
-@keyframes reveal-text {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-@keyframes parallax-drift {
-  from {
-    transform: translateY(0) translateX(0);
-  }
-  to {
-    transform: translateY(-50px) translateX(30px);
-  }
-}
-
-@keyframes heritage-pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.4),
-                0 0 40px hsl(var(--accent) / 0.2),
-                0 0 60px hsl(var(--copper) / 0.1);
-  }
-  50% {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.6),
-                0 0 60px hsl(var(--accent) / 0.4),
-                0 0 90px hsl(var(--copper) / 0.2);
-  }
-}
-
-@keyframes heritage-shimmer {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-@keyframes slide-up-fade {
+/* Scroll-triggered animation */
+@keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(30px) scale(0.95);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
-@keyframes rotate-3d {
-  0% {
-    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
-  }
-  100% {
-    transform: perspective(1000px) rotateY(360deg) rotateX(10deg);
-  }
-}
-
-@keyframes heritage-aurora {
-  0% {
-    background-position: 50% 50%, 50% 50%;
-  }
-  100% {
-    background-position: 350% 50%, 350% 50%;
-  }
-}
-
-/* Animation Classes */
-.animate-float-advanced {
-  animation: float-advanced 6s ease-in-out infinite;
-}
-
-.animate-morph {
-  animation: morph 8s ease-in-out infinite;
-}
-
-.animate-heritage-gradient-flow {
-  background-size: 200% 200%;
-  animation: heritage-gradient-flow 4s ease infinite;
-}
-
-.animate-reveal-text {
-  animation: reveal-text 1s var(--animation-smooth) forwards;
-}
-
-.animate-parallax-drift {
-  animation: parallax-drift 20s ease-in-out infinite alternate;
-}
-
-.animate-heritage-pulse-glow {
-  animation: heritage-pulse-glow 2s ease-in-out infinite;
-}
-
-.animate-rotate-3d {
-  animation: rotate-3d 20s linear infinite;
-}
-
-/* Advanced Glass Morphism with Heritage Colors */
-.glass-ultra {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid hsl(var(--border) / 0.3);
-  box-shadow: 0 8px 32px 0 hsl(var(--primary) / 0.1);
-}
-
-.glass-heritage {
-  background: linear-gradient(135deg, 
-    hsl(var(--primary) / 0.08) 0%, 
-    hsl(var(--accent) / 0.05) 50%, 
-    hsl(var(--cedar) / 0.08) 100%);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid hsl(var(--border) / 0.2);
-}
-
-.glass-papyrus {
-  background: linear-gradient(135deg, 
-    hsl(var(--papyrus) / 0.6) 0%, 
-    hsl(var(--sand) / 0.4) 100%);
-  backdrop-filter: blur(15px) saturate(150%);
-  -webkit-backdrop-filter: blur(15px) saturate(150%);
-  border: 1px solid hsl(var(--sand) / 0.3);
-}
-
-.glass-terracotta {
-  background: linear-gradient(135deg, 
-    hsl(var(--primary) / 0.1) 0%, 
-    hsl(var(--copper) / 0.08) 100%);
-  backdrop-filter: blur(18px) saturate(160%);
-  -webkit-backdrop-filter: blur(18px) saturate(160%);
-  border: 1px solid hsl(var(--primary) / 0.2);
-}
-
-/* Heritage Text Effects */
-.text-heritage-gradient {
-  background: linear-gradient(
-    135deg,
-    hsl(var(--primary)) 0%,
-    hsl(var(--accent)) 25%,
-    hsl(var(--cedar)) 50%,
-    hsl(var(--copper)) 75%,
-    hsl(var(--primary)) 100%
-  );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: heritage-shimmer 4s ease-in-out infinite;
-}
-
-.text-earth-gradient {
-  background: linear-gradient(
-    90deg,
-    hsl(var(--sand)) 0%,
-    hsl(var(--copper)) 50%,
-    hsl(var(--sand)) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-cedar-gold-gradient {
-  background: linear-gradient(
-    45deg,
-    hsl(var(--cedar)) 0%,
-    hsl(var(--accent)) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.text-terracotta-copper-gradient {
-  background: linear-gradient(
-    60deg,
-    hsl(var(--primary)) 0%,
-    hsl(var(--copper)) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Heritage Button Styles */
-.btn-heritage-primary {
-  background: linear-gradient(135deg, 
-    hsl(var(--primary)) 0%, 
-    hsl(var(--copper)) 100%);
-  color: hsl(var(--primary-foreground));
-  border: 1px solid hsl(var(--primary) / 0.2);
-  transition: all 0.3s var(--animation-smooth);
-}
-
-.btn-heritage-primary:hover {
-  background: linear-gradient(135deg, 
-    hsl(var(--primary) / 0.9) 0%, 
-    hsl(var(--copper) / 0.9) 100%);
-  box-shadow: 0 8px 25px hsl(var(--primary) / 0.3);
-  transform: translateY(-2px);
-}
-
-.btn-heritage-accent {
-  background: linear-gradient(135deg, 
-    hsl(var(--accent)) 0%, 
-    hsl(var(--sand)) 100%);
-  color: hsl(var(--accent-foreground));
-  border: 1px solid hsl(var(--accent) / 0.2);
-  transition: all 0.3s var(--animation-smooth);
-}
-
-.btn-heritage-accent:hover {
-  background: linear-gradient(135deg, 
-    hsl(var(--accent) / 0.9) 0%, 
-    hsl(var(--sand) / 0.9) 100%);
-  box-shadow: 0 8px 25px hsl(var(--accent) / 0.3);
-  transform: translateY(-2px);
-}
-
-.btn-cedar-olive {
-  background: linear-gradient(135deg, 
-    hsl(var(--cedar)) 0%, 
-    hsl(var(--olive)) 100%);
-  color: hsl(var(--cedar-foreground));
-  border: 1px solid hsl(var(--cedar) / 0.2);
-  transition: all 0.3s var(--animation-smooth);
-}
-
-.btn-cedar-olive:hover {
-  background: linear-gradient(135deg, 
-    hsl(var(--cedar) / 0.9) 0%, 
-    hsl(var(--olive) / 0.9) 100%);
-  box-shadow: 0 8px 25px hsl(var(--cedar) / 0.3);
-  transform: translateY(-2px);
-}
-
-/* Heritage Card Styles */
-.card-heritage {
-  background: linear-gradient(145deg, 
-    hsl(var(--card)) 0%, 
-    hsl(var(--papyrus)) 100%);
-  border: 1px solid hsl(var(--border));
-  box-shadow: 0 4px 20px hsl(var(--primary) / 0.08);
-  transition: all 0.4s var(--animation-smooth);
-}
-
-.card-heritage:hover {
-  background: linear-gradient(145deg, 
-    hsl(var(--card)) 0%, 
-    hsl(var(--sand) / 0.3) 100%);
-  box-shadow: 0 8px 40px hsl(var(--primary) / 0.15);
-  transform: translateY(-4px) scale(1.02);
-}
-
-.card-heritage-premium {
-  background: linear-gradient(135deg,
-    hsl(var(--primary) / 0.03) 0%,
-    hsl(var(--accent) / 0.02) 50%,
-    hsl(var(--cedar) / 0.03) 100%);
-  backdrop-filter: blur(20px);
-  border: 1px solid hsl(var(--border) / 0.2);
-  position: relative;
-  overflow: hidden;
-}
-
-.card-heritage-premium::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, 
-    transparent, 
-    hsl(var(--accent) / 0.1), 
-    transparent);
-  transition: left 0.8s;
-}
-
-.card-heritage-premium:hover::before {
-  left: 100%;
-}
-
-.card-terracotta {
-  background: linear-gradient(145deg,
-    hsl(var(--primary) / 0.05) 0%,
-    hsl(var(--copper) / 0.03) 100%);
-  border: 1px solid hsl(var(--primary) / 0.2);
-  transition: all 0.4s var(--animation-smooth);
-}
-
-.card-terracotta:hover {
-  background: linear-gradient(145deg,
-    hsl(var(--primary) / 0.08) 0%,
-    hsl(var(--copper) / 0.05) 100%);
-  box-shadow: 0 8px 30px hsl(var(--primary) / 0.2);
-  transform: translateY(-3px);
-}
-
-/* Heritage Aurora Background */
-.aurora-heritage {
-  background: linear-gradient(45deg, 
-    hsl(var(--primary) / 0.1) 0%, 
-    transparent 70%),
-    linear-gradient(135deg, 
-    hsl(var(--accent) / 0.08) 0%, 
-    transparent 70%),
-    linear-gradient(225deg, 
-    hsl(var(--cedar) / 0.06) 0%, 
-    transparent 70%);
-  background-size: 300% 300%;
-  animation: heritage-aurora 15s ease infinite;
-}
-
-.aurora-earth {
-  background: linear-gradient(45deg, 
-    hsl(var(--sand) / 0.1) 0%, 
-    transparent 70%),
-    linear-gradient(135deg, 
-    hsl(var(--copper) / 0.08) 0%, 
-    transparent 70%);
-  background-size: 200% 200%;
-  animation: heritage-aurora 12s ease infinite;
-}
-
-.aurora-nature {
-  background: linear-gradient(45deg, 
-    hsl(var(--cedar) / 0.1) 0%, 
-    transparent 70%),
-    linear-gradient(135deg, 
-    hsl(var(--olive) / 0.08) 0%, 
-    transparent 70%);
-  background-size: 250% 250%;
-  animation: heritage-aurora 14s ease infinite;
-}
-
-/* Neon Effects with Heritage Colors */
-.neon-heritage {
-  position: relative;
-  overflow: hidden;
-}
-
-.neon-heritage::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(45deg, 
-    hsl(var(--primary)), 
-    hsl(var(--accent)), 
-    hsl(var(--cedar)),
-    hsl(var(--copper)),
-    hsl(var(--primary)));
-  border-radius: inherit;
-  animation: rotate-3d 4s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.neon-heritage:hover::before {
-  opacity: 1;
-}
-
-.neon-heritage::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: hsl(var(--background));
-  border-radius: inherit;
-  z-index: 1;
-}
-
-.neon-heritage > * {
-  position: relative;
-  z-index: 2;
-}
-
-.neon-terracotta {
-  position: relative;
-  overflow: hidden;
-}
-
-.neon-terracotta::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(45deg, 
-    hsl(var(--primary)), 
-    hsl(var(--copper)), 
-    hsl(var(--primary)));
-  border-radius: inherit;
-  animation: rotate-3d 3s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.neon-terracotta:hover::before {
-  opacity: 1;
-}
-
-.neon-terracotta::after {
-  content: '';
-  position: absolute;
-  inset: 2px;
-  background: hsl(var(--background));
-  border-radius: inherit;
-  z-index: 1;
-}
-
-.neon-terracotta > * {
-  position: relative;
-  z-index: 2;
-}
-
-/* Heritage-specific Loading States */
-.skeleton-heritage {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(90deg, 
-    hsl(var(--sand) / 0.3) 0%, 
-    hsl(var(--papyrus) / 0.5) 50%, 
-    hsl(var(--sand) / 0.3) 100%);
-  background-size: 200% 100%;
-  animation: loading 1.8s infinite;
-}
-
-.skeleton-heritage::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    hsl(var(--accent) / 0.2) 50%, 
-    transparent 100%);
-  animation: loading 1.8s infinite;
-}
-
-.skeleton-terracotta {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(90deg, 
-    hsl(var(--primary) / 0.2) 0%, 
-    hsl(var(--copper) / 0.3) 50%, 
-    hsl(var(--primary) / 0.2) 100%);
-  background-size: 200% 100%;
-  animation: loading 2s infinite;
-}
-
-.skeleton-terracotta::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    hsl(var(--accent) / 0.3) 50%, 
-    transparent 100%);
-  animation: loading 2s infinite;
-}
-
-@keyframes loading {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
-/* Heritage Focus States */
-.focus-heritage {
-  transition: all 0.2s var(--animation-smooth);
-}
-
-.focus-heritage:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px hsl(var(--accent) / 0.3);
-  border-color: hsl(var(--accent));
-}
-
-.focus-terracotta:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.3);
-  border-color: hsl(var(--primary));
-}
-
-/* Heritage Shadow Utilities */
-.shadow-heritage-sm {
-  box-shadow: 0 2px 8px hsl(var(--primary) / 0.1);
-}
-
-.shadow-heritage {
-  box-shadow: 0 4px 20px hsl(var(--primary) / 0.15);
-}
-
-.shadow-heritage-lg {
-  box-shadow: 0 8px 40px hsl(var(--primary) / 0.2);
-}
-
-.shadow-heritage-xl {
-  box-shadow: 0 16px 60px hsl(var(--primary) / 0.25);
-}
-
-.shadow-accent {
-  box-shadow: 0 4px 20px hsl(var(--accent) / 0.2);
-}
-
-.shadow-cedar {
-  box-shadow: 0 4px 20px hsl(var(--cedar) / 0.2);
-}
-
-.shadow-copper {
-  box-shadow: 0 4px 20px hsl(var(--copper) / 0.2);
-}
-
-.shadow-sand {
-  box-shadow: 0 4px 20px hsl(var(--sand) / 0.15);
-}
-
-/* Responsive Typography with Heritage Feel */
-.text-heritage-responsive {
-  font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
-  line-height: 1.7;
-  font-weight: 400;
-}
-
-.heading-heritage-responsive {
-  font-size: clamp(2rem, 5vw + 1rem, 4rem);
-  line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-/* Performance Optimizations */
-.gpu-accelerated {
-  transform: translateZ(0);
-  will-change: transform, opacity;
-  backface-visibility: hidden;
-  perspective: 1000px;
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
 }
 
 /* Reduced Motion */
@@ -789,37 +113,5 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-/* Print Styles */
-@media print {
-  .no-print {
-    display: none !important;
-  }
-  
-  body {
-    font-size: 12pt;
-    line-height: 1.5;
-    color: #000;
-    background: #fff;
-  }
-  
-  .text-heritage-gradient,
-  .text-earth-gradient,
-  .text-cedar-gold-gradient,
-  .text-terracotta-copper-gradient {
-    -webkit-text-fill-color: hsl(var(--primary));
-    color: hsl(var(--primary));
-  }
-}
-
-/* High Resolution Displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .glass-ultra,
-  .glass-heritage,
-  .glass-terracotta {
-    backdrop-filter: blur(30px) saturate(200%);
-    -webkit-backdrop-filter: blur(30px) saturate(200%);
   }
 }
