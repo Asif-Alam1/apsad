@@ -116,11 +116,13 @@ export default function GetInvolvedPage() {
                   className="grid lg:grid-cols-2 gap-12 items-center"
                 >
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                    <ParallaxImage
-                      src={option.imageSrc}
-                      alt={option.imageAlt}
-                      className="aspect-[4/3]"
-                    />
+              
+                      <ParallaxImage
+                        src={option.imageSrc}
+                        alt={option.imageAlt}
+                        className="aspect-[4/3]"
+                      />
+             
                   </div>
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                     <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">

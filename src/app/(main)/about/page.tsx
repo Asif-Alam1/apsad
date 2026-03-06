@@ -6,6 +6,8 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/ui/reveal";
 import { SplitText } from "@/components/ui/split-text";
 import { ParallaxImage } from "@/components/ui/parallax-image";
+import { HorizontalText } from "@/components/ui/horizontal-text";
+import { Magnetic } from "@/components/ui/magnetic";
 
 export const metadata: Metadata = {
   title: "About APSAD - Our Heritage Preservation Story | APSAD Lebanon",
@@ -86,22 +88,26 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <div className="flex gap-4 mt-8">
-                  <Button
-                    asChild
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground text-[13px] tracking-[0.1em] uppercase px-6 py-5"
-                  >
-                    <Link href="/gallery" className="flex items-center gap-2">
-                      View Our Projects
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="text-[13px] tracking-[0.1em] uppercase px-6 py-5"
-                  >
-                    <Link href="/get-involved">Join Our Mission</Link>
-                  </Button>
+                  <Magnetic>
+                    <Button
+                      asChild
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground text-[13px] tracking-[0.1em] uppercase px-6 py-5"
+                    >
+                      <Link href="/gallery" className="flex items-center gap-2">
+                        View Our Projects
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </Magnetic>
+                  <Magnetic>
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="text-[13px] tracking-[0.1em] uppercase px-6 py-5"
+                    >
+                      <Link href="/get-involved">Join Our Mission</Link>
+                    </Button>
+                  </Magnetic>
                 </div>
               </div>
             </Reveal>
@@ -154,6 +160,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Decorative Scroll Text */}
+      <HorizontalText>OUR STORY SINCE 1960</HorizontalText>
 
       {/* Mission & Vision */}
       <section className="py-24">
@@ -245,9 +254,9 @@ export default function AboutPage() {
             <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
               Our People
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+            <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
               Join Our Expert Team
-            </h2>
+            </SplitText>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               APSAD is powered by a diverse team of passionate professionals,
               researchers, and volunteers united by an unwavering commitment to

@@ -19,6 +19,8 @@ import {
   Search,
 } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollZoom } from "@/components/ui/scroll-zoom";
+import { SplitText } from "@/components/ui/split-text";
 
 const initialGalleryItems: GalleryItem[] = [
   {
@@ -185,9 +187,9 @@ export default function GalleryPage() {
           <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
             Heritage Gallery
           </p>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <SplitText as="h1" className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
             Our Work
-          </h1>
+          </SplitText>
           <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-12">
             Explore the diverse range of Lebanese heritage sites and projects
             APSAD is dedicated to preserving.
@@ -268,25 +270,31 @@ export default function GalleryPage() {
               {filteredItems.map((item, index) => (
                 <div
                   key={item.id}
-                  className="group cursor-pointer"
+                  className={`group cursor-pointer ${index === 0 ? 'md:col-span-2 md:row-span-2' : ''}`}
                   style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
                   onClick={() => openModal(item)}
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden mb-4">
-                    <Image
-                      src={item.imageUrls[0]}
-                      alt={item.title}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors duration-500" />
-                    {item.imageUrls.length > 1 && (
-                      <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] px-2 py-1 tracking-wide">
-                        {item.imageUrls.length} images
-                      </span>
-                    )}
-                  </div>
+                  <ScrollZoom className="mb-4">
+                    <div className={`relative overflow-hidden ${index === 0 ? 'aspect-[16/10]' : 'aspect-[4/3]'}`}>
+                      <Image
+                        src={item.imageUrls[0]}
+                        alt={item.title}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        className="transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <span className="text-white text-[12px] uppercase tracking-[0.15em] font-medium translate-y-3 group-hover:translate-y-0 transition-transform duration-500">
+                          View Project
+                        </span>
+                      </div>
+                      {item.imageUrls.length > 1 && (
+                        <span className="absolute top-3 right-3 bg-black/60 text-white text-[11px] px-2 py-1 tracking-wide">
+                          {item.imageUrls.length} images
+                        </span>
+                      )}
+                    </div>
+                  </ScrollZoom>
                   <h3 className="font-serif text-lg font-bold mb-1 group-hover:text-primary transition-colors duration-300">
                     {item.title}
                   </h3>

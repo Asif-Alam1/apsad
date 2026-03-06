@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { Chatbot } from "@/components/chatbot/chatbot";
 import { PageTransition } from "@/components/ui/page-transition";
+import { CursorFollower } from "@/components/ui/cursor-follower";
 
 export default function MainLayout({
   children,
@@ -11,6 +12,7 @@ export default function MainLayout({
 }) {
   return (
     <div className="flex min-h-screen flex-col">
+      <CursorFollower />
       <Header />
       <main className="flex-1">
         <PageTransition>{children}</PageTransition>

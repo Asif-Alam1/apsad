@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { Magnetic } from "@/components/ui/magnetic";
 
 const ease = 'cubic-bezier(0.16, 1, 0.3, 1)';
 
@@ -87,23 +88,27 @@ export default function HeroSection() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
           style={reveal(loaded, 1.3)}
         >
-          <Button
-            asChild
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
-          >
-            <Link href="/gallery">Explore Our Work</Link>
-          </Button>
+          <Magnetic>
+            <Button
+              asChild
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+            >
+              <Link href="/gallery">Explore Our Work</Link>
+            </Button>
+          </Magnetic>
 
-          <Button
-            asChild
-            variant="outline"
-            className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
-          >
-            <Link href="/get-involved" className="flex items-center gap-2">
-              Get Involved
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          </Button>
+          <Magnetic>
+            <Button
+              asChild
+              variant="outline"
+              className="border-white/30 text-black hover:bg-white/10 px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+            >
+              <Link href="/get-involved" className="flex items-center gap-2">
+                Get Involved
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </Magnetic>
         </div>
       </div>
 

@@ -11,6 +11,8 @@ import { Marquee } from "@/components/ui/marquee";
 import { SplitText } from "@/components/ui/split-text";
 import { ParallaxImage } from "@/components/ui/parallax-image";
 import { Magnetic } from "@/components/ui/magnetic";
+import { ScrollZoom } from "@/components/ui/scroll-zoom";
+import { HorizontalText } from "@/components/ui/horizontal-text";
 
 export const metadata: Metadata = {
   title: 'APSAD - Preserving Lebanon\'s Heritage | Home',
@@ -217,16 +219,22 @@ export default function HomePage() {
             {featuredProjects.map((project, index) => (
               <Reveal key={index} delay={index * 120}>
                 <Link href="/gallery" className="group block">
-                  <div className="relative aspect-[3/4] overflow-hidden mb-4">
-                    <Image
-                      src={project.src}
-                      alt={project.title}
-                      fill
-                      style={{ objectFit: "cover" }}
-                      className="transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors duration-500" />
-                  </div>
+                  <ScrollZoom className="mb-4">
+                    <div className="relative aspect-[3/4] overflow-hidden">
+                      <Image
+                        src={project.src}
+                        alt={project.title}
+                        fill
+                        style={{ objectFit: "cover" }}
+                        className="transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                        <span className="text-white text-[12px] uppercase tracking-[0.15em] font-medium translate-y-3 group-hover:translate-y-0 transition-transform duration-500">
+                          View Project
+                        </span>
+                      </div>
+                    </div>
+                  </ScrollZoom>
                   <p className="text-[12px] uppercase tracking-[0.15em] text-primary mb-1 font-medium">
                     {project.category}
                   </p>
@@ -240,6 +248,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Decorative Scroll Text */}
+      <HorizontalText>HERITAGE PRESERVATION</HorizontalText>
+
       {/* Team */}
       <TeamSection />
 
@@ -250,9 +261,9 @@ export default function HomePage() {
             <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
               Join the Mission
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+            <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
               Make a Difference with APSAD
-            </h2>
+            </SplitText>
             <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               Your support is crucial. Whether you volunteer, become a member, or
               advocate for our cause, you play a part in preserving our shared
@@ -261,7 +272,7 @@ export default function HomePage() {
             <Magnetic>
               <Button
                 asChild
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+                className="bg-primary hover:bg-primary/90 text-black px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
               >
                 <Link href="/get-involved">Get Involved</Link>
               </Button>
