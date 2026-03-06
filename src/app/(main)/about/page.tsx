@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/ui/reveal";
+import { SplitText } from "@/components/ui/split-text";
+import { ParallaxImage } from "@/components/ui/parallax-image";
 
 export const metadata: Metadata = {
   title: "About APSAD - Our Heritage Preservation Story | APSAD Lebanon",
@@ -39,9 +41,9 @@ export default function AboutPage() {
             <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
               Our Story
             </p>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <SplitText as="h1" className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               About APSAD
-            </h1>
+            </SplitText>
             <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               For over six decades, we have been dedicated to the preservation and
               promotion of Lebanon&apos;s cultural and natural heritage &mdash; a
@@ -105,14 +107,11 @@ export default function AboutPage() {
             </Reveal>
 
             <Reveal delay={200}>
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <Image
-                  src="/history.jpeg"
-                  alt="Historical photograph showcasing APSAD's early heritage preservation work in Lebanon"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+              <ParallaxImage
+                src="/history.jpeg"
+                alt="Historical photograph showcasing APSAD's early heritage preservation work in Lebanon"
+                className="aspect-[4/5]"
+              />
             </Reveal>
           </div>
         </div>
@@ -126,9 +125,9 @@ export default function AboutPage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                 Milestones
               </p>
-              <h2 className="font-serif text-4xl font-bold mb-6">
+              <SplitText as="h2" className="font-serif text-4xl font-bold mb-6">
                 Our Journey Through Time
-              </h2>
+              </SplitText>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
                 Six decades of dedication to preserving Lebanon&apos;s cultural
                 treasures.

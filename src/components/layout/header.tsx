@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -17,10 +18,16 @@ const navItems = [
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(total > 0 ? window.scrollY / total : 0);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -39,16 +46,30 @@ export function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-10">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="relative text-[13px] font-medium text-muted-foreground hover:text-foreground transition-colors duration-300 tracking-[0.1em] uppercase group"
-            >
-              {item.label}
-              <span className="absolute left-0 -bottom-1 h-px w-0 bg-foreground transition-[width] duration-300 ease-out group-hover:w-full" />
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive =
+              pathname === item.href ||
+              (item.href !== '/' && pathname.startsWith(item.href));
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`relative text-[13px] font-medium transition-colors duration-300 tracking-[0.1em] uppercase group ${
+                  isActive
+                    ? 'text-foreground'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {item.label}
+                <span
+                  className={`absolute left-0 -bottom-1 h-px bg-foreground transition-[width] duration-300 ease-out ${
+                    isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         {/* CTA */}
@@ -74,16 +95,24 @@ export function Header() {
             <SheetContent side="right" className="w-72 p-0">
               <div className="flex flex-col h-full p-8 pt-12">
                 <nav className="flex flex-col">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="py-4 text-base font-medium border-b border-border hover:text-primary transition-colors tracking-wide"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  {navItems.map((item) => {
+                    const isActive =
+                      pathname === item.href ||
+                      (item.href !== '/' && pathname.startsWith(item.href));
+
+                    return (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setIsOpen(false)}
+                        className={`py-4 text-base font-medium border-b border-border transition-colors tracking-wide ${
+                          isActive ? 'text-primary' : 'hover:text-primary'
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                 </nav>
                 <div className="mt-auto pb-8">
                   <Button
@@ -103,6 +132,12 @@ export function Header() {
           </Sheet>
         </div>
       </div>
+
+      {/* Scroll Progress Bar */}
+      <div
+        className="absolute bottom-0 left-0 h-[2px] bg-primary"
+        style={{ width: `${progress * 100}%`, transition: 'none' }}
+      />
     </header>
   );
 }

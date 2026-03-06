@@ -1,10 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/ui/reveal";
+import { SplitText } from "@/components/ui/split-text";
+import { ParallaxImage } from "@/components/ui/parallax-image";
 
 export const metadata: Metadata = {
   title: "Get Involved - Support APSAD's Mission in Lebanon",
@@ -82,9 +83,9 @@ export default function GetInvolvedPage() {
             <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
               Join Our Mission
             </p>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <SplitText as="h1" className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               Get Involved
-            </h1>
+            </SplitText>
             <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
               Preserving Lebanon&apos;s rich tapestry of history and culture is a
               collective endeavor. Discover how you can become an integral part of
@@ -115,14 +116,11 @@ export default function GetInvolvedPage() {
                   className="grid lg:grid-cols-2 gap-12 items-center"
                 >
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <Image
-                        src={option.imageSrc}
-                        alt={option.imageAlt}
-                        fill
-                        style={{ objectFit: "cover" }}
-                      />
-                    </div>
+                    <ParallaxImage
+                      src={option.imageSrc}
+                      alt={option.imageAlt}
+                      className="aspect-[4/3]"
+                    />
                   </div>
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
                     <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">

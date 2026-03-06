@@ -7,6 +7,10 @@ import HeroSection from "@/components/HeroSection";
 import { StatsSection } from "@/components/StatSection";
 import { TeamSection } from "@/components/TeamSection";
 import { Reveal } from "@/components/ui/reveal";
+import { Marquee } from "@/components/ui/marquee";
+import { SplitText } from "@/components/ui/split-text";
+import { ParallaxImage } from "@/components/ui/parallax-image";
+import { Magnetic } from "@/components/ui/magnetic";
 
 export const metadata: Metadata = {
   title: 'APSAD - Preserving Lebanon\'s Heritage | Home',
@@ -32,6 +36,20 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
+
+      {/* Marquee Band */}
+      <Marquee
+        items={[
+          "Heritage Preservation",
+          "Cultural Identity",
+          "Archaeological Conservation",
+          "Community Engagement",
+          "Sustainable Tourism",
+          "Living History",
+        ]}
+        className="py-4 bg-foreground text-background text-sm tracking-[0.2em] uppercase font-medium"
+      />
+
       <StatsSection />
 
       {/* Welcome / Intro */}
@@ -43,9 +61,12 @@ export default function HomePage() {
                 <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                   About APSAD
                 </p>
-                <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                <SplitText
+                  as="h2"
+                  className="font-serif text-4xl md:text-5xl font-bold mb-6 leading-tight"
+                >
                   Safeguarding Lebanon&apos;s Living Heritage
-                </h2>
+                </SplitText>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                   APSAD &mdash; Association pour la Protection des Sites et
                   Anciennes Demeures &mdash; is a non-governmental organization
@@ -74,14 +95,11 @@ export default function HomePage() {
             </Reveal>
 
             <Reveal delay={200}>
-              <div className="relative aspect-[4/5] overflow-hidden">
-                <Image
-                  src="/history.jpeg"
-                  alt="Historic heritage site preserved by APSAD"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
+              <ParallaxImage
+                src="/history.jpeg"
+                alt="Historic heritage site preserved by APSAD"
+                className="aspect-[4/5]"
+              />
             </Reveal>
           </div>
         </div>
@@ -95,9 +113,9 @@ export default function HomePage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                 What Drives Us
               </p>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold">
-                Mission &amp; Vision
-              </h2>
+              <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold">
+                Mission & Vision
+              </SplitText>
             </div>
           </Reveal>
 
@@ -139,9 +157,9 @@ export default function HomePage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                 Our Focus
               </p>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
+              <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
                 Strategic Goals
-              </h2>
+              </SplitText>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
                 Six pillars that guide our mission to preserve Lebanon&apos;s
                 invaluable heritage.
@@ -178,9 +196,9 @@ export default function HomePage() {
                 <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                   Heritage in Action
                 </p>
-                <h2 className="font-serif text-4xl md:text-5xl font-bold">
+                <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold">
                   Featured Projects
-                </h2>
+                </SplitText>
               </div>
               <Button
                 asChild
@@ -240,12 +258,14 @@ export default function HomePage() {
               advocate for our cause, you play a part in preserving our shared
               heritage for generations to come.
             </p>
-            <Button
-              asChild
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
-            >
-              <Link href="/get-involved">Get Involved</Link>
-            </Button>
+            <Magnetic>
+              <Button
+                asChild
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+              >
+                <Link href="/get-involved">Get Involved</Link>
+              </Button>
+            </Magnetic>
           </div>
         </Reveal>
       </section>
