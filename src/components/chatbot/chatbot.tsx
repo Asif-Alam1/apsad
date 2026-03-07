@@ -123,7 +123,7 @@ export function Chatbot() {
       {/* Trigger Button */}
       <SheetTrigger asChild>
         <button
-          className="fixed bottom-6 right-6 z-50 h-14 w-14 flex items-center justify-center bg-foreground text-background shadow-lg hover:bg-foreground/90 transition-colors duration-300 rounded-3xl"
+          className="fixed bottom-6 right-6 z-50 h-14 w-14 flex items-center justify-center bg-foreground text-background shadow-lg hover:bg-foreground/90 transition-all duration-300 rounded-full hover:scale-105"
           aria-label="Open heritage assistant"
         >
           <MessageCircle className="h-5 w-5" />
@@ -133,7 +133,7 @@ export function Chatbot() {
       {/* Chat Panel */}
       <SheetContent
         side="right"
-        className="w-full max-w-[420px] p-0 flex flex-col h-full border-l border-border bg-background"
+        className="w-full max-w-[420px] p-0 flex flex-col h-full border-l border-border bg-background [&>button:last-child]:hidden"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-border">
@@ -141,7 +141,13 @@ export function Chatbot() {
             <h2 className="font-serif text-lg font-bold">APSAD Assistant</h2>
             <p className="text-[12px] text-muted-foreground tracking-[0.1em] uppercase mt-0.5">Heritage Expert</p>
           </div>
-
+          <button
+            onClick={() => setIsOpen(false)}
+            className="h-8 w-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Close chat"
+          >
+            <X className="h-4 w-4" />
+          </button>
         </div>
 
         {/* Messages */}
@@ -192,7 +198,7 @@ export function Chatbot() {
                 <p className="text-[11px] text-muted-foreground uppercase tracking-[0.1em]">
                   Suggested
                 </p>
-                {lastBotMsg.followUps.map((fu: { text: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | null | undefined; }, i: React.Key | null | undefined) => (
+                {lastBotMsg.followUps.map((fu: { text: string }, i: number) => (
                   <button
                     key={i}
                     onClick={() => handleSend(fu.text)}
