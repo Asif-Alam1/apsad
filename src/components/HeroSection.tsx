@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Magnetic } from "@/components/ui/magnetic";
 
 const ease = 'cubic-bezier(0.16, 1, 0.3, 1)';
@@ -91,7 +91,7 @@ export default function HeroSection() {
           <Magnetic>
             <Button
               asChild
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground h-[52px] min-w-[220px] text-[13px] tracking-[0.15em] uppercase"
             >
               <Link href="/gallery">Explore Our Work</Link>
             </Button>
@@ -101,12 +101,9 @@ export default function HeroSection() {
             <Button
               asChild
               variant="outline"
-              className="border-white/30 text-black hover:bg-white/10 px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+              className="border-white/30 text-black hover:bg-white/10 h-[52px] min-w-[220px] text-[13px] tracking-[0.15em] uppercase"
             >
-              <Link href="/get-involved" className="flex items-center gap-2">
-                Get Involved
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+              <Link href="/get-involved">Get Involved</Link>
             </Button>
           </Magnetic>
         </div>
