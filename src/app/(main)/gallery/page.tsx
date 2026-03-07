@@ -18,7 +18,6 @@ import {
   Images,
   X,
 } from "lucide-react";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { SplitText } from "@/components/ui/split-text";
 
 const initialGalleryItems: GalleryItem[] = [
@@ -225,7 +224,8 @@ export default function GalleryPage() {
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  aria-label="Clear search"
                 >
                   <X className="h-4 w-4" />
                 </button>
@@ -237,7 +237,7 @@ export default function GalleryPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-5 py-2 text-[12px] uppercase tracking-[0.1em] font-medium transition-colors duration-300 border ${
+                  className={`px-5 py-2.5 min-h-[44px] text-[12px] uppercase tracking-[0.1em] font-medium transition-colors duration-200 border cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
                     selectedCategory === category
                       ? "bg-foreground text-background border-foreground"
                       : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
@@ -299,9 +299,12 @@ export default function GalleryPage() {
               {filteredItems.map((item, index) => (
                 <div
                   key={item.id}
-                  className={`group relative cursor-pointer overflow-hidden ${getBentoClass(index, filteredItems.length)}`}
+                  role="button"
+                  tabIndex={0}
+                  className={`group relative cursor-pointer overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset ${getBentoClass(index, filteredItems.length)}`}
                   style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
                   onClick={() => openModal(item)}
+                  onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openModal(item); } }}
                 >
                   {/* Image */}
                   <Image
@@ -340,8 +343,8 @@ export default function GalleryPage() {
                   </div>
 
                   {/* View indicator on hover */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <span className="text-white text-[11px] uppercase tracking-[0.2em] font-medium border border-white/50 px-5 py-2.5 backdrop-blur-md bg-white/10">
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span className="text-white text-[11px] uppercase tracking-[0.2em] font-medium border border-white/40 px-5 py-2.5 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-out">
                       View
                     </span>
                   </div>
@@ -352,92 +355,117 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Modal */}
+      {/* Modal — Editorial two-panel lightbox */}
       {selectedItem && (
         <Dialog open={!!selectedItem} onOpenChange={(open) => !open && closeModal()}>
-          <DialogContent className="max-w-4xl w-[95vw] p-0 overflow-hidden max-h-[90vh] gap-0">
-            <DialogHeader className="p-6 pb-4 border-b border-border">
-              <div className="flex items-start justify-between">
-                <div>
-                  <DialogTitle className="font-serif text-2xl font-bold">
-                    {selectedItem.title}
-                  </DialogTitle>
-                  {selectedItem.imageUrls.length > 1 && (
-                    <p className="text-[13px] text-muted-foreground mt-1">
-                      {currentImageIndex + 1} of {selectedItem.imageUrls.length} images
+          <DialogContent className="max-w-5xl w-[95vw] p-0 overflow-hidden max-h-[90vh] gap-0 [&>button:last-child]:z-20 [&>button:last-child]:bg-black/50 [&>button:last-child]:text-white [&>button:last-child]:hover:bg-black/70 [&>button:last-child]:rounded-none [&>button:last-child]:right-3 [&>button:last-child]:top-3 [&>button:last-child]:h-10 [&>button:last-child]:w-10 [&>button:last-child]:flex [&>button:last-child]:items-center [&>button:last-child]:justify-center [&>button:last-child]:opacity-100">
+            {/* Visually hidden title for accessibility */}
+            <DialogHeader className="sr-only">
+              <DialogTitle>{selectedItem.title}</DialogTitle>
+            </DialogHeader>
+
+            <div className="flex flex-col md:flex-row h-full max-h-[90vh]">
+              {/* Left — Image viewer */}
+              <div className="relative md:flex-1 bg-black min-h-[240px] md:min-h-0">
+                <div className="relative w-full h-[50vh] md:h-full">
+                  <Image
+                    src={selectedItem.imageUrls[currentImageIndex]}
+                    alt={`${selectedItem.title} — Image ${currentImageIndex + 1}`}
+                    fill
+                    style={{ objectFit: "contain" }}
+                    className="select-none"
+                    key={selectedItem.imageUrls[currentImageIndex]}
+                  />
+                </div>
+
+                {/* Image nav arrows */}
+                {selectedItem.imageUrls.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImage}
+                      aria-label="Previous image"
+                      className="absolute left-3 top-1/2 -translate-y-1/2 h-11 w-11 flex items-center justify-center bg-black/40 hover:bg-black/60 text-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    >
+                      <ChevronLeft className="h-5 w-5" />
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      aria-label="Next image"
+                      className="absolute right-3 top-1/2 -translate-y-1/2 h-11 w-11 flex items-center justify-center bg-black/40 hover:bg-black/60 text-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                    >
+                      <ChevronRight className="h-5 w-5" />
+                    </button>
+                  </>
+                )}
+
+                {/* Image counter */}
+                {selectedItem.imageUrls.length > 1 && (
+                  <span className="absolute bottom-3 left-3 text-white/70 text-[11px] tracking-[0.15em] tabular-nums bg-black/40 px-2.5 py-1">
+                    {currentImageIndex + 1} / {selectedItem.imageUrls.length}
+                  </span>
+                )}
+              </div>
+
+              {/* Right — Info panel */}
+              <div className="md:w-[340px] lg:w-[380px] flex flex-col border-l border-border bg-background overflow-hidden">
+                <div className="flex-1 overflow-y-auto">
+                  {/* Title block */}
+                  <div className="px-6 pt-6 pb-5 border-b border-border">
+                    <p className="text-[11px] uppercase tracking-[0.2em] text-primary font-medium mb-2">
+                      Heritage Site
                     </p>
+                    <h2 className="font-serif text-xl md:text-2xl font-bold leading-tight">
+                      {selectedItem.title}
+                    </h2>
+                  </div>
+
+                  {/* Description */}
+                  <div className="px-6 py-5 border-b border-border">
+                    <h4 className="text-[11px] uppercase tracking-[0.15em] font-medium text-muted-foreground mb-3">
+                      Description
+                    </h4>
+                    <p className="text-sm leading-relaxed text-foreground/80">
+                      {selectedItem.description}
+                    </p>
+                  </div>
+
+                  {/* Historical Context */}
+                  <div className="px-6 py-5 border-b border-border">
+                    <h4 className="text-[11px] uppercase tracking-[0.15em] font-medium text-muted-foreground mb-3">
+                      Historical Context
+                    </h4>
+                    <p className="text-sm leading-relaxed text-foreground/80">
+                      {selectedItem.historicalContext}
+                    </p>
+                  </div>
+
+                  {/* Thumbnail strip */}
+                  {selectedItem.imageUrls.length > 1 && (
+                    <div className="px-6 py-5">
+                      <h4 className="text-[11px] uppercase tracking-[0.15em] font-medium text-muted-foreground mb-3">
+                        Gallery
+                      </h4>
+                      <div className="flex gap-[3px]">
+                        {selectedItem.imageUrls.map((url, i) => (
+                          <button
+                            key={i}
+                            onClick={() => setCurrentImageIndex(i)}
+                            className={`relative h-16 flex-1 overflow-hidden transition-opacity cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                              i === currentImageIndex
+                                ? "opacity-100 ring-2 ring-foreground"
+                                : "opacity-40 hover:opacity-70"
+                            }`}
+                            aria-label={`View image ${i + 1}`}
+                          >
+                            <Image src={url} alt="" fill style={{ objectFit: "cover" }} />
+                          </button>
+                        ))}
+                      </div>
+                    </div>
                   )}
                 </div>
               </div>
-            </DialogHeader>
-
-            {/* Image */}
-            <div className="relative aspect-[16/10] w-full bg-secondary">
-              <Image
-                src={selectedItem.imageUrls[currentImageIndex]}
-                alt={`${selectedItem.title} - Image ${currentImageIndex + 1}`}
-                fill
-                style={{ objectFit: "contain" }}
-                key={selectedItem.imageUrls[currentImageIndex]}
-              />
-              {selectedItem.imageUrls.length > 1 && (
-                <>
-                  <button
-                    onClick={prevImage}
-                    aria-label="Previous image"
-                    className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 transition-colors"
-                  >
-                    <ChevronLeft className="h-5 w-5" />
-                  </button>
-                  <button
-                    onClick={nextImage}
-                    aria-label="Next image"
-                    className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 transition-colors"
-                  >
-                    <ChevronRight className="h-5 w-5" />
-                  </button>
-                </>
-              )}
             </div>
-
-            {/* Thumbnail strip */}
-            {selectedItem.imageUrls.length > 1 && (
-              <div className="flex gap-[2px] px-6 py-3 bg-secondary/50 overflow-x-auto">
-                {selectedItem.imageUrls.map((url, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setCurrentImageIndex(i)}
-                    className={`relative h-14 w-20 flex-shrink-0 overflow-hidden transition-opacity ${
-                      i === currentImageIndex ? "opacity-100 ring-2 ring-foreground" : "opacity-50 hover:opacity-80"
-                    }`}
-                  >
-                    <Image src={url} alt="" fill style={{ objectFit: "cover" }} />
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {/* Description */}
-            <ScrollArea className="p-6 max-h-64">
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-[13px] uppercase tracking-[0.1em] font-medium text-primary mb-2">
-                    Description
-                  </h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {selectedItem.description}
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-[13px] uppercase tracking-[0.1em] font-medium text-primary mb-2">
-                    Historical Context
-                  </h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {selectedItem.historicalContext}
-                  </p>
-                </div>
-              </div>
-            </ScrollArea>
           </DialogContent>
         </Dialog>
       )}

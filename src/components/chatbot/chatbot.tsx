@@ -143,7 +143,7 @@ export function Chatbot() {
           </div>
           <button
             onClick={() => setIsOpen(false)}
-            className="h-8 w-8 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+            className="h-11 w-11 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             aria-label="Close chat"
           >
             <X className="h-4 w-4" />
@@ -202,7 +202,7 @@ export function Chatbot() {
                   <button
                     key={i}
                     onClick={() => handleSend(fu.text)}
-                    className="w-full text-left px-4 py-3 border border-border hover:border-foreground/30 hover:bg-secondary/50 transition-colors duration-200 text-sm flex items-center justify-between group"
+                    className="w-full text-left px-4 py-3 min-h-[44px] border border-border hover:border-foreground/30 hover:bg-secondary/50 transition-colors duration-200 text-sm flex items-center justify-between group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     <span>{fu.text}</span>
                     <ArrowRight className="h-3 w-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -221,7 +221,7 @@ export function Chatbot() {
                   <button
                     key={i}
                     onClick={() => handleSend(q)}
-                    className="w-full text-left px-4 py-3 border border-border hover:border-foreground/30 hover:bg-secondary/50 transition-colors duration-200 text-sm flex items-center justify-between group"
+                    className="w-full text-left px-4 py-3 min-h-[44px] border border-border hover:border-foreground/30 hover:bg-secondary/50 transition-colors duration-200 text-sm flex items-center justify-between group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     <span>{q}</span>
                     <ArrowRight className="h-3 w-3 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -251,7 +251,7 @@ export function Chatbot() {
             <button
               onClick={() => handleSend(inputValue)}
               disabled={isLoading || !inputValue.trim()}
-              className="h-10 w-10 flex items-center justify-center bg-foreground text-background disabled:opacity-30 transition-opacity duration-200"
+              className="h-11 w-11 flex items-center justify-center bg-foreground text-background disabled:opacity-30 transition-opacity duration-200 cursor-pointer disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               aria-label="Send message"
             >
               {isLoading ? (
