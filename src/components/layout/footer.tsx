@@ -35,8 +35,7 @@ export function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="p-2.5 border border-current/20 hover:border-current/40 transition-colors duration-300"
-                  style={{ borderColor: 'hsl(40 20% 92% / 0.2)' }}
+                  className="p-2.5 border border-white/20 hover:border-white/40 transition-colors duration-300"
                 >
                   <social.icon className="h-4 w-4" />
                 </Link>
@@ -93,7 +92,7 @@ export function Footer() {
       </div>
 
       {/* Copyright */}
-      <div style={{ borderTop: '1px solid hsl(40 20% 92% / 0.1)' }}>
+      <div className="border-t border-white/10">
         <div className="container max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs opacity-40">
             &copy; {new Date().getFullYear()} APSAD. All rights reserved.

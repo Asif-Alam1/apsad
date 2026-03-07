@@ -92,9 +92,9 @@ export function Chatbot() {
       };
 
       setMessages(prev => [...prev, botMsg]);
-      setChatHistory((prev: any) => [
+      setChatHistory(prev => [
         ...prev,
-        { role: 'model', parts: [{ text: response.answer }] }
+        { role: 'model' as const, parts: [{ text: response.answer }] }
       ]);
     } catch {
       const errorMsg: ChatMessage = {
