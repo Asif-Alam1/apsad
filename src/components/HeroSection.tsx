@@ -111,7 +111,7 @@ export default function HeroSection() {
 
       {/* Scroll indicator — delayed appearance */}
       <div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60"
         style={{
           opacity: loaded ? 1 : 0,
           transition: `opacity 0.8s ${ease} 2s`,

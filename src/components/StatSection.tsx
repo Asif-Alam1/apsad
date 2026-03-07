@@ -41,7 +41,7 @@ export function StatsSection() {
   return (
     <section className="py-20 border-y border-border">
       <div className="container max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <CountUp end={stat.number} suffix={stat.suffix} />

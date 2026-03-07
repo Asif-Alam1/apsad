@@ -313,14 +313,11 @@ export default function GalleryPage() {
                     className="transition-transform duration-700 ease-out group-hover:scale-105"
                   />
 
-                  {/* Persistent subtle gradient for legibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-
-                  {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500" />
+                  {/* Gradient + hover overlay (single layer to avoid double-darkening) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-black/0 group-hover:from-black/60 group-hover:via-black/20 group-hover:to-black/10 transition-all duration-500" />
 
                   {/* Catalog number */}
-                  <span className="absolute top-3 left-3 text-white/50 text-[11px] font-medium tracking-[0.15em] tabular-nums">
+                  <span className="absolute top-3 left-3 text-white/60 text-[12px] font-medium tracking-[0.15em] tabular-nums">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
@@ -344,7 +341,7 @@ export default function GalleryPage() {
 
                   {/* View indicator on hover */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <span className="text-white text-[11px] uppercase tracking-[0.2em] font-medium border border-white/40 px-4 py-2 backdrop-blur-sm bg-white/5">
+                    <span className="text-white text-[11px] uppercase tracking-[0.2em] font-medium border border-white/50 px-5 py-2.5 backdrop-blur-md bg-white/10">
                       View
                     </span>
                   </div>
@@ -411,7 +408,7 @@ export default function GalleryPage() {
                     key={i}
                     onClick={() => setCurrentImageIndex(i)}
                     className={`relative h-14 w-20 flex-shrink-0 overflow-hidden transition-opacity ${
-                      i === currentImageIndex ? "opacity-100 ring-2 ring-primary" : "opacity-50 hover:opacity-80"
+                      i === currentImageIndex ? "opacity-100 ring-2 ring-foreground" : "opacity-50 hover:opacity-80"
                     }`}
                   >
                     <Image src={url} alt="" fill style={{ objectFit: "cover" }} />

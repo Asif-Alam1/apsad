@@ -131,7 +131,7 @@ export default function AboutPage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                 Milestones
               </p>
-              <SplitText as="h2" className="font-serif text-4xl font-bold mb-6">
+              <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
                 Our Journey Through Time
               </SplitText>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
@@ -145,7 +145,7 @@ export default function AboutPage() {
             {milestones.map((milestone, index) => (
               <Reveal key={milestone.year} delay={index * 80}>
                 <div className="bg-secondary/50 p-8 md:p-10 h-full">
-                  <span className="font-serif text-4xl font-bold text-primary/20 block mb-3">
+                  <span className="font-serif text-4xl font-bold text-primary/35 block mb-3">
                     {milestone.year}
                   </span>
                   <h3 className="font-serif text-xl font-bold mb-2">
@@ -217,9 +217,9 @@ export default function AboutPage() {
               <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
                 Our Focus
               </p>
-              <h2 className="font-serif text-4xl font-bold mb-6">
+              <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
                 Strategic Goals
-              </h2>
+              </SplitText>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
                 Six comprehensive pillars that guide our mission to preserve and
                 promote Lebanon&apos;s invaluable heritage.
@@ -231,7 +231,7 @@ export default function AboutPage() {
             {goals.map((goal, index) => (
               <Reveal key={goal.num} delay={index * 80}>
                 <div className="bg-secondary/50 p-8 md:p-10 h-full">
-                  <span className="font-serif text-4xl font-bold text-primary/20 block mb-4">
+                  <span className="font-serif text-4xl font-bold text-primary/35 block mb-4">
                     {goal.num}
                   </span>
                   <h3 className="font-serif text-xl font-bold mb-3">

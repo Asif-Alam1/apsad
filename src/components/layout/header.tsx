@@ -135,7 +135,7 @@ export function Header() {
 
       {/* Scroll Progress Bar */}
       <div
-        className="absolute bottom-0 left-0 h-[2px] bg-primary"
+        className="absolute bottom-0 left-0 h-[2px] bg-foreground"
         style={{ width: `${progress * 100}%`, transition: 'none' }}
       />
     </header>

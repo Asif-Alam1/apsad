@@ -32,7 +32,7 @@ export function HorizontalText({ children, className = '' }: HorizontalTextProps
     <div ref={ref} className={`overflow-hidden py-8 md:py-12 ${className}`} aria-hidden="true">
       <div
         ref={textRef}
-        className="whitespace-nowrap font-serif text-[15vw] md:text-[12vw] font-bold leading-none text-foreground/[0.04] select-none"
+        className="whitespace-nowrap font-serif text-[15vw] md:text-[12vw] font-bold leading-none text-foreground/[0.06] select-none"
         style={{ willChange: 'transform' }}
       >
         {children}

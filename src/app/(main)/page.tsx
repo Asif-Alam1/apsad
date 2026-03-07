@@ -124,7 +124,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-16">
             <Reveal delay={100}>
               <div>
-                <h3 className="font-serif text-2xl font-bold mb-4">Our Mission</h3>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   APSAD is committed to the identification, protection,
                   conservation, and promotion of cultural and natural heritage in
@@ -137,7 +137,7 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={250}>
               <div>
-                <h3 className="font-serif text-2xl font-bold mb-4">Our Vision</h3>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   We envision a Lebanon where cultural and natural heritage is
                   universally valued, meticulously protected, and serves as a
@@ -173,7 +173,7 @@ export default function HomePage() {
             {goals.map((goal, index) => (
               <Reveal key={goal.num} delay={index * 80}>
                 <div className="bg-background p-8 md:p-10 h-full">
-                  <span className="font-serif text-4xl font-bold text-primary/20 block mb-4">
+                  <span className="font-serif text-4xl font-bold text-primary/35 block mb-4">
                     {goal.num}
                   </span>
                   <h3 className="font-serif text-xl font-bold mb-3">
