@@ -1,0 +1,12 @@
+[      11ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[     305ms] [LOG] [Fast Refresh] done in 295ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[     447ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_compiled_2ce9398a._.js:16329
+[     512ms] [WARNING] Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[     538ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[     569ms] [LOG] [Fast Refresh] done in 32ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[    8518ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[    8552ms] [LOG] [Fast Refresh] done in 34ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[   30207ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[   30241ms] [LOG] [Fast Refresh] done in 34ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[   73599ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[   73728ms] [LOG] [Fast Refresh] done in 103ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584

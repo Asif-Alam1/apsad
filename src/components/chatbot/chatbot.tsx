@@ -123,7 +123,7 @@ export function Chatbot() {
       {/* Trigger Button */}
       <SheetTrigger asChild>
         <button
-          className="fixed bottom-6 right-6 z-50 h-14 w-14 flex items-center justify-center bg-foreground text-background shadow-lg hover:bg-foreground/90 transition-all duration-300 rounded-full hover:scale-105"
+          className="fixed bottom-6 right-6 z-[40] h-14 w-14 flex items-center justify-center bg-[hsl(38_52%_63%)] text-[hsl(26_20%_7%)] hover:bg-[hsl(38_52%_70%)] transition-all duration-300 hover:scale-105"
           aria-label="Open heritage assistant"
         >
           <MessageCircle className="h-5 w-5" />
@@ -138,8 +138,8 @@ export function Chatbot() {
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-border">
           <div>
-            <h2 className="font-serif text-lg font-bold">APSAD Assistant</h2>
-            <p className="text-[12px] text-muted-foreground tracking-[0.1em] uppercase mt-0.5">Heritage Expert</p>
+            <h2 className="font-display text-lg">APSAD Assistant</h2>
+            <p className="font-display text-[11px] text-primary tracking-[0.25em] uppercase mt-1">Heritage Expert</p>
           </div>
           <button
             onClick={() => setIsOpen(false)}

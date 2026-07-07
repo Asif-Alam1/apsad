@@ -9,6 +9,7 @@ interface ParallaxImageProps {
   speed?: number
   className?: string
   priority?: boolean
+  sizes?: string
 }
 
 export function ParallaxImage({
@@ -17,6 +18,7 @@ export function ParallaxImage({
   speed = 0.15,
   className = '',
   priority = false,
+  sizes = '100vw',
 }: ParallaxImageProps) {
   const ref = useRef<HTMLDivElement>(null)
   const [offset, setOffset] = useState(0)
@@ -43,6 +45,7 @@ export function ParallaxImage({
         src={src}
         alt={alt}
         fill
+        sizes={sizes}
         priority={priority}
         style={{
           objectFit: 'cover',

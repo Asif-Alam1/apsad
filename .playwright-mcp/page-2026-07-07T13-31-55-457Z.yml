@@ -1,0 +1,202 @@
+- generic [ref=e6]:
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - list [ref=e13]:
+            - listitem [ref=e14]:
+              - link "Home" [ref=e15] [cursor=pointer]:
+                - /url: "#/"
+            - listitem [ref=e16]:
+              - link "About us" [ref=e17] [cursor=pointer]:
+                - /url: "#/content/aboutUs"
+            - listitem [ref=e18]:
+              - link "Our history" [ref=e19] [cursor=pointer]:
+                - /url: "#/content/history"
+          - list [ref=e20]:
+            - listitem [ref=e21]:
+              - link "" [ref=e22] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e23]: 
+            - listitem [ref=e24]:
+              - link "" [ref=e25] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e26]: 
+            - listitem [ref=e27]:
+              - link "" [ref=e28] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e29]: 
+      - navigation [ref=e31]:
+        - link [ref=e32] [cursor=pointer]:
+          - /url: "#/"
+          - img [ref=e33]
+        - list [ref=e36]:
+          - listitem [ref=e37]:
+            - button "Members" [ref=e38] [cursor=pointer]
+          - listitem [ref=e39]:
+            - button "Achievements" [ref=e40] [cursor=pointer]
+          - listitem [ref=e41]:
+            - link "Actions & campaigns" [ref=e42] [cursor=pointer]:
+              - /url: "#/content/actions"
+          - listitem [ref=e43]:
+            - link "Development" [ref=e44] [cursor=pointer]:
+              - /url: "#/content/development"
+          - listitem [ref=e45]:
+            - button "News & Events" [ref=e46] [cursor=pointer]
+          - listitem [ref=e47]:
+            - link "Gallery" [ref=e48] [cursor=pointer]:
+              - /url: "#/gallery"
+    - generic [ref=e123]:
+      - tablist [ref=e124]:
+        - tab "Slide 1 of 4" [selected] [ref=e125] [cursor=pointer]
+        - tab "Slide 2 of 4" [ref=e126] [cursor=pointer]
+        - tab "Slide 3 of 4" [ref=e127] [cursor=pointer]
+        - tab "Slide 4 of 4" [ref=e128] [cursor=pointer]
+      - tabpanel [ref=e199]:
+        - generic [ref=e200]: Slide 1 of 4
+        - img [ref=e202]
+      - button "Previous" [ref=e134] [cursor=pointer]:
+        - generic [ref=e50]: Previous
+      - button "Next" [ref=e135] [cursor=pointer]:
+        - generic [ref=e52]: Next
+  - generic [ref=e56]:
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - heading "Events" [level=1] [ref=e59]
+        - img [ref=e60]
+      - generic [ref=e136]:
+        - generic [ref=e139] [cursor=pointer]:
+          - img "..." [ref=e140]
+          - generic [ref=e141]:
+            - heading "أمسية شرقية \"لبنانيات\"" [level=5] [ref=e142]
+            - link "read more" [ref=e143]:
+              - /url: "#/event/48"
+        - generic [ref=e146] [cursor=pointer]:
+          - img "..." [ref=e147]
+          - generic [ref=e148]:
+            - heading "Nocturne d’opéra on the occasion of the 57th anniversary of APSAD" [level=5] [ref=e149]
+            - link "read more" [ref=e150]:
+              - /url: "#/event/47"
+        - generic [ref=e153] [cursor=pointer]:
+          - img "..." [ref=e154]
+          - generic [ref=e155]:
+            - heading "National heritage day - Mashghara" [level=5] [ref=e156]
+            - link "read more" [ref=e157]:
+              - /url: "#/event/46"
+    - generic [ref=e61]:
+      - generic [ref=e62]:
+        - heading "Message de la présidente Raya Daouk" [level=1] [ref=e63]
+        - img [ref=e64]
+      - generic [ref=e158]:
+        - paragraph [ref=e159]:
+          - strong [ref=e160]: Message de la présidente Raya Daouk
+        - paragraph
+        - paragraph [ref=e161]: C’est la fin de l’été, il est l’heure de rentrer, de faire des bilans.
+        - paragraph [ref=e162]: Dans un Liban qui va mal, il faudrait trouver une éclaircie dans notre grisaille quotidienne aussi.
+        - paragraph [ref=e163]: Cette année l’APSAD faste malgré toutes les difficultés qui jalonnent notre chemin.
+        - paragraph [ref=e164]: Nous avons inauguré notre musée « Zaki Nasssif » après plusieurs mois de restauration et commencé une école de musique à Mashgahra.
+        - paragraph [ref=e165]: Nous nous sommes également occupés d’amorcer notre partenariat avec Factum Foundation en vue de faire l’étude de sites historiques Libanais en commençant par les stèles de Nahr el Kaleb.
+        - paragraph [ref=e166]: Nous avons également suivi la restauration de l’ancien Hamman de tripoli qui avait jadis servi de siège à l’APSAD.
+        - paragraph [ref=e167]: Nous avons également fait des concerts dans des maisons anciennes, au musée national, au musée « Zaki Nassif » ainsi que des visites guidées de notre patrimoine à travers plusieurs régions du Liban.
+        - paragraph [ref=e168]: Notre héritage Culturel est d’une richesse inouïe que nous tentons tant bien que mal de sauver de l’altération du temps.
+        - paragraph [ref=e169]: Il faut toujours aller au-delà de la chronologie décevante de notre quotidien, et en aucun cas succomber à l’indifférence;
+        - paragraph [ref=e170]: Mais réapprendre à respecter notre patrimoine et aimer notre pays.
+        - paragraph [ref=e171]: Seul, dans cet amour, que nous pourrons sauver un pays déjà à bout de souffle.
+        - paragraph
+        - paragraph [ref=e172]: Raya Daouk
+        - paragraph [ref=e173]: 24 septembre 2016
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - heading "News" [level=1] [ref=e67]
+        - img [ref=e68]
+      - generic [ref=e174]:
+        - generic [ref=e177] [cursor=pointer]:
+          - img "..." [ref=e178]
+          - generic [ref=e179]:
+            - heading "أيام التراث 2017" [level=5] [ref=e180]
+            - paragraph [ref=e183]: إطلاق " أيام التراث الوطني" لهذا العام بالتعاون مع وزارة الثقافة وبرفقة متخصصين في التراث الوطني
+            - link "read more" [ref=e184]:
+              - /url: "#/news/28"
+        - generic [ref=e187] [cursor=pointer]:
+          - img "..." [ref=e188]
+          - generic [ref=e189]:
+            - heading "Visits to Zaki Nassif Museum in Mashgharah" [level=5] [ref=e190]
+            - link "read more" [ref=e191]:
+              - /url: "#/news/27"
+        - generic [ref=e194] [cursor=pointer]:
+          - img "..." [ref=e195]
+          - generic [ref=e196]:
+            - heading "National heritage day - Mashghara" [level=5] [ref=e197]
+            - link "read more" [ref=e198]:
+              - /url: "#/news/25"
+  - contentinfo [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - heading "APSAD" [level=4] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - text: "Achrafieh, Sursock Street, Aoun bldg, GF, Beirut, Lebanon, P.O.Box: 11 154 Beirut - Lebanon"
+              - text: Phone 961 1 336 368
+              - text: Fax 961 1 330 489
+        - generic [ref=e77]:
+          - heading "Who we are" [level=5] [ref=e78]
+          - list [ref=e79]:
+            - listitem [ref=e80]:
+              - link "About us" [ref=e81] [cursor=pointer]:
+                - /url: "#/content/aboutUs"
+            - listitem [ref=e82]:
+              - link "Our history" [ref=e83] [cursor=pointer]:
+                - /url: "#/content/history"
+            - listitem [ref=e84]:
+              - link "Development" [ref=e85] [cursor=pointer]:
+                - /url: "#/content/development"
+        - generic [ref=e86]:
+          - heading "Our activities" [level=5] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "Restoration" [ref=e90] [cursor=pointer]:
+                - /url: "#/content/restoration"
+            - listitem [ref=e91]:
+              - link "Plans and studies" [ref=e92] [cursor=pointer]:
+                - /url: "#/content/plansStudies"
+            - listitem [ref=e93]:
+              - link "Awareness" [ref=e94] [cursor=pointer]:
+                - /url: "#/content/awareness"
+            - listitem [ref=e95]:
+              - link "Actions and campaigns" [ref=e96] [cursor=pointer]:
+                - /url: "#/content/actionsCampaigns"
+            - listitem [ref=e97]:
+              - link "Development" [ref=e98] [cursor=pointer]:
+                - /url: "#/content/development"
+        - generic [ref=e99]:
+          - heading "Media" [level=5] [ref=e100]
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link "News" [ref=e103] [cursor=pointer]:
+                - /url: "#/news"
+            - listitem [ref=e104]:
+              - link "Events" [ref=e105] [cursor=pointer]:
+                - /url: "#/events"
+            - listitem [ref=e106]:
+              - link "Press" [ref=e107] [cursor=pointer]:
+                - /url: "#/content/press"
+            - listitem [ref=e108]:
+              - link "Gallery" [ref=e109] [cursor=pointer]:
+                - /url: "#/gallery"
+        - generic [ref=e110]:
+          - heading "Community" [level=5] [ref=e111]
+          - list [ref=e112]:
+            - listitem [ref=e113]:
+              - link "Past membres" [ref=e114] [cursor=pointer]:
+                - /url: "#/members/past"
+            - listitem [ref=e115]:
+              - link "Affiliations and partners" [ref=e116] [cursor=pointer]:
+                - /url: "#/affiliations"
+            - listitem [ref=e117]:
+              - link "Executive membres" [ref=e118] [cursor=pointer]:
+                - /url: "#/members/executive"
+            - listitem [ref=e119]:
+              - link "Current membres" [ref=e120] [cursor=pointer]:
+                - /url: "#/members/current"
+      - generic [ref=e121]: Copyright © 2025 APSAD. All rights reserved

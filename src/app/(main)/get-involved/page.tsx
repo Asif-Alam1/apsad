@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
 import type { Metadata } from "next";
 import { Reveal } from "@/components/ui/reveal";
 import { SplitText } from "@/components/ui/split-text";
 import { ParallaxImage } from "@/components/ui/parallax-image";
 
 export const metadata: Metadata = {
-  title: "Get Involved - Support APSAD's Mission in Lebanon",
+  title: "Get Involved - Membership, Volunteering & Partnership",
   description:
-    "Join APSAD in protecting Lebanon's heritage. Discover ways to get involved, from volunteering and membership to advocacy and partnerships.",
+    "Join APSAD as a member, volunteer, advocate, or partner. The association has been carried by its members since 1960 — the salon on Sursock Street, Beirut is open.",
 };
 
 const involvementOptions = [
@@ -19,128 +19,102 @@ const involvementOptions = [
     imageSrc: "/volunteer.jpg",
     imageAlt: "Volunteers collaborating on an APSAD heritage project",
     description:
-      "Lend your skills and passion to our projects in Lebanon. From field work to archival research, there are many ways to contribute directly.",
+      "Lend your skills to the work itself — from field restoration to archival research.",
     details:
-      "We welcome volunteers with diverse backgrounds. Whether you're interested in hands-on restoration, digital archiving, educational outreach, or administrative support, your contribution makes a real difference.",
+      "APSAD welcomes volunteers of every background: hands-on restoration, digital archiving, educational outreach, or the quiet administration that keeps a sixty-five-year-old association running.",
   },
   {
     title: "Become a Member",
     imageSrc: "/members.jpg",
-    imageAlt: "APSAD community support and membership",
+    imageAlt: "Members gathered at an APSAD event",
     description:
-      "Join the APSAD family and enjoy exclusive benefits while supporting our ongoing conservation efforts in Lebanon.",
+      "Join the assembly that has carried APSAD since 1960 and sustain the work with regular support.",
     details:
-      "Membership provides vital regular funding and comes with exclusive perks including newsletters, priority access to events, behind-the-scenes site visits, and discounts on publications.",
+      "Membership provides the association's vital regular funding — and admits you to a company that has included architects, historians, and patrons of Lebanese heritage for six decades.",
   },
   {
     title: "Advocate for Heritage",
     imageSrc: "/heritage.jpg",
-    imageAlt: "Advocating for Lebanese heritage preservation",
+    imageAlt: "A historic Lebanese façade under advocacy protection",
     description:
-      "Use your voice to raise awareness about the importance of Lebanese heritage preservation and support our advocacy campaigns.",
+      "Use your voice where it counts — APSAD's campaigns have moved ministers, municipalities, and the Central Bank.",
     details:
-      "Help us influence policy and public opinion by sharing our stories on social media, participating in awareness campaigns, writing to representatives, and speaking within your communities.",
+      "From letters to the Ministry of Culture to public complaints against demolitions, advocacy is how endangered houses stay standing. Share the campaigns, write, speak, and hold the line with us.",
   },
   {
     title: "Partner With Us",
     imageSrc: "/partner.jpg",
-    imageAlt: "Corporate partnership with APSAD",
+    imageAlt: "Institutional partners meeting with APSAD",
     description:
-      "Collaborate with APSAD on projects, sponsor initiatives, or explore corporate social responsibility opportunities.",
+      "Institutions and enterprises have always stood behind the association's largest undertakings.",
     details:
-      "We seek meaningful partnerships with institutions, corporations, and other NGOs. Together, we can create larger impact through joint projects, sponsorships, and knowledge sharing.",
+      "APSAD works with the DGA, municipalities, foundations, and international bodies — from Factum Foundation at Nahr el-Kalb to Mercy Corps in the schools. Joint projects, sponsorships, and studies are how the biggest work gets done.",
   },
 ];
 
-const testimonials = [
-  {
-    name: "Sarah Mitchell",
-    role: "Volunteer Archaeologist",
-    quote:
-      "Working with APSAD has been transformative. Every day, I contribute to preserving stories that span millennia.",
-  },
-  {
-    name: "Ahmad Khalil",
-    role: "Corporate Partner",
-    quote:
-      "Our partnership with APSAD aligns perfectly with our values of cultural preservation and community impact.",
-  },
-  {
-    name: "Elena Rodriguez",
-    role: "Heritage Advocate",
-    quote:
-      "Through APSAD's advocacy programs, I've learned to be an effective voice for heritage preservation.",
-  },
+const privileges = [
+  "The association's newsletters and publications, in three languages",
+  "Priority access to concerts, exhibitions, and events",
+  "Guided visits of old houses and sites across Lebanon",
+  "A voice and a vote in the general assembly",
 ];
 
 export default function GetInvolvedPage() {
   return (
     <div className="pt-20">
       {/* Page Header */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 md:py-32 border-b border-border">
         <div className="container max-w-6xl mx-auto px-6 text-center">
           <Reveal>
-            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-              Join Our Mission
+            <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+              The Invitation
             </p>
-            <SplitText as="h1" className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <SplitText
+              as="h1"
+              className="font-display uppercase tracking-[0.05em] text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8"
+            >
               Get Involved
             </SplitText>
-            <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              Preserving Lebanon&apos;s rich tapestry of history and culture is a
-              collective endeavor. Discover how you can become an integral part of
-              safeguarding our shared heritage.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              APSAD has always been carried by its members. Volunteering,
+              membership, advocacy, partnership — choose your way into the
+              record.
             </p>
           </Reveal>
         </div>
       </section>
 
       {/* Ways to Get Involved */}
-      <section className="py-24">
+      <section className="py-24 md:py-32">
         <div className="container max-w-6xl mx-auto px-6">
-          <Reveal>
-            <div className="text-center mb-16">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                How You Can Help
-              </p>
-              <h2 className="font-serif text-4xl font-bold mb-6">
-                Ways to Make a Difference
-              </h2>
-            </div>
-          </Reveal>
-
-          <div className="space-y-24">
+          <div className="space-y-24 md:space-y-32">
             {involvementOptions.map((option, index) => (
               <Reveal key={option.title}>
-                <div
-                  className="grid lg:grid-cols-2 gap-12 items-center"
-                >
+                <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-              
-                      <ParallaxImage
-                        src={option.imageSrc}
-                        alt={option.imageAlt}
-                        className="aspect-[4/3]"
-                      />
-             
+                    <ParallaxImage
+                      src={option.imageSrc}
+                      alt={option.imageAlt}
+                      className="aspect-[4/3]"
+                    />
                   </div>
                   <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+                    <h3 className="font-display uppercase tracking-[0.02em] text-3xl md:text-4xl leading-[1.12] mb-5">
                       {option.title}
                     </h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+                    <p className="font-body italic text-lg text-foreground/90 leading-relaxed mb-4">
                       {option.description}
                     </p>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-8">
                       {option.details}
                     </p>
                     <Button
                       asChild
                       variant="outline"
-                      className="text-[13px] tracking-[0.1em] uppercase px-6 py-5"
+                      className="font-display text-[12px] tracking-[0.22em] uppercase px-7 h-12"
                     >
-                      <Link href="#contact-section" className="flex items-center gap-2">
-                        Get Started
+                      <Link href="#contact" className="flex items-center gap-2">
+                        Write to Us
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
@@ -152,60 +126,86 @@ export default function GetInvolvedPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-secondary/50">
-        <div className="container max-w-6xl mx-auto px-6">
-          <Reveal>
-            <div className="text-center mb-16">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                Community Voices
-              </p>
-              <h2 className="font-serif text-4xl font-bold mb-6">
-                What Our Community Says
-              </h2>
-            </div>
-          </Reveal>
-
-          <div className="grid md:grid-cols-3 gap-px bg-border">
-            {testimonials.map((t, index) => (
-              <Reveal key={index} delay={index * 120}>
-                <div className="bg-secondary/50 p-8 md:p-10 h-full">
-                  <blockquote className="text-foreground leading-relaxed mb-6 text-lg italic">
-                    &ldquo;{t.quote}&rdquo;
-                  </blockquote>
-                  <p className="font-serif font-bold">{t.name}</p>
-                  <p className="text-[13px] text-primary uppercase tracking-[0.1em]">
-                    {t.role}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+      {/* The Member's Privileges */}
+      <section className="section-dark border-y">
+        <div className="container max-w-6xl mx-auto px-6 py-24 md:py-32">
+          <div className="grid lg:grid-cols-2 gap-14 lg:gap-24">
+            <Reveal>
+              <div>
+                <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                  The Member&apos;s Privileges
+                </p>
+                <h2 className="font-display uppercase tracking-[0.03em] text-4xl md:text-5xl leading-[1.1] mb-8">
+                  What membership brings
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Beyond sustaining the restorations, members belong to the life
+                  of the association — its salons, its journeys, its assemblies.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <ul className="flex flex-col justify-center h-full">
+                {privileges.map((privilege) => (
+                  <li
+                    key={privilege}
+                    className="border-t border-border last:border-b py-5 flex items-baseline gap-5"
+                  >
+                    <span className="h-1.5 w-1.5 bg-primary shrink-0 translate-y-[-2px]" aria-hidden="true" />
+                    <span className="text-lg leading-relaxed">{privilege}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact-section" className="py-24 scroll-mt-20">
-        <div className="container max-w-3xl mx-auto px-6">
-          <Reveal>
-            <div className="text-center mb-12">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                Get in Touch
-              </p>
-              <h2 className="font-serif text-4xl font-bold mb-6">
-                Connect With APSAD
-              </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                Whether you have questions about our projects, wish to explore
-                involvement opportunities, or simply want to share your thoughts
-                &mdash; we are eager to hear from you.
-              </p>
-            </div>
-          </Reveal>
+      <section id="contact" className="py-24 md:py-32 scroll-mt-20">
+        <div className="container max-w-6xl mx-auto px-6">
+          <div className="grid lg:grid-cols-12 gap-14 lg:gap-20">
+            <Reveal className="lg:col-span-4">
+              <div>
+                <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                  Write to Us
+                </p>
+                <h2 className="font-display uppercase tracking-[0.03em] text-4xl leading-[1.12] mb-8">
+                  The salon is open
+                </h2>
+                <p className="text-base text-muted-foreground leading-relaxed mb-10">
+                  Questions about the projects, membership, or a building you
+                  believe should be saved — we are eager to hear from you.
+                </p>
+                <ul className="space-y-5 text-base">
+                  <li className="flex items-start gap-4">
+                    <MapPin className="h-4 w-4 mt-1.5 text-primary shrink-0" aria-hidden="true" />
+                    <span className="text-muted-foreground">
+                      Sursock Street, Aoun Building, GF
+                      <br />
+                      Achrafieh, Beirut — P.O.Box 11-154
+                    </span>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <Phone className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
+                    <a href="tel:+9611336368" className="text-muted-foreground hover:text-foreground transition-colors">
+                      +961 1 336 368
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <Mail className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
+                    <a href="mailto:info@apsad.org" className="text-muted-foreground hover:text-foreground transition-colors">
+                      info@apsad.org
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </Reveal>
 
-          <Reveal delay={100}>
-            <ContactForm />
-          </Reveal>
+            <Reveal delay={100} className="lg:col-span-8">
+              <ContactForm />
+            </Reveal>
+          </div>
         </div>
       </section>
     </div>

@@ -68,7 +68,7 @@ export function CursorFollower() {
   return (
     <div
       ref={dotRef}
-      className="fixed top-0 left-0 z-[9998] pointer-events-none"
+      className="fixed top-0 left-0 z-[60] pointer-events-none"
       style={{
         width: 10,
         height: 10,

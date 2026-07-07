@@ -1,0 +1,19 @@
+[       8ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[     943ms] [LOG] [Fast Refresh] done in 935ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[     947ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[    1112ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_compiled_2ce9398a._.js:16329
+[    1177ms] [WARNING] Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[    1177ms] [WARNING] Image with src "/volunteer.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[    1177ms] [WARNING] Image with src "/members.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[    1177ms] [WARNING] Image with src "/heritage.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[    1206ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[    1441ms] [LOG] [Fast Refresh] done in 236ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[    9480ms] [WARNING] Image with src "/partner.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[   10747ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[   10804ms] [LOG] [Fast Refresh] done in 57ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[   34096ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[   34129ms] [LOG] [Fast Refresh] done in 33ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[   92037ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[   92155ms] [LOG] [Fast Refresh] done in 94ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584
+[   97588ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14755
+[   97673ms] [LOG] [Fast Refresh] done in 59ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_43e3ffb8._.js:14584

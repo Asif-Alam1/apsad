@@ -9,8 +9,13 @@ export default {
   theme: {
   	extend: {
       fontFamily: {
-        sans: ['var(--font-dm-sans)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--font-playfair)', ...defaultTheme.fontFamily.serif],
+        // Fully-serif system (see DESIGN.md): body text is EB Garamond, display
+        // is Marcellus. `sans` intentionally resolves to the body serif so
+        // shadcn defaults inherit the house voice.
+        sans: ['var(--font-eb-garamond)', ...defaultTheme.fontFamily.serif],
+        serif: ['var(--font-marcellus)', ...defaultTheme.fontFamily.serif],
+        display: ['var(--font-marcellus)', ...defaultTheme.fontFamily.serif],
+        body: ['var(--font-eb-garamond)', ...defaultTheme.fontFamily.serif],
       },
   		colors: {
   			background: 'hsl(var(--background))',

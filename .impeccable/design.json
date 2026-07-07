@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-07T13:45:00Z",
+  "title": "Design System: APSAD Lebanon",
+  "extensions": {
+    "colorMeta": {
+      "antique-gold": { "role": "primary", "displayName": "Antique Gold", "canonical": "hsl(37 34% 52%)", "tonalRamp": ["#2B2214", "#4A3A22", "#6B5432", "#8C7043", "#AE8E5B", "#C2A97E", "#D6C4A3", "#EDE3D1"] },
+      "cedar-brown": { "role": "secondary", "displayName": "Cedar Brown", "canonical": "hsl(24 48% 32%)", "tonalRamp": ["#1F1209", "#3C2413", "#5A371E", "#794A2A", "#9A6440", "#B8845F", "#D3AA8B", "#EDD7C4"] },
+      "limestone-white": { "role": "neutral", "displayName": "Limestone White", "canonical": "hsl(40 20% 98%)", "tonalRamp": ["#26241F", "#4D4940", "#767065", "#9E978B", "#C4BEB3", "#DEDAD2", "#EFECE7", "#FBFAF9"] },
+      "plaster": { "role": "neutral", "displayName": "Plaster", "canonical": "hsl(35 10% 95%)", "tonalRamp": ["#242220", "#494540", "#6F6A62", "#948E85", "#B9B4AC", "#D6D2CC", "#E8E5E1", "#F4F2F1"] },
+      "umber-ink": { "role": "neutral", "displayName": "Umber Ink", "canonical": "hsl(24 10% 10%)", "tonalRamp": ["#1C1917", "#33302C", "#4D4842", "#68625A", "#847D74", "#A19B93", "#C0BBB5", "#E0DDD9"] },
+      "stone-gray": { "role": "neutral", "displayName": "Stone Gray", "canonical": "hsl(25 5% 45%)", "tonalRamp": ["#191715", "#33302C", "#4D4944", "#78726D", "#938D88", "#AEA9A4", "#C9C5C1", "#E4E2E0"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "hsl(24 6% 90%)", "tonalRamp": ["#232120", "#464341", "#6A6663", "#8E8A86", "#B1ADAA", "#CCC9C6", "#DDDAD8", "#E7E5E4"] },
+      "night-umber": { "role": "neutral", "displayName": "Night Umber", "canonical": "hsl(24 10% 7%)", "tonalRamp": ["#141110", "#2B2724", "#443F3A", "#5E5751", "#78716A", "#958F88", "#B5B0AA", "#D8D4D0"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero statements only — one per page, up to 8rem." },
+      "headline": { "displayName": "Headline", "purpose": "Serif section openers." },
+      "body": { "displayName": "Body", "purpose": "Paragraphs at ~65ch measure." },
+      "label": { "displayName": "Label", "purpose": "13px tracked-caps kickers, nav, marquee items — the only all-caps voice." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-reveal", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Staggered entrances and split-text reveals (ease-out-quint family)." },
+      { "name": "duration-reveal", "value": "0.8s", "purpose": "Standard entrance duration." },
+      { "name": "ken-burns", "value": "20s ease-out", "purpose": "Hero background slow zoom 1.08 to 1." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Antique-gold square-cornered action; the patron's invitation.",
+      "html": "<button class=\"ds-btn-primary\">Join the Association</button>",
+      "css": ".ds-btn-primary { background: #AE8E5B; color: #fff; padding: 10px 24px; border: none; border-radius: 0; font-family: 'DM Sans', system-ui, sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.2s; } .ds-btn-primary:hover { background: rgba(174, 142, 91, 0.9); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px #FBFAF9, 0 0 0 4px #AE8E5B; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Quiet hairline-bordered secondary action.",
+      "html": "<button class=\"ds-btn-outline\">Our History</button>",
+      "css": ".ds-btn-outline { background: #FBFAF9; color: #1C1917; padding: 10px 24px; border: 1px solid #E7E5E4; border-radius: 0; font-family: 'DM Sans', system-ui, sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.2s, color 0.2s; } .ds-btn-outline:hover { background: #794A2A; color: #FBFAF9; border-color: #794A2A; } .ds-btn-outline:focus-visible { outline: none; box-shadow: 0 0 0 2px #FBFAF9, 0 0 0 4px #AE8E5B; }"
+    },
+    {
+      "name": "Kicker Label",
+      "kind": "chip",
+      "refersTo": "label",
+      "description": "13px tracked-caps gold kicker above headlines.",
+      "html": "<span class=\"ds-kicker\">Preserving Heritage Since 1960</span>",
+      "css": ".ds-kicker { color: #AE8E5B; font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square hairline field with gold focus ring.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"Your name\" />",
+      "css": ".ds-input { background: #FBFAF9; color: #1C1917; border: 1px solid #E7E5E4; border-radius: 0; padding: 10px 12px; font-family: 'DM Sans', system-ui, sans-serif; font-size: 14px; width: 260px; } .ds-input::placeholder { color: #78726D; } .ds-input:focus-visible { outline: none; box-shadow: 0 0 0 2px #FBFAF9, 0 0 0 4px #AE8E5B; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Square-cornered, hairline-ruled card — no shadow, per the Stone-Doesn't-Float Rule.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-media\"></div><div class=\"ds-card-body\"><span class=\"ds-card-cat\">Conservation</span><h3 class=\"ds-card-title\">Ancient Baalbek Restoration</h3></div></div>",
+      "css": ".ds-card { background: #fff; border: 1px solid #E7E5E4; border-radius: 0; width: 280px; overflow: hidden; } .ds-card-media { height: 140px; background: linear-gradient(135deg, #4A3A22, #8C7043); } .ds-card-body { padding: 20px; } .ds-card-cat { color: #AE8E5B; font-family: 'DM Sans', system-ui, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; } .ds-card-title { color: #1C1917; font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; margin-top: 8px; line-height: 1.2; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "label",
+      "description": "Tracked-caps header link with gold active state.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link ds-active\" href=\"#\">Home</a><a class=\"ds-nav-link\" href=\"#\">About</a><a class=\"ds-nav-link\" href=\"#\">Gallery</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 28px; } .ds-nav-link { color: #1C1917; font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: color 0.2s; } .ds-nav-link:hover { color: #794A2A; } .ds-nav-link.ds-active { color: #AE8E5B; }"
+    },
+    {
+      "name": "Marquee Band",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Inverted full-width strip of scrolling tracked-caps phrases.",
+      "html": "<div class=\"ds-marquee\"><span>Heritage Preservation</span><span>·</span><span>Cultural Identity</span><span>·</span><span>Living History</span></div>",
+      "css": ".ds-marquee { background: #1C1917; color: #FBFAF9; display: flex; gap: 24px; align-items: center; padding: 14px 24px; font-family: 'DM Sans', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; white-space: nowrap; overflow: hidden; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Sursock Salon",
+    "overview": "The reception room of a Beirut heritage mansion on Sursock Street — APSAD's literal address. Limestone walls, antique gold leaf catching late light, dark cedar wood, and the quiet confidence of an institution that has been receiving guests since 1960. The interface addresses patrons as peers: it never pleads, never shouts, never decorates for decoration's sake. Photography of the sites does the emotional work; typography and gold do the framing.",
+    "keyCharacteristics": [
+      "Square-cornered everything — the geometry of cut stone",
+      "Serif display at architectural scale (up to 8rem), sans body in quiet restraint",
+      "Antique gold as a scarce material, not a paint bucket",
+      "Full-bleed site photography with dark scrims; sections that invert to near-black",
+      "A film-grain overlay (2.8% opacity) giving every page a printed-matter texture",
+      "Choreographed motion: staggered entrances, Ken Burns heroes, split-text reveals, marquee bands"
+    ],
+    "rules": [
+      { "name": "The Gold-Leaf Rule", "body": "Antique Gold covers at most 10% of any viewport — buttons, labels, rules, one highlighted word. Gold spread wide turns patina into paint.", "section": "colors" },
+      { "name": "The Inversion Rule", "body": "Contrast between sections comes from full tonal inversion (.section-dark, Umber Ink ground), never from pastel section tints.", "section": "colors" },
+      { "name": "The One-Lintel Rule", "body": "One serif display statement per viewport. Stacked display sizes compete like two carved inscriptions on one façade.", "section": "typography" },
+      { "name": "The Stone-Doesn't-Float Rule", "body": "No decorative box-shadows on cards, buttons, or sections. If a surface must separate, invert it or rule it off with Hairline.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep every corner square; --radius stays 0rem everywhere.",
+      "Do let full-bleed site photography carry heroes, with scrims ≥55% black before setting light text on it.",
+      "Do honor prefers-reduced-motion for every new animation (global kill-switch already exists in globals.css).",
+      "Do use tonal inversion (.section-dark) to pace long pages — limestone, umber, limestone.",
+      "Do address the reader as a patron: \"Join the association\", never \"Donate now!!\" urgency mechanics."
+    ],
+    "donts": [
+      "Don't build the \"generic charity template\" — no donation progress bars, no crisis-photography guilt, no floating donate ribbons.",
+      "Don't drift into \"tourism-board gloss\" — no saturated postcard filters or exclamation-mark copy.",
+      "Don't ship the \"dusty museum archive\" — no parchment textures, no 12-paragraph walls of unbroken text.",
+      "Don't import \"startup/SaaS modernism\" — no gradients on text or buttons, no rounded-2xl cards, no glassmorphism.",
+      "Don't use Stone Gray (#78726D) for long body copy on Limestone — it fails 4.5:1; step down to Umber Ink.",
+      "Don't add colored side-stripe borders, gradient text, or icon-in-rounded-square headers — banned outright."
+    ]
+  }
+}

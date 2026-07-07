@@ -8,93 +8,107 @@ import { SplitText } from "@/components/ui/split-text";
 import { ParallaxImage } from "@/components/ui/parallax-image";
 import { HorizontalText } from "@/components/ui/horizontal-text";
 import { Magnetic } from "@/components/ui/magnetic";
+import { TeamSection } from "@/components/TeamSection";
 
 export const metadata: Metadata = {
-  title: "About APSAD - Our Heritage Preservation Story | APSAD Lebanon",
+  title: "The Association - APSAD's Story Since 1960",
   description:
-    "Learn about APSAD's 60+ year journey preserving Lebanon's cultural heritage. Discover our mission, vision, goals, and the dedicated team working to protect Lebanese historical sites and traditions.",
+    "APSAD — Association pour la Protection des Sites et Anciennes Demeures — was founded in Beirut in 1960. Discover the founding appeal, our mission, the regional sections, and the people behind six decades of Lebanese heritage preservation.",
 };
 
-const milestones = [
-  { year: "1960", title: "Foundation", description: "APSAD established to protect Lebanon's heritage sites." },
-  { year: "1975", title: "First Major Project", description: "Restoration of ancient Phoenician ruins in Byblos." },
-  { year: "1990", title: "UNESCO Partnership", description: "Official collaboration with UNESCO for heritage protection." },
-  { year: "2000", title: "Digital Archive", description: "Launch of comprehensive digital heritage documentation." },
-  { year: "2010", title: "Community Program", description: "Expansion into community-based conservation initiatives." },
-  { year: "2020", title: "Modern Era", description: "Integration of modern technology in preservation efforts." },
+const regions = [
+  { name: "Beirut", role: "The salon on Sursock Street — headquarters since the founding" },
+  { name: "Tripoli", role: "Regional section — from the Hammam el-Jédid to the old khans" },
+  { name: "Deir el-Qamar", role: "Regional section — a rehabilitated residence in the Chouf since 1972" },
+  { name: "Saïda & Aley", role: "Regional sections — carrying the work along the coast and mountain" },
 ];
 
-const goals = [
-  { num: "01", title: "Site Preservation", description: "Implement effective conservation measures for endangered heritage sites, utilizing best practices and innovative technologies." },
-  { num: "02", title: "Research & Documentation", description: "Conduct and support scholarly research that enhances understanding of our heritage, and meticulously document sites and artifacts." },
-  { num: "03", title: "Community Engagement", description: "Actively involve local communities in heritage preservation, empowering them as custodians of their own history." },
-  { num: "04", title: "Education & Awareness", description: "Raise public awareness about the significance of heritage and the importance of its conservation through innovative educational programs." },
-  { num: "05", title: "Advocacy & Policy", description: "Advocate for stronger legal frameworks and policies that support heritage protection at local, national, and international levels." },
-  { num: "06", title: "Sustainable Practices", description: "Promote sustainable tourism and site management practices that benefit both heritage preservation and local economic development." },
+const projects = [
+  {
+    title: "The Old Souk of Jounieh",
+    period: "Since 2001",
+    description:
+      "Demolition bans won, restorations regulated, façades cleaned and repainted — and a festival that turns the souk into a pedestrian street by night.",
+  },
+  {
+    title: "Tourist Centre of Jbeil",
+    period: "2001 — 2002",
+    description:
+      "A historic residence restored with the DGA and the municipal council to welcome visitors to Kesrouan, Jbeil, and Batroun.",
+  },
+  {
+    title: "Salima Village",
+    period: "Two-year study",
+    description:
+      "With Patrimoine Sans Frontières and a team of Lebanese architects, seventy residences were classified as historic by the Ministry of Culture.",
+  },
 ];
 
 export default function AboutPage() {
   return (
     <div className="pt-20">
       {/* Page Header */}
-      <section className="py-24 border-b border-border">
+      <section className="py-24 md:py-32 border-b border-border">
         <div className="container max-w-6xl mx-auto px-6 text-center">
           <Reveal>
-            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-              Our Story
+            <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+              Est. 1960 · Beirut
             </p>
-            <SplitText as="h1" className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-              About APSAD
+            <SplitText
+              as="h1"
+              className="font-display uppercase tracking-[0.05em] text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8"
+            >
+              The Association
             </SplitText>
-            <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-              For over six decades, we have been dedicated to the preservation and
-              promotion of Lebanon&apos;s cultural and natural heritage &mdash; a
-              journey of passion, dedication, and unwavering commitment.
+            <p className="font-body italic text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Association pour la Protection des Sites et Anciennes Demeures au
+              Liban — the Association for Protecting Natural Sites and Old
+              Buildings in Lebanon.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* History */}
-      <section className="py-24">
+      {/* The Founding */}
+      <section id="history" className="py-24 md:py-32 scroll-mt-20">
         <div className="container max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <Reveal>
               <div>
-                <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                  Since 1960
+                <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                  The Founding
                 </p>
-                <h2 className="font-serif text-4xl font-bold mb-6">
-                  Our Rich History
+                <h2 className="font-display uppercase tracking-[0.03em] text-4xl md:text-[2.75rem] leading-[1.1] mb-8">
+                  An appeal, answered
                 </h2>
-                <div className="space-y-5 text-muted-foreground leading-relaxed">
+                <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
                   <p>
-                    Founded in 1960, APSAD emerged from a collective desire among
-                    historians, archaeologists, architects, and community leaders
-                    to address the growing concerns over the neglect and
-                    degradation of Lebanon&apos;s significant heritage sites.
+                    In 1960, APSAD launched its first appeal to the Lebanese
+                    people — to those who would preserve harmonious,
+                    well-ordered towns and villages; <em>a welcoming Lebanon,
+                    proud of its past, trustful in its future</em>.
                   </p>
                   <p>
-                    Over the decades, APSAD has evolved into Lebanon&apos;s
-                    leading non-governmental organization for heritage
-                    preservation, spearheading numerous groundbreaking conservation
-                    projects and advocating for transformative policy changes.
+                    Those who wished to save their heritage joined the
+                    association and supported its action. APSAD requests all
+                    initiatives, accepts all suggestions, saves old buildings,
+                    and coordinates all efforts within the field.
                   </p>
                   <p>
-                    Our journey has been marked by strategic partnerships with
-                    local communities, national institutions, and international
-                    bodies, continuously adapting our methodologies to meet new
-                    challenges in heritage conservation.
+                    Wherever you go in Lebanon, you will find the print of that
+                    work: around one hundred architectural treasures saved
+                    through plans, drawings, and painstaking documentation, and
+                    regional sections carrying the mission across the country.
                   </p>
                 </div>
-                <div className="flex gap-4 mt-8">
+                <div className="flex flex-wrap gap-4 mt-10">
                   <Magnetic>
                     <Button
                       asChild
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground text-[13px] tracking-[0.1em] uppercase px-6 py-5"
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground font-display text-[12px] tracking-[0.22em] uppercase px-7 h-12"
                     >
                       <Link href="/gallery" className="flex items-center gap-2">
-                        View Our Projects
+                        See the Sites
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
@@ -103,9 +117,9 @@ export default function AboutPage() {
                     <Button
                       asChild
                       variant="outline"
-                      className="text-[13px] tracking-[0.1em] uppercase px-6 py-5"
+                      className="font-display text-[12px] tracking-[0.22em] uppercase px-7 h-12"
                     >
-                      <Link href="/get-involved">Join Our Mission</Link>
+                      <Link href="/get-involved">Join the Mission</Link>
                     </Button>
                   </Magnetic>
                 </div>
@@ -115,7 +129,7 @@ export default function AboutPage() {
             <Reveal delay={200}>
               <ParallaxImage
                 src="/history.jpeg"
-                alt="Historical photograph showcasing APSAD's early heritage preservation work in Lebanon"
+                alt="Early conservation work on a traditional Lebanese building"
                 className="aspect-[4/5]"
               />
             </Reveal>
@@ -123,38 +137,98 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-24 bg-secondary/50">
+      {/* Mission & Vision */}
+      <section className="py-24 md:py-32 bg-secondary/60 border-y border-border">
+        <div className="container max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-16 md:gap-20">
+            <Reveal>
+              <div>
+                <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                  Purpose
+                </p>
+                <h2 className="font-display uppercase tracking-[0.03em] text-3xl md:text-4xl mb-6">
+                  Our Mission
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  To identify, protect, conserve, and promote the cultural and
+                  natural heritage of Lebanon — acting upon the laws that shield
+                  it, restoring what can be saved, and documenting what must be
+                  remembered, so that these assets pass intact to the next
+                  generation.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={150}>
+              <div>
+                <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                  Aspiration
+                </p>
+                <h2 className="font-display uppercase tracking-[0.03em] text-3xl md:text-4xl mb-6">
+                  Our Vision
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  A Lebanon whose architectural and natural heritage is
+                  universally valued and defended — where old souks, houses, and
+                  sites are living sources of knowledge, identity, and
+                  sustainable prosperity, and where the country regains the
+                  standing its past deserves.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Where We Work */}
+      <section className="py-24 md:py-32">
         <div className="container max-w-6xl mx-auto px-6">
           <Reveal>
-            <div className="text-center mb-16">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                Milestones
+            <div className="max-w-2xl mb-16">
+              <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                Across Lebanon
               </p>
-              <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
-                Our Journey Through Time
-              </SplitText>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-                Six decades of dedication to preserving Lebanon&apos;s cultural
-                treasures.
-              </p>
+              <h2 className="font-display uppercase tracking-[0.03em] text-4xl md:text-5xl leading-[1.1]">
+                Where we work
+              </h2>
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-            {milestones.map((milestone, index) => (
-              <Reveal key={milestone.year} delay={index * 80}>
-                <div className="bg-secondary/50 p-8 md:p-10 h-full">
-                  <span className="font-serif text-4xl font-bold text-primary/35 block mb-3">
-                    {milestone.year}
-                  </span>
-                  <h3 className="font-serif text-xl font-bold mb-2">
-                    {milestone.title}
+          {/* Regional sections */}
+          <div className="mb-20">
+            {regions.map((region, index) => (
+              <Reveal key={region.name} delay={index * 80}>
+                <div className="group border-t border-border last:border-b py-6 md:py-7 grid md:grid-cols-12 gap-2 md:gap-8 items-baseline">
+                  <h3 className="md:col-span-4 font-display text-2xl tracking-[0.02em] group-hover:text-primary transition-colors duration-300">
+                    {region.name}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {milestone.description}
+                  <p className="md:col-span-8 text-base text-muted-foreground leading-relaxed">
+                    {region.role}
                   </p>
                 </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* Development projects */}
+          <Reveal>
+            <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-10">
+              Development Projects
+            </p>
+          </Reveal>
+          <div className="grid md:grid-cols-3 gap-x-12 gap-y-10">
+            {projects.map((project, index) => (
+              <Reveal key={project.title} delay={index * 100}>
+                <article className="border-t border-primary/40 pt-6 h-full">
+                  <p className="font-display text-[11px] uppercase tracking-[0.25em] text-muted-foreground mb-3">
+                    {project.period}
+                  </p>
+                  <h3 className="font-display text-xl tracking-[0.02em] mb-3">
+                    {project.title}
+                  </h3>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+                </article>
               </Reveal>
             ))}
           </div>
@@ -162,119 +236,43 @@ export default function AboutPage() {
       </section>
 
       {/* Decorative Scroll Text */}
-      <HorizontalText>OUR STORY SINCE 1960</HorizontalText>
+      <HorizontalText>DEPUIS 1960 · بيروت · BEYROUTH</HorizontalText>
 
-      {/* Mission & Vision */}
-      <section className="py-24">
-        <div className="container max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16">
-            <Reveal>
-              <div>
-                <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                  Purpose
-                </p>
-                <h2 className="font-serif text-3xl font-bold mb-6">
-                  Our Mission
-                </h2>
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  APSAD is committed to the identification, protection,
-                  conservation, and promotion of cultural and natural heritage in
-                  Lebanon. We strive to ensure that these invaluable assets are
-                  preserved for future generations, fostering a deeper
-                  understanding and appreciation of our collective history and
-                  identity through cutting-edge research, innovative education,
-                  and meaningful community engagement.
-                </p>
-              </div>
-            </Reveal>
-            <Reveal delay={150}>
-              <div>
-                <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                  Aspiration
-                </p>
-                <h2 className="font-serif text-3xl font-bold mb-6">
-                  Our Vision
-                </h2>
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  We envision a Lebanon where cultural and natural heritage is
-                  universally valued, meticulously protected, and serves as a
-                  dynamic source of knowledge, inspiration, and sustainable
-                  development for all communities, enriching lives and
-                  strengthening national identity while contributing to global
-                  heritage preservation efforts.
-                </p>
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      {/* Team */}
+      <div id="team" className="scroll-mt-20">
+        <TeamSection />
+      </div>
 
-      {/* Goals */}
-      <section className="py-24 bg-secondary/50">
-        <div className="container max-w-6xl mx-auto px-6">
-          <Reveal>
-            <div className="text-center mb-16">
-              <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-                Our Focus
-              </p>
-              <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
-                Strategic Goals
-              </SplitText>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-                Six comprehensive pillars that guide our mission to preserve and
-                promote Lebanon&apos;s invaluable heritage.
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
-            {goals.map((goal, index) => (
-              <Reveal key={goal.num} delay={index * 80}>
-                <div className="bg-secondary/50 p-8 md:p-10 h-full">
-                  <span className="font-serif text-4xl font-bold text-primary/35 block mb-4">
-                    {goal.num}
-                  </span>
-                  <h3 className="font-serif text-xl font-bold mb-3">
-                    {goal.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {goal.description}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team CTA */}
-      <section className="section-dark">
+      {/* CTA */}
+      <section className="section-dark border-t">
         <Reveal>
-          <div className="container max-w-4xl mx-auto px-6 py-24 text-center">
-            <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-              Our People
+          <div className="container max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
+            <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+              Continue the Story
             </p>
-            <SplitText as="h2" className="font-serif text-4xl md:text-5xl font-bold mb-6">
-              Join Our Expert Team
+            <SplitText
+              as="h2"
+              className="font-display uppercase tracking-[0.04em] text-4xl md:text-5xl leading-[1.1] mb-8"
+            >
+              Sixty-five years, and counting
             </SplitText>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-              APSAD is powered by a diverse team of passionate professionals,
-              researchers, and volunteers united by an unwavering commitment to
-              heritage preservation.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12 max-w-2xl mx-auto">
+              Every saved building in the record began with someone deciding it
+              mattered. Membership, volunteering, advocacy — choose your way in.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 asChild
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-[52px] font-display text-[12px] tracking-[0.25em] uppercase"
               >
                 <Link href="/get-involved">Get Involved</Link>
               </Button>
               <Button
                 asChild
                 variant="outline"
-                className="border-muted-foreground/30 hover:bg-muted/20 px-8 py-6 text-[13px] tracking-[0.15em] uppercase"
+                className="border-foreground/30 bg-transparent text-foreground hover:bg-foreground/10 hover:text-foreground px-8 h-[52px] font-display text-[12px] tracking-[0.25em] uppercase"
               >
-                <Link href="/gallery">See Our Work</Link>
+                <Link href="/gallery">See the Sites</Link>
               </Button>
             </div>
           </div>

@@ -23,87 +23,87 @@ import { SplitText } from "@/components/ui/split-text";
 const initialGalleryItems: GalleryItem[] = [
   {
     id: "1",
-    title: "Ancient Baalbek Temple Complex",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg", "/image-3.jpeg"],
+    title: "Baalbek Temple Complex",
+    imageUrls: ["/vision.jpeg"],
     description:
-      "Magnificent Roman temple complex featuring the Temple of Jupiter, one of the largest religious structures ever built. This UNESCO World Heritage site represents the pinnacle of Roman architectural achievement in the Eastern Mediterranean.",
+      "The Roman temple complex of Heliopolis, crowned by the Temple of Jupiter — among the largest religious structures ever raised, and the summit of Roman architecture in the Eastern Mediterranean.",
     historicalContext:
-      "Built during the 1st-3rd centuries CE, Baalbek was known as Heliopolis during Roman times. The complex includes the Temple of Jupiter, Temple of Bacchus, and Temple of Venus.",
+      "Built during the 1st-3rd centuries CE. Sites of this rank anchor APSAD's founding conviction: that Lebanon's stones carry a memory worth any effort to keep.",
     aiHints: ["Baalbek temple", "Jupiter columns", "Roman carving"],
   },
   {
     id: "2",
-    title: "Historic Byblos Port City",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg"],
+    title: "Byblos, City of the Alphabet",
+    imageUrls: ["/image-3.jpeg"],
     description:
-      "One of the world's oldest continuously inhabited cities, Byblos is the birthplace of the Phoenician alphabet and a crucial link in ancient Mediterranean trade networks.",
+      "One of the world's oldest continuously inhabited cities and the birthplace of the Phoenician alphabet — port, castle, and old souks together in a single living site.",
     historicalContext:
-      "Dating back over 7,000 years, Byblos gave its name to the Bible (Biblos) due to its role in papyrus trade.",
+      "Inhabited for over 7,000 years. APSAD's Kesrouan-Jbeil section restored a historic residence here as the region's tourist and information centre.",
     aiHints: ["Byblos port", "Crusader castle"],
   },
   {
     id: "3",
-    title: "Anjar Umayyad Archaeological Site",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg", "/image-3.jpeg", "/image-4.jpeg"],
+    title: "Anjar, the Umayyad City",
+    imageUrls: ["/image-2.jpeg"],
     description:
-      "The only inland commercial city established by the Umayyad dynasty, representing a unique example of 8th-century urban planning and Islamic architecture in Lebanon.",
+      "The only inland commercial city founded by the Umayyad dynasty — 8th-century urban planning preserved in arcaded stone.",
     historicalContext:
-      "Founded by Caliph Walid I around 705 CE, Anjar served as a commercial hub on the trade route between Damascus and the Mediterranean coast.",
-    aiHints: ["Anjar ruins", "Umayyad city", "Islamic architecture", "Anjar arches"],
+      "Founded by Caliph Walid I around 705 CE on the trade route between Damascus and the coast.",
+    aiHints: ["Anjar ruins", "Umayyad city", "Islamic architecture"],
   },
   {
     id: "4",
     title: "Qadisha Valley Monasteries",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg"],
+    imageUrls: ["/history.jpeg"],
     description:
-      "Sacred valley housing ancient Christian monasteries carved into cliffsides, representing centuries of spiritual devotion and architectural ingenuity.",
+      "The sacred valley's monasteries, carved into cliffsides — centuries of devotion answered by architectural ingenuity.",
     historicalContext:
-      "The Qadisha Valley has been a Christian refuge since the early centuries of Christianity. Maronite monks established monasteries here from the 4th century onwards.",
+      "A Christian refuge since the earliest centuries; Maronite monks established monasteries here from the 4th century onward.",
     aiHints: ["Qadisha monastery", "cliff dwelling"],
   },
   {
     id: "5",
-    title: "Ancient Tyre Archaeological Complex",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg", "/image-3.jpeg"],
+    title: "Tyre, Queen of the Seas",
+    imageUrls: ["/mission.jpeg"],
     description:
-      "Legendary Phoenician city known for its purple dye production and maritime prowess, featuring extensive Roman ruins including a massive hippodrome.",
+      "The greatest of the Phoenician cities, famed for its purple dye and its fleets — with Roman ruins that include a vast hippodrome.",
     historicalContext:
-      "Tyre was the greatest of Phoenician cities, founding colonies across the Mediterranean including Carthage.",
+      "Tyre founded colonies across the Mediterranean, Carthage among them.",
     aiHints: ["Tyre ruins", "Roman hippodrome", "Phoenician city"],
   },
   {
     id: "6",
-    title: "Traditional Lebanese Architecture",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg"],
+    title: "The Triple-Arch House",
+    imageUrls: ["/hero.jpeg"],
     description:
-      "Exemplary traditional Lebanese house featuring the iconic triple arch design, showcasing local stone masonry and architectural harmony with the landscape.",
+      "The iconic architecture of the traditional Lebanese house — three arches, red tile, local stone masonry in harmony with the landscape.",
     historicalContext:
-      "Traditional Lebanese architecture evolved over centuries, incorporating Ottoman, Arab, and Mediterranean influences.",
+      "Houses of this kind are the heart of APSAD's work: around one hundred have been saved through the association's plans, drawings, and classifications.",
     aiHints: ["Lebanese house", "triple arch"],
   },
   {
     id: "7",
-    title: "Roman Aqueduct System",
-    imageUrls: ["/image-1.jpeg"],
+    title: "Hammam el-Jédid, Tripoli",
+    imageUrls: ["/image-4.jpeg"],
     description:
-      "Remarkable example of Roman hydraulic engineering, demonstrating the sophisticated water management systems that supplied ancient Lebanese cities.",
+      "The 18th-century bathhouse of Tripoli — domed chambers and stone arcades returned to light in one of APSAD's earliest restorations.",
     historicalContext:
-      "Roman aqueducts in Lebanon were engineering marvels that supplied water to major cities.",
-    aiHints: ["Roman aqueduct"],
+      "Restored in 1964 with the Directorate General of Antiquities, four years after the association's founding.",
+    aiHints: ["Tripoli hammam", "Ottoman bathhouse"],
   },
   {
     id: "8",
-    title: "Tripoli's Historic Khan",
-    imageUrls: ["/image-1.jpeg", "/image-2.jpeg", "/image-3.jpeg"],
+    title: "Khan al-Khayatin, Tripoli",
+    imageUrls: ["/image-1.jpeg"],
     description:
-      "Magnificent example of Mamluk commercial architecture, serving as a trading center and caravanserai along historic trade routes.",
+      "The tailors' khan of old Tripoli — Mamluk commercial architecture serving as caravanserai and covered market on the historic trade routes.",
     historicalContext:
-      "Built during the Mamluk period (13th-16th centuries), this khan represents the architectural and commercial heritage of medieval Tripoli.",
-    aiHints: ["Tripoli khan", "Ottoman architecture", "Mamluk caravanserai"],
+      "APSAD drew restoration studies for Khan al-Khayatin in 1965, a year after restoring Tripoli's 18th-century Hammam el-Jédid with the DGA.",
+    aiHints: ["Tripoli khan", "Mamluk caravanserai"],
   },
 ];
 
-const categories = ["All", "Temples", "Cities", "Monasteries", "Architecture"];
+const categories = ["All", "Roman", "Phoenician", "Monasteries", "Houses"];
 
 /**
  * Bento span assignment — repeating 5-item pattern fills exactly 3 rows
@@ -143,20 +143,18 @@ export default function GalleryPage() {
   useEffect(() => {
     let filtered = galleryItems;
 
+    const matches = (item: GalleryItem, term: string) =>
+      [item.title, item.description, item.historicalContext]
+        .join(" ")
+        .toLowerCase()
+        .includes(term.toLowerCase());
+
     if (selectedCategory !== "All") {
-      filtered = filtered.filter(
-        (item) =>
-          item.title.toLowerCase().includes(selectedCategory.toLowerCase()) ||
-          item.description.toLowerCase().includes(selectedCategory.toLowerCase())
-      );
+      filtered = filtered.filter((item) => matches(item, selectedCategory));
     }
 
     if (searchQuery) {
-      filtered = filtered.filter(
-        (item) =>
-          item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.description.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+      filtered = filtered.filter((item) => matches(item, searchQuery));
     }
 
     setFilteredItems(filtered);
@@ -195,19 +193,19 @@ export default function GalleryPage() {
   }, [selectedItem, nextImage, prevImage]);
 
   return (
-    <div className="pt-20">
+    <div className="section-dark min-h-screen pt-20">
       {/* Header */}
       <section className="py-16 md:py-24 border-b border-border">
         <div className="container max-w-6xl mx-auto px-6 text-center">
-          <p className="text-[13px] uppercase tracking-[0.2em] text-primary mb-4 font-medium">
-            Heritage Gallery
+          <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+            The Catalogue
           </p>
-          <SplitText as="h1" className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-            Our Work
+          <SplitText as="h1" className="font-display uppercase tracking-[0.05em] text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8">
+            The Sites
           </SplitText>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-            Explore the diverse range of Lebanese heritage sites and projects
-            APSAD is dedicated to preserving.
+            The places APSAD works for — temples and souks, monasteries and
+            family houses, photographed as they deserve to be seen.
           </p>
 
           {/* Search & Filters */}
@@ -237,7 +235,7 @@ export default function GalleryPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-5 py-2.5 min-h-[44px] text-[12px] uppercase tracking-[0.1em] font-medium transition-colors duration-200 border cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                  className={`px-5 py-2.5 min-h-[44px] font-display text-[12px] uppercase tracking-[0.18em] transition-colors duration-200 border cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
                     selectedCategory === category
                       ? "bg-foreground text-background border-foreground"
                       : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
@@ -274,7 +272,7 @@ export default function GalleryPage() {
             </div>
           ) : filteredItems.length === 0 ? (
             <div className="text-center py-20">
-              <p className="font-serif text-2xl font-bold mb-4">
+              <p className="font-display text-2xl mb-4">
                 No sites found
               </p>
               <p className="text-muted-foreground mb-6">
@@ -334,7 +332,7 @@ export default function GalleryPage() {
 
                   {/* Bottom info — always visible title, description on hover */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
-                    <h3 className="font-serif text-white text-sm md:text-base font-bold leading-tight drop-shadow-lg">
+                    <h3 className="font-display text-white text-sm md:text-base leading-tight drop-shadow-lg">
                       {item.title}
                     </h3>
                     <p className="text-white/70 text-[12px] mt-1 line-clamp-1 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -411,10 +409,10 @@ export default function GalleryPage() {
                 <div className="flex-1 overflow-y-auto">
                   {/* Title block */}
                   <div className="px-6 pt-6 pb-5 border-b border-border">
-                    <p className="text-[11px] uppercase tracking-[0.2em] text-primary font-medium mb-2">
+                    <p className="font-display text-[11px] uppercase tracking-[0.3em] text-primary mb-2">
                       Heritage Site
                     </p>
-                    <h2 className="font-serif text-xl md:text-2xl font-bold leading-tight">
+                    <h2 className="font-display text-xl md:text-2xl leading-tight">
                       {selectedItem.title}
                     </h2>
                   </div>

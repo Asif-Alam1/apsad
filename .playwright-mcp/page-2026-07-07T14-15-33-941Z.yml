@@ -1,0 +1,115 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - banner [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - link "APSAD Depuis 1960" [ref=f5e5]:
+          - /url: /
+          - generic [ref=f5e6]:
+            - generic [ref=f5e7]: APSAD
+            - generic [ref=f5e8]: Depuis 1960
+        - navigation "Primary" [ref=f5e9]:
+          - link "Home" [ref=f5e10]:
+            - /url: /
+            - text: Home
+          - link "The Association" [ref=f5e11]:
+            - /url: /about
+            - text: The Association
+          - link "The Sites" [ref=f5e12]:
+            - /url: /gallery
+            - text: The Sites
+          - link "Get Involved" [ref=f5e14]:
+            - /url: /get-involved
+            - text: Get Involved
+        - link "Become a Member" [ref=f5e16]:
+          - /url: /get-involved
+    - main [ref=f5e17]:
+      - generic [ref=f5e21]:
+        - paragraph [ref=f5e22]: The Catalogue
+        - heading "The Sites" [level=1] [ref=f5e23]:
+          - generic [ref=f5e25]: The
+          - generic [ref=f5e27]: Sites
+        - paragraph [ref=f5e28]: The places APSAD works for — temples and souks, monasteries and family houses, photographed as they deserve to be seen.
+        - generic [ref=f5e29]:
+          - generic [ref=f5e30]:
+            - img [ref=f5e31]
+            - textbox "Search heritage sites..." [ref=f5e34]
+          - generic [ref=f5e35]:
+            - button "All" [ref=f5e36]
+            - button "Roman" [ref=f5e37]
+            - button "Phoenician" [ref=f5e38]
+            - button "Monasteries" [ref=f5e39]
+            - button "Houses" [ref=f5e40]
+          - paragraph [ref=f5e41]: Loading...
+    - contentinfo [ref=f5e53]:
+      - paragraph [ref=f5e55]: APSAD
+      - generic [ref=f5e56]:
+        - generic [ref=f5e57]:
+          - generic [ref=f5e58]:
+            - link "APSAD APSAD" [ref=f5e59]:
+              - /url: /
+              - img "APSAD" [ref=f5e60]
+              - generic [ref=f5e61]: APSAD
+            - paragraph [ref=f5e62]: Association pour la Protection des Sites et Anciennes Demeures au Liban
+            - paragraph [ref=f5e63]: Founded in 1960 to identify, protect, and restore Lebanon's architectural treasures and natural sites — a hundred saved so far, and the work continues.
+            - generic [ref=f5e64]:
+              - link "APSAD on Facebook" [ref=f5e65]:
+                - /url: https://www.facebook.com/apsad.lebanon/
+                - img [ref=f5e66]
+              - link "APSAD on Instagram" [ref=f5e68]:
+                - /url: https://www.instagram.com/apsad_lebanon/
+                - img [ref=f5e69]
+          - generic [ref=f5e72]:
+            - heading "The Association" [level=4] [ref=f5e73]
+            - list [ref=f5e74]:
+              - listitem [ref=f5e75]:
+                - link "Who We Are" [ref=f5e76]:
+                  - /url: /about
+                  - text: Who We Are
+              - listitem [ref=f5e77]:
+                - link "Our History" [ref=f5e78]:
+                  - /url: /about#history
+                  - text: Our History
+              - listitem [ref=f5e79]:
+                - link "Leadership" [ref=f5e80]:
+                  - /url: /about#team
+                  - text: Leadership
+              - listitem [ref=f5e81]:
+                - link "The Sites" [ref=f5e82]:
+                  - /url: /gallery
+                  - text: The Sites
+          - generic [ref=f5e83]:
+            - heading "Take Part" [level=4] [ref=f5e84]
+            - list [ref=f5e85]:
+              - listitem [ref=f5e86]:
+                - link "Become a Member" [ref=f5e87]:
+                  - /url: /get-involved
+                  - text: Become a Member
+              - listitem [ref=f5e88]:
+                - link "Volunteer" [ref=f5e89]:
+                  - /url: /get-involved
+                  - text: Volunteer
+              - listitem [ref=f5e90]:
+                - link "Write to Us" [ref=f5e91]:
+                  - /url: /get-involved#contact
+                  - text: Write to Us
+          - generic [ref=f5e92]:
+            - heading "The Salon" [level=4] [ref=f5e93]
+            - generic [ref=f5e94]:
+              - paragraph [ref=f5e95]:
+                - text: Sursock Street, Aoun Building
+                - text: Achrafieh, Beirut — Lebanon
+                - text: P.O.Box 11-154
+              - paragraph [ref=f5e96]:
+                - link "+961 1 336 368" [ref=f5e97]:
+                  - /url: tel:+9611336368
+                - link "info@apsad.org" [ref=f5e98]:
+                  - /url: mailto:info@apsad.org
+        - paragraph [ref=f5e100]: Europa Nostra · ICOMOS Lebanon · World Monuments Fund · Patrimoine Sans Frontières
+      - generic [ref=f5e102]:
+        - paragraph [ref=f5e103]: © 2026 APSAD. All rights reserved.
+        - paragraph [ref=f5e104]: Guardians of Lebanese heritage since 1960
+    - button "Open heritage assistant" [ref=f5e105]:
+      - img [ref=f5e106]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f5e108]
