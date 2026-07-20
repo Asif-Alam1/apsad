@@ -1,0 +1,96 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - banner [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - link "APSAD Depuis 1960" [ref=f6e5]:
+          - /url: /
+          - generic [ref=f6e6]:
+            - generic [ref=f6e7]: APSAD
+            - generic [ref=f6e8]: Depuis 1960
+        - navigation "Primary" [ref=f6e9]:
+          - link "Home" [ref=f6e10]:
+            - /url: /
+          - link "The Association" [ref=f6e11]:
+            - /url: /about
+          - link "The Sites" [ref=f6e12]:
+            - /url: /gallery
+          - link "Get Involved" [ref=f6e14]:
+            - /url: /get-involved
+        - link "Become a Member" [ref=f6e16]:
+          - /url: /get-involved
+    - main [ref=f6e17]:
+      - generic [ref=f6e21]:
+        - paragraph [ref=f6e22]: The Photographic Archive
+        - heading "The Sites" [level=1] [ref=f6e23]:
+          - generic [ref=f6e24]: The
+          - generic [ref=f6e26]: Sites
+        - paragraph [ref=f6e28]: Souks and khans, palaces and villages — from the association's own archive, photographed by APSAD's surveyors across sixty-five years of fieldwork.
+        - generic [ref=f6e29]:
+          - textbox "Search heritage sites..." [ref=f6e34]
+          - generic [ref=f6e35]:
+            - button "All" [ref=f6e36]
+            - button "Beirut" [ref=f6e37]
+            - button "Tripoli" [ref=f6e38]
+            - button "Mountain" [ref=f6e39]
+            - button "Coast" [ref=f6e40]
+          - paragraph [ref=f6e41]: Loading...
+    - contentinfo [ref=f6e53]:
+      - paragraph [ref=f6e55]: APSAD
+      - generic [ref=f6e56]:
+        - generic [ref=f6e57]:
+          - generic [ref=f6e58]:
+            - link "APSAD APSAD" [ref=f6e59]:
+              - /url: /
+              - img "APSAD" [ref=f6e60]
+              - generic [ref=f6e61]: APSAD
+            - paragraph [ref=f6e62]: Association pour la Protection des Sites et Anciennes Demeures au Liban
+            - paragraph [ref=f6e63]: Founded in 1960 to identify, protect, and restore Lebanon's architectural treasures and natural sites — a hundred saved so far, and the work continues.
+            - generic [ref=f6e64]:
+              - link "APSAD on Facebook" [ref=f6e65]:
+                - /url: https://www.facebook.com/apsad.lebanon/
+              - link "APSAD on Instagram" [ref=f6e68]:
+                - /url: https://www.instagram.com/apsad_lebanon/
+          - generic [ref=f6e72]:
+            - heading "The Association" [level=4] [ref=f6e73]
+            - list [ref=f6e74]:
+              - listitem [ref=f6e75]:
+                - link "Who We Are" [ref=f6e76]:
+                  - /url: /about
+              - listitem [ref=f6e77]:
+                - link "Our History" [ref=f6e78]:
+                  - /url: /about#history
+              - listitem [ref=f6e79]:
+                - link "Leadership" [ref=f6e80]:
+                  - /url: /about#team
+              - listitem [ref=f6e81]:
+                - link "The Sites" [ref=f6e82]:
+                  - /url: /gallery
+          - generic [ref=f6e83]:
+            - heading "Take Part" [level=4] [ref=f6e84]
+            - list [ref=f6e85]:
+              - listitem [ref=f6e86]:
+                - link "Become a Member" [ref=f6e87]:
+                  - /url: /get-involved
+              - listitem [ref=f6e88]:
+                - link "Volunteer" [ref=f6e89]:
+                  - /url: /get-involved
+              - listitem [ref=f6e90]:
+                - link "Write to Us" [ref=f6e91]:
+                  - /url: /get-involved#contact
+          - generic [ref=f6e92]:
+            - heading "The Salon" [level=4] [ref=f6e93]
+            - generic [ref=f6e94]:
+              - paragraph [ref=f6e95]: Sursock Street, Aoun BuildingAchrafieh, Beirut — LebanonP.O.Box 11-154
+              - paragraph [ref=f6e96]:
+                - link "+961 1 336 368" [ref=f6e97]:
+                  - /url: tel:+9611336368
+                - link "info@apsad.org" [ref=f6e98]:
+                  - /url: mailto:info@apsad.org
+        - paragraph [ref=f6e100]: Europa Nostra · ICOMOS Lebanon · World Monuments Fund · Patrimoine Sans Frontières
+      - generic [ref=f6e102]:
+        - paragraph [ref=f6e103]: © 2026 APSAD. All rights reserved.
+        - paragraph [ref=f6e104]: Guardians of Lebanese heritage since 1960
+    - button "Open heritage assistant" [ref=f6e105]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f6e108]

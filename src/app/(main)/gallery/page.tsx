@@ -23,87 +23,167 @@ import { SplitText } from "@/components/ui/split-text";
 const initialGalleryItems: GalleryItem[] = [
   {
     id: "1",
-    title: "Baalbek Temple Complex",
-    imageUrls: ["/vision.jpeg"],
+    title: "The Jeweler's Souk, Beirut",
+    imageUrls: ["/archive/bijoutiers-1.jpg", "/archive/bijoutiers-2.jpg", "/archive/bijoutiers-3.jpg"],
     description:
-      "The Roman temple complex of Heliopolis, crowned by the Temple of Jupiter — among the largest religious structures ever raised, and the summit of Roman architecture in the Eastern Mediterranean.",
+      "The goldsmiths' souk of the Borj, photographed by APSAD's surveyors in the heart of old Beirut.",
     historicalContext:
-      "Built during the 1st-3rd centuries CE. Sites of this rank anchor APSAD's founding conviction: that Lebanon's stones carry a memory worth any effort to keep.",
-    aiHints: ["Baalbek temple", "Jupiter columns", "Roman carving"],
+      "APSAD studied the souk in 1964, and in 1978 drew the plans for its reconstruction after the war.",
+    aiHints: ["jewelers souk", "old Beirut"],
   },
   {
     id: "2",
-    title: "Byblos, City of the Alphabet",
-    imageUrls: ["/image-3.jpeg"],
+    title: "Beirut from the Air",
+    imageUrls: ["/archive/beirut-aerial-1.jpg", "/archive/beirut-aerial-2.jpg"],
     description:
-      "One of the world's oldest continuously inhabited cities and the birthplace of the Phoenician alphabet — port, castle, and old souks together in a single living site.",
+      "Aerial surveys of Beirut from the association's photographic archive \u2014 the city's old fabric seen whole.",
     historicalContext:
-      "Inhabited for over 7,000 years. APSAD's Kesrouan-Jbeil section restored a historic residence here as the region's tourist and information centre.",
-    aiHints: ["Byblos port", "Crusader castle"],
+      "Views like these underpinned APSAD's campaigns against the disfigurement the 1960 appeal warned of.",
+    aiHints: ["aerial Beirut"],
   },
   {
     id: "3",
-    title: "Anjar, the Umayyad City",
-    imageUrls: ["/image-2.jpeg"],
+    title: "Hammam el-J\u00e9did, Tripoli",
+    imageUrls: ["/archive/hammam-1.jpg", "/archive/hammam-2.jpg", "/archive/hammam-3.jpg"],
     description:
-      "The only inland commercial city founded by the Umayyad dynasty — 8th-century urban planning preserved in arcaded stone.",
+      "The 18th-century bathhouse of Tripoli \u2014 domed chambers and stone arcades in the association's own photographs.",
     historicalContext:
-      "Founded by Caliph Walid I around 705 CE on the trade route between Damascus and the coast.",
-    aiHints: ["Anjar ruins", "Umayyad city", "Islamic architecture"],
+      "Restored in 1964 with the Directorate General of Antiquities \u2014 one of APSAD's first restorations.",
+    aiHints: ["Tripoli hammam"],
   },
   {
     id: "4",
-    title: "Qadisha Valley Monasteries",
-    imageUrls: ["/history.jpeg"],
+    title: "The Khans of Tripoli",
+    imageUrls: ["/archive/khan-khayatin.jpg", "/archive/khan-saboun.jpg", "/archive/khan-tamassili.jpg"],
     description:
-      "The sacred valley's monasteries, carved into cliffsides — centuries of devotion answered by architectural ingenuity.",
+      "Khan al-Khayatin, Khan el-Saboun, and Khan el-Tamassili at El-Mina \u2014 the caravanserais of Tripoli's old city.",
     historicalContext:
-      "A Christian refuge since the earliest centuries; Maronite monks established monasteries here from the 4th century onward.",
-    aiHints: ["Qadisha monastery", "cliff dwelling"],
+      "APSAD drew restoration studies for Khan al-Khayatin in 1965; the khans remain touchstones of the association's northern work.",
+    aiHints: ["Tripoli khan"],
   },
   {
     id: "5",
-    title: "Tyre, Queen of the Seas",
-    imageUrls: ["/mission.jpeg"],
+    title: "Houses of Beirut",
+    imageUrls: ["/archive/beirut-khoury.jpg", "/archive/beirut-arts-metiers.jpg"],
     description:
-      "The greatest of the Phoenician cities, famed for its purple dye and its fleets — with Roman ruins that include a vast hippodrome.",
+      "The Bechara el-Khoury house and the H\u00f4pital des Arts et M\u00e9tiers \u2014 Beirut's endangered mansions on file.",
     historicalContext:
-      "Tyre founded colonies across the Mediterranean, Carthage among them.",
-    aiHints: ["Tyre ruins", "Roman hippodrome", "Phoenician city"],
+      "The Arts et M\u00e9tiers building was the subject of a 1979 APSAD restoration study; house dossiers like these are how classification battles are won.",
+    aiHints: ["Beirut mansion"],
   },
   {
     id: "6",
-    title: "The Triple-Arch House",
-    imageUrls: ["/hero.jpeg"],
+    title: "Deir el-Qamar",
+    imageUrls: ["/archive/deirelkamar-1.jpg", "/archive/deirelkamar-2.jpg", "/archive/deirelkamar-3.jpg"],
     description:
-      "The iconic architecture of the traditional Lebanese house — three arches, red tile, local stone masonry in harmony with the landscape.",
+      "The silk souk, the serail, and the stone lanes of the mountain capital of the Chouf.",
     historicalContext:
-      "Houses of this kind are the heart of APSAD's work: around one hundred have been saved through the association's plans, drawings, and classifications.",
-    aiHints: ["Lebanese house", "triple arch"],
+      "APSAD drew plans for the old street in 1964 and made a rehabilitated residence its regional home here in 1972.",
+    aiHints: ["Deir el-Qamar"],
   },
   {
     id: "7",
-    title: "Hammam el-Jédid, Tripoli",
-    imageUrls: ["/image-4.jpeg"],
+    title: "Abey",
+    imageUrls: ["/archive/abey-1.jpg", "/archive/abey-2.jpg", "/archive/abey-3.jpg"],
     description:
-      "The 18th-century bathhouse of Tripoli — domed chambers and stone arcades returned to light in one of APSAD's earliest restorations.",
+      "The mountain village of Abey, where the association's field record begins.",
     historicalContext:
-      "Restored in 1964 with the Directorate General of Antiquities, four years after the association's founding.",
-    aiHints: ["Tripoli hammam", "Ottoman bathhouse"],
+      "APSAD's first restoration, 1962: the historic El-Dine residence, later chosen as the British Ambassador's residence.",
+    aiHints: ["Abey village"],
   },
   {
     id: "8",
-    title: "Khan al-Khayatin, Tripoli",
-    imageUrls: ["/image-1.jpeg"],
+    title: "Beiteddine",
+    imageUrls: ["/archive/beiteddine-1.jpg", "/archive/beiteddine-2.jpg"],
     description:
-      "The tailors' khan of old Tripoli — Mamluk commercial architecture serving as caravanserai and covered market on the historic trade routes.",
+      "The palace of the emirs and its mountain site, from the classification archive.",
     historicalContext:
-      "APSAD drew restoration studies for Khan al-Khayatin in 1965, a year after restoring Tripoli's 18th-century Hammam el-Jédid with the DGA.",
-    aiHints: ["Tripoli khan", "Mamluk caravanserai"],
+      "The Green Folders \u2014 APSAD's site-by-site dossiers \u2014 record the palace of Emir Amin among Lebanon's first-rank treasures.",
+    aiHints: ["Beiteddine palace"],
+  },
+  {
+    id: "9",
+    title: "Jounieh",
+    imageUrls: ["/archive/jounieh-1.jpg", "/archive/jounieh-2.jpg", "/archive/jounieh-3.jpg"],
+    description:
+      "The bay, the old souk, and the houses along the sea \u2014 the coast town before the towers.",
+    historicalContext:
+      "APSAD studied the old souk and principal street in 1963, and led the souk's rehabilitation and pedestrian revival from 2001.",
+    aiHints: ["Jounieh bay"],
+  },
+  {
+    id: "10",
+    title: "Byblos",
+    imageUrls: ["/archive/byblos-1.jpg", "/archive/byblos-2.jpg", "/archive/byblos-3.jpg"],
+    description:
+      "The port, the crusader church of St. John, and the archaeological site of the coast's oldest city.",
+    historicalContext:
+      "APSAD's Kesrouan-Jbeil section restored a historic residence here as the region's tourist and information centre.",
+    aiHints: ["Byblos port"],
+  },
+  {
+    id: "11",
+    title: "Sofar",
+    imageUrls: ["/archive/sofar-1.jpg", "/archive/sofar-2.jpg"],
+    description:
+      "The Sursock palace at Sofar \u2014 the grand mountain villa of Lebanon's summering age.",
+    historicalContext:
+      "Photographed for the association's archive; the Sursock name also marks APSAD's own street in Achrafieh.",
+    aiHints: ["Sofar palace"],
+  },
+  {
+    id: "12",
+    title: "Salima",
+    imageUrls: ["/archive/salima-1.jpg", "/archive/salima-2.jpg"],
+    description:
+      "The Nagib Asmar house and the mountain village whose architecture was judged exceptional enough to save whole.",
+    historicalContext:
+      "With Patrimoine Sans Fronti\u00e8res, APSAD's two-year study led the Ministry of Culture to classify seventy of Salima's residences as historic.",
+    aiHints: ["Salima village"],
+  },
+  {
+    id: "13",
+    title: "Enfeh",
+    imageUrls: ["/archive/enfeh-1.jpg", "/archive/enfeh-2.jpg"],
+    description:
+      "Rock-cut salinas and chapels on the coast's most fragile peninsula.",
+    historicalContext:
+      "With APSAD's collaboration, the World Monuments Fund placed Enfeh among the 100 most endangered sites of the world.",
+    aiHints: ["Enfeh peninsula"],
+  },
+  {
+    id: "14",
+    title: "The Qadisha Valley",
+    imageUrls: ["/archive/kadisha-1.jpg", "/archive/kadisha-2.jpg"],
+    description:
+      "Deir Qannoubin and the holy valley \u2014 monasteries in the mountain cliffs.",
+    historicalContext:
+      "From the Green Folders: the valley's monasteries documented site by site for their protection.",
+    aiHints: ["Qadisha monastery"],
+  },
+  {
+    id: "15",
+    title: "Nahr el-Kalb",
+    imageUrls: ["/archive/nahrelkalb.jpg"],
+    description:
+      "The old bridge at the Dog River, where every coast-bound empire left its stele.",
+    historicalContext:
+      "In 2016 APSAD began a partnership with Factum Foundation to study the river's ancient stelae for preservation.",
+    aiHints: ["Nahr el-Kalb"],
+  },
+  {
+    id: "16",
+    title: "Batroun",
+    imageUrls: ["/archive/batroun-wall.jpg"],
+    description:
+      "The Phoenician sea wall \u2014 the coast town's oldest defence, still holding the waves.",
+    historicalContext:
+      "APSAD studied Batroun's old souk in 1967 and restored the church of Mar Estephan in 1969.",
+    aiHints: ["Batroun wall"],
   },
 ];
 
-const categories = ["All", "Roman", "Phoenician", "Monasteries", "Houses"];
+const categories = ["All", "Beirut", "Tripoli", "Mountain", "Coast"];
 
 /**
  * Bento span assignment — repeating 5-item pattern fills exactly 3 rows
@@ -198,14 +278,15 @@ export default function GalleryPage() {
       <section className="py-16 md:py-24 border-b border-border">
         <div className="container max-w-6xl mx-auto px-6 text-center">
           <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
-            The Catalogue
+            The Photographic Archive
           </p>
           <SplitText as="h1" className="font-display uppercase tracking-[0.05em] text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8">
             The Sites
           </SplitText>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-            The places APSAD works for — temples and souks, monasteries and
-            family houses, photographed as they deserve to be seen.
+            Souks and khans, palaces and villages — from the association&apos;s
+            own archive, photographed by APSAD&apos;s surveyors across sixty-five
+            years of fieldwork.
           </p>
 
           {/* Search & Filters */}

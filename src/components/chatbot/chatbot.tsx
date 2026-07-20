@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageCircle, Send, X, ArrowRight } from "lucide-react";
 import { answerQuestionsAboutAPSAD } from "@/ai/flows/answer-questions-about-apsad";
@@ -138,7 +138,9 @@ export function Chatbot() {
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-border">
           <div>
-            <h2 className="font-display text-lg">APSAD Assistant</h2>
+            <SheetTitle asChild>
+              <h2 className="font-display text-lg font-normal">APSAD Assistant</h2>
+            </SheetTitle>
             <p className="font-display text-[11px] text-primary tracking-[0.25em] uppercase mt-1">Heritage Expert</p>
           </div>
           <button

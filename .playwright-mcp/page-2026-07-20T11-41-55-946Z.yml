@@ -1,0 +1,170 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - banner [ref=f7e3]:
+      - generic [ref=f7e4]:
+        - link "APSAD Depuis 1960" [ref=f7e5]:
+          - /url: /
+          - generic [ref=f7e6]:
+            - generic [ref=f7e7]: APSAD
+            - generic [ref=f7e8]: Depuis 1960
+        - navigation "Primary" [ref=f7e9]:
+          - link "Home" [ref=f7e10]:
+            - /url: /
+          - link "The Association" [ref=f7e11]:
+            - /url: /about
+          - link "The Sites" [ref=f7e12]:
+            - /url: /gallery
+          - link "Get Involved" [ref=f7e13]:
+            - /url: /get-involved
+        - link "Become a Member" [ref=f7e16]:
+          - /url: /get-involved
+    - main [ref=f7e17]:
+      - generic [ref=f7e19]:
+        - generic [ref=f7e22]:
+          - paragraph [ref=f7e23]: The Invitation
+          - heading "Get Involved" [level=1] [ref=f7e24]:
+            - generic [ref=f7e25]: Get
+            - generic [ref=f7e27]: Involved
+          - paragraph [ref=f7e29]: APSAD has always been carried by its members. Volunteering, membership, advocacy, partnership — choose your way into the record.
+        - generic [ref=f7e32]:
+          - generic [ref=f7e34]:
+            - img "Volunteers collaborating on an APSAD heritage project" [ref=f7e38]
+            - generic [ref=f7e39]:
+              - heading "Volunteer Your Time" [level=3] [ref=f7e40]
+              - paragraph [ref=f7e41]: Lend your skills to the work itself — from field restoration to archival research.
+              - paragraph [ref=f7e42]: "APSAD welcomes volunteers of every background: hands-on restoration, digital archiving, educational outreach, or the quiet administration that keeps a sixty-five-year-old association running."
+              - link "Write to Us" [ref=f7e43]:
+                - /url: "#contact"
+          - generic [ref=f7e45]:
+            - img "Members gathered at an APSAD event" [ref=f7e49]
+            - generic [ref=f7e50]:
+              - heading "Become a Member" [level=3] [ref=f7e51]
+              - paragraph [ref=f7e52]: Join the assembly that has carried APSAD since 1960 and sustain the work with regular support.
+              - paragraph [ref=f7e53]: Membership provides the association's vital regular funding — and admits you to a company that has included architects, historians, and patrons of Lebanese heritage for six decades.
+              - link "Write to Us" [ref=f7e54]:
+                - /url: "#contact"
+          - generic [ref=f7e56]:
+            - img "A historic Lebanese façade under advocacy protection" [ref=f7e60]
+            - generic [ref=f7e61]:
+              - heading "Advocate for Heritage" [level=3] [ref=f7e62]
+              - paragraph [ref=f7e63]: Use your voice where it counts — APSAD's campaigns have moved ministers, municipalities, and the Central Bank.
+              - paragraph [ref=f7e64]: From letters to the Ministry of Culture to public complaints against demolitions, advocacy is how endangered houses stay standing. Share the campaigns, write, speak, and hold the line with us.
+              - link "Write to Us" [ref=f7e65]:
+                - /url: "#contact"
+          - generic [ref=f7e67]:
+            - img "Institutional partners meeting with APSAD" [ref=f7e71]
+            - generic [ref=f7e72]:
+              - heading "Partner With Us" [level=3] [ref=f7e73]
+              - paragraph [ref=f7e74]: Institutions and enterprises have always stood behind the association's largest undertakings.
+              - paragraph [ref=f7e75]: APSAD works with the DGA, municipalities, foundations, and international bodies — from Factum Foundation at Nahr el-Kalb to Mercy Corps in the schools. Joint projects, sponsorships, and studies are how the biggest work gets done.
+              - link "Write to Us" [ref=f7e76]:
+                - /url: "#contact"
+        - generic [ref=f7e79]:
+          - generic [ref=f7e81]:
+            - paragraph [ref=f7e82]: The Member's Privileges
+            - heading "What membership brings" [level=2] [ref=f7e83]
+            - paragraph [ref=f7e84]: Beyond sustaining the restorations, members belong to the life of the association — its salons, its journeys, its assemblies.
+          - list [ref=f7e86]:
+            - listitem [ref=f7e87]:
+              - generic [ref=f7e89]: The association's newsletters and publications, in three languages
+            - listitem [ref=f7e90]:
+              - generic [ref=f7e92]: Priority access to concerts, exhibitions, and events
+            - listitem [ref=f7e93]:
+              - generic [ref=f7e95]: Guided visits of old houses and sites across Lebanon
+            - listitem [ref=f7e96]:
+              - generic [ref=f7e98]: A voice and a vote in the general assembly
+        - generic [ref=f7e101]:
+          - generic [ref=f7e103]:
+            - paragraph [ref=f7e104]: Write to Us
+            - heading "The salon is open" [level=2] [ref=f7e105]
+            - paragraph [ref=f7e106]: Questions about the projects, membership, or a building you believe should be saved — we are eager to hear from you.
+            - list [ref=f7e107]:
+              - listitem [ref=f7e108]:
+                - generic [ref=f7e112]: Sursock Street, Aoun Building, GFAchrafieh, Beirut — P.O.Box 11-154
+              - listitem [ref=f7e113]:
+                - link "+961 1 336 368" [ref=f7e116]:
+                  - /url: tel:+9611336368
+              - listitem [ref=f7e117]:
+                - link "info@apsad.org" [ref=f7e121]:
+                  - /url: mailto:info@apsad.org
+          - generic [ref=f7e123]:
+            - generic [ref=f7e124]:
+              - generic [ref=f7e125]:
+                - generic [ref=f7e126]: Full Name
+                - textbox "Full Name" [ref=f7e127]:
+                  - /placeholder: Jane Doe
+              - generic [ref=f7e128]:
+                - generic [ref=f7e129]: Email Address
+                - textbox "Email Address" [ref=f7e130]:
+                  - /placeholder: jane@example.com
+            - generic [ref=f7e131]:
+              - generic [ref=f7e132]: Subject
+              - textbox "Subject" [ref=f7e133]:
+                - /placeholder: How can we help?
+            - generic [ref=f7e134]:
+              - generic [ref=f7e135]: Message
+              - textbox "Message" [ref=f7e136]:
+                - /placeholder: Tell us about your interest in APSAD's work...
+            - generic [ref=f7e137]:
+              - paragraph [ref=f7e138]: We respond within 24 hours.
+              - button "Send Message" [ref=f7e139]
+    - contentinfo [ref=f7e140]:
+      - paragraph [ref=f7e142]: APSAD
+      - generic [ref=f7e143]:
+        - generic [ref=f7e144]:
+          - generic [ref=f7e145]:
+            - link "APSAD APSAD" [ref=f7e146]:
+              - /url: /
+              - img "APSAD" [ref=f7e147]
+              - generic [ref=f7e148]: APSAD
+            - paragraph [ref=f7e149]: Association pour la Protection des Sites et Anciennes Demeures au Liban
+            - paragraph [ref=f7e150]: Founded in 1960 to identify, protect, and restore Lebanon's architectural treasures and natural sites — a hundred saved so far, and the work continues.
+            - generic [ref=f7e151]:
+              - link "APSAD on Facebook" [ref=f7e152]:
+                - /url: https://www.facebook.com/apsad.lebanon/
+              - link "APSAD on Instagram" [ref=f7e155]:
+                - /url: https://www.instagram.com/apsad_lebanon/
+          - generic [ref=f7e159]:
+            - heading "The Association" [level=4] [ref=f7e160]
+            - list [ref=f7e161]:
+              - listitem [ref=f7e162]:
+                - link "Who We Are" [ref=f7e163]:
+                  - /url: /about
+              - listitem [ref=f7e164]:
+                - link "Our History" [ref=f7e165]:
+                  - /url: /about#history
+              - listitem [ref=f7e166]:
+                - link "Leadership" [ref=f7e167]:
+                  - /url: /about#team
+              - listitem [ref=f7e168]:
+                - link "The Sites" [ref=f7e169]:
+                  - /url: /gallery
+          - generic [ref=f7e170]:
+            - heading "Take Part" [level=4] [ref=f7e171]
+            - list [ref=f7e172]:
+              - listitem [ref=f7e173]:
+                - link "Become a Member" [ref=f7e174]:
+                  - /url: /get-involved
+              - listitem [ref=f7e175]:
+                - link "Volunteer" [ref=f7e176]:
+                  - /url: /get-involved
+              - listitem [ref=f7e177]:
+                - link "Write to Us" [ref=f7e178]:
+                  - /url: /get-involved#contact
+          - generic [ref=f7e179]:
+            - heading "The Salon" [level=4] [ref=f7e180]
+            - generic [ref=f7e181]:
+              - paragraph [ref=f7e182]: Sursock Street, Aoun BuildingAchrafieh, Beirut — LebanonP.O.Box 11-154
+              - paragraph [ref=f7e183]:
+                - link "+961 1 336 368" [ref=f7e184]:
+                  - /url: tel:+9611336368
+                - link "info@apsad.org" [ref=f7e185]:
+                  - /url: mailto:info@apsad.org
+        - paragraph [ref=f7e187]: Europa Nostra · ICOMOS Lebanon · World Monuments Fund · Patrimoine Sans Frontières
+      - generic [ref=f7e189]:
+        - paragraph [ref=f7e190]: © 2026 APSAD. All rights reserved.
+        - paragraph [ref=f7e191]: Guardians of Lebanese heritage since 1960
+    - button "Open heritage assistant" [ref=f7e192]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f7e195]

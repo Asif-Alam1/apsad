@@ -1,0 +1,118 @@
+- generic [ref=f2e6]:
+  - banner [ref=f2e8]:
+    - generic [ref=f2e9]:
+      - navigation [ref=f2e11]:
+        - generic [ref=f2e12]:
+          - list [ref=f2e13]:
+            - listitem [ref=f2e14]:
+              - link "Home" [ref=f2e15] [cursor=pointer]:
+                - /url: "#/"
+            - listitem [ref=f2e16]:
+              - link "About us" [ref=f2e17] [cursor=pointer]:
+                - /url: "#/content/aboutUs"
+            - listitem [ref=f2e18]:
+              - link "Our history" [ref=f2e19] [cursor=pointer]:
+                - /url: "#/content/history"
+          - list [ref=f2e20]:
+            - listitem [ref=f2e21]:
+              - link "" [ref=f2e22] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f2e24]:
+              - link "" [ref=f2e25] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=f2e27]:
+              - link "" [ref=f2e28] [cursor=pointer]:
+                - /url: "#"
+      - navigation [ref=f2e31]:
+        - link [ref=f2e32] [cursor=pointer]:
+          - /url: "#/"
+        - list [ref=f2e36]:
+          - listitem [ref=f2e37]:
+            - button "Members" [ref=f2e38] [cursor=pointer]
+          - listitem [ref=f2e39]:
+            - button "Achievements" [ref=f2e40] [cursor=pointer]
+          - listitem [ref=f2e41]:
+            - link "Actions & campaigns" [ref=f2e42] [cursor=pointer]:
+              - /url: "#/content/actions"
+          - listitem [ref=f2e43]:
+            - link "Development" [ref=f2e44] [cursor=pointer]:
+              - /url: "#/content/development"
+          - listitem [ref=f2e45]:
+            - button "News & Events" [ref=f2e46] [cursor=pointer]
+          - listitem [ref=f2e47]:
+            - link "Gallery" [ref=f2e48] [cursor=pointer]:
+              - /url: "#/gallery"
+    - generic:
+      - generic:
+        - tablist
+        - button "Previous"
+        - button "Next"
+  - heading "Past executive members" [level=1] [ref=f2e59]
+  - contentinfo [ref=f2e64]:
+    - generic [ref=f2e65]:
+      - generic [ref=f2e66]:
+        - generic [ref=f2e67]:
+          - heading "APSAD" [level=4] [ref=f2e68]
+          - list [ref=f2e69]:
+            - listitem [ref=f2e70]: "Achrafieh, Sursock Street, Aoun bldg, GF, Beirut, Lebanon, P.O.Box: 11 154 Beirut - Lebanon Phone 961 1 336 368 Fax 961 1 330 489"
+        - generic [ref=f2e71]:
+          - heading "Who we are" [level=5] [ref=f2e72]
+          - list [ref=f2e73]:
+            - listitem [ref=f2e74]:
+              - link "About us" [ref=f2e75] [cursor=pointer]:
+                - /url: "#/content/aboutUs"
+            - listitem [ref=f2e76]:
+              - link "Our history" [ref=f2e77] [cursor=pointer]:
+                - /url: "#/content/history"
+            - listitem [ref=f2e78]:
+              - link "Development" [ref=f2e79] [cursor=pointer]:
+                - /url: "#/content/development"
+        - generic [ref=f2e80]:
+          - heading "Our activities" [level=5] [ref=f2e81]
+          - list [ref=f2e82]:
+            - listitem [ref=f2e83]:
+              - link "Restoration" [ref=f2e84] [cursor=pointer]:
+                - /url: "#/content/restoration"
+            - listitem [ref=f2e85]:
+              - link "Plans and studies" [ref=f2e86] [cursor=pointer]:
+                - /url: "#/content/plansStudies"
+            - listitem [ref=f2e87]:
+              - link "Awareness" [ref=f2e88] [cursor=pointer]:
+                - /url: "#/content/awareness"
+            - listitem [ref=f2e89]:
+              - link "Actions and campaigns" [ref=f2e90] [cursor=pointer]:
+                - /url: "#/content/actionsCampaigns"
+            - listitem [ref=f2e91]:
+              - link "Development" [ref=f2e92] [cursor=pointer]:
+                - /url: "#/content/development"
+        - generic [ref=f2e93]:
+          - heading "Media" [level=5] [ref=f2e94]
+          - list [ref=f2e95]:
+            - listitem [ref=f2e96]:
+              - link "News" [ref=f2e97] [cursor=pointer]:
+                - /url: "#/news"
+            - listitem [ref=f2e98]:
+              - link "Events" [ref=f2e99] [cursor=pointer]:
+                - /url: "#/events"
+            - listitem [ref=f2e100]:
+              - link "Press" [ref=f2e101] [cursor=pointer]:
+                - /url: "#/content/press"
+            - listitem [ref=f2e102]:
+              - link "Gallery" [ref=f2e103] [cursor=pointer]:
+                - /url: "#/gallery"
+        - generic [ref=f2e104]:
+          - heading "Community" [level=5] [ref=f2e105]
+          - list [ref=f2e106]:
+            - listitem [ref=f2e107]:
+              - link "Past membres" [ref=f2e108] [cursor=pointer]:
+                - /url: "#/members/past"
+            - listitem [ref=f2e109]:
+              - link "Affiliations and partners" [ref=f2e110] [cursor=pointer]:
+                - /url: "#/affiliations"
+            - listitem [ref=f2e111]:
+              - link "Executive membres" [ref=f2e112] [cursor=pointer]:
+                - /url: "#/members/executive"
+            - listitem [ref=f2e113]:
+              - link "Current membres" [ref=f2e114] [cursor=pointer]:
+                - /url: "#/members/current"
+      - generic [ref=f2e115]: Copyright © 2025 APSAD. All rights reserved

@@ -44,6 +44,63 @@ const projects = [
   },
 ];
 
+const chronicle = [
+  {
+    date: "May 2017",
+    title: "National Heritage Days",
+    note: "Three itineraries with the Ministry of Culture — departing the Linda Sursock palace for the old souks of Douma and Batroun, the fortresses of Niha in the Bekaa, and the silk works and heritage houses of Qobayat in Akkar.",
+  },
+  {
+    date: "Jan 2017",
+    title: "Nocturne d'opéra",
+    note: "For APSAD's 57th anniversary, four voices and a string quintet among the marble gods of the National Museum of Beirut, under the patronage of the Minister of Culture.",
+  },
+  {
+    date: "May 2016",
+    title: "The Zaki Nassif Museum opens",
+    note: "The composer's blue house in Mashghara returns as museum, cultural centre, and music school — some 1,100 works opened to the public, and APSAD's music school receiving its first students.",
+  },
+];
+
+const press = [
+  {
+    outlet: "L'Orient-Le Jour",
+    date: "January 2017",
+    headline: "« Le patrimoine libanais sur un air d'opéra »",
+    rtl: false,
+  },
+  {
+    outlet: "Annahar",
+    date: "January 2017",
+    headline: "الموسيقى والغناء الأوبرالي أعادا رمق حياة إلى التماثيل الرخام",
+    rtl: true,
+  },
+  {
+    outlet: "Sky News Arabia",
+    date: "August 2016",
+    headline: "افتتاح متحف زكي ناصيف بذكراه المئوية",
+    rtl: true,
+  },
+  {
+    outlet: "L'Orient-Le Jour",
+    date: "June 2016",
+    headline: "« Bienvenue chez Zaki Nassif ! »",
+    rtl: false,
+  },
+  {
+    outlet: "Al Jazeera.net",
+    date: "May 2016",
+    headline: "منزل زكي ناصيف يتحول لمتحف ومعهد موسيقي",
+    rtl: true,
+  },
+  {
+    outlet: "Middle East Online",
+    date: "June 2016",
+    headline: "بيت زكي ناصيف متحفاً ومركزاً ثقافياً",
+    rtl: true,
+  },
+];
+
 export default function AboutPage() {
   return (
     <div className="pt-20">
@@ -229,6 +286,64 @@ export default function AboutPage() {
                     {project.description}
                   </p>
                 </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Chronicle */}
+      <section className="section-dark border-y">
+        <div className="container max-w-6xl mx-auto px-6 py-24 md:py-32">
+          <Reveal>
+            <div className="max-w-2xl mb-16">
+              <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
+                The Chronicle
+              </p>
+              <h2 className="font-display uppercase tracking-[0.03em] text-4xl md:text-5xl leading-[1.1]">
+                The association, lately
+              </h2>
+            </div>
+          </Reveal>
+
+          <div className="mb-20">
+            {chronicle.map((entry, index) => (
+              <Reveal key={entry.title} delay={index * 80}>
+                <div className="group border-t border-border last:border-b py-7 md:py-8 grid md:grid-cols-12 gap-3 md:gap-8 items-baseline">
+                  <p className="md:col-span-2 font-display text-[11px] uppercase tracking-[0.25em] text-primary">
+                    {entry.date}
+                  </p>
+                  <h3 className="md:col-span-4 font-display text-2xl tracking-[0.02em] group-hover:text-primary transition-colors duration-300">
+                    {entry.title}
+                  </h3>
+                  <p className="md:col-span-6 text-base text-muted-foreground leading-relaxed">
+                    {entry.note}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* In the Press */}
+          <Reveal>
+            <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-10">
+              In the Press
+            </p>
+          </Reveal>
+          <div className="grid md:grid-cols-2 gap-x-16">
+            {press.map((item, index) => (
+              <Reveal key={item.headline} delay={(index % 2) * 80}>
+                <div className="border-t border-border py-6 grid gap-1.5">
+                  <p className="font-display text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
+                    {item.outlet} · {item.date}
+                  </p>
+                  <p
+                    className="font-body italic text-lg leading-snug"
+                    dir={item.rtl ? 'rtl' : undefined}
+                  >
+                    {item.headline}
+                  </p>
+                </div>
               </Reveal>
             ))}
           </div>

@@ -1,0 +1,15 @@
+[     158ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_compiled_2ce9398a._.js:16329
+[     233ms] [WARNING] Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[     898ms] [WARNING] Image with src "/archive/beirut-aerial-1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[     907ms] [WARNING] Image with src "/archive/bijoutiers-1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[   19124ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[   19156ms] [LOG] [Fast Refresh] done in 33ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[   40487ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ http://localhost:9002/_next/static/chunks/node_modules_ac9bf601._.js:6602
+[   40488ms] [WARNING] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}. @ http://localhost:9002/_next/static/chunks/node_modules_ac9bf601._.js:6602
+[   40542ms] [WARNING] Image with src "/archive/hammam-3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[   40548ms] [WARNING] Image with src "/archive/hammam-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[   40562ms] [WARNING] Image with src "/archive/hammam-2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[   40579ms] [WARNING] Image with src "/archive/hammam-1.jpg" was detected as the Largest Contentful Paint (LCP). Please add the "priority" property if this image is above the fold.
+Read more: https://nextjs.org/docs/api-reference/next/image#priority @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803

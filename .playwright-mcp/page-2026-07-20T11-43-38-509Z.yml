@@ -1,0 +1,86 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e2]:
+    - banner [ref=f8e3]:
+      - generic [ref=f8e4]:
+        - link "APSAD Depuis 1960" [ref=f8e5]:
+          - /url: /
+          - generic [ref=f8e6]:
+            - generic [ref=f8e7]: APSAD
+            - generic [ref=f8e8]: Depuis 1960
+        - button "Menu" [ref=f8e10]
+    - main [ref=f8e12]:
+      - generic [ref=f8e16]:
+        - paragraph [ref=f8e17]: The Photographic Archive
+        - heading "The Sites" [level=1] [ref=f8e18]:
+          - generic [ref=f8e19]: The
+          - generic [ref=f8e21]: Sites
+        - paragraph [ref=f8e23]: Souks and khans, palaces and villages — from the association's own archive, photographed by APSAD's surveyors across sixty-five years of fieldwork.
+        - generic [ref=f8e24]:
+          - textbox "Search heritage sites..." [ref=f8e29]
+          - generic [ref=f8e30]:
+            - button "All" [ref=f8e31]
+            - button "Beirut" [ref=f8e32]
+            - button "Tripoli" [ref=f8e33]
+            - button "Mountain" [ref=f8e34]
+            - button "Coast" [ref=f8e35]
+          - paragraph [ref=f8e36]: Loading...
+    - contentinfo [ref=f8e48]:
+      - paragraph [ref=f8e50]: APSAD
+      - generic [ref=f8e51]:
+        - generic [ref=f8e52]:
+          - generic [ref=f8e53]:
+            - link "APSAD APSAD" [ref=f8e54]:
+              - /url: /
+              - img "APSAD" [ref=f8e55]
+              - generic [ref=f8e56]: APSAD
+            - paragraph [ref=f8e57]: Association pour la Protection des Sites et Anciennes Demeures au Liban
+            - paragraph [ref=f8e58]: Founded in 1960 to identify, protect, and restore Lebanon's architectural treasures and natural sites — a hundred saved so far, and the work continues.
+            - generic [ref=f8e59]:
+              - link "APSAD on Facebook" [ref=f8e60]:
+                - /url: https://www.facebook.com/apsad.lebanon/
+              - link "APSAD on Instagram" [ref=f8e63]:
+                - /url: https://www.instagram.com/apsad_lebanon/
+          - generic [ref=f8e67]:
+            - heading "The Association" [level=4] [ref=f8e68]
+            - list [ref=f8e69]:
+              - listitem [ref=f8e70]:
+                - link "Who We Are" [ref=f8e71]:
+                  - /url: /about
+              - listitem [ref=f8e72]:
+                - link "Our History" [ref=f8e73]:
+                  - /url: /about#history
+              - listitem [ref=f8e74]:
+                - link "Leadership" [ref=f8e75]:
+                  - /url: /about#team
+              - listitem [ref=f8e76]:
+                - link "The Sites" [ref=f8e77]:
+                  - /url: /gallery
+          - generic [ref=f8e78]:
+            - heading "Take Part" [level=4] [ref=f8e79]
+            - list [ref=f8e80]:
+              - listitem [ref=f8e81]:
+                - link "Become a Member" [ref=f8e82]:
+                  - /url: /get-involved
+              - listitem [ref=f8e83]:
+                - link "Volunteer" [ref=f8e84]:
+                  - /url: /get-involved
+              - listitem [ref=f8e85]:
+                - link "Write to Us" [ref=f8e86]:
+                  - /url: /get-involved#contact
+          - generic [ref=f8e87]:
+            - heading "The Salon" [level=4] [ref=f8e88]
+            - generic [ref=f8e89]:
+              - paragraph [ref=f8e90]: Sursock Street, Aoun BuildingAchrafieh, Beirut — LebanonP.O.Box 11-154
+              - paragraph [ref=f8e91]:
+                - link "+961 1 336 368" [ref=f8e92]:
+                  - /url: tel:+9611336368
+                - link "info@apsad.org" [ref=f8e93]:
+                  - /url: mailto:info@apsad.org
+        - paragraph [ref=f8e95]: Europa Nostra · ICOMOS Lebanon · World Monuments Fund · Patrimoine Sans Frontières
+      - generic [ref=f8e97]:
+        - paragraph [ref=f8e98]: © 2026 APSAD. All rights reserved.
+        - paragraph [ref=f8e99]: Guardians of Lebanese heritage since 1960
+    - button "Open heritage assistant" [ref=f8e100]
+  - region "Notifications (F8)":
+    - list
+  - alert [ref=f8e103]
