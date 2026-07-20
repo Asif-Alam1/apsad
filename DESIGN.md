@@ -1,161 +1,197 @@
 ---
 name: APSAD Lebanon
-description: Warm, patrician heritage-preservation brand site — antique gold on limestone, serif-led, motion-rich
+description: Chiaroscuro heritage brand site — gilded nocturne and limestone daylight, lapidary serif, choreographed motion
 colors:
-  antique-gold: "#AE8E5B"
-  cedar-brown: "#794A2A"
-  limestone-white: "#FBFAF9"
-  plaster: "#F4F2F1"
-  umber-ink: "#1C1917"
-  stone-gray: "#78726D"
-  hairline: "#E7E5E4"
-  night-umber: "#141110"
+  gold-leaf: "#CFA968"
+  bronze: "#8A6B34"
+  cedar: "#66401F"
+  night-umber: "#121009"
+  candle-ivory: "#EDE7DC"
+  smoke: "#B3A894"
+  limestone: "#F8F7F4"
+  umber-ink: "#201B17"
+  stone-gray: "#635B54"
+  plaster: "#EDEAE6"
+  hairline-day: "#DFDAD4"
+  hairline-night: "#2E271F"
 typography:
   display:
-    fontFamily: "Playfair Display, Georgia, serif"
-    fontSize: "clamp(3.75rem, 10vw, 8rem)"
-    fontWeight: 700
-    lineHeight: 0.9
-    letterSpacing: "-0.02em"
+    fontFamily: "Marcellus, Georgia, serif"
+    fontSize: "clamp(2.25rem, 6.5vw, 5.5rem)"
+    fontWeight: 400
+    lineHeight: 1.04
+    letterSpacing: "0.06em"
   headline:
-    fontFamily: "Playfair Display, Georgia, serif"
-    fontSize: "clamp(2.25rem, 4vw, 3rem)"
-    fontWeight: 700
-    lineHeight: 1.15
+    fontFamily: "Marcellus, Georgia, serif"
+    fontSize: "clamp(2rem, 3.6vw, 3.25rem)"
+    fontWeight: 400
+    lineHeight: 1.1
+    letterSpacing: "0.03em"
+  title:
+    fontFamily: "Marcellus, Georgia, serif"
+    fontSize: "1.5rem"
+    fontWeight: 400
+    lineHeight: 1.2
   body:
-    fontFamily: "DM Sans, system-ui, sans-serif"
-    fontSize: "1rem"
+    fontFamily: "EB Garamond, Georgia, serif"
+    fontSize: "1.125rem"
     fontWeight: 400
     lineHeight: 1.65
   label:
-    fontFamily: "DM Sans, system-ui, sans-serif"
-    fontSize: "13px"
-    fontWeight: 500
-    letterSpacing: "0.2em"
+    fontFamily: "Marcellus, Georgia, serif"
+    fontSize: "11px"
+    fontWeight: 400
+    letterSpacing: "0.42em"
 rounded:
   none: "0px"
 spacing:
-  section: "6rem"
+  section: "clamp(6rem, 10vw, 9rem)"
   gutter: "1.5rem"
 components:
-  button-primary:
-    backgroundColor: "{colors.antique-gold}"
-    textColor: "#FFFFFF"
+  button-gold:
+    backgroundColor: "{colors.gold-leaf}"
+    textColor: "{colors.night-umber}"
     rounded: "{rounded.none}"
-    padding: "8px 16px"
-  button-outline:
-    backgroundColor: "{colors.limestone-white}"
-    textColor: "{colors.umber-ink}"
+    padding: "16px 32px"
+  button-bronze:
+    backgroundColor: "{colors.bronze}"
+    textColor: "{colors.limestone}"
     rounded: "{rounded.none}"
-    padding: "8px 16px"
+    padding: "16px 32px"
+  button-ghost-night:
+    backgroundColor: "transparent"
+    textColor: "{colors.candle-ivory}"
+    rounded: "{rounded.none}"
+    padding: "16px 32px"
 ---
 
 # Design System: APSAD Lebanon
 
 ## 1. Overview
 
-**Creative North Star: "The Sursock Salon"**
+**Creative North Star: "The Sursock Salon, by Candlelight and by Day"**
 
-The reception room of a Beirut heritage mansion on Sursock Street — APSAD's literal address. Limestone walls, antique gold leaf catching late light, dark cedar wood, and the quiet confidence of an institution that has been receiving guests since 1960. The interface addresses patrons as peers: it never pleads, never shouts, never decorates for decoration's sake. Photography of the sites does the emotional work; typography and gold do the framing.
+A chiaroscuro world built around APSAD's real address — a Beirut heritage
+mansion on Sursock Street. The home page and the gallery are the **nocturne**:
+a candlelit palace where photography glows out of near-black umber and gold
+leaf carries the type. The Association and Get Involved pages are the
+**daylight**: limestone reading rooms with umber ink. The inversion — night
+into day into night — is the design; both registers share one lapidary voice.
 
-This system explicitly rejects the **generic charity template** (donate-button urgency, progress bars), **tourism-board gloss** (saturated postcard energy), the **dusty museum archive** (walls of text, parchment kitsch), and **startup/SaaS modernism** (gradients, rounded play). See PRODUCT.md.
+Every letter behaves as if cut into stone: Marcellus (the Trajan-inscription
+letterform) for display and labels, EB Garamond for text. There is no
+sans-serif anywhere. Motion is choreographed, not decorated: an opening
+curtain, inertial scroll, characters carving in, a scroll-driven horizontal
+timeline with a live year ticker.
+
+This system explicitly rejects the **generic charity template**,
+**tourism-board gloss**, the **dusty museum archive**, and **startup/SaaS
+modernism** (see PRODUCT.md).
 
 **Key Characteristics:**
-- Square-cornered everything — the geometry of cut stone
-- Serif display at architectural scale (up to 8rem), sans body in quiet restraint
-- Antique gold as a scarce material, not a paint bucket
-- Full-bleed site photography with dark scrims; sections that invert to near-black
-- A film-grain overlay (2.8% opacity) giving every page a printed-matter texture
-- Choreographed motion: staggered entrances, Ken Burns heroes, split-text reveals, marquee bands
+- Chiaroscuro pacing: drenched night-umber surfaces alternating with limestone daylight
+- Fully serif: Marcellus caps + EB Garamond text; zero sans, zero bold synthesis
+- Gold by night (#CFA968), bronze by day (#8A6B34) — the primary itself inverts
+- Square corners everywhere (radius 0); depth from tonal inversion, never shadows
+- Film grain at 2.8% over everything; 1px hairline rules as the only ornament
+- Signature motion: preloader curtain, Lenis inertial scroll, char-carve reveals, pointer-parallax hero, clip-path image unveilings, labeled cursor
 
 ## 2. Colors
 
-A warm two-hue world — gold and brown on limestone — where color signals material (stone, wood, gilt), never mood-of-the-week.
+Two rooms, one palette: night materials (umber, candle ivory, gold leaf) and day materials (limestone, umber ink, bronze). CSS source of truth: HSL custom properties in `src/app/globals.css` (`:root` = daylight, `.section-dark`/`.dark` = nocturne, `.section-light` = daylight island inside a nocturne page).
 
 ### Primary
-- **Antique Gold** (#AE8E5B / `hsl(37 34% 52%)`, CSS `--primary`): the gilded accent — primary buttons, kicker labels, active nav states, selection tint. It reads as gold leaf on the limestone ground; keep it scarce so it stays precious.
+- **Gold Leaf** (#CFA968 / `hsl(38 52% 63%)`, nocturne `--primary`): buttons, kickers, nav accents, timeline nodes and ticker on dark grounds. 7.9:1 on Night Umber — safe even for body sizes.
+- **Bronze** (#8A6B34 / `hsl(35 45% 37%)`, daylight `--primary`): the same voice struck in daylight — 4.9:1 on Limestone, passes AA at label sizes.
 
 ### Secondary
-- **Cedar Brown** (#794A2A / `hsl(24 48% 32%)`, CSS `--accent`): deep reddish wood for hover states and important links; the darker, structural sibling of the gold.
+- **Cedar** (#66401F / `hsl(24 48% 27%)`, daylight `--accent`): deep wood for hovers and important links.
 
 ### Neutral
-- **Limestone White** (#FBFAF9 / `hsl(40 20% 98%)`, CSS `--background`): the body ground — warm-tinted near-white.
-- **Plaster** (#F4F2F1 / `--secondary`) and **Hairline** (#E7E5E4 / `--border`): surface tint and 1px rules.
-- **Umber Ink** (#1C1917 / `--foreground`): body text, and the background of `.section-dark` inverted sections.
-- **Stone Gray** (#78726D / `--muted-foreground`): captions and secondary copy. ⚠ At ~4.4:1 on Limestone White it sits just under WCAG AA for body sizes — use for large/short text only, or darken when it carries paragraphs.
-- **Night Umber** (#141110): the `.dark` theme ground.
+- **Night Umber** (#121009 / `hsl(26 20% 6%)`): the nocturne ground; hero base drops to `hsl(26 20% 4%)`.
+- **Candle Ivory** (#EDE7DC / `hsl(40 30% 91%)`): nocturne text.
+- **Smoke** (#B3A894 / `hsl(36 14% 68%)`): nocturne secondary text (~8.7:1).
+- **Limestone** (#F8F7F4 / `hsl(40 12% 97%)`): daylight ground. **Plaster** (#EDEAE6): daylight surface tint.
+- **Umber Ink** (#201B17 / `hsl(24 12% 11%)`): daylight text.
+- **Stone Gray** (#635B54 / `hsl(25 9% 35%)`): daylight secondary text (≥7:1).
+- **Hairlines**: #DFDAD4 by day, #2E271F by night — always 1px.
 
 ### Named Rules
-**The Gold-Leaf Rule.** Antique Gold covers at most 10% of any viewport — buttons, labels, rules, one highlighted word. Gold spread wide turns patina into paint.
-**The Inversion Rule.** Contrast between sections comes from full tonal inversion (`.section-dark`, Umber Ink ground), never from pastel section tints.
+**The Inversion Rule.** Section contrast comes from full tonal inversion (nocturne ↔ limestone), never pastel tints. The chiaroscuro rhythm on the home page is: night, night, night, day, day, day, night, night.
+**The Gold-Is-Light Rule.** Gold behaves like light, not paint: type, hairlines, nodes, small fills. Never large gold surfaces.
 
 ## 3. Typography
 
-**Display Font:** Playfair Display (with Georgia, serif)
-**Body Font:** DM Sans (with system-ui, sans-serif)
+**Display Font:** Marcellus (with Georgia, serif) — single weight 400
+**Body Font:** EB Garamond (with Georgia, serif) — with true italics
 
-**Character:** A high-contrast transitional serif at architectural scale over a geometric-humanist sans kept deliberately quiet — the engraved lintel above, the museum caption below.
+**Character:** Roman inscription over manuscript. Marcellus is the lapidary voice (all display, headings, labels, buttons — usually uppercase, tracked wide); EB Garamond is the reading voice (body, quotes in italic). `font-synthesis-weight: none` is enforced globally — Marcellus is never faux-bolded.
 
 ### Hierarchy
-- **Display** (700, clamp 3.75–8rem / `text-6xl`→`text-9xl`, line-height 0.9, tracking tight): hero statements only; one per page.
-- **Headline** (700, ~2.25–3rem / `text-4xl md:text-5xl`, 1.15): section openers, always serif.
-- **Title** (500–700, 1.25rem / `text-xl`): card titles, sub-sections; serif or sans by context.
-- **Body** (400, 1rem–1.125rem, 1.65): max measure ~65ch; Umber Ink or Stone Gray (see contrast warning).
-- **Label** (500, 13px, tracking 0.2–0.35em, uppercase): kickers, marquee items, nav; the only all-caps voice.
+- **Display** (400, clamp 2.25–5.5rem, 1.04, +0.06em, UPPERCASE): one per page; carved in character by character.
+- **Headline** (400, clamp 2–3.25rem, 1.1, +0.03em, UPPERCASE): section openers.
+- **Title** (400, 1.25–1.5rem): row headings, card titles — sentence case.
+- **Body** (400, 1.0625–1.125rem, 1.65): EB Garamond; base body size is 17px because Garamond runs small; quotes set italic at clamp(1.4–2.75rem).
+- **Label** (400, 10–12px, +0.22–0.42em, UPPERCASE, Marcellus): kickers, nav, buttons, marquee.
 
 ### Named Rules
-**The One-Lintel Rule.** One serif display statement per viewport. Stacked display sizes compete like two carved inscriptions on one façade.
+**The One-Lintel Rule.** One display statement per viewport.
+**The Carve Rule.** Display type enters like an inscription: per-character rise from blur (`CharReveal`), 26–34ms stagger, expo ease.
 
 ## 4. Elevation
 
-Flat, like masonry. Depth comes from tonal inversion (light limestone vs. near-black umber sections), 1px hairlines, image scrims (`bg-black/55`), and the global film grain — not from drop shadows. Shadows are effectively absent from the system; shadcn defaults that carry them (popover, dialog) keep only the minimum needed to separate overlays.
+Flat, like masonry. Depth comes from tonal inversion, image scrims (gradient washes of the ground color at 0.5–0.85 alpha), 1px hairlines, and the global film grain. No decorative box-shadows anywhere; overlays (dialogs, sheets) keep only shadcn's minimum separation.
 
 ### Named Rules
-**The Stone-Doesn't-Float Rule.** No decorative box-shadows on cards, buttons, or sections. If a surface must separate, invert it or rule it off with Hairline.
+**The Stone-Doesn't-Float Rule.** No drop shadows on cards, buttons, or sections — invert or rule off instead.
 
 ## 5. Components
 
 ### Buttons
-- **Shape:** perfectly square corners (`--radius: 0`)
-- **Primary:** Antique Gold fill, white text, `h-10 px-4` (`h-11 px-8` large); hover dims to 90%
-- **Outline:** 1px Hairline border on Limestone; hover fills Cedar Brown with light text
-- **Hover / Focus:** color transitions only; `focus-visible` ring in gold (`--ring`)
-- **Ghost / Link:** quiet variants for nav and inline actions; link underlines offset 4px
+- **Shape:** square (0px), h-[52px] hero / h-10–12 chrome, Marcellus 11–12px caps +0.22–0.25em
+- **Gold (nocturne primary):** Gold Leaf fill, Night Umber text; hover lightens to `hsl(38 52% 70%)`
+- **Bronze (daylight primary):** Bronze fill, Limestone text; hover 90%
+- **Ghost (nocturne):** 1px ivory/35% border, transparent, ivory text; hover ivory/10 wash
+- **Focus:** 2px ring in the ground's primary (`--ring`)
+- Hero and finale CTAs wrap in `Magnetic` (cursor-attracted)
 
 ### Cards / Containers
-- **Corner Style:** square (0px)
-- **Background:** white (`--card`) on Limestone ground; Umber surfaces inside `.section-dark`
-- **Shadow Strategy:** none — hairline borders per the Stone-Doesn't-Float Rule
-- **Internal Padding:** 1.5rem+
+Ruled rows beat cards. Lists (aims, affiliations, regions, privileges) are hairline-ruled rows with Marcellus lead + Garamond note. Where surfaces exist (gallery lightbox panel) they are flat with hairline borders, square corners.
 
 ### Inputs / Fields
-- **Style:** 1px Hairline stroke, Limestone ground, square corners, `h-10`
-- **Focus:** 2px gold ring with offset
-- **Error:** destructive red (#EF4444 family) reserved exclusively for form validation
+1px hairline stroke, ground-colored fill, square, h-10+; gold/bronze focus ring; destructive red reserved for validation.
 
 ### Navigation
-- Fixed header over hero imagery, label-typography links (13px tracked caps), gold active state, sheet-based mobile menu. Footer in inverted umber with columned sitemap.
+Fixed transparent header; gains a 92% ground-color blur bar after 50px scroll. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Gold 2px scroll-progress bar. Mobile: full nocturne sheet with 2xl Marcellus links.
 
 ### Signature Components
-- **Marquee band:** full-width inverted strip of tracked uppercase phrases scrolling at constant speed (`translateX(-50%)` loop).
-- **Split-text reveal:** headlines enter word-by-word with `cubic-bezier(0.16, 1, 0.3, 1)` staggering.
-- **Ken Burns hero:** full-bleed photograph slow-zooming from 1.08→1 over 20s under a 55% black scrim.
-- **Film grain:** fixed SVG turbulence overlay at 2.8% opacity, z-40, pointer-events none — the whole site reads as printed matter.
-- **Custom cursor:** dot-follower on pointer-fine devices.
+- **Preloader curtain** (`ui/preloader.tsx`): once per session — APSAD carves in gold on black, hairline draws, curtain lifts (1.05s expo). Dispatches `apsad:preloader-done`; the hero holds its entrance for it.
+- **Lenis inertial scroll** (`ui/smooth-scroll.tsx`): duration 1.15, expo easing; disabled under reduced motion.
+- **CharReveal** (`ui/char-reveal.tsx`): per-character carve-in for display type.
+- **Pointer-parallax hero**: photograph drifts −14px against cursor, type +7px with it, over Ken Burns.
+- **The Record timeline** (`home/restoration-timeline.tsx`): 300vh sticky section driving a horizontal track; gold-node thread, alternating entries, live gold year ticker (1960→2016), progress hairline. Falls back to a scroll-snap strip on touch/reduced-motion with a "Drag" cursor label.
+- **ParallaxImage** (`ui/parallax-image.tsx`): scroll parallax + first-view clip-path unveiling (inset 14%/8% → 0 over 1.2s) with a settle from scale 1.12.
+- **Labeled cursor** (`ui/cursor-follower.tsx`): blend-difference dot; grows ×2.8 over interactives; morphs into a 76px gold disc with tracked caps over `[data-cursor-label]` ("View" on gallery cards, "Drag" on the timeline strip).
+- **Marquee band**: trilingual (FR/EN/AR) gold tracked caps on the nocturne.
+- **Film grain**: fixed SVG turbulence at 2.8%, `z-index: var(--z-grain)`.
+
+Semantic z-scale (globals.css): grain 30 < header 40 < overlays 50 < cursor 60 < preloader 70.
 
 ## 6. Do's and Don'ts
 
 ### Do:
-- **Do** keep every corner square; `--radius` stays 0rem everywhere.
-- **Do** let full-bleed site photography carry heroes, with scrims ≥55% black before setting light text on it.
-- **Do** honor `prefers-reduced-motion` for every new animation (global kill-switch already exists in `globals.css`).
-- **Do** use tonal inversion (`.section-dark`) to pace long pages — limestone, umber, limestone.
-- **Do** address the reader as a patron: "Join the association", never "Donate now!!" urgency mechanics.
+- **Do** keep every corner square; `--radius` stays 0rem.
+- **Do** guard every animation with `prefers-reduced-motion` (global kill-switch exists; each JS component also checks `matchMedia` — follow that pattern).
+- **Do** write scrim/overlay alphas as `hsla(h,s%,l%,a)` arbitrary values — Tailwind's `/NN` slash opacity silently fails on non-standard steps and arbitrary hsl values in this setup.
+- **Do** pace long pages by inversion: nocturne → limestone → nocturne.
+- **Do** address the reader as a patron: "Become a Member", never donation-urgency mechanics.
+- **Do** use real content from the apsad.net record (dates, places, names) — never invented milestones.
 
 ### Don't:
-- **Don't** build the "generic charity template" — no donation progress bars, no crisis-photography guilt, no floating donate ribbons (PRODUCT.md anti-reference).
-- **Don't** drift into "tourism-board gloss" — no saturated postcard filters or exclamation-mark copy (PRODUCT.md anti-reference).
-- **Don't** ship the "dusty museum archive" — no parchment textures, no 12-paragraph walls of unbroken text (PRODUCT.md anti-reference).
-- **Don't** import "startup/SaaS modernism" — no gradients on text or buttons, no rounded-2xl cards, no glassmorphism (PRODUCT.md anti-reference).
-- **Don't** use Stone Gray (#78726D) for long body copy on Limestone — it fails 4.5:1; step down to Umber Ink.
-- **Don't** add colored side-stripe borders, gradient text, or icon-in-rounded-square headers — banned outright.
+- **Don't** build the "generic charity template" — no progress bars, crisis photography, or floating donate ribbons (PRODUCT.md anti-reference).
+- **Don't** drift into "tourism-board gloss" — no saturated postcard filters or exclamation copy (PRODUCT.md anti-reference).
+- **Don't** ship the "dusty museum archive" — no parchment textures or unbroken text walls (PRODUCT.md anti-reference).
+- **Don't** import "startup/SaaS modernism" — no gradient text, rounded cards, or glassmorphism (PRODUCT.md anti-reference).
+- **Don't** apply `font-bold` to Marcellus — one weight exists; synthesis is disabled and would look broken.
+- **Don't** introduce a sans-serif; the fully-serif stack is the identity.
+- **Don't** add a second scroll-hijacked section — The Record is the one and only.

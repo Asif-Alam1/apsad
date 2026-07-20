@@ -1,0 +1,390 @@
+- generic:
+  - generic:
+    - banner:
+      - generic:
+        - link:
+          - /url: /
+          - generic:
+            - generic: APSAD
+            - generic: Depuis 1960
+        - generic:
+          - button [expanded]:
+            - img
+            - generic: Menu
+    - main:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - paragraph: Beirut · Founded 1960
+              - heading [level=1]: Guardians of a Vanishing Lebanon
+              - paragraph: For sixty-five years, APSAD has stood between Lebanon's architectural treasures and their disappearance — restoring, documenting, and defending the places that hold our memory.
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /get-involved
+                    - text: Become a Guardian
+                - generic:
+                  - link:
+                    - /url: /gallery
+                    - text: Enter the Sites
+            - generic:
+              - generic: The Record
+          - generic:
+            - generic:
+              - generic: Sauvegarde du Patrimoine • Heritage Preservation • حماية التراث • Depuis 1960 • Restoration • Conservation des Sites •
+              - generic: Sauvegarde du Patrimoine • Heritage Preservation • حماية التراث • Depuis 1960 • Restoration • Conservation des Sites •
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: The First Appeal · 1960
+              - generic:
+                - figure:
+                  - generic: «
+                  - blockquote: "Take care: this heritage is sacked, abandoned, despised — disfigured by ugly buildings, incoherent suburbs, and cities without dignity…"
+                  - generic: APSAD's appeal to the Lebanese people
+              - generic:
+                - generic:
+                  - paragraph:
+                    - text: The appeal called on those who would preserve harmonious towns and villages —
+                    - emphasis: a welcoming Lebanon, proud of its past, trustful in its future
+                    - text: . Lebanon answered. A hundred architectural treasures have been saved since, through plans, drawings, and stubborn devotion.
+          - generic:
+            - region:
+              - generic:
+                - paragraph: The Record · 1960 — Today
+                - heading [level=2]: Sixty-five years of rescue
+                - paragraph: Churches, souks, bathhouses, and family houses — each entry below is a place that still stands because someone refused to let it fall.
+              - generic:
+                - generic:
+                  - paragraph: "1960"
+                  - paragraph: Beirut
+                  - heading [level=3]: The Appeal
+                  - paragraph: APSAD is founded and issues its first appeal to the Lebanese people.
+              - generic:
+                - generic:
+                  - paragraph: "1962"
+                  - paragraph: Abey
+                  - heading [level=3]: El-Dine Residence
+                  - paragraph: The first restoration — a historic house later chosen as the British Ambassador’s residence.
+              - generic:
+                - generic:
+                  - paragraph: "1964"
+                  - paragraph: Tripoli
+                  - heading [level=3]: Hammam el-Jédid
+                  - paragraph: The 18th-century bathhouse restored with the Directorate General of Antiquities.
+              - generic:
+                - generic:
+                  - paragraph: "1969"
+                  - paragraph: Batroun
+                  - heading [level=3]: Mar Estephan
+                  - paragraph: The coastal church returned to its parish, stone by stone.
+              - generic:
+                - generic:
+                  - paragraph: "1972"
+                  - paragraph: The Chouf
+                  - heading [level=3]: Deir el-Qamar
+                  - paragraph: A rehabilitated residence becomes APSAD’s regional home in the mountains.
+              - generic:
+                - generic:
+                  - paragraph: "1978"
+                  - paragraph: Beirut
+                  - heading [level=3]: The Jeweler’s Souk
+                  - paragraph: Reconstruction plans drawn for the old gold souk in the wake of war.
+              - generic:
+                - generic:
+                  - paragraph: "2001"
+                  - paragraph: Jounieh
+                  - heading [level=3]: The Old Souk
+                  - paragraph: Rehabilitation and a pedestrian revival return evenings to the souk.
+              - generic:
+                - generic:
+                  - paragraph: "2012"
+                  - paragraph: Mashghara
+                  - heading [level=3]: Zaki Nassif House
+                  - paragraph: The composer’s heirs entrust his family house to APSAD.
+              - generic:
+                - generic:
+                  - paragraph: "2015"
+                  - paragraph: Mashghara
+                  - heading [level=3]: Zaki Nassif Museum
+                  - paragraph: Museum, cultural centre, and music school open their doors.
+              - generic:
+                - generic:
+                  - paragraph: "2016"
+                  - paragraph: Kesrouan
+                  - heading [level=3]: Nahr el-Kalb
+                  - paragraph: With Factum Foundation, the river’s ancient stelae are studied for preservation.
+              - generic:
+                - generic:
+                  - paragraph: Today
+                  - paragraph: The record is still being written.
+                  - link:
+                    - /url: /get-involved
+                    - text: Add your name
+                    - img
+            - paragraph: Swipe to travel the record
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: Why We Exist
+                  - heading [level=2]:
+                    - generic:
+                      - generic: Proud
+                    - generic:
+                      - generic: of
+                    - generic:
+                      - generic: its
+                    - generic:
+                      - generic: past,
+                    - generic:
+                      - generic: trustful
+                    - generic:
+                      - generic: in
+                    - generic:
+                      - generic: its
+                    - generic:
+                      - generic: future
+              - generic:
+                - generic:
+                  - paragraph: APSAD requests all initiatives and accepts all suggestions; it saves old buildings and coordinates every effort within the field. From the founding charter onward, the work has followed six aims.
+            - generic:
+              - generic:
+                - generic:
+                  - generic: I
+                  - generic:
+                    - heading [level=3]: Protect & Restore
+                    - paragraph: Promote the protection and restoration of ancient buildings of historic and artistic character, and the conservation of natural sites.
+              - generic:
+                - generic:
+                  - generic: II
+                  - generic:
+                    - heading [level=3]: Act Upon the Law
+                    - paragraph: Advance and defend the legal frameworks that shield Lebanon’s architectural heritage from demolition.
+              - generic:
+                - generic:
+                  - generic: III
+                  - generic:
+                    - heading [level=3]: Enlist Investment
+                    - paragraph: Persuade investors that preservation pays — economically, culturally, and in the standing of the country.
+              - generic:
+                - generic:
+                  - generic: IV
+                  - generic:
+                    - heading [level=3]: Awaken the Public
+                    - paragraph: Raise awareness of urban and environmental problems through campaigns, publications, and debate in three languages.
+              - generic:
+                - generic:
+                  - generic: V
+                  - generic:
+                    - heading [level=3]: Strengthen the Fabric
+                    - paragraph: Mobilize communities around their own heritage, stimulating civic responsibility and a sense of custodianship.
+              - generic:
+                - generic:
+                  - generic: VI
+                  - generic:
+                    - heading [level=3]: Build Toward Tourism
+                    - paragraph: Develop architectural and natural sites so Lebanon regains the standing it deserves on a regional scale.
+            - generic:
+              - generic:
+                - generic:
+                  - paragraph: "1960"
+                  - paragraph: Founded in Beirut
+              - generic:
+                - generic:
+                  - paragraph: 100+
+                  - paragraph: Treasures saved
+              - generic:
+                - generic:
+                  - paragraph: "4"
+                  - paragraph: Regional sections
+              - generic:
+                - generic:
+                  - paragraph: "5"
+                  - paragraph: International affiliations
+        - generic:
+          - generic:
+            - img
+          - generic:
+            - generic:
+              - paragraph: Stone by stone — the slow, patient work of keeping a place alive.
+              - link:
+                - /url: /gallery
+                - text: Enter the gallery
+                - img
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: In Good Company
+                - heading [level=2]: The company of guardians
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=3]: Europa Nostra
+                  - paragraph: Member since 1963
+                  - paragraph: Through APSAD, Lebanon is the only non-European country in Europe’s federation of heritage organizations.
+              - generic:
+                - generic:
+                  - heading [level=3]: ICOMOS
+                  - paragraph: Official partner in Lebanon
+                  - paragraph: UNESCO’s principal advisor on the conservation of the world’s monuments and sites.
+              - generic:
+                - generic:
+                  - heading [level=3]: World Monuments Fund
+                  - paragraph: Collaboration
+                  - paragraph: Together, the region of Enfeh was placed on the list of the world’s 100 most endangered sites.
+              - generic:
+                - generic:
+                  - heading [level=3]: Patrimoine Sans Frontières
+                  - paragraph: Member since 1996
+                  - paragraph: Locating threats to old heritage and answering them with concrete action.
+              - generic:
+                - generic:
+                  - heading [level=3]: Civitas Nostra
+                  - paragraph: Member since 1961
+                  - paragraph: Assemblies and congresses across the historic cities of Europe.
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+              - generic:
+                - generic:
+                  - paragraph: From the President
+                  - blockquote: Our cultural heritage is of a richness beyond telling. We must look past the disappointing chronology of the everyday and never succumb to indifference — but learn again to respect our heritage, and to love our country.
+                  - paragraph: « Réapprendre à respecter notre patrimoine et aimer notre pays. »
+                  - generic:
+                    - generic:
+                      - paragraph: Raya Daouk
+                      - paragraph: President, APSAD
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: The Invitation
+            - heading [level=2]:
+              - generic:
+                - generic: Add
+              - generic:
+                - generic: your
+              - generic:
+                - generic: name
+              - generic:
+                - generic: to
+              - generic:
+                - generic: the
+              - generic:
+                - generic: record
+            - generic:
+              - paragraph: APSAD has always been carried by its members — patrons, volunteers, and friends of Lebanese heritage. The salon on Sursock Street is open.
+              - generic:
+                - generic:
+                  - link:
+                    - /url: /get-involved
+                    - text: Become a Member
+                - generic:
+                  - link:
+                    - /url: /get-involved
+                    - text: Volunteer With Us
+              - paragraph: Sursock Street, Aoun Building · Achrafieh, Beirut
+    - contentinfo:
+      - generic:
+        - paragraph: APSAD
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /
+              - img
+              - generic: APSAD
+            - paragraph: Association pour la Protection des Sites et Anciennes Demeures au Liban
+            - paragraph: Founded in 1960 to identify, protect, and restore Lebanon's architectural treasures and natural sites — a hundred saved so far, and the work continues.
+            - generic:
+              - link:
+                - /url: https://www.facebook.com/apsad.lebanon/
+                - img
+              - link:
+                - /url: https://www.instagram.com/apsad_lebanon/
+                - img
+          - generic:
+            - heading [level=4]: The Association
+            - list:
+              - listitem:
+                - link:
+                  - /url: /about
+                  - text: Who We Are
+              - listitem:
+                - link:
+                  - /url: /about#history
+                  - text: Our History
+              - listitem:
+                - link:
+                  - /url: /about#team
+                  - text: Leadership
+              - listitem:
+                - link:
+                  - /url: /gallery
+                  - text: The Sites
+          - generic:
+            - heading [level=4]: Take Part
+            - list:
+              - listitem:
+                - link:
+                  - /url: /get-involved
+                  - text: Become a Member
+              - listitem:
+                - link:
+                  - /url: /get-involved
+                  - text: Volunteer
+              - listitem:
+                - link:
+                  - /url: /get-involved#contact
+                  - text: Write to Us
+          - generic:
+            - heading [level=4]: The Salon
+            - generic:
+              - paragraph: Sursock Street, Aoun Building Achrafieh, Beirut — Lebanon P.O.Box 11-154
+              - paragraph:
+                - link:
+                  - /url: tel:+9611336368
+                  - text: +961 1 336 368
+                - link:
+                  - /url: mailto:info@apsad.org
+                  - text: info@apsad.org
+        - generic:
+          - paragraph: Europa Nostra · ICOMOS Lebanon · World Monuments Fund · Patrimoine Sans Frontières
+      - generic:
+        - generic:
+          - paragraph: © 2026 APSAD. All rights reserved.
+          - paragraph: Guardians of Lebanese heritage since 1960
+    - button:
+      - img
+  - list
+  - button [ref=e360] [cursor=pointer]:
+    - img [ref=e361]
+  - alert
+  - dialog "Navigation" [ref=e365]:
+    - heading "Navigation" [level=2] [ref=e366]
+    - generic [ref=e367]:
+      - paragraph [ref=e368]: APSAD · Depuis 1960
+      - navigation "Mobile" [ref=e369]:
+        - link "Home" [ref=e370]:
+          - /url: /
+        - link "The Association" [ref=e371]:
+          - /url: /about
+        - link "The Sites" [ref=e372]:
+          - /url: /gallery
+        - link "Get Involved" [ref=e373]:
+          - /url: /get-involved
+      - generic [ref=e374]:
+        - link "Become a Member" [ref=e375]:
+          - /url: /get-involved
+        - paragraph [ref=e376]: Guardians of Lebanese heritage
+    - button "Close" [active] [ref=e377]:
+      - img [ref=e378]
+      - generic [ref=e381]: Close

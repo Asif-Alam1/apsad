@@ -1,0 +1,183 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - banner [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - link "APSAD Depuis 1960" [ref=f1e5]:
+          - /url: /
+          - generic [ref=f1e6]:
+            - generic [ref=f1e7]: APSAD
+            - generic [ref=f1e8]: Depuis 1960
+        - navigation "Primary" [ref=f1e9]:
+          - link "Home" [ref=f1e10]:
+            - /url: /
+            - text: Home
+          - link "The Association" [ref=f1e11]:
+            - /url: /about
+            - text: The Association
+          - link "The Sites" [ref=f1e12]:
+            - /url: /gallery
+            - text: The Sites
+          - link "Get Involved" [ref=f1e14]:
+            - /url: /get-involved
+            - text: Get Involved
+        - link "Become a Member" [ref=f1e16]:
+          - /url: /get-involved
+    - main [ref=f1e17]:
+      - generic [ref=f1e19]:
+        - generic [ref=f1e21]:
+          - paragraph [ref=f1e22]: The Catalogue
+          - heading "The Sites" [level=1] [ref=f1e23]:
+            - generic [ref=f1e25]: The
+            - generic [ref=f1e27]: Sites
+          - paragraph [ref=f1e28]: The places APSAD works for — temples and souks, monasteries and family houses, photographed as they deserve to be seen.
+          - generic [ref=f1e29]:
+            - generic [ref=f1e30]:
+              - img [ref=f1e31]
+              - textbox "Search heritage sites..." [ref=f1e34]
+            - generic [ref=f1e35]:
+              - button "All" [ref=f1e36]
+              - button "Roman" [ref=f1e37]
+              - button "Phoenician" [ref=f1e38]
+              - button "Monasteries" [ref=f1e39]
+              - button "Houses" [ref=f1e40]
+            - paragraph [ref=f1e41]: 8 heritage sites
+        - generic [ref=f1e44]:
+          - button "Baalbek Temple Complex 01 Baalbek Temple Complex The Roman temple complex of Heliopolis, crowned by the Temple of Jupiter — among the largest religious structures ever raised, and the summit of Roman architecture in the Eastern Mediterranean. View" [ref=f1e108]:
+            - img "Baalbek Temple Complex" [ref=f1e109]
+            - generic [ref=f1e111]: "01"
+            - generic [ref=f1e112]:
+              - heading "Baalbek Temple Complex" [level=3] [ref=f1e113]
+              - paragraph [ref=f1e114]: The Roman temple complex of Heliopolis, crowned by the Temple of Jupiter — among the largest religious structures ever raised, and the summit of Roman architecture in the Eastern Mediterranean.
+            - generic:
+              - generic: View
+          - button "Byblos, City of the Alphabet 02 Byblos, City of the Alphabet One of the world's oldest continuously inhabited cities and the birthplace of the Phoenician alphabet — port, castle, and old souks together in a single living site. View" [ref=f1e115]:
+            - img "Byblos, City of the Alphabet" [ref=f1e116]
+            - generic [ref=f1e118]: "02"
+            - generic [ref=f1e119]:
+              - heading "Byblos, City of the Alphabet" [level=3] [ref=f1e120]
+              - paragraph [ref=f1e121]: One of the world's oldest continuously inhabited cities and the birthplace of the Phoenician alphabet — port, castle, and old souks together in a single living site.
+            - generic:
+              - generic: View
+          - button "Anjar, the Umayyad City 03 Anjar, the Umayyad City The only inland commercial city founded by the Umayyad dynasty — 8th-century urban planning preserved in arcaded stone. View" [ref=f1e122]:
+            - img "Anjar, the Umayyad City" [ref=f1e123]
+            - generic [ref=f1e125]: "03"
+            - generic [ref=f1e126]:
+              - heading "Anjar, the Umayyad City" [level=3] [ref=f1e127]
+              - paragraph [ref=f1e128]: The only inland commercial city founded by the Umayyad dynasty — 8th-century urban planning preserved in arcaded stone.
+            - generic:
+              - generic: View
+          - button "Qadisha Valley Monasteries 04 Qadisha Valley Monasteries The sacred valley's monasteries, carved into cliffsides — centuries of devotion answered by architectural ingenuity. View" [ref=f1e129]:
+            - img "Qadisha Valley Monasteries" [ref=f1e130]
+            - generic [ref=f1e132]: "04"
+            - generic [ref=f1e133]:
+              - heading "Qadisha Valley Monasteries" [level=3] [ref=f1e134]
+              - paragraph [ref=f1e135]: The sacred valley's monasteries, carved into cliffsides — centuries of devotion answered by architectural ingenuity.
+            - generic:
+              - generic: View
+          - button "Tyre, Queen of the Seas 05 Tyre, Queen of the Seas The greatest of the Phoenician cities, famed for its purple dye and its fleets — with Roman ruins that include a vast hippodrome. View" [ref=f1e136]:
+            - img "Tyre, Queen of the Seas" [ref=f1e137]
+            - generic [ref=f1e139]: "05"
+            - generic [ref=f1e140]:
+              - heading "Tyre, Queen of the Seas" [level=3] [ref=f1e141]
+              - paragraph [ref=f1e142]: The greatest of the Phoenician cities, famed for its purple dye and its fleets — with Roman ruins that include a vast hippodrome.
+            - generic:
+              - generic: View
+          - button "The Triple-Arch House 06 The Triple-Arch House The iconic architecture of the traditional Lebanese house — three arches, red tile, local stone masonry in harmony with the landscape. View" [ref=f1e143]:
+            - img "The Triple-Arch House" [ref=f1e144]
+            - generic [ref=f1e146]: "06"
+            - generic [ref=f1e147]:
+              - heading "The Triple-Arch House" [level=3] [ref=f1e148]
+              - paragraph [ref=f1e149]: The iconic architecture of the traditional Lebanese house — three arches, red tile, local stone masonry in harmony with the landscape.
+            - generic:
+              - generic: View
+          - button "Hammam el-Jédid, Tripoli 07 Hammam el-Jédid, Tripoli The 18th-century bathhouse of Tripoli — domed chambers and stone arcades returned to light in one of APSAD's earliest restorations. View" [ref=f1e150]:
+            - img "Hammam el-Jédid, Tripoli" [ref=f1e151]
+            - generic [ref=f1e153]: "07"
+            - generic [ref=f1e154]:
+              - heading "Hammam el-Jédid, Tripoli" [level=3] [ref=f1e155]
+              - paragraph [ref=f1e156]: The 18th-century bathhouse of Tripoli — domed chambers and stone arcades returned to light in one of APSAD's earliest restorations.
+            - generic:
+              - generic: View
+          - button "Khan al-Khayatin, Tripoli 08 Khan al-Khayatin, Tripoli The tailors' khan of old Tripoli — Mamluk commercial architecture serving as caravanserai and covered market on the historic trade routes. View" [ref=f1e157]:
+            - img "Khan al-Khayatin, Tripoli" [ref=f1e158]
+            - generic [ref=f1e160]: "08"
+            - generic [ref=f1e161]:
+              - heading "Khan al-Khayatin, Tripoli" [level=3] [ref=f1e162]
+              - paragraph [ref=f1e163]: The tailors' khan of old Tripoli — Mamluk commercial architecture serving as caravanserai and covered market on the historic trade routes.
+            - generic:
+              - generic: View
+    - contentinfo [ref=f1e53]:
+      - paragraph [ref=f1e55]: APSAD
+      - generic [ref=f1e56]:
+        - generic [ref=f1e57]:
+          - generic [ref=f1e58]:
+            - link "APSAD APSAD" [ref=f1e59]:
+              - /url: /
+              - img "APSAD" [ref=f1e60]
+              - generic [ref=f1e61]: APSAD
+            - paragraph [ref=f1e62]: Association pour la Protection des Sites et Anciennes Demeures au Liban
+            - paragraph [ref=f1e63]: Founded in 1960 to identify, protect, and restore Lebanon's architectural treasures and natural sites — a hundred saved so far, and the work continues.
+            - generic [ref=f1e64]:
+              - link "APSAD on Facebook" [ref=f1e65]:
+                - /url: https://www.facebook.com/apsad.lebanon/
+                - img [ref=f1e66]
+              - link "APSAD on Instagram" [ref=f1e68]:
+                - /url: https://www.instagram.com/apsad_lebanon/
+                - img [ref=f1e69]
+          - generic [ref=f1e72]:
+            - heading "The Association" [level=4] [ref=f1e73]
+            - list [ref=f1e74]:
+              - listitem [ref=f1e75]:
+                - link "Who We Are" [ref=f1e76]:
+                  - /url: /about
+                  - text: Who We Are
+              - listitem [ref=f1e77]:
+                - link "Our History" [ref=f1e78]:
+                  - /url: /about#history
+                  - text: Our History
+              - listitem [ref=f1e79]:
+                - link "Leadership" [ref=f1e80]:
+                  - /url: /about#team
+                  - text: Leadership
+              - listitem [ref=f1e81]:
+                - link "The Sites" [ref=f1e82]:
+                  - /url: /gallery
+                  - text: The Sites
+          - generic [ref=f1e83]:
+            - heading "Take Part" [level=4] [ref=f1e84]
+            - list [ref=f1e85]:
+              - listitem [ref=f1e86]:
+                - link "Become a Member" [ref=f1e87]:
+                  - /url: /get-involved
+                  - text: Become a Member
+              - listitem [ref=f1e88]:
+                - link "Volunteer" [ref=f1e89]:
+                  - /url: /get-involved
+                  - text: Volunteer
+              - listitem [ref=f1e90]:
+                - link "Write to Us" [ref=f1e91]:
+                  - /url: /get-involved#contact
+                  - text: Write to Us
+          - generic [ref=f1e92]:
+            - heading "The Salon" [level=4] [ref=f1e93]
+            - generic [ref=f1e94]:
+              - paragraph [ref=f1e95]:
+                - text: Sursock Street, Aoun Building
+                - text: Achrafieh, Beirut — Lebanon
+                - text: P.O.Box 11-154
+              - paragraph [ref=f1e96]:
+                - link "+961 1 336 368" [ref=f1e97]:
+                  - /url: tel:+9611336368
+                - link "info@apsad.org" [ref=f1e98]:
+                  - /url: mailto:info@apsad.org
+        - paragraph [ref=f1e100]: Europa Nostra · ICOMOS Lebanon · World Monuments Fund · Patrimoine Sans Frontières
+      - generic [ref=f1e102]:
+        - paragraph [ref=f1e103]: © 2026 APSAD. All rights reserved.
+        - paragraph [ref=f1e104]: Guardians of Lebanese heritage since 1960
+    - button "Open heritage assistant" [ref=f1e105]:
+      - img [ref=f1e106]
+  - region "Notifications (F8)":
+    - list
+  - button "Open Next.js Dev Tools" [ref=f1e169] [cursor=pointer]:
+    - img [ref=f1e170]
+  - alert [ref=f1e173]

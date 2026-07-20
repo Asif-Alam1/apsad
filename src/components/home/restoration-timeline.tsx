@@ -158,6 +158,7 @@ export function RestorationTimeline() {
   const wrapRef = useRef<HTMLDivElement>(null)
   const trackRef = useRef<HTMLDivElement>(null)
   const progressRef = useRef<HTMLDivElement>(null)
+  const tickerRef = useRef<HTMLSpanElement>(null)
   const [sticky, setSticky] = useState(false)
   const [contentW, setContentW] = useState(0)
   const [travel, setTravel] = useState(0)
@@ -207,6 +208,9 @@ export function RestorationTimeline() {
         if (progressRef.current) {
           progressRef.current.style.transform = `scaleX(${progress})`
         }
+        if (tickerRef.current) {
+          tickerRef.current.textContent = String(Math.round(1960 + progress * (2016 - 1960)))
+        }
       })
     }
 
@@ -231,6 +235,7 @@ export function RestorationTimeline() {
         role: 'region',
         'aria-label': 'Restoration timeline, scroll horizontally',
         tabIndex: 0,
+        'data-cursor-label': 'Drag',
       })}
     >
       {/* The continuous thread */}
@@ -266,17 +271,25 @@ export function RestorationTimeline() {
     >
       <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
         {track}
-        {/* Progress hairline */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-56 flex items-center gap-4">
-          <span className="font-display text-[10px] tracking-[0.2em] text-muted-foreground">1960</span>
-          <div className="relative flex-1 h-px bg-border overflow-hidden">
-            <div
-              ref={progressRef}
-              className="absolute inset-0 bg-primary origin-left"
-              style={{ transform: 'scaleX(0)' }}
-            />
+        {/* Live year ticker + progress hairline */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3" aria-hidden="true">
+          <span
+            ref={tickerRef}
+            className="font-display text-4xl lg:text-5xl text-primary tabular-nums leading-none"
+          >
+            1960
+          </span>
+          <div className="w-56 flex items-center gap-4">
+            <span className="font-display text-[10px] tracking-[0.2em] text-muted-foreground">1960</span>
+            <div className="relative flex-1 h-px bg-border overflow-hidden">
+              <div
+                ref={progressRef}
+                className="absolute inset-0 bg-primary origin-left"
+                style={{ transform: 'scaleX(0)' }}
+              />
+            </div>
+            <span className="font-display text-[10px] tracking-[0.2em] text-muted-foreground">Today</span>
           </div>
-          <span className="font-display text-[10px] tracking-[0.2em] text-muted-foreground">Today</span>
         </div>
       </div>
     </section>

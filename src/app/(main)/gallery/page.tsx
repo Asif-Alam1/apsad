@@ -299,6 +299,7 @@ export default function GalleryPage() {
                   key={item.id}
                   role="button"
                   tabIndex={0}
+                  data-cursor-label="View"
                   className={`group relative cursor-pointer overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset ${getBentoClass(index, filteredItems.length)}`}
                   style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
                   onClick={() => openModal(item)}
@@ -340,12 +341,6 @@ export default function GalleryPage() {
                     </p>
                   </div>
 
-                  {/* View indicator on hover */}
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <span className="text-white text-[11px] uppercase tracking-[0.2em] font-medium border border-white/40 px-5 py-2.5 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-out">
-                      View
-                    </span>
-                  </div>
                 </div>
               ))}
             </div>

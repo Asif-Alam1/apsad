@@ -1,0 +1,22 @@
+[    1091ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_compiled_2ce9398a._.js:16329
+[    1347ms] [WARNING] Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[    1361ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[    1621ms] [LOG] [Fast Refresh] done in 261ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[   41578ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[   41612ms] [LOG] [Fast Refresh] done in 34ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[  126179ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[  126292ms] [LOG] [Fast Refresh] done in 81ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[  200674ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[  200831ms] [LOG] [Fast Refresh] done in 157ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[  200977ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_compiled_2ce9398a._.js:16329
+[  201037ms] [WARNING] Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[  264143ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[  264177ms] [LOG] [Fast Refresh] done in 34ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[  347847ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[  347930ms] [LOG] [Fast Refresh] done in 82ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[  347994ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_compiled_2ce9398a._.js:16329
+[  348049ms] [WARNING] Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio. @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_3bfaed20._.js:803
+[  348068ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[  348099ms] [LOG] [Fast Refresh] done in 31ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
+[  401648ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14731
+[  401682ms] [LOG] [Fast Refresh] done in 34ms @ http://localhost:9002/_next/static/chunks/node_modules_next_dist_client_fdf37019._.js:14560
