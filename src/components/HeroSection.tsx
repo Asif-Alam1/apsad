@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Magnetic } from "@/components/ui/magnetic";
 import { CharReveal } from "@/components/ui/char-reveal";
-import { DONE_EVENT } from "@/components/ui/preloader";
+import { DONE_EVENT, isPreloaderRunning } from "@/components/ui/preloader";
 
 const ease = 'cubic-bezier(0.16, 1, 0.3, 1)';
 
@@ -32,8 +32,15 @@ export default function HeroSection() {
     }
     let t: ReturnType<typeof setTimeout>;
     const start = () => { t = setTimeout(() => setLoaded(true), 100); };
+
+    // No curtain this load (revisit within session) — enter right away.
+    if (!isPreloaderRunning()) {
+      start();
+      return () => clearTimeout(t);
+    }
+
     window.addEventListener(DONE_EVENT, start, { once: true });
-    // fallback when no preloader will fire (revisit within session)
+    // safety net in case the curtain never lifts
     const fallback = setTimeout(() => setLoaded(true), 3600);
     return () => {
       window.removeEventListener(DONE_EVENT, start);

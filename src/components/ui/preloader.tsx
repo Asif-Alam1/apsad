@@ -14,6 +14,13 @@ export function preloaderWillRun() {
   )
 }
 
+/* Module flag so late-mounting listeners (the hero) never miss the done
+   event: false = curtain not running, start your entrance immediately. */
+let running = false
+export function isPreloaderRunning() {
+  return running
+}
+
 export { DONE_EVENT }
 
 /**
@@ -32,11 +39,13 @@ export function Preloader() {
     }
 
     window.sessionStorage.setItem(SEEN_KEY, '1')
+    running = true
     document.documentElement.style.overflow = 'hidden'
     setPhase('play')
 
     const lift = setTimeout(() => {
       setPhase('lift')
+      running = false
       window.dispatchEvent(new Event(DONE_EVENT))
       document.documentElement.style.overflow = ''
     }, 1900)
@@ -45,6 +54,7 @@ export function Preloader() {
     return () => {
       clearTimeout(lift)
       clearTimeout(gone)
+      running = false
       document.documentElement.style.overflow = ''
     }
   }, [])

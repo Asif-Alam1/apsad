@@ -16,7 +16,7 @@ export function PresidentSection() {
                 src="/Raya.jpg"
                 alt="Raya Daouk, President of APSAD"
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'cover', objectPosition: '100% 30%' }}
                 sizes="(max-width: 1024px) 90vw, 30vw"
               />
               <div

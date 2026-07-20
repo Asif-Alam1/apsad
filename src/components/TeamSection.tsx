@@ -10,18 +10,21 @@ const teamMembers = [
     name: "Raya Daouk",
     title: "President",
     imageUrl: "/Raya.jpg",
+    focus: "100% 30%",
     bio: "Presiding over the association's restorations, campaigns, and partnerships — from the Zaki Nassif Museum to the defense of Beirut's old houses.",
   },
   {
     name: "Costa Doumani",
     title: "Director of Operations",
     imageUrl: "/Costa.jpg",
+    focus: "center",
     bio: "Orchestrating field operations and sustaining the work of the regional sections across Lebanon.",
   },
   {
     name: "Yasmine Makaroun",
     title: "Architect & Conservation Specialist",
     imageUrl: "/yasmine.jpeg",
+    focus: "center",
     bio: "The architect behind the study that turned Zaki Nassif's family house into a museum, cultural centre, and music school.",
   },
 ];
@@ -57,7 +60,7 @@ export function TeamSection() {
                     src={member.imageUrl}
                     alt={`${member.name}, ${member.title} at APSAD`}
                     fill
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", objectPosition: member.focus ?? "center" }}
                     sizes="(max-width: 768px) 90vw, 30vw"
                     className="transition-transform duration-700 group-hover:scale-105"
                   />
