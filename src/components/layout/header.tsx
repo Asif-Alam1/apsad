@@ -55,7 +55,7 @@ export function Header() {
           <Image src="/logo.png" alt="" width={38} height={38} className="rounded-full" />
           <span className="flex flex-col leading-none">
             <span className="font-display text-xl tracking-[0.18em]">APSAD</span>
-            <span className={`font-display text-[10px] tracking-[0.32em] uppercase mt-1 ${nocturne ? 'text-[hsl(38_52%_63%)]' : 'text-primary'}`}>
+            <span className={`font-display text-[10px] tracking-[0.32em] uppercase mt-1 ${nocturne ? 'text-[hsl(38_52%_63%)]' : 'text-accent'}`}>
               Depuis 1960
             </span>
           </span>

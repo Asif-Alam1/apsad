@@ -1,14 +1,11 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
-
-export const metadata: Metadata = {
-  title: "Page Not Found",
-};
 
 export default function NotFound() {
   return (
     <section className="container max-w-3xl mx-auto px-6 py-32 md:py-44 text-center">
+      {/* Rendered here because route metadata is dropped when the not-found boundary hydrates. */}
+      <title>Page Not Found | APSAD Lebanon</title>
       <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-8">
         Error 404
       </p>

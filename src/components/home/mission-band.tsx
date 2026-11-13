@@ -87,7 +87,7 @@ export function MissionBand() {
             <Reveal key={aim.numeral} delay={(index % 2) * 100}>
               <div className="group border-t border-border py-8 grid grid-cols-[3.5rem_1fr] gap-6">
                 <span
-                  className="font-display text-2xl text-primary/70 pt-0.5 group-hover:text-primary transition-colors duration-300"
+                  className="font-display text-2xl text-primary pt-0.5 group-hover:text-accent transition-colors duration-300"
                   aria-hidden="true"
                 >
                   {aim.numeral}
