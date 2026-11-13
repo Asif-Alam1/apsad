@@ -34,7 +34,7 @@ const two = (n: number) => String(n).padStart(2, "0");
 export function TeamSection() {
   return (
     <section className="py-[clamp(6rem,10vw,9rem)] border-b border-border">
-      <div className="container max-w-6xl mx-auto px-6">
+      <div className="container max-w-7xl mx-auto px-6">
         <Reveal>
           <div className="grid md:grid-cols-12 gap-x-8 gap-y-6 items-end mb-[clamp(3rem,6vw,5rem)]">
             <div className="md:col-span-7">

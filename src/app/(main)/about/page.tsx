@@ -112,7 +112,7 @@ export default function AboutPage() {
     <div className="pt-20">
       {/* Opener */}
       <section className="border-b border-border">
-        <div className="container max-w-6xl mx-auto px-6 pt-[clamp(3rem,7vw,6rem)] pb-[clamp(3.5rem,7vw,6rem)]">
+        <div className="container max-w-7xl mx-auto px-6 pt-[clamp(3rem,7vw,6rem)] pb-[clamp(3.5rem,7vw,6rem)]">
           <Reveal>
             <div className="flex items-baseline justify-between gap-6 border-b border-border pb-4 mb-[clamp(2.5rem,6vw,5rem)]">
               <p className={label}>Est. 1960 — Beirut</p>
@@ -163,7 +163,7 @@ export default function AboutPage() {
 
       {/* The Founding */}
       <section id="history" className={`${sectionPad} scroll-mt-20`}>
-        <div className="container max-w-6xl mx-auto px-6">
+        <div className="container max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-12 gap-x-8 gap-y-16">
             <Reveal className="lg:col-span-7">
               <p className={`${label} mb-6`}>The Founding</p>
@@ -248,7 +248,7 @@ export default function AboutPage() {
 
       {/* Mission & Vision */}
       <section className="border-y border-border">
-        <div className="container max-w-6xl mx-auto px-6">
+        <div className="container max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2">
             {[
               {
@@ -296,7 +296,7 @@ export default function AboutPage() {
 
       {/* Where We Work */}
       <section className={sectionPad}>
-        <div className="container max-w-6xl mx-auto px-6">
+        <div className="container max-w-7xl mx-auto px-6">
           <Reveal>
             <div className="grid md:grid-cols-12 gap-x-8 gap-y-4 items-end mb-[clamp(3rem,6vw,5rem)]">
               <p className={`${label} md:col-span-4`}>Across Lebanon</p>
@@ -366,7 +366,7 @@ export default function AboutPage() {
 
       {/* The Chronicle */}
       <section className="section-dark border-y">
-        <div className={`container max-w-6xl mx-auto px-6 ${sectionPad}`}>
+        <div className={`container max-w-7xl mx-auto px-6 ${sectionPad}`}>
           <Reveal>
             <div className="grid md:grid-cols-12 gap-x-8 gap-y-4 items-end mb-[clamp(3rem,6vw,5rem)]">
               <p className={`${label} md:col-span-4`}>The Chronicle</p>
@@ -450,7 +450,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="section-dark border-t">
         <Reveal>
-          <div className={`container max-w-6xl mx-auto px-6 ${sectionPad}`}>
+          <div className={`container max-w-7xl mx-auto px-6 ${sectionPad}`}>
             <div className="rule-ornament mb-[clamp(3rem,6vw,5rem)]">
               <span />
             </div>
