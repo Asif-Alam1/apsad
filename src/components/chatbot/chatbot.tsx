@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -24,6 +25,9 @@ const suggestedQuestions = [
 ];
 
 export function Chatbot() {
+  // The panel takes the room it opens in: nocturne on the home page and the gallery
+  const pathname = usePathname();
+  const nocturne = pathname === "/" || pathname.startsWith("/gallery");
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputValue, setInputValue] = useState("");
@@ -141,7 +145,7 @@ export function Chatbot() {
       {/* Chat Panel */}
       <SheetContent
         side="right"
-        className="flex h-full w-[calc(100vw-1.25rem)] max-w-[440px] flex-col border-l border-border bg-background p-0 shadow-none sm:max-w-[440px] [&>button:last-child]:hidden"
+        className={`${nocturne ? "section-dark " : ""}flex h-full w-[calc(100vw-1.25rem)] max-w-[440px] flex-col border-l border-border bg-background p-0 shadow-none sm:max-w-[440px] [&>button:last-child]:hidden`}
       >
         {/* Header */}
         <div className="flex items-start justify-between border-b border-border py-5 pl-6 pr-3">
