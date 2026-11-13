@@ -10,18 +10,6 @@ export const ai = genkit({
     }),
   ],
   model: 'googleai/gemini-2.0-flash',
-  // Enhanced configuration
-  modelConfig: {
-    temperature: 0.7, // Balanced creativity and accuracy
-    topK: 40, // Good diversity of responses
-    topP: 0.95, // Natural language generation
-    maxOutputTokens: 2048, // Longer, more detailed responses
-  },
-  // Enable logging for debugging
-  logging: {
-    level: 'info',
-    logger: logger,
-  },
 });
 
 // Export for use in flows

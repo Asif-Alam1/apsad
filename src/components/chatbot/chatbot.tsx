@@ -28,7 +28,7 @@ export function Chatbot() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [chatHistory, setChatHistory] = useState<AnswerQuestionsAboutAPSADInput['chatHistory']>([]);
+  const [chatHistory, setChatHistory] = useState<NonNullable<AnswerQuestionsAboutAPSADInput['chatHistory']>>([]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 

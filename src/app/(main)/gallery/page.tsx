@@ -187,18 +187,30 @@ const categories = ["All", "Beirut", "Tripoli", "Mountain", "Coast"];
 
 /**
  * Bento span assignment — repeating 5-item pattern fills exactly 3 rows
- * in a 3-column grid (9 cells per group). Falls back to uniform 1×1
- * when there aren't enough remaining items to complete a group.
+ * in a 3-column grid (9 cells per group). The leftover items after the last
+ * full group are re-set so the final rows close flush, with no empty cells.
  */
 function getBentoClass(index: number, total: number): string {
+  let tail = total % 5;
+  // A lone leftover would stretch into a thin banner; instead fold it into
+  // the last full group and set those six as two plain rows of three.
+  if (tail === 1 && total > 5) tail = 6;
+  const tailStart = total - tail;
+  // On the 2-column mobile grid, an odd count leaves one cell: widen the last item.
+  const mobile = total % 2 === 1 && index === total - 1 ? "col-span-2 " : "";
+
+  if (index >= tailStart) {
+    const pos = index - tailStart;
+    if (tail === 2 && pos === 0) return mobile + "md:col-span-2";
+    if (tail === 4 && (pos === 0 || pos === 3)) return mobile + "md:col-span-2";
+    return mobile + "md:col-span-1";
+  }
+
   const mod = index % 5;
-  const remaining = total - index;
-
   // Large featured: 2 cols × 2 rows (4 cells)
-  if (mod === 0 && remaining >= 5) return "md:col-span-2 md:row-span-2";
+  if (mod === 0) return "md:col-span-2 md:row-span-2";
   // Tall portrait: 1 col × 2 rows (2 cells)
-  if (mod === 2 && remaining >= 3) return "md:row-span-2";
-
+  if (mod === 2) return "md:row-span-2";
   return "";
 }
 

@@ -27,8 +27,7 @@ const AnswerQuestionsAboutAPSADInputSchema = z.object({
     .describe('The tone to use in the conversation.'),
 });
 
-export type AnswerQuestionsAboutAPSADInput = z.infer
-  typeof AnswerQuestionsAboutAPSADInputSchema
+export type AnswerQuestionsAboutAPSADInput = z.infer<typeof AnswerQuestionsAboutAPSADInputSchema>;
 
 
 // Enhanced output schema with richer responses
@@ -80,8 +79,7 @@ const AnswerQuestionsAboutAPSADOutputSchema = z.object({
     .describe('Additional resources that might be helpful to the user.'),
 });
 
-export type AnswerQuestionsAboutAPSADOutput = z.infer
-  typeof AnswerQuestionsAboutAPSADOutputSchema
+export type AnswerQuestionsAboutAPSADOutput = z.infer<typeof AnswerQuestionsAboutAPSADOutputSchema>;
 
 
 // Helper function to summarize conversation history
