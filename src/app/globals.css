@@ -104,6 +104,11 @@
     /* EB Garamond runs small; 17px base keeps unstyled prose comfortable */
     font-size: 1.0625rem;
     font-kerning: normal;
+    /* Old-style figures sit in the text like lowercase; display type keeps lining figures */
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    font-variant-ligatures: common-ligatures;
+    hanging-punctuation: first;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -112,8 +117,18 @@
     text-wrap: balance;
   }
 
+  p, li, blockquote, figcaption {
+    text-wrap: pretty;
+  }
+
   ::selection {
     background: hsl(var(--primary) / 0.25);
+  }
+
+  /* Every link shows where the keyboard is, even without component styles */
+  :where(a, summary):focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 4px;
   }
 }
 
@@ -122,6 +137,107 @@
 .font-display {
   font-weight: 400;
   font-synthesis-weight: none;
+  font-variant-numeric: lining-nums;
+}
+
+:root {
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/*
+ * The Plate — every photograph is printed in one warm monochrome so archive
+ * prints, event snapshots and portraits read as a single collection. Inside a
+ * `.plate-hover` parent the original colour develops on hover/focus.
+ */
+.plate {
+  filter: grayscale(1) sepia(0.26) contrast(1.05) brightness(0.97);
+  transition: filter 1.1s var(--ease-expo), transform 1.4s var(--ease-expo);
+}
+
+.plate-hover:hover .plate,
+.plate-hover:focus-visible .plate,
+.plate-hover:focus-within .plate {
+  filter: grayscale(0) sepia(0) contrast(1) brightness(1);
+}
+
+/* A hairline that draws itself under a text link */
+.link-rule {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  padding-bottom: 2px;
+  transition: background-size 0.6s var(--ease-expo), color 0.3s ease;
+}
+
+.link-rule:hover,
+.link-rule:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* Inscriptional drop cap for an opening paragraph */
+.dropcap::first-letter {
+  font-family: var(--font-marcellus), Georgia, serif;
+  float: left;
+  font-size: 4.1em;
+  line-height: 0.78;
+  padding: 0.07em 0.11em 0 0;
+  color: hsl(var(--primary));
+}
+
+/* Hairline rule broken by a small lozenge — the only ornament in the system */
+.rule-ornament {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.rule-ornament::before,
+.rule-ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: hsl(var(--border));
+}
+
+.rule-ornament > span {
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border: 1px solid hsl(var(--primary));
+}
+
+/* Ledger field — a ruled line to write on, not a box */
+.field-line {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid hsl(var(--input));
+  border-radius: 0;
+  padding: 0.7rem 0 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+  transition: border-color 0.4s var(--ease-expo);
+}
+
+.field-line::placeholder {
+  color: hsl(var(--muted-foreground) / 0.65);
+  font-style: italic;
+}
+
+.field-line:hover {
+  border-bottom-color: hsl(var(--foreground) / 0.55);
+}
+
+.field-line:focus-visible {
+  outline: none;
+  border-bottom-color: hsl(var(--primary));
+  box-shadow: 0 1px 0 0 hsl(var(--primary));
+}
+
+.field-line[aria-invalid='true'] {
+  border-bottom-color: hsl(var(--destructive));
 }
 
 /* Scroll-triggered animation */

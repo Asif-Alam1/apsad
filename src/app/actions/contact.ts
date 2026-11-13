@@ -1,54 +1,76 @@
-
-// @/app/actions/contact.ts
 "use server";
 
 import { contactFormSchema, type ContactFormState } from "@/lib/validators/contact";
 
-export async function submitContactForm(
-  prevState: ContactFormState,
-  formData: FormData
-): Promise<ContactFormState> {
-  await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate network delay
+/**
+ * Delivers a contact-form message by email through Resend's REST API.
+ *
+ * Requires three environment variables (see .env.example):
+ *   RESEND_API_KEY      — API key from resend.com
+ *   CONTACT_TO_EMAIL    — the APSAD inbox that receives messages
+ *   CONTACT_FROM_EMAIL  — a sender on a domain verified in Resend
+ *
+ * When they are missing, or delivery fails, the form reports the failure
+ * instead of pretending the message was sent.
+ */
+export async function submitContactForm(input: unknown): Promise<ContactFormState> {
+  const parsed = contactFormSchema.safeParse(input);
 
-  const validatedFields = contactFormSchema.safeParse({
-    name: formData.get("name"),
-    email: formData.get("email"),
-    subject: formData.get("subject"),
-    message: formData.get("message"),
-  });
-
-  if (!validatedFields.success) {
+  if (!parsed.success) {
     return {
-      message: "Validation failed. Please check your input.",
+      message: "Please check the highlighted fields.",
       success: false,
-      errors: validatedFields.error.flatten().fieldErrors,
-      timestamp: Date.now(),
+      errors: parsed.error.flatten().fieldErrors,
     };
   }
 
-  // In a real application, you would typically:
-  // 1. Send an email using a service like Nodemailer, Resend, or SendGrid.
-  // 2. Save the submission to a database.
-  // For this example, we'll just log the data to the console.
-  console.log("Contact Form Submission Received:");
-  console.log("Name:", validatedFields.data.name);
-  console.log("Email:", validatedFields.data.email);
-  console.log("Subject:", validatedFields.data.subject);
-  console.log("Message:", validatedFields.data.message);
+  const { name, email, subject, message, website } = parsed.data;
 
-  // Example of a potential server-side error
-  // if (validatedFields.data.subject.toLowerCase().includes("spam")) {
-  //   return {
-  //     message: "Your message was flagged as spam and could not be processed.",
-  //     success: false,
-  //     errors: { _form: ["Message flagged as spam."] },
-  //     timestamp: Date.now(),
-  //   };
-  // }
+  // Honeypot: real visitors never see or fill this field. Accept silently.
+  if (website) {
+    return { message: "Thank you — your message has been sent.", success: true };
+  }
 
-  return {
-    message: "Thank you for your message! We'll get back to you as soon as possible.",
-    success: true,
-    timestamp: Date.now(),
+  const apiKey = process.env.RESEND_API_KEY;
+  const to = process.env.CONTACT_TO_EMAIL;
+  const from = process.env.CONTACT_FROM_EMAIL;
+
+  const failure: ContactFormState = {
+    message:
+      "Your message could not be sent from this form. Please write or telephone the association directly.",
+    success: false,
   };
+
+  if (!apiKey || !to || !from) {
+    console.error("Contact form: email delivery is not configured (see .env.example).");
+    return failure;
+  }
+
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to: [to],
+        reply_to: email,
+        subject: `[Website] ${subject}`,
+        text: `From: ${name} <${email}>\n\n${message}`,
+      }),
+      signal: AbortSignal.timeout(10_000),
+    });
+
+    if (!response.ok) {
+      console.error("Contact form: delivery failed", response.status, await response.text());
+      return failure;
+    }
+  } catch (error) {
+    console.error("Contact form: delivery failed", error);
+    return failure;
+  }
+
+  return { message: "Thank you — your message has been sent.", success: true };
 }

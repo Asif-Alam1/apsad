@@ -30,30 +30,40 @@ const affiliations = [
 
 export function AffiliationsSection() {
   return (
-    <section className="section-light py-24 md:py-32 border-t border-border">
-      <div className="container max-w-6xl mx-auto px-6">
+    <section className="section-light py-24 md:py-36 border-t border-border">
+      <div className="container max-w-7xl mx-auto px-6">
         <Reveal>
-          <div className="max-w-2xl mb-16">
+          <div className="mb-14 md:mb-20">
             <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
               In Good Company
             </p>
-            <h2 className="font-display uppercase tracking-[0.03em] text-4xl md:text-5xl leading-[1.1]">
+            <h2 className="font-display uppercase tracking-[0.03em] text-4xl md:text-[3.25rem] leading-[1.06] max-w-[16ch]">
               The company of guardians
             </h2>
           </div>
         </Reveal>
 
-        <div>
+        <div className="border-b border-border">
           {affiliations.map((item, index) => (
             <Reveal key={item.name} delay={index * 80}>
-              <div className="group border-t border-border last:border-b py-7 md:py-8 grid md:grid-cols-12 gap-3 md:gap-8 items-baseline">
-                <h3 className="md:col-span-4 font-display text-2xl md:text-[1.7rem] tracking-[0.02em] group-hover:text-primary transition-colors duration-300">
+              <div className="group relative border-t border-border py-8 md:py-10 grid lg:grid-cols-12 gap-x-12 gap-y-3 items-baseline">
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-px left-0 h-px w-full bg-foreground/70 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-[var(--ease-expo)]"
+                />
+                <span
+                  aria-hidden="true"
+                  className="hidden lg:block lg:col-span-1 font-display text-[11px] tracking-[0.28em] text-muted-foreground"
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <h3 className="lg:col-span-4 font-display text-2xl md:text-[1.75rem] leading-[1.15] tracking-[0.02em] transition-transform duration-500 ease-[var(--ease-expo)] group-hover:translate-x-1.5">
                   {item.name}
                 </h3>
-                <p className="md:col-span-3 font-display text-[11px] uppercase tracking-[0.25em] text-primary">
+                <p className="lg:col-span-3 font-display text-[11px] uppercase tracking-[0.28em] leading-relaxed text-primary">
                   {item.tenure}
                 </p>
-                <p className="md:col-span-5 text-base text-muted-foreground leading-relaxed">
+                <p className="lg:col-span-4 text-[17px] text-muted-foreground leading-relaxed max-w-[46ch]">
                   {item.note}
                 </p>
               </div>

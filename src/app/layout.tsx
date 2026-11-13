@@ -1,8 +1,9 @@
 
 import type { Metadata } from 'next';
-import { Marcellus, EB_Garamond } from 'next/font/google';
+import { Marcellus, EB_Garamond, Amiri } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { siteUrl } from "@/lib/site";
 
 const marcellus = Marcellus({
   variable: '--font-marcellus',
@@ -18,7 +19,19 @@ const ebGaramond = EB_Garamond({
   display: 'swap',
 });
 
+// Arabic companion to the Garamond text face — used automatically wherever
+// Arabic appears, because it sits behind the Latin faces in every font stack.
+const amiri = Amiri({
+  variable: '--font-arabic',
+  weight: ['400', '700'],
+  subsets: ['arabic'],
+  display: 'swap',
+  preload: false,
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: './' },
   title: {
     default: 'APSAD - Protecting Lebanon\'s Cultural & Natural Heritage',
     template: '%s | APSAD Lebanon',
@@ -26,7 +39,7 @@ export const metadata: Metadata = {
   description: 'APSAD (Association for the Protection of Natural Sites and Old Buildings in Lebanon) is a leading NGO dedicated to identifying, protecting, preserving, and promoting Lebanon\'s rich cultural and natural heritage for future generations.',
   keywords: ['APSAD', 'Lebanon', 'heritage', 'preservation', 'NGO', 'cultural heritage', 'natural sites', 'old buildings', 'archaeology', 'Baalbek', 'Byblos', 'Tyre', 'Anjar', 'Qadisha Valley', 'Lebanese heritage', 'heritage conservation'],
   applicationName: 'APSAD Lebanon',
-  authors: [{ name: 'APSAD', url: 'https://apsad.org' }],
+  authors: [{ name: 'APSAD' }],
   robots: {
     index: true,
     follow: true,
@@ -41,7 +54,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'APSAD - Protecting Lebanon\'s Cultural & Natural Heritage',
     description: 'Join APSAD in preserving Lebanon\'s invaluable historical sites and natural beauty.',
-    url: 'https://apsad.org',
     siteName: 'APSAD Lebanon',
     locale: 'en_US',
     type: 'website',
@@ -58,7 +70,7 @@ const organizationSchema = {
   "@type": "Organization",
   "name": "APSAD - Association pour la Protection des Sites et Anciennes Demeures",
   "alternateName": "APSAD Lebanon",
-  "url": "https://apsad.org",
+  "url": siteUrl,
   "foundingDate": "1960",
   "description": "APSAD is a non-governmental organization founded in 1960, dedicated to the identification, protection, preservation, and promotion of Lebanon's rich cultural and natural heritage.",
   "address": {
@@ -89,7 +101,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className={`${marcellus.variable} ${ebGaramond.variable} font-body antialiased`}>
+      <body className={`${marcellus.variable} ${ebGaramond.variable} ${amiri.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>

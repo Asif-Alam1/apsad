@@ -9,15 +9,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Search,
-  Images,
-  X,
-} from "lucide-react";
+import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
 import { SplitText } from "@/components/ui/split-text";
 
 const initialGalleryItems: GalleryItem[] = [
@@ -185,22 +177,17 @@ const initialGalleryItems: GalleryItem[] = [
 
 const categories = ["All", "Beirut", "Tripoli", "Mountain", "Coast"];
 
-/**
- * Bento span assignment — repeating 5-item pattern fills exactly 3 rows
- * in a 3-column grid (9 cells per group). Falls back to uniform 1×1
- * when there aren't enough remaining items to complete a group.
- */
-function getBentoClass(index: number, total: number): string {
-  const mod = index % 5;
-  const remaining = total - index;
+const totalPlates = initialGalleryItems.reduce(
+  (sum, item) => sum + item.imageUrls.length,
+  0
+);
 
-  // Large featured: 2 cols × 2 rows (4 cells)
-  if (mod === 0 && remaining >= 5) return "md:col-span-2 md:row-span-2";
-  // Tall portrait: 1 col × 2 rows (2 cells)
-  if (mod === 2 && remaining >= 3) return "md:row-span-2";
+const pad = (n: number | string) => String(n).padStart(2, "0");
 
-  return "";
-}
+const LABEL =
+  "font-display text-[11px] uppercase tracking-[0.3em]";
+const FOCUS =
+  "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-background";
 
 export default function GalleryPage() {
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([]);
@@ -247,6 +234,11 @@ export default function GalleryPage() {
 
   const closeModal = () => setSelectedItem(null);
 
+  const clearFilters = () => {
+    setSearchQuery("");
+    setSelectedCategory("All");
+  };
+
   const nextImage = useCallback(() => {
     if (selectedItem) {
       setCurrentImageIndex((i) => (i + 1) % selectedItem.imageUrls.length);
@@ -274,154 +266,187 @@ export default function GalleryPage() {
 
   return (
     <div className="section-dark min-h-screen pt-20">
-      {/* Header */}
-      <section className="py-16 md:py-24 border-b border-border">
-        <div className="container max-w-6xl mx-auto px-6 text-center">
-          <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
-            The Photographic Archive
-          </p>
-          <SplitText as="h1" className="font-display uppercase tracking-[0.05em] text-5xl md:text-6xl lg:text-7xl leading-[1.05] mb-8">
-            The Sites
-          </SplitText>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-            Souks and khans, palaces and villages — from the association&apos;s
-            own archive, photographed by APSAD&apos;s surveyors across sixty-five
-            years of fieldwork.
-          </p>
-
-          {/* Search & Filters */}
-          <div className="max-w-xl mx-auto space-y-5">
-            <div className="relative">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search heritage sites..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-11 py-5 text-sm bg-background border-border"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10 flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  aria-label="Clear search"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              )}
+      {/* Opening — editorial title block */}
+      <section className="pt-[clamp(4rem,8vw,7rem)]">
+        <div className="mx-auto w-full max-w-[1320px] px-5 md:px-10">
+          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-12 md:gap-x-10 md:items-end">
+            <div className="md:col-span-7">
+              <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-7">
+                The Photographic Archive
+              </p>
+              <SplitText
+                as="h1"
+                className="font-display uppercase tracking-[0.04em] text-[clamp(3.25rem,10vw,8.5rem)] leading-[0.95]"
+              >
+                The Sites
+              </SplitText>
             </div>
-
-            <div className="flex flex-wrap gap-2 justify-center">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-5 py-2.5 min-h-[44px] font-display text-[12px] uppercase tracking-[0.18em] transition-colors duration-200 border cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
-                    selectedCategory === category
-                      ? "bg-foreground text-background border-foreground"
-                      : "bg-transparent text-muted-foreground border-border hover:border-foreground hover:text-foreground"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+            <div className="md:col-span-5 md:pb-3">
+              <p className="text-[17px] md:text-[19px] leading-[1.6] text-foreground/80 max-w-[38ch]">
+                Souks and khans, palaces and villages — from the association&apos;s
+                own archive, photographed by APSAD&apos;s surveyors across sixty-five
+                years of fieldwork.
+              </p>
+              <p className={`${LABEL} tabular-nums text-muted-foreground mt-7`}>
+                Archive <span className="text-primary">·</span>{" "}
+                {initialGalleryItems.length} sites{" "}
+                <span className="text-primary">·</span> {totalPlates} plates
+              </p>
             </div>
-
-            <p className="text-[13px] text-muted-foreground">
-              {isLoading
-                ? "Loading..."
-                : `${filteredItems.length} heritage site${filteredItems.length !== 1 ? "s" : ""}`}
-            </p>
           </div>
+
+          {/* Index — filters as a text index, search as a ruled line */}
+          <div className="mt-[clamp(3rem,6vw,5rem)] border-t border-border pt-3 md:pt-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div
+              role="group"
+              aria-label="Filter sites by region"
+              className="flex flex-wrap items-center justify-between gap-x-3 sm:justify-start sm:gap-x-7 md:gap-x-9"
+            >
+              {categories.map((category) => {
+                const active = selectedCategory === category;
+                return (
+                  <button
+                    key={category}
+                    type="button"
+                    aria-pressed={active}
+                    onClick={() => setSelectedCategory(category)}
+                    className={`group/f relative min-h-[44px] cursor-pointer ${LABEL} transition-colors duration-300 ${FOCUS} ${
+                      active
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {category}
+                    <span
+                      aria-hidden
+                      className={`absolute left-0 right-[0.3em] bottom-[9px] h-px bg-primary origin-left transition-transform duration-700 ease-[var(--ease-expo)] ${
+                        active
+                          ? "scale-x-100"
+                          : "scale-x-0 group-hover/f:scale-x-50"
+                      }`}
+                    />
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="flex items-center gap-6 md:gap-8">
+              <p
+                aria-live="polite"
+                className="hidden lg:block text-[15px] italic text-muted-foreground whitespace-nowrap"
+              >
+                {isLoading
+                  ? "Loading..."
+                  : `${filteredItems.length} heritage site${filteredItems.length !== 1 ? "s" : ""}`}
+              </p>
+              <div className="relative w-full md:w-[280px]">
+                <Search
+                  aria-hidden
+                  strokeWidth={1.25}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground"
+                />
+                <input
+                  type="text"
+                  aria-label="Search heritage sites"
+                  placeholder="Search heritage sites..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full h-11 bg-transparent pl-7 pr-10 text-[16px] text-foreground placeholder:text-muted-foreground placeholder:italic border-0 border-b border-border outline-none transition-colors duration-300 focus:border-primary"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className={`absolute right-0 top-1/2 -translate-y-1/2 h-11 w-9 flex items-center justify-end text-muted-foreground hover:text-foreground transition-colors cursor-pointer ${FOCUS}`}
+                    aria-label="Clear search"
+                  >
+                    <X className="h-4 w-4" strokeWidth={1.25} />
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+          <p className="lg:hidden mt-4 text-[15px] italic text-muted-foreground">
+            {isLoading
+              ? "Loading..."
+              : `${filteredItems.length} heritage site${filteredItems.length !== 1 ? "s" : ""}`}
+          </p>
         </div>
       </section>
 
-      {/* Bento Gallery Grid */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-[1400px] mx-auto px-3 md:px-6">
+      {/* Plate wall */}
+      <section className="pt-[clamp(3rem,6vw,5rem)] pb-[clamp(6rem,10vw,9rem)]">
+        <div className="mx-auto w-full max-w-[1320px] px-5 md:px-10">
           {isLoading ? (
-            <div
-              className="grid grid-cols-2 md:grid-cols-3 gap-[3px]"
-              style={{ gridAutoRows: "200px" }}
-            >
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 md:gap-x-10 gap-y-12 md:gap-y-20">
               {[...Array(8)].map((_, i) => (
-                <div
-                  key={i}
-                  className={`bg-secondary animate-pulse ${getBentoClass(i, 8)}`}
-                />
+                <div key={i} aria-hidden>
+                  <div className="aspect-[5/4] border border-border bg-card" />
+                  <div className="mt-4 border-t border-border" />
+                </div>
               ))}
             </div>
           ) : filteredItems.length === 0 ? (
-            <div className="text-center py-20">
-              <p className="font-display text-2xl mb-4">
-                No sites found
+            <div className="max-w-[46ch] pt-2 pb-[clamp(2rem,6vw,5rem)] md:pt-6">
+              <p className={`${LABEL} text-primary mb-6`}>No sites found</p>
+              <p className="font-display text-2xl md:text-[2rem] leading-[1.25] mb-6">
+                Nothing on file under that search.
               </p>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-[17px] leading-[1.65] text-muted-foreground mb-8">
                 Try adjusting your search or filter criteria.
               </p>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  setSearchQuery("");
-                  setSelectedCategory("All");
-                }}
-                className="text-[13px] tracking-[0.1em] uppercase"
+              <button
+                type="button"
+                onClick={clearFilters}
+                className={`link-rule cursor-pointer ${LABEL} text-primary ${FOCUS}`}
               >
-                Clear Filters
-              </Button>
+                Clear filters
+              </button>
             </div>
           ) : (
-            <div
-              className="grid grid-cols-2 md:grid-cols-3 gap-[3px]"
-              style={{ gridAutoRows: "200px", gridAutoFlow: "dense" }}
-            >
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-4 md:gap-x-10 gap-y-12 md:gap-y-20">
               {filteredItems.map((item, index) => (
                 <div
                   key={item.id}
                   role="button"
                   tabIndex={0}
                   data-cursor-label="View"
-                  className={`group relative cursor-pointer overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset ${getBentoClass(index, filteredItems.length)}`}
-                  style={{ animation: `fade-up 0.5s ease-out ${index * 0.06}s both` }}
+                  className={`group plate-hover cursor-pointer ${FOCUS} focus-visible:ring-offset-8`}
+                  style={{ animation: `fade-up 0.7s var(--ease-expo) ${Math.min(index, 11) * 0.05}s both` }}
                   onClick={() => openModal(item)}
                   onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openModal(item); } }}
                 >
-                  {/* Image */}
-                  <Image
-                    src={item.imageUrls[0]}
-                    alt={item.title}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                    style={{ objectFit: "cover" }}
-                    className="transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
-
-                  {/* Gradient + hover overlay (single layer to avoid double-darkening) */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/0 to-black/0 group-hover:from-black/60 group-hover:via-black/20 group-hover:to-black/10 transition-all duration-500" />
-
-                  {/* Catalog number */}
-                  <span className="absolute top-3 left-3 text-white/60 text-[12px] font-medium tracking-[0.15em] tabular-nums">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-
-                  {/* Image count badge */}
-                  {item.imageUrls.length > 1 && (
-                    <span className="absolute top-3 right-3 flex items-center gap-1 bg-black/50 backdrop-blur-sm text-white text-[11px] px-2 py-1 tracking-wide">
-                      <Images className="h-3 w-3" />
-                      {item.imageUrls.length}
-                    </span>
-                  )}
-
-                  {/* Bottom info — always visible title, description on hover */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 md:p-5">
-                    <h3 className="font-display text-white text-sm md:text-base leading-tight drop-shadow-lg">
-                      {item.title}
-                    </h3>
-                    <p className="text-white/70 text-[12px] mt-1 line-clamp-1 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                      {item.description}
-                    </p>
+                  {/* Matted plate */}
+                  <div className="border border-border bg-card p-1.5 md:p-2.5 transition-colors duration-700 group-hover:border-primary/50">
+                    <div className="relative aspect-[5/4] overflow-hidden">
+                      <Image
+                        src={item.imageUrls[0]}
+                        alt=""
+                        fill
+                        sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 300px"
+                        className="plate object-cover group-hover:scale-[1.04] group-focus-visible:scale-[1.04]"
+                      />
+                    </div>
                   </div>
 
+                  {/* Typeset label */}
+                  <div className="relative mt-4 md:mt-5 border-t border-border pt-3">
+                    <span
+                      aria-hidden
+                      className="absolute -top-px left-0 h-px w-full bg-primary origin-left scale-x-0 transition-transform duration-[900ms] ease-[var(--ease-expo)] group-hover:scale-x-100 group-focus-visible:scale-x-100"
+                    />
+                    <div className="flex items-baseline justify-between gap-2">
+                      <span className={`${LABEL} tabular-nums text-primary`}>
+                        Pl. {pad(item.id)}
+                      </span>
+                      <span className="text-[13px] md:text-[14px] italic text-muted-foreground whitespace-nowrap">
+                        {item.imageUrls.length} photograph{item.imageUrls.length !== 1 ? "s" : ""}
+                      </span>
+                    </div>
+                    <h3 className="font-display text-[15px] md:text-[19px] leading-[1.25] mt-2 md:mt-3 text-foreground [text-wrap:balance]">
+                      {item.title}
+                    </h3>
+                  </div>
                 </div>
               ))}
             </div>
@@ -429,115 +454,128 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Modal — Editorial two-panel lightbox */}
+      {/* Lightbox — catalogue spread */}
       {selectedItem && (
         <Dialog open={!!selectedItem} onOpenChange={(open) => !open && closeModal()}>
-          <DialogContent className="max-w-5xl w-[95vw] p-0 overflow-hidden max-h-[90vh] gap-0 [&>button:last-child]:z-20 [&>button:last-child]:bg-black/50 [&>button:last-child]:text-white [&>button:last-child]:hover:bg-black/70 [&>button:last-child]:rounded-none [&>button:last-child]:right-3 [&>button:last-child]:top-3 [&>button:last-child]:h-10 [&>button:last-child]:w-10 [&>button:last-child]:flex [&>button:last-child]:items-center [&>button:last-child]:justify-center [&>button:last-child]:opacity-100">
+          <DialogContent
+            aria-describedby={undefined}
+            className="section-dark block max-w-[1180px] w-[94vw] p-0 gap-0 max-h-[92vh] overflow-y-auto border-border shadow-none sm:rounded-none [&>button:last-child]:z-20 [&>button:last-child]:right-2 [&>button:last-child]:top-2 [&>button:last-child]:h-11 [&>button:last-child]:w-11 [&>button:last-child]:flex [&>button:last-child]:items-center [&>button:last-child]:justify-center [&>button:last-child]:rounded-none [&>button:last-child]:bg-transparent [&>button:last-child]:text-foreground [&>button:last-child]:focus:ring-1 [&>button:last-child]:focus:ring-primary [&>button:last-child]:focus:ring-offset-0"
+          >
             {/* Visually hidden title for accessibility */}
             <DialogHeader className="sr-only">
               <DialogTitle>{selectedItem.title}</DialogTitle>
             </DialogHeader>
 
-            <div className="flex flex-col md:flex-row h-full max-h-[90vh]">
-              {/* Left — Image viewer */}
-              <div className="relative md:flex-1 bg-black min-h-[240px] md:min-h-0">
-                <div className="relative w-full h-[50vh] md:h-full">
-                  <Image
-                    src={selectedItem.imageUrls[currentImageIndex]}
-                    alt={`${selectedItem.title} — Image ${currentImageIndex + 1}`}
-                    fill
-                    style={{ objectFit: "contain" }}
-                    className="select-none"
-                    key={selectedItem.imageUrls[currentImageIndex]}
-                  />
+            <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_360px] lg:grid-cols-[minmax(0,1fr)_400px]">
+              {/* Plate on its mat */}
+              <div className="flex flex-col bg-black/35 px-5 pt-14 pb-4 md:px-12 md:pt-12 md:pb-6">
+                <div className="flex flex-1 items-center justify-center md:min-h-[420px]">
+                  <figure className="plate-hover border border-border bg-card p-1.5 md:p-2.5">
+                    {/* Native <img>: intrinsic size, never upscaled past the scan */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      key={selectedItem.imageUrls[currentImageIndex]}
+                      src={selectedItem.imageUrls[currentImageIndex]}
+                      alt={`${selectedItem.title} — photograph ${currentImageIndex + 1} of ${selectedItem.imageUrls.length}`}
+                      className="plate block h-auto w-auto max-w-full max-h-[44vh] md:max-h-[calc(92vh-13rem)] select-none animate-in fade-in duration-700"
+                    />
+                  </figure>
                 </div>
 
-                {/* Image nav arrows */}
-                {selectedItem.imageUrls.length > 1 && (
-                  <>
+                <div className="mt-4 md:mt-6 flex items-center justify-between gap-4">
+                  {selectedItem.imageUrls.length > 1 ? (
                     <button
+                      type="button"
                       onClick={prevImage}
                       aria-label="Previous image"
-                      className="absolute left-3 top-1/2 -translate-y-1/2 h-11 w-11 flex items-center justify-center bg-black/40 hover:bg-black/60 text-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                      className={`group/nav inline-flex min-h-[44px] items-center gap-3 cursor-pointer ${LABEL} text-muted-foreground hover:text-primary transition-colors duration-300 ${FOCUS}`}
                     >
-                      <ChevronLeft className="h-5 w-5" />
+                      <ArrowLeft
+                        strokeWidth={1}
+                        className="h-4 w-4 transition-transform duration-500 ease-[var(--ease-expo)] group-hover/nav:-translate-x-1"
+                      />
+                      <span className="hidden sm:inline">Previous</span>
                     </button>
+                  ) : (
+                    <span />
+                  )}
+                  <span className="font-display text-[12px] tracking-[0.3em] tabular-nums text-foreground/85">
+                    {pad(currentImageIndex + 1)}{" "}
+                    <span className="text-primary">/</span>{" "}
+                    {pad(selectedItem.imageUrls.length)}
+                  </span>
+                  {selectedItem.imageUrls.length > 1 ? (
                     <button
+                      type="button"
                       onClick={nextImage}
                       aria-label="Next image"
-                      className="absolute right-3 top-1/2 -translate-y-1/2 h-11 w-11 flex items-center justify-center bg-black/40 hover:bg-black/60 text-white transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                      className={`group/nav inline-flex min-h-[44px] items-center gap-3 cursor-pointer ${LABEL} text-muted-foreground hover:text-primary transition-colors duration-300 ${FOCUS}`}
                     >
-                      <ChevronRight className="h-5 w-5" />
+                      <span className="hidden sm:inline">Next</span>
+                      <ArrowRight
+                        strokeWidth={1}
+                        className="h-4 w-4 transition-transform duration-500 ease-[var(--ease-expo)] group-hover/nav:translate-x-1"
+                      />
                     </button>
-                  </>
-                )}
-
-                {/* Image counter */}
-                {selectedItem.imageUrls.length > 1 && (
-                  <span className="absolute bottom-3 left-3 text-white/70 text-[11px] tracking-[0.15em] tabular-nums bg-black/40 px-2.5 py-1">
-                    {currentImageIndex + 1} / {selectedItem.imageUrls.length}
-                  </span>
-                )}
-              </div>
-
-              {/* Right — Info panel */}
-              <div className="md:w-[340px] lg:w-[380px] flex flex-col border-l border-border bg-background overflow-hidden">
-                <div className="flex-1 overflow-y-auto">
-                  {/* Title block */}
-                  <div className="px-6 pt-6 pb-5 border-b border-border">
-                    <p className="font-display text-[11px] uppercase tracking-[0.3em] text-primary mb-2">
-                      Heritage Site
-                    </p>
-                    <h2 className="font-display text-xl md:text-2xl leading-tight">
-                      {selectedItem.title}
-                    </h2>
-                  </div>
-
-                  {/* Description */}
-                  <div className="px-6 py-5 border-b border-border">
-                    <h4 className="text-[11px] uppercase tracking-[0.15em] font-medium text-muted-foreground mb-3">
-                      Description
-                    </h4>
-                    <p className="text-sm leading-relaxed text-foreground/80">
-                      {selectedItem.description}
-                    </p>
-                  </div>
-
-                  {/* Historical Context */}
-                  <div className="px-6 py-5 border-b border-border">
-                    <h4 className="text-[11px] uppercase tracking-[0.15em] font-medium text-muted-foreground mb-3">
-                      Historical Context
-                    </h4>
-                    <p className="text-sm leading-relaxed text-foreground/80">
-                      {selectedItem.historicalContext}
-                    </p>
-                  </div>
-
-                  {/* Thumbnail strip */}
-                  {selectedItem.imageUrls.length > 1 && (
-                    <div className="px-6 py-5">
-                      <h4 className="text-[11px] uppercase tracking-[0.15em] font-medium text-muted-foreground mb-3">
-                        Gallery
-                      </h4>
-                      <div className="flex gap-[3px]">
-                        {selectedItem.imageUrls.map((url, i) => (
-                          <button
-                            key={i}
-                            onClick={() => setCurrentImageIndex(i)}
-                            className={`relative h-16 flex-1 overflow-hidden transition-opacity cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
-                              i === currentImageIndex
-                                ? "opacity-100 ring-2 ring-foreground"
-                                : "opacity-40 hover:opacity-70"
-                            }`}
-                            aria-label={`View image ${i + 1}`}
-                          >
-                            <Image src={url} alt="" fill style={{ objectFit: "cover" }} />
-                          </button>
-                        ))}
-                      </div>
-                    </div>
+                  ) : (
+                    <span />
                   )}
                 </div>
+              </div>
+
+              {/* Caption */}
+              <div className="border-t md:border-t-0 md:border-l border-border px-6 py-8 md:px-10 md:py-12 flex flex-col">
+                <p className={`${LABEL} tabular-nums text-primary mb-5`}>
+                  Pl. {pad(selectedItem.id)}
+                </p>
+                <h2 className="font-display text-[1.75rem] md:text-[2.125rem] leading-[1.15] pr-8 md:pr-0 [text-wrap:balance]">
+                  {selectedItem.title}
+                </h2>
+
+                <div className="rule-ornament my-7 md:my-8">
+                  <span />
+                </div>
+
+                <p className="text-[17px] md:text-[18px] leading-[1.6] text-foreground/90">
+                  {selectedItem.description}
+                </p>
+
+                <p className={`${LABEL} text-muted-foreground mt-8 mb-3`}>
+                  The record
+                </p>
+                <p className="text-[16px] md:text-[17px] leading-[1.6] italic text-foreground/75">
+                  {selectedItem.historicalContext}
+                </p>
+
+                {selectedItem.imageUrls.length > 1 && (
+                  <div className="mt-10 md:mt-auto md:pt-10">
+                    <p className={`${LABEL} text-muted-foreground mb-3`}>Plates</p>
+                    <div className="flex gap-2">
+                      {selectedItem.imageUrls.map((url, i) => (
+                        <button
+                          key={url}
+                          type="button"
+                          onClick={() => setCurrentImageIndex(i)}
+                          aria-label={`View image ${i + 1}`}
+                          aria-current={i === currentImageIndex}
+                          className={`plate-hover relative h-14 w-[72px] overflow-hidden border cursor-pointer transition-[border-color,opacity] duration-500 ${FOCUS} focus-visible:ring-offset-2 ${
+                            i === currentImageIndex
+                              ? "border-primary opacity-100"
+                              : "border-border opacity-55 hover:opacity-100"
+                          }`}
+                        >
+                          <Image
+                            src={url}
+                            alt=""
+                            fill
+                            sizes="72px"
+                            className="plate object-cover"
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </DialogContent>

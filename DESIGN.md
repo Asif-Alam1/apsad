@@ -143,6 +143,7 @@ Two rooms, one palette: night materials (umber, candle ivory, gold leaf) and day
 Flat, like masonry. Depth comes from tonal inversion, image scrims (gradient washes of the ground color at 0.5–0.85 alpha), 1px hairlines, and the global film grain. No decorative box-shadows anywhere; overlays (dialogs, sheets) keep only shadcn's minimum separation.
 
 ### Named Rules
+**The Plate Rule.** Every photograph is printed in one warm monochrome (`.plate`: grayscale + 26% sepia) so archive prints, event snapshots and portraits read as a single collection; inside a `.plate-hover` parent the original colour develops on hover or focus. The archive is small (about 800px), so plates are shown at or near native size inside a hairline mat with a typeset caption beneath (plate number left, label right) — never stretched across a viewport. The home hero and photography break are the only full-bleed images.
 **The Stone-Doesn't-Float Rule.** No drop shadows on cards, buttons, or sections — invert or rule off instead.
 
 ## 5. Components
@@ -162,7 +163,20 @@ Ruled rows beat cards. Lists (aims, affiliations, regions, privileges) are hairl
 1px hairline stroke, ground-colored fill, square, h-10+; gold/bronze focus ring; destructive red reserved for validation.
 
 ### Navigation
-Fixed transparent header; gains a 92% ground-color blur bar after 50px scroll. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Gold 2px scroll-progress bar. Mobile: full nocturne sheet with 2xl Marcellus links.
+Fixed transparent header; after 50px of scroll it becomes a near-opaque ground-colour bar (95-96%) with a hairline bottom border. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Nav links carry a hairline that draws in from the left on hover and focus and stays under the active item. Gold 2px scroll-progress bar. Mobile: a full-height nocturne index — gold 01-04 numerals, large Marcellus caps links between hairline rules, the member button full-width at the foot, then the address, telephone and email.
+
+### Assistant
+The chatbot launcher is a hairline umber tab with a gold icon and an "Ask" label (gold fill on hover only). The panel is square and unshadowed: Marcellus caps title, Garamond messages (visitor in a hairline box, assistant with a thin gold left rule), suggestions as ruled text rows, a `.field-line` input with a text "Send".
+
+### Editorial primitives (globals.css)
+- `.plate` / `.plate-hover` — the monochrome print treatment (see The Plate Rule).
+- `.link-rule` — a text link whose hairline underline draws in from the left; the default for inline and footer links (no icon boxes).
+- `.field-line` — ledger form field: a ruled line to write on, italic placeholder, bronze/gold focus rule. Labels are Marcellus 10px caps above the line.
+- `.dropcap` — inscriptional Marcellus drop cap for an opening paragraph.
+- `.rule-ornament` — hairline broken by a small lozenge.
+- `--ease-expo` — `cubic-bezier(0.16, 1, 0.3, 1)`, the house easing for hovers and reveals.
+- Figures: body text uses old-style figures; Marcellus display and labels use lining figures.
+- Page openers are asymmetric: monumental left-aligned title, standfirst in the right column, hairline, then an index or colophon strip. Centred stacks are reserved for the closing invitation.
 
 ### Signature Components
 - **Preloader curtain** (`ui/preloader.tsx`): once per session — APSAD carves in gold on black, hairline draws, curtain lifts (1.05s expo). Dispatches `apsad:preloader-done`; the hero holds its entrance for it.
@@ -170,7 +184,7 @@ Fixed transparent header; gains a 92% ground-color blur bar after 50px scroll. R
 - **CharReveal** (`ui/char-reveal.tsx`): per-character carve-in for display type.
 - **Pointer-parallax hero**: photograph drifts −14px against cursor, type +7px with it, over Ken Burns.
 - **The Record timeline** (`home/restoration-timeline.tsx`): 300vh sticky section driving a horizontal track; gold-node thread, alternating entries, live gold year ticker (1960→2016), progress hairline. Falls back to a scroll-snap strip on touch/reduced-motion with a "Drag" cursor label.
-- **ParallaxImage** (`ui/parallax-image.tsx`): scroll parallax + first-view clip-path unveiling (inset 14%/8% → 0 over 1.2s) with a settle from scale 1.12.
+- **The archive hang** (`home/photography-break.tsx`): four genuine archive plates hung salon-style at staggered heights on the nocturne, each matted, numbered and captioned; colour develops on hover.
 - **Labeled cursor** (`ui/cursor-follower.tsx`): blend-difference dot; grows ×2.8 over interactives; morphs into a 76px gold disc with tracked caps over `[data-cursor-label]` ("View" on gallery cards, "Drag" on the timeline strip).
 - **Marquee band**: trilingual (FR/EN/AR) gold tracked caps on the nocturne.
 - **Film grain**: fixed SVG turbulence at 2.8%, `z-index: var(--z-grain)`.

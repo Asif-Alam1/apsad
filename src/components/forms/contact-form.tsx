@@ -5,14 +5,12 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactFormSchema, type ContactFormData } from "@/lib/validators/contact";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Loader2, CheckCircle, AlertCircle, Send } from "lucide-react";
+import { Loader2, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
+import { submitContactForm } from "@/app/actions/contact";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [result, setResult] = useState<{ success: boolean; message: string } | null>(null);
 
   const {
     register,
@@ -21,34 +19,50 @@ export function ContactForm() {
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
-    defaultValues: { name: "", email: "", subject: "", message: "" },
+    defaultValues: { name: "", email: "", subject: "", message: "", website: "" },
   });
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
-    reset();
-    setTimeout(() => setIsSuccess(false), 4000);
+    setResult(null);
+    try {
+      const state = await submitContactForm(data);
+      setResult({ success: state.success, message: state.message });
+      if (state.success) reset();
+    } catch {
+      setResult({
+        success: false,
+        message:
+          "Your message could not be sent from this form. Please write or telephone the association directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-      <div className="grid sm:grid-cols-2 gap-6">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-10" noValidate>
+      {/* Honeypot — hidden from people and assistive technology; only bots fill it. */}
+      <div className="hidden" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input id="website" type="text" tabIndex={-1} autoComplete="off" {...register("website")} />
+      </div>
+      <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10">
         <div>
-          <Label htmlFor="name" className="text-sm font-medium mb-2 block">
+          <label htmlFor="name" className="block font-display text-[10px] uppercase tracking-[0.3em] text-primary">
             Full Name
-          </Label>
-          <Input
+          </label>
+          <input
             id="name"
             type="text"
             {...register("name")}
-            placeholder="Jane Doe"
-            className="py-5"
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "name-error" : undefined}
+            placeholder="Your name"
+            className="field-line"
           />
           {errors.name && (
-            <p className="text-sm text-destructive flex items-center gap-1 mt-1.5">
+            <p id="name-error" className="text-sm text-destructive flex items-center gap-1 mt-1.5">
               <AlertCircle className="h-3 w-3" />
               {errors.name.message}
             </p>
@@ -56,18 +70,20 @@ export function ContactForm() {
         </div>
 
         <div>
-          <Label htmlFor="email" className="text-sm font-medium mb-2 block">
+          <label htmlFor="email" className="block font-display text-[10px] uppercase tracking-[0.3em] text-primary">
             Email Address
-          </Label>
-          <Input
+          </label>
+          <input
             id="email"
             type="email"
             {...register("email")}
-            placeholder="jane@example.com"
-            className="py-5"
+            aria-invalid={!!errors.email}
+            aria-describedby={errors.email ? "email-error" : undefined}
+            placeholder="Where we may reply"
+            className="field-line"
           />
           {errors.email && (
-            <p className="text-sm text-destructive flex items-center gap-1 mt-1.5">
+            <p id="email-error" className="text-sm text-destructive flex items-center gap-1 mt-1.5">
               <AlertCircle className="h-3 w-3" />
               {errors.email.message}
             </p>
@@ -76,18 +92,20 @@ export function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="subject" className="text-sm font-medium mb-2 block">
+        <label htmlFor="subject" className="block font-display text-[10px] uppercase tracking-[0.3em] text-primary">
           Subject
-        </Label>
-        <Input
+        </label>
+        <input
           id="subject"
           type="text"
           {...register("subject")}
-          placeholder="How can we help?"
-          className="py-5"
+            aria-invalid={!!errors.subject}
+            aria-describedby={errors.subject ? "subject-error" : undefined}
+          placeholder="Membership, a project, a building…"
+          className="field-line"
         />
         {errors.subject && (
-          <p className="text-sm text-destructive flex items-center gap-1 mt-1.5">
+          <p id="subject-error" className="text-sm text-destructive flex items-center gap-1 mt-1.5">
             <AlertCircle className="h-3 w-3" />
             {errors.subject.message}
           </p>
@@ -95,54 +113,66 @@ export function ContactForm() {
       </div>
 
       <div>
-        <Label htmlFor="message" className="text-sm font-medium mb-2 block">
+        <label htmlFor="message" className="block font-display text-[10px] uppercase tracking-[0.3em] text-primary">
           Message
-        </Label>
-        <Textarea
+        </label>
+        <textarea
           id="message"
           {...register("message")}
-          placeholder="Tell us about your interest in APSAD's work..."
-          rows={6}
-          className="resize-none"
+            aria-invalid={!!errors.message}
+            aria-describedby={errors.message ? "message-error" : undefined}
+          placeholder="Your message"
+          rows={5}
+          className="field-line resize-none"
         />
         {errors.message && (
-          <p className="text-sm text-destructive flex items-center gap-1 mt-1.5">
+          <p id="message-error" className="text-sm text-destructive flex items-center gap-1 mt-1.5">
             <AlertCircle className="h-3 w-3" />
             {errors.message.message}
           </p>
         )}
       </div>
 
-      <div className="flex items-center justify-between pt-2">
-        <p className="text-[13px] text-muted-foreground">
-          We respond within 24 hours.
+      <div className="flex flex-col-reverse sm:flex-row sm:items-center justify-between gap-6 pt-2">
+        <p className="text-base italic text-muted-foreground">
+          Every message is read by the association.
         </p>
 
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="bg-foreground hover:bg-foreground/90 text-background text-[13px] tracking-[0.1em] uppercase px-8 py-5"
+          className="group bg-primary hover:bg-accent text-primary-foreground h-[52px] px-9 font-display text-[12px] tracking-[0.25em] uppercase transition-colors duration-500"
         >
           {isSubmitting ? (
             <>
-              <Loader2 className="h-4 w-4 animate-spin mr-2" />
-              Sending...
+              <Loader2 className="h-4 w-4 animate-spin mr-3" />
+              Sending
             </>
           ) : (
             <>
-              <Send className="h-4 w-4 mr-2" />
-              Send Message
+              Send the letter
+              <ArrowRight className="h-4 w-4 ml-3 transition-transform duration-500 ease-[var(--ease-expo)] group-hover:translate-x-1.5" />
             </>
           )}
         </Button>
       </div>
 
-      {isSuccess && (
-        <div className="flex items-center gap-2 text-sm text-primary pt-2">
-          <CheckCircle className="h-4 w-4" />
-          Message sent successfully. We&apos;ll be in touch soon.
-        </div>
-      )}
+      <div role="status" aria-live="polite">
+        {result && (
+          <p
+            className={`flex items-center gap-2 text-sm pt-2 ${
+              result.success ? "text-primary" : "text-destructive"
+            }`}
+          >
+            {result.success ? (
+              <CheckCircle className="h-4 w-4 shrink-0" />
+            ) : (
+              <AlertCircle className="h-4 w-4 shrink-0" />
+            )}
+            {result.message}
+          </p>
+        )}
+      </div>
     </form>
   );
 }

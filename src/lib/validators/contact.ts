@@ -1,11 +1,12 @@
-
 import { z } from "zod";
 
 export const contactFormSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  subject: z.string().min(5, { message: "Subject must be at least 5 characters." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+  name: z.string().trim().min(2, { message: "Name must be at least 2 characters." }).max(120),
+  email: z.string().trim().email({ message: "Please enter a valid email address." }).max(200),
+  subject: z.string().trim().min(5, { message: "Subject must be at least 5 characters." }).max(200),
+  message: z.string().trim().min(10, { message: "Message must be at least 10 characters." }).max(5000),
+  /** Honeypot — hidden from visitors; only bots fill it. */
+  website: z.string().max(200).optional(),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
@@ -13,18 +14,5 @@ export type ContactFormData = z.infer<typeof contactFormSchema>;
 export interface ContactFormState {
   message: string;
   success: boolean;
-  errors?: {
-    name?: string[];
-    email?: string[];
-    subject?: string[];
-    message?: string[];
-    _form?: string[]; // For general form errors
-  };
-  timestamp?: number; // To ensure re-render on subsequent submissions
+  errors?: Partial<Record<keyof ContactFormData, string[]>>;
 }
-
-export const initialContactFormState: ContactFormState = {
-  message: "",
-  success: false,
-  errors: {},
-};

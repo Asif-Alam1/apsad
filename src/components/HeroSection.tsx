@@ -83,26 +83,30 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[hsl(26_20%_4%)]">
+    <section className="relative min-h-[100svh] flex items-end overflow-hidden bg-[hsl(26_20%_4%)]">
       {/* Photograph emerging from the dark, drifting against the cursor */}
       <div ref={imageRef} className="absolute inset-0 will-change-transform">
         <Image
           src="/hero.jpeg"
           alt="Traditional Lebanese stone villa above the Mediterranean at dusk"
           fill
-          style={{ objectFit: 'cover' }}
+          sizes="100vw"
+          style={{ objectFit: 'cover', objectPosition: '70% 50%' }}
           className="animate-ken-burns"
           priority
         />
-        <div className="absolute inset-0 bg-[hsla(26,20%,4%,0.62)]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsla(26,20%,4%,0.85)] via-transparent to-[hsl(26_20%_6%)]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[hsla(26,20%,4%,0.5)] via-transparent to-[hsla(26,20%,4%,0.5)]" />
+        <div className="absolute inset-0 bg-[hsla(26,20%,4%,0.42)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsla(26,20%,4%,0.8)] via-transparent to-[hsl(26_20%_5%)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[hsla(26,20%,4%,0.86)] via-[hsla(26,20%,4%,0.42)] to-transparent" />
       </div>
 
-      {/* Engraved title block */}
-      <div ref={contentRef} className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20 will-change-transform">
+      {/* Engraved title block — set low and left, like a lintel inscription */}
+      <div
+        ref={contentRef}
+        className="relative z-10 w-full container max-w-7xl mx-auto px-6 pt-36 pb-32 md:pb-36 will-change-transform"
+      >
         <p
-          className="font-display text-[11px] sm:text-[12px] uppercase tracking-[0.42em] text-[hsl(38_52%_63%)] mb-10"
+          className="font-display text-[11px] sm:text-[12px] uppercase tracking-[0.42em] text-[hsl(38_52%_63%)] mb-8 md:mb-10"
           style={reveal(loaded, 0.2)}
         >
           Beirut · Founded 1960
@@ -111,76 +115,84 @@ export default function HeroSection() {
         {loaded ? (
           <CharReveal
             as="h1"
-            className="font-display uppercase text-[hsl(40_30%_93%)] tracking-[0.06em] leading-[1.04] mb-8 text-[clamp(2.25rem,6.5vw,5.5rem)]"
+            className="font-display uppercase text-[hsl(40_30%_93%)] tracking-[0.04em] leading-[0.98] max-w-[13ch] text-[clamp(2.75rem,8.6vw,8rem)]"
             delay={250}
             stagger={34}
           >
             Guardians of a Vanishing Lebanon
           </CharReveal>
         ) : (
-          <h1 className="font-display uppercase opacity-0 tracking-[0.06em] leading-[1.04] mb-8 text-[clamp(2.25rem,6.5vw,5.5rem)]">
+          <h1 className="font-display uppercase opacity-0 tracking-[0.04em] leading-[0.98] max-w-[13ch] text-[clamp(2.75rem,8.6vw,8rem)]">
             Guardians of a Vanishing Lebanon
           </h1>
         )}
 
         <div
-          className="h-px bg-[hsl(38_52%_63%)]/60 mx-auto mb-8"
+          className="h-px bg-[hsla(38,52%,63%,0.55)] mt-10 md:mt-14 mb-8 origin-left"
           style={{
-            width: loaded ? '5rem' : '0',
-            transition: `width 0.9s ${ease} 1.2s`,
+            transform: loaded ? 'scaleX(1)' : 'scaleX(0)',
+            transition: `transform 1.4s ${ease} 1.1s`,
           }}
         />
 
-        <p
-          className="text-lg md:text-xl text-[hsla(40,25%,88%,0.92)] max-w-2xl mx-auto mb-12 leading-relaxed"
-          style={reveal(loaded, 1.4)}
-        >
-          For sixty-five years, APSAD has stood between Lebanon&apos;s
-          architectural treasures and their disappearance — restoring,
-          documenting, and defending the places that hold our memory.
-        </p>
+        <div className="grid lg:grid-cols-12 gap-x-12 gap-y-10 items-end">
+          <p
+            className="lg:col-span-6 text-lg md:text-xl text-[hsla(40,25%,88%,0.92)] max-w-[46ch] leading-[1.6]"
+            style={reveal(loaded, 1.4)}
+          >
+            For sixty-five years, APSAD has stood between Lebanon&apos;s
+            architectural treasures and their disappearance — restoring,
+            documenting, and defending the places that hold our memory.
+          </p>
 
-        <div
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-          style={reveal(loaded, 1.65)}
-        >
-          <Magnetic>
-            <Button
-              asChild
-              className="bg-[hsl(38_52%_63%)] hover:bg-[hsl(38_52%_70%)] text-[hsl(26_20%_7%)] h-[52px] min-w-[220px] font-display text-[12px] tracking-[0.25em] uppercase"
-            >
-              <Link href="/get-involved">Become a Guardian</Link>
-            </Button>
-          </Magnetic>
+          <div
+            className="lg:col-span-6 flex flex-col sm:flex-row gap-4 lg:justify-end"
+            style={reveal(loaded, 1.65)}
+          >
+            <Magnetic>
+              <Button
+                asChild
+                className="bg-[hsl(38_52%_63%)] hover:bg-[hsl(38_52%_70%)] text-[hsl(26_20%_7%)] h-[52px] w-full sm:w-auto min-w-[220px] font-display text-[12px] tracking-[0.25em] uppercase"
+              >
+                <Link href="/get-involved">Become a Guardian</Link>
+              </Button>
+            </Magnetic>
 
-          <Magnetic>
-            <Button
-              asChild
-              variant="outline"
-              className="border-[hsla(40,25%,85%,0.35)] bg-transparent text-[hsl(40_25%_90%)] hover:bg-[hsla(40,25%,90%,0.1)] hover:text-[hsl(40_25%_95%)] h-[52px] min-w-[220px] font-display text-[12px] tracking-[0.25em] uppercase"
-            >
-              <Link href="/gallery">Enter the Sites</Link>
-            </Button>
-          </Magnetic>
+            <Magnetic>
+              <Button
+                asChild
+                variant="outline"
+                className="border-[hsla(40,25%,85%,0.35)] bg-transparent text-[hsl(40_25%_90%)] hover:bg-[hsla(40,25%,90%,0.1)] hover:text-[hsl(40_25%_95%)] h-[52px] w-full sm:w-auto min-w-[220px] font-display text-[12px] tracking-[0.25em] uppercase"
+              >
+                <Link href="/gallery">Enter the Sites</Link>
+              </Button>
+            </Magnetic>
+          </div>
         </div>
       </div>
 
-      {/* Scroll cue */}
+      {/* Colophon strip */}
       <div
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+        className="absolute bottom-0 inset-x-0 z-10"
         style={{
           opacity: loaded ? 1 : 0,
           transition: `opacity 0.8s ${ease} 2.2s`,
         }}
         aria-hidden="true"
       >
-        <span className="font-display text-[10px] uppercase tracking-[0.35em] text-[hsla(40,25%,85%,0.6)]">
-          The Record
-        </span>
-        <div
-          className="w-px h-10 bg-gradient-to-b from-[hsl(38_52%_63%)] to-transparent"
-          style={{ animation: 'gold-pulse 2.4s ease-in-out infinite' }}
-        />
+        <div className="container max-w-7xl mx-auto px-6">
+          <div className="border-t border-[hsla(40,25%,85%,0.16)] py-5 flex items-center justify-between gap-6 font-display text-[10px] uppercase tracking-[0.35em] text-[hsla(40,25%,85%,0.7)]">
+            <span className="hidden sm:inline">Sursock Street · Achrafieh</span>
+            <span className="flex items-center gap-4 whitespace-nowrap">
+              <span
+                className="h-px w-10 bg-[hsl(38_52%_63%)]"
+                style={{ animation: 'gold-pulse 2.4s ease-in-out infinite' }}
+              />
+              Scroll — The Record
+            </span>
+            <span className="hidden sm:inline">Depuis 1960</span>
+          </div>
+        </div>
       </div>
     </section>
   );
