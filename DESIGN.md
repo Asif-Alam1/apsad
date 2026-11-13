@@ -143,6 +143,7 @@ Two rooms, one palette: night materials (umber, candle ivory, gold leaf) and day
 Flat, like masonry. Depth comes from tonal inversion, image scrims (gradient washes of the ground color at 0.5–0.85 alpha), 1px hairlines, and the global film grain. No decorative box-shadows anywhere; overlays (dialogs, sheets) keep only shadcn's minimum separation.
 
 ### Named Rules
+**The Plate Rule.** Every photograph is printed in one warm monochrome (`.plate`: grayscale + 26% sepia) so archive prints, event snapshots and portraits read as a single collection; inside a `.plate-hover` parent the original colour develops on hover or focus. The archive is small (about 800px), so plates are shown at or near native size inside a hairline mat with a typeset caption beneath (plate number left, label right) — never stretched across a viewport. The home hero and photography break are the only full-bleed images.
 **The Stone-Doesn't-Float Rule.** No drop shadows on cards, buttons, or sections — invert or rule off instead.
 
 ## 5. Components
@@ -163,6 +164,16 @@ Ruled rows beat cards. Lists (aims, affiliations, regions, privileges) are hairl
 
 ### Navigation
 Fixed transparent header; gains a 92% ground-color blur bar after 50px scroll. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Gold 2px scroll-progress bar. Mobile: full nocturne sheet with 2xl Marcellus links.
+
+### Editorial primitives (globals.css)
+- `.plate` / `.plate-hover` — the monochrome print treatment (see The Plate Rule).
+- `.link-rule` — a text link whose hairline underline draws in from the left; the default for inline and footer links (no icon boxes).
+- `.field-line` — ledger form field: a ruled line to write on, italic placeholder, bronze/gold focus rule. Labels are Marcellus 10px caps above the line.
+- `.dropcap` — inscriptional Marcellus drop cap for an opening paragraph.
+- `.rule-ornament` — hairline broken by a small lozenge.
+- `--ease-expo` — `cubic-bezier(0.16, 1, 0.3, 1)`, the house easing for hovers and reveals.
+- Figures: body text uses old-style figures; Marcellus display and labels use lining figures.
+- Page openers are asymmetric: monumental left-aligned title, standfirst in the right column, hairline, then an index or colophon strip. Centred stacks are reserved for the closing invitation.
 
 ### Signature Components
 - **Preloader curtain** (`ui/preloader.tsx`): once per session — APSAD carves in gold on black, hairline draws, curtain lifts (1.05s expo). Dispatches `apsad:preloader-done`; the hero holds its entrance for it.

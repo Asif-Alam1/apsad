@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Facebook, Instagram } from 'lucide-react';
 
 const columns = [
   {
@@ -30,8 +29,8 @@ const affiliations = [
 ];
 
 const socialLinks = [
-  { href: 'https://www.facebook.com/apsad.lebanon/', icon: Facebook, label: 'APSAD on Facebook' },
-  { href: 'https://www.instagram.com/apsad_lebanon/', icon: Instagram, label: 'APSAD on Instagram' },
+  { href: 'https://www.facebook.com/apsad.lebanon/', name: 'Facebook', label: 'APSAD on Facebook' },
+  { href: 'https://www.instagram.com/apsad_lebanon/', name: 'Instagram', label: 'APSAD on Instagram' },
 ];
 
 export function Footer() {
@@ -60,20 +59,21 @@ export function Footer() {
               architectural treasures and natural sites — a hundred saved so far,
               and the work continues.
             </p>
-            <div className="flex gap-3">
+            <ul className="flex gap-8 pt-2">
               {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="p-3 border border-border hover:border-primary hover:text-primary transition-colors duration-300"
-                >
-                  <social.icon className="h-4 w-4" />
-                </a>
+                <li key={social.label}>
+                  <a
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="link-rule font-display text-[11px] uppercase tracking-[0.28em] text-foreground/80 hover:text-primary"
+                  >
+                    {social.name}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
           {/* Link columns */}
@@ -87,10 +87,9 @@ export function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-base text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
+                      className="link-rule text-base text-muted-foreground hover:text-foreground"
                     >
                       {link.label}
-                      <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-primary transition-[width] duration-300 group-hover:w-full" />
                     </Link>
                   </li>
                 ))}
@@ -112,11 +111,11 @@ export function Footer() {
                 P.O.Box 11-154
               </p>
               <p>
-                <a href="tel:+9611336368" className="hover:text-foreground transition-colors">
+                <a href="tel:+9611336368" className="link-rule hover:text-foreground">
                   +961 1 336 368
                 </a>
                 <br />
-                <a href="mailto:info@apsad.org" className="hover:text-foreground transition-colors">
+                <a href="mailto:info@apsad.org" className="link-rule hover:text-foreground">
                   info@apsad.org
                 </a>
               </p>

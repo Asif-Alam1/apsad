@@ -11,18 +11,17 @@ export function PresidentSection() {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           <Reveal className="lg:col-span-4">
-            <div className="relative aspect-[3/4] overflow-hidden max-w-sm mx-auto lg:mx-0">
+            <div className="plate-hover relative aspect-[3/4] overflow-hidden max-w-[19rem] mx-auto lg:mx-0 border border-border p-3">
+              <div className="relative h-full w-full overflow-hidden">
               <Image
                 src="/Raya.jpg"
                 alt="Raya Daouk, President of APSAD"
                 fill
+                className="plate"
                 style={{ objectFit: 'cover', objectPosition: '100% 30%' }}
                 sizes="(max-width: 1024px) 90vw, 30vw"
               />
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-[hsla(26,20%,6%,0.6)] to-transparent"
-                aria-hidden="true"
-              />
+              </div>
             </div>
           </Reveal>
 
