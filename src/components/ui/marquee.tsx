@@ -2,6 +2,7 @@
 
 interface MarqueeProps {
   items: string[]
+  /** Optional text separator. Omit it to get the house lozenge. */
   separator?: string
   speed?: number
   className?: string
@@ -9,23 +10,37 @@ interface MarqueeProps {
 
 export function Marquee({
   items,
-  separator = '\u2022',
+  separator,
   speed = 40,
   className = '',
 }: MarqueeProps) {
-  const content = items.map((item) => `${item} ${separator} `).join('')
+  /* One run of the band: each item followed by a small hairline lozenge */
+  const run = (key: string) => (
+    <span key={key} className="inline-flex shrink-0 items-center">
+      {items.map((item, i) => (
+        <span key={`${key}-${i}`} className="inline-flex items-center">
+          <span>{item}</span>
+          {separator ? (
+            <span className="mx-[1.25em] opacity-60">{separator}</span>
+          ) : (
+            <span className="mx-[1.5em] inline-block h-[0.34em] w-[0.34em] shrink-0 rotate-45 border border-current opacity-60" />
+          )}
+        </span>
+      ))}
+    </span>
+  )
 
   return (
     <div
-      className={`overflow-hidden whitespace-nowrap select-none ${className}`}
+      className={`group/marquee overflow-hidden whitespace-nowrap select-none ${className}`}
       aria-hidden="true"
     >
       <div
-        className="inline-flex"
+        className="inline-flex group-hover/marquee:[animation-play-state:paused] motion-reduce:[animation-play-state:paused]"
         style={{ animation: `marquee ${speed}s linear infinite` }}
       >
-        <span className="inline-block">{content}</span>
-        <span className="inline-block">{content}</span>
+        {run('a')}
+        {run('b')}
       </div>
     </div>
   )

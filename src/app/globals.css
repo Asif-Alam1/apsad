@@ -124,6 +124,12 @@
   ::selection {
     background: hsl(var(--primary) / 0.25);
   }
+
+  /* Every link shows where the keyboard is, even without component styles */
+  :where(a, summary):focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 4px;
+  }
 }
 
 /* Marcellus ships a single weight — never synthesize bold on display type */

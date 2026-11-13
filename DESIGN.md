@@ -181,7 +181,7 @@ Fixed transparent header; gains a 92% ground-color blur bar after 50px scroll. R
 - **CharReveal** (`ui/char-reveal.tsx`): per-character carve-in for display type.
 - **Pointer-parallax hero**: photograph drifts −14px against cursor, type +7px with it, over Ken Burns.
 - **The Record timeline** (`home/restoration-timeline.tsx`): 300vh sticky section driving a horizontal track; gold-node thread, alternating entries, live gold year ticker (1960→2016), progress hairline. Falls back to a scroll-snap strip on touch/reduced-motion with a "Drag" cursor label.
-- **ParallaxImage** (`ui/parallax-image.tsx`): scroll parallax + first-view clip-path unveiling (inset 14%/8% → 0 over 1.2s) with a settle from scale 1.12.
+- **The archive hang** (`home/photography-break.tsx`): four genuine archive plates hung salon-style at staggered heights on the nocturne, each matted, numbered and captioned; colour develops on hover.
 - **Labeled cursor** (`ui/cursor-follower.tsx`): blend-difference dot; grows ×2.8 over interactives; morphs into a 76px gold disc with tracked caps over `[data-cursor-label]` ("View" on gallery cards, "Drag" on the timeline strip).
 - **Marquee band**: trilingual (FR/EN/AR) gold tracked caps on the nocturne.
 - **Film grain**: fixed SVG turbulence at 2.8%, `z-index: var(--z-grain)`.

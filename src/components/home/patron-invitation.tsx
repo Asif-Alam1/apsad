@@ -10,21 +10,24 @@ import { SplitText } from '@/components/ui/split-text'
 export function PatronInvitation() {
   return (
     <section className="section-dark relative overflow-hidden">
-      <div className="container max-w-4xl mx-auto px-6 py-28 md:py-40 text-center relative">
+      <div className="container max-w-6xl mx-auto px-6 py-28 md:py-44 text-center relative">
         <Reveal>
-          <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-8">
+          <div className="rule-ornament mx-auto mb-10 max-w-[14rem]" aria-hidden="true">
+            <span />
+          </div>
+          <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-8 md:mb-10">
             The Invitation
           </p>
         </Reveal>
         <SplitText
           as="h2"
-          className="font-display uppercase tracking-[0.05em] leading-[1.1] text-4xl md:text-6xl"
+          className="font-display uppercase tracking-[0.04em] leading-[1.02] text-[clamp(2.5rem,7.2vw,6rem)]"
           delay={150}
         >
           Add your name to the record
         </SplitText>
         <Reveal delay={350}>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-8 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mt-10 mb-12 max-w-[52ch] mx-auto">
             APSAD has always been carried by its members — patrons, volunteers,
             and friends of Lebanese heritage. The salon on Sursock Street is
             open.

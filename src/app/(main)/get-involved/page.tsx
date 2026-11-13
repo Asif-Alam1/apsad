@@ -234,15 +234,17 @@ export default function GetInvolvedPage() {
                   believe should be saved — we are eager to hear from you.
                 </p>
                 <dl className="border-t border-border">
-                  <div className="border-b border-border py-5 grid grid-cols-[6.5rem_1fr] gap-4 items-baseline">
+                  <div className="border-b border-border py-5 grid grid-cols-[5.75rem_1fr] sm:grid-cols-[6.5rem_1fr] gap-4 items-baseline">
                     <dt className="font-display text-[10px] uppercase tracking-[0.3em] text-primary">Address</dt>
                     <dd className="text-[1.0625rem] leading-relaxed">
                       Sursock Street, Aoun Building, GF
                       <br />
-                      Achrafieh, Beirut — P.O.Box 11-154
+                      Achrafieh, Beirut
+                      <br />
+                      <span className="whitespace-nowrap">P.O.Box 11-154</span>
                     </dd>
                   </div>
-                  <div className="border-b border-border py-5 grid grid-cols-[6.5rem_1fr] gap-4 items-baseline">
+                  <div className="border-b border-border py-5 grid grid-cols-[5.75rem_1fr] sm:grid-cols-[6.5rem_1fr] gap-4 items-baseline">
                     <dt className="font-display text-[10px] uppercase tracking-[0.3em] text-primary">Telephone</dt>
                     <dd className="text-[1.0625rem]">
                       <a href="tel:+9611336368" className="link-rule">
@@ -250,7 +252,7 @@ export default function GetInvolvedPage() {
                       </a>
                     </dd>
                   </div>
-                  <div className="border-b border-border py-5 grid grid-cols-[6.5rem_1fr] gap-4 items-baseline">
+                  <div className="border-b border-border py-5 grid grid-cols-[5.75rem_1fr] sm:grid-cols-[6.5rem_1fr] gap-4 items-baseline">
                     <dt className="font-display text-[10px] uppercase tracking-[0.3em] text-primary">Email</dt>
                     <dd className="text-[1.0625rem]">
                       <a href="mailto:info@apsad.org" className="link-rule">
