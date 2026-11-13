@@ -1,6 +1,6 @@
 
 import type { Metadata } from 'next';
-import { Marcellus, EB_Garamond } from 'next/font/google';
+import { Marcellus, EB_Garamond, Amiri } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { siteUrl } from "@/lib/site";
@@ -17,6 +17,16 @@ const ebGaramond = EB_Garamond({
   subsets: ['latin'],
   style: ['normal', 'italic'],
   display: 'swap',
+});
+
+// Arabic companion to the Garamond text face — used automatically wherever
+// Arabic appears, because it sits behind the Latin faces in every font stack.
+const amiri = Amiri({
+  variable: '--font-arabic',
+  weight: ['400', '700'],
+  subsets: ['arabic'],
+  display: 'swap',
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -91,7 +101,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className={`${marcellus.variable} ${ebGaramond.variable} font-body antialiased`}>
+      <body className={`${marcellus.variable} ${ebGaramond.variable} ${amiri.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>

@@ -417,7 +417,7 @@ export default function AboutPage() {
                           className="text-right text-[clamp(1.3rem,2.2vw,1.65rem)] leading-[1.6]"
                           style={{
                             fontFamily:
-                              '"Amiri", "Noto Naskh Arabic", "Scheherazade New", "Geeza Pro", "Traditional Arabic", serif',
+                              'var(--font-arabic), "Amiri", "Noto Naskh Arabic", "Scheherazade New", "Geeza Pro", "Traditional Arabic", serif',
                           }}
                         >
                           {item.headline}
