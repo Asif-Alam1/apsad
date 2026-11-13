@@ -163,7 +163,10 @@ Ruled rows beat cards. Lists (aims, affiliations, regions, privileges) are hairl
 1px hairline stroke, ground-colored fill, square, h-10+; gold/bronze focus ring; destructive red reserved for validation.
 
 ### Navigation
-Fixed transparent header; gains a 92% ground-color blur bar after 50px scroll. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Gold 2px scroll-progress bar. Mobile: full nocturne sheet with 2xl Marcellus links.
+Fixed transparent header; after 50px of scroll it becomes a near-opaque ground-colour bar (95-96%) with a hairline bottom border. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Nav links carry a hairline that draws in from the left on hover and focus and stays under the active item. Gold 2px scroll-progress bar. Mobile: a full-height nocturne index — gold 01-04 numerals, large Marcellus caps links between hairline rules, the member button full-width at the foot, then the address, telephone and email.
+
+### Assistant
+The chatbot launcher is a hairline umber tab with a gold icon and an "Ask" label (gold fill on hover only). The panel is square and unshadowed: Marcellus caps title, Garamond messages (visitor in a hairline box, assistant with a thin gold left rule), suggestions as ruled text rows, a `.field-line` input with a text "Send".
 
 ### Editorial primitives (globals.css)
 - `.plate` / `.plate-hover` — the monochrome print treatment (see The Plate Rule).
