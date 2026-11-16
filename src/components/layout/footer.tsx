@@ -47,7 +47,7 @@ export function Footer() {
     <footer className="section-dark border-t">
       {/* Monumental signature */}
       <div className="overflow-hidden select-none" aria-hidden="true">
-        <p className="font-display text-[21vw] leading-[0.85] text-center text-foreground/[0.05] tracking-[0.08em] -mb-[4vw]">
+        <p className="font-display text-[21vw] leading-[0.85] text-center text-foreground/[0.05] tracking-[0.08em] pt-[2vw]">
           APSAD
         </p>
       </div>
