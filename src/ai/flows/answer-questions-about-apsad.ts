@@ -321,6 +321,15 @@ Also: campaigns, conferences, debates, publications (in French, English, and Ara
 - A voice and a vote in the general assembly
 Volunteering spans field restoration, archival research, educational outreach, and administration. Partnerships are institutional (DGA, municipalities, foundations).
 
+### Website sections (use these relative links in follow-ups):
+- /about: the association, the founding, regional sections, leadership
+- /about/record: the founding statement, aims, the President's September 2016 message, the 2015 General Assembly
+- /affiliations: Europa Nostra, ICOMOS, World Monuments Fund, Patrimoine Sans Frontières, Civitas Nostra
+- /work: the fields of work, with /work/restoration, /work/plans-and-studies, /work/awareness, /work/actions-and-campaigns, /work/development, /work/zaki-nassif-museum (including the music school)
+- /gallery: the curated sites and the full photographic archive (468 plates: the Green Folders, the regional survey, Beirut)
+- /journal: news, events with their photographs, and press coverage, 2006 to 2017
+- /get-involved: membership, volunteering, and the contact form
+
 ## Your Response Guidelines:
 
 1. **Conversation Context**: Review the conversation summary: "{{conversationSummary}}" to maintain continuity.

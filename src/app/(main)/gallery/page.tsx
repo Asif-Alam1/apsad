@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
 import { SplitText } from "@/components/ui/split-text";
+import { Archive } from "@/components/gallery/archive";
 
 const initialGalleryItems: GalleryItem[] = [
   {
@@ -288,9 +289,13 @@ export default function GalleryPage() {
                 years of fieldwork.
               </p>
               <p className={`${LABEL} tabular-nums text-muted-foreground mt-7`}>
-                Archive <span className="text-primary">·</span>{" "}
+                Selected <span className="text-primary">·</span>{" "}
                 {initialGalleryItems.length} sites{" "}
-                <span className="text-primary">·</span> {totalPlates} plates
+                <span className="text-primary">·</span> {totalPlates} plates{" "}
+                <span className="text-primary">·</span>{" "}
+                <a href="#archive-title" className="link-rule hover:text-foreground">
+                  Full archive below
+                </a>
               </p>
             </div>
           </div>
@@ -453,6 +458,8 @@ export default function GalleryPage() {
           )}
         </div>
       </section>
+
+      <Archive />
 
       {/* Lightbox — catalogue spread */}
       {selectedItem && (

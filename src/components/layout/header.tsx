@@ -8,12 +8,19 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 
+// Home is the wordmark; Get Involved is the "Become a Member" button.
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'The Association' },
-  { href: '/gallery', label: 'The Sites' },
-  { href: '/get-involved', label: 'Get Involved' },
+  { href: '/about', label: 'The Association', match: ['/about', '/affiliations'] },
+  { href: '/work', label: 'The Work', match: ['/work'] },
+  { href: '/gallery', label: 'The Sites', match: ['/gallery'] },
+  { href: '/journal', label: 'Journal', match: ['/journal', '/news', '/events'] },
 ];
+
+// The mobile index covers the wordmark, so it lists Home itself.
+const mobileItems = [{ href: '/', label: 'Home', match: [] as string[] }, ...navItems];
+
+const isActiveItem = (pathname: string, item: { href: string; match: string[] }) =>
+  pathname === item.href || item.match.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -64,9 +71,7 @@ export function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-9" aria-label="Primary">
           {navItems.map((item) => {
-            const isActive =
-              pathname === item.href ||
-              (item.href !== '/' && pathname.startsWith(item.href));
+            const isActive = isActiveItem(pathname, item);
 
             return (
               <Link
@@ -127,10 +132,8 @@ export function Header() {
                   APSAD · Depuis 1960
                 </p>
                 <nav className="mt-10 flex flex-col border-t border-border" aria-label="Mobile">
-                  {navItems.map((item, i) => {
-                    const isActive =
-                      pathname === item.href ||
-                      (item.href !== '/' && pathname.startsWith(item.href));
+                  {mobileItems.map((item, i) => {
+                    const isActive = isActiveItem(pathname, item);
 
                     return (
                       <Link
