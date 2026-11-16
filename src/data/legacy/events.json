@@ -1,6 +1,7 @@
 [
   {
     "id": 48,
+    "legacyId": 61,
     "title": "أمسية شرقية \"لبنانيات\"",
     "date": "2017-05-08",
     "location": "السراي الكبير",
@@ -287,6 +288,7 @@
   },
   {
     "id": 47,
+    "legacyId": 60,
     "title": "Nocturne d’opéra on the occasion of the 57th anniversary of APSAD",
     "date": "2017-01-10",
     "location": "The National Museum of Beirut",
@@ -531,6 +533,7 @@
   },
   {
     "id": 46,
+    "legacyId": 59,
     "title": "National heritage day - Mashghara",
     "date": "2016-08-24",
     "location": null,
@@ -1285,6 +1288,7 @@
   },
   {
     "id": 45,
+    "legacyId": 58,
     "title": "Musical evening",
     "date": "2016-08-19",
     "location": "Zaki Nassif Museum and Cultural Center",
@@ -1517,6 +1521,7 @@
   },
   {
     "id": 44,
+    "legacyId": 57,
     "title": "Guided visit in Beirut",
     "date": "2016-08-17",
     "location": null,
@@ -1677,6 +1682,7 @@
   },
   {
     "id": 43,
+    "legacyId": 56,
     "title": "National heritage days",
     "date": "2016-06-26",
     "location": "Sud - Tripoli - Byblos",
@@ -2119,6 +2125,7 @@
   },
   {
     "id": 42,
+    "legacyId": 55,
     "title": "Opening of Zaki Nassif Museum",
     "date": "2016-05-21",
     "location": "Mashghara",
@@ -2789,6 +2796,7 @@
   },
   {
     "id": 41,
+    "legacyId": 54,
     "title": "Signature of Cooperation Agreement",
     "date": "2015-12-19",
     "location": "Antoine Mokbel Palace",
@@ -3033,6 +3041,7 @@
   },
   {
     "id": 40,
+    "legacyId": 53,
     "title": "National heritage day in Kfeir",
     "date": "2015-08-05",
     "location": "Hasbaya",
@@ -3265,6 +3274,7 @@
   },
   {
     "id": 39,
+    "legacyId": 51,
     "title": "حفل موسيقي لجمعية الابساد في السراي الكبير",
     "date": "2015-05-08",
     "location": null,
@@ -3545,6 +3555,7 @@
   },
   {
     "id": 38,
+    "legacyId": 48,
     "title": "55th anniversary of APSAD",
     "date": "2015-01-22",
     "location": "NATIONAL MUSEUM",
@@ -3675,6 +3686,7 @@
   },
   {
     "id": 37,
+    "legacyId": null,
     "title": "Guided visits in Achrefieh palaces",
     "date": "2014-12-11",
     "location": "Bustros palace, Audi palace, Sursock palace, domains Lady Cochranes",
@@ -3690,6 +3702,7 @@
   },
   {
     "id": 36,
+    "legacyId": 46,
     "title": "Musical evening",
     "date": "2014-09-20",
     "location": "Baabda Saray",
@@ -3850,6 +3863,7 @@
   },
   {
     "id": 35,
+    "legacyId": 45,
     "title": "Journée de patrimoine / Kesrwan",
     "date": "2014-05-22",
     "location": "Mtein",
@@ -3926,6 +3940,7 @@
   },
   {
     "id": 34,
+    "legacyId": 44,
     "title": "APSAD Heritage 2014",
     "date": "2014-05-13",
     "location": "Tannourine, Chatine, Jezzine, Bkassine",
@@ -4026,6 +4041,7 @@
   },
   {
     "id": 33,
+    "legacyId": 43,
     "title": "Concert",
     "date": "2014-04-11",
     "location": "Grand Sérail",
@@ -4168,6 +4184,7 @@
   },
   {
     "id": 32,
+    "legacyId": 42,
     "title": "APSAD / FACTUM",
     "date": "2014-03-24",
     "location": "DGA BEIRUT",
@@ -4322,6 +4339,7 @@
   },
   {
     "id": 30,
+    "legacyId": 40,
     "title": "ROTARY lunch - conference",
     "date": "2014-01-27",
     "location": "Palm Beach Hotel",
@@ -4416,6 +4434,7 @@
   },
   {
     "id": 31,
+    "legacyId": 41,
     "title": "National Built Heritage",
     "date": "2013-12-08",
     "location": "Al-Madina Al-Munawarah",
@@ -4522,6 +4541,7 @@
   },
   {
     "id": 4,
+    "legacyId": 8,
     "title": "Concert",
     "date": "2013-11-28",
     "location": "Musée National",
@@ -4754,6 +4774,7 @@
   },
   {
     "id": 3,
+    "legacyId": 7,
     "title": "Concert",
     "date": "2013-09-28",
     "location": "Baabda Saray",
@@ -4836,6 +4857,7 @@
   },
   {
     "id": 2,
+    "legacyId": 6,
     "title": "National Heritage Day",
     "date": "2013-05-15",
     "location": "Western Bekaa",
@@ -5134,6 +5156,7 @@
   },
   {
     "id": 1,
+    "legacyId": 3,
     "title": "Conference on APSAD activities",
     "date": "2013-04-17",
     "location": "The Rotary Club Cedars",
@@ -5180,6 +5203,7 @@
   },
   {
     "id": 6,
+    "legacyId": 10,
     "title": "Concert",
     "date": "2013-01-18",
     "location": "National Museum",
@@ -5238,6 +5262,7 @@
   },
   {
     "id": 7,
+    "legacyId": 11,
     "title": "Concert",
     "date": "2012-09-21",
     "location": "Baabda Seray",
@@ -5458,6 +5483,7 @@
   },
   {
     "id": 8,
+    "legacyId": 12,
     "title": "National Heritage Day",
     "date": "2012-05-24",
     "location": "Bekaa",
@@ -5528,6 +5554,7 @@
   },
   {
     "id": 5,
+    "legacyId": 9,
     "title": "APSAD's Jubilee",
     "date": "2012-05-18",
     "location": "Grand Serail",
@@ -5628,6 +5655,7 @@
   },
   {
     "id": 27,
+    "legacyId": 35,
     "title": "Guided visits for Ndu University",
     "date": "2012-03-20",
     "location": "Beirut palaces",
@@ -5680,6 +5708,7 @@
   },
   {
     "id": 25,
+    "legacyId": 32,
     "title": "Guided visit for french visitors",
     "date": "2011-11-12",
     "location": "Palais Daouk in Kraytem",
@@ -5744,6 +5773,7 @@
   },
   {
     "id": 9,
+    "legacyId": 13,
     "title": "Concert",
     "date": "2011-10-08",
     "location": "National Museum",
@@ -5856,6 +5886,7 @@
   },
   {
     "id": 10,
+    "legacyId": 14,
     "title": "National Heritage Day 2011",
     "date": "2011-05-18",
     "location": "Rachaya, Anjar, Akkar, Zahlé",
@@ -5926,6 +5957,7 @@
   },
   {
     "id": 11,
+    "legacyId": 15,
     "title": "Heritage Day Kesrwan/Jbeil",
     "date": "2011-05-12",
     "location": "Caza of Jbeil",
@@ -5966,6 +5998,7 @@
   },
   {
     "id": 12,
+    "legacyId": 17,
     "title": "Concert",
     "date": "2011-05-02",
     "location": "Sursock Palace",
@@ -6006,6 +6039,7 @@
   },
   {
     "id": 13,
+    "legacyId": 18,
     "title": "Christmas concert",
     "date": "2010-12-18",
     "location": "Lucien George's Residence",
@@ -6106,6 +6140,7 @@
   },
   {
     "id": 24,
+    "legacyId": 31,
     "title": "Guided visits for Russian Ladies",
     "date": "2010-12-09",
     "location": "Achrafieh region palaces",
@@ -6158,6 +6193,7 @@
   },
   {
     "id": 14,
+    "legacyId": 19,
     "title": "APSAD musical walks",
     "date": "2010-05-29",
     "location": "Residence Fadlo Dagher",
@@ -6198,6 +6234,7 @@
   },
   {
     "id": 15,
+    "legacyId": 20,
     "title": "Heritage day APSAD/Kesrwan",
     "date": "2010-05-25",
     "location": "Ghosta Dlepda Ghazir",
@@ -6274,6 +6311,7 @@
   },
   {
     "id": 29,
+    "legacyId": 39,
     "title": "Conference for Urban Heritage",
     "date": "2010-05-22",
     "location": "Riyadh",
@@ -6350,6 +6388,7 @@
   },
   {
     "id": 16,
+    "legacyId": 21,
     "title": "Heritage day 2010",
     "date": "2010-05-20",
     "location": "Beit Chabab, Bichareh, Ehden horsh, Baskinta, Choukhroub",
@@ -6456,6 +6495,7 @@
   },
   {
     "id": 17,
+    "legacyId": 22,
     "title": "Concert",
     "date": "2010-03-30",
     "location": "Tesswinet el Tueni",
@@ -6490,6 +6530,7 @@
   },
   {
     "id": 19,
+    "legacyId": 25,
     "title": "Concert",
     "date": "2009-10-12",
     "location": "Sursock Palace",
@@ -6572,6 +6613,7 @@
   },
   {
     "id": 20,
+    "legacyId": 26,
     "title": "Heritage day APSAD Kesrwan/Jbeil",
     "date": "2009-08-12",
     "location": "Amchit / Batroun",
@@ -6648,6 +6690,7 @@
   },
   {
     "id": 23,
+    "legacyId": 30,
     "title": "Guided visits for AYADINA",
     "date": "2009-03-31",
     "location": "Achrafieh region palaces",
@@ -6694,6 +6737,7 @@
   },
   {
     "id": 18,
+    "legacyId": 23,
     "title": "Concert",
     "date": "2009-03-21",
     "location": "Mouawad Museum",
@@ -6824,6 +6868,7 @@
   },
   {
     "id": 26,
+    "legacyId": 33,
     "title": "Guided visits for German Ladies",
     "date": "2008-11-20",
     "location": "Achrafieh region palaces",
@@ -6900,6 +6945,7 @@
   },
   {
     "id": 28,
+    "legacyId": 37,
     "title": "Conferences",
     "date": "2008-09-01",
     "location": "Lebanese schools",
@@ -6970,6 +7016,7 @@
   },
   {
     "id": 22,
+    "legacyId": 29,
     "title": "National Heritage Day",
     "date": "2007-08-25",
     "location": "South Lebanon / Nabatiyeh",
@@ -7136,6 +7183,7 @@
   },
   {
     "id": 21,
+    "legacyId": 28,
     "title": "National Heritage Day",
     "date": "2006-05-21",
     "location": "Beirut, Ghazir, Dlepta, Jezzine, Tripoli, Marjayoun, Baalbeck",

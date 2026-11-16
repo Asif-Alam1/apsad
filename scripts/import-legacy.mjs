@@ -8,7 +8,8 @@
 // Re-runnable: files already on disk are not downloaded again.
 // Usage: node scripts/import-legacy.mjs
 
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -103,6 +104,13 @@ async function image(url, rel) {
       return null;
     }
     buf = Buffer.from(await res.arrayBuffer());
+    // A few originals on the old server are truncated; leave them out rather than show half a photograph.
+    try {
+      await sharp(buf, { failOn: 'truncated' }).stats();
+    } catch {
+      missing.push(`${url} (corrupt on the old server)`);
+      return null;
+    }
     const meta = await sharp(buf).metadata();
     const width = meta.orientation >= 5 ? meta.height : meta.width;
     if (meta.format === 'jpeg' && (width > MAX_WIDTH || buf.length > 900_000)) {
@@ -115,19 +123,11 @@ async function image(url, rel) {
     await mkdir(path.dirname(file), { recursive: true });
     await writeFile(file, buf);
   }
-  // A few originals on the old server are truncated; leave them out rather than show half a photograph.
-  try {
-    await sharp(buf, { failOn: 'truncated' }).stats();
-  } catch {
-    missing.push(`${url} (corrupt on the old server)`);
-    await rm(file, { force: true });
-    return null;
-  }
 
   // Grids and ledgers use a pre-built thumbnail, so the site never depends on a host's image optimizer.
   const thumbRel = `legacy/thumbs/${rel.replace(/^legacy\//, '').replace(/\.\w+$/, '.webp')}`;
   const thumbFile = path.join(PUBLIC, thumbRel);
-  if (!(await readOrNull(thumbFile))) {
+  if (!existsSync(thumbFile)) {
     await mkdir(path.dirname(thumbFile), { recursive: true });
     await sharp(buf).rotate().resize({ width: THUMB_WIDTH, withoutEnlargement: true }).webp({ quality: 72 }).toFile(thumbFile);
   }
@@ -244,6 +244,26 @@ function makeCleaner(resolveLink) {
       .trim();
 }
 
+// ---------- affiliations ----------
+
+// The CMS titles affiliations as sentences ("APSAD is member of EUROPA NOSTRA"); the site shows the body's name.
+const AFFILIATION_NAMES = [
+  [/monument fund/i, 'World Monuments Fund'],
+  [/europa nostra/i, 'Europa Nostra'],
+  [/patrimoine sans/i, 'Patrimoine Sans Frontières'],
+  [/icomos/i, 'ICOMOS Lebanon'],
+  [/civitas nostra/i, 'Civitas Nostra'],
+];
+
+function safeHttpUrl(value) {
+  try {
+    const url = new URL(String(value ?? '').trim());
+    return ['http:', 'https:'].includes(url.protocol) ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
 // ---------- archive series ----------
 
 // Gallery filenames keep the old archive's folder path: "Green Folders<Place><n>.<Subject>",
@@ -330,6 +350,7 @@ async function main() {
     const content = clean(e.content);
     return {
       id: e.id,
+      legacyId: Number(e.eventGallery.map((pic) => pic.match(/^\((\d+)\)/)?.[1]).find(Boolean)) || null,
       title: toText(e.title),
       date: e.date,
       location: e.location ? toText(e.location) : null,
@@ -351,13 +372,21 @@ async function main() {
     })
   ).filter(Boolean);
 
-  const affiliationsOut = await pool(affiliations, 4, async (a) => ({
-    id: a.id,
-    name: toText(a.name),
-    description: clean(a.description),
-    link: a.link || null,
-    image: a.picture ? await image(legacyUrl(FOLDER.affiliation, a.picture), `legacy/affiliations/${a.id}${extOf(a.picture)}`) : null,
-  }));
+  const affiliationsOut = await pool(affiliations, 4, async (a) => {
+    const statement = toText(a.name);
+    const name = AFFILIATION_NAMES.find(([pattern]) => pattern.test(statement))?.[1] ?? statement;
+    let link = safeHttpUrl(a.link);
+    // The old record links ICOMOS to Patrimoine Sans Frontières' site; drop it rather than repeat the error.
+    if (/icomos/i.test(statement) && link?.includes('patrimsf')) link = null;
+    return {
+      id: a.id,
+      name,
+      statement,
+      description: clean(a.description),
+      link,
+      image: a.picture ? await image(legacyUrl(FOLDER.affiliation, a.picture), `legacy/affiliations/${a.id}${extOf(a.picture)}`) : null,
+    };
+  });
 
   const sliderOut = (await pool(slider, 4, (name) => image(legacyUrl(FOLDER.slider, name), `legacy/slider/${name.toLowerCase()}`))).filter(Boolean);
 

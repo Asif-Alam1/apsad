@@ -10,19 +10,7 @@ export const metadata: Metadata = {
     "APSAD's place among the world's heritage organizations: Europa Nostra since 1963, Civitas Nostra, Patrimoine Sans Frontières, ICOMOS in Lebanon, and the World Monuments Fund.",
 };
 
-// Display names for the CMS records, whose own titles are full sentences ("APSAD is member of EUROPA NOSTRA").
-const names: Record<number, string> = {
-  5: "World Monuments Fund",
-  6: "Europa Nostra",
-  7: "Patrimoine Sans Frontières",
-  8: "ICOMOS Lebanon",
-  9: "Civitas Nostra",
-};
-
-// The old record links ICOMOS to Patrimoine Sans Frontières' site; leave it unlinked rather than repeat the error.
-const hideLink = new Set([8]);
-
-const host = (url: string) => new URL(url.trim()).hostname.replace(/^www\./, "");
+const host = (url: string) => new URL(url).hostname.replace(/^www\./, "");
 
 export default function AffiliationsPage() {
   return (
@@ -44,7 +32,7 @@ export default function AffiliationsPage() {
                       src={item.image.src}
                       width={item.image.width}
                       height={item.image.height}
-                      alt={`${names[item.id] ?? item.name} emblem`}
+                      alt={`${item.name} emblem`}
                       unoptimized
                       className="plate block h-auto w-full"
                     />
@@ -52,12 +40,12 @@ export default function AffiliationsPage() {
                 )}
                 <div className="md:col-span-4">
                   <h2 className="font-display text-[clamp(1.6rem,2.8vw,2.1rem)] leading-[1.15] tracking-[0.02em]">
-                    {names[item.id] ?? item.name}
+                    {item.name}
                   </h2>
-                  <p className="mt-3 italic text-[16px] leading-[1.55] text-muted-foreground max-w-[34ch]">{item.name}</p>
-                  {item.link && !hideLink.has(item.id) && (
+                  <p className="mt-3 italic text-[16px] leading-[1.55] text-muted-foreground max-w-[34ch]">{item.statement}</p>
+                  {item.link && (
                     <a
-                      href={item.link.trim()}
+                      href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link-rule mt-5 inline-block font-display text-[11px] uppercase tracking-[0.28em] text-primary"

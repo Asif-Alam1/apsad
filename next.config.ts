@@ -1,4 +1,5 @@
 import type {NextConfig} from 'next';
+import legacyEvents from './src/data/legacy/events.json';
 
 // URLs of the previous apsad.net (Angular) site, so old links and search results land on the new pages.
 const legacyRedirects = [
@@ -17,6 +18,16 @@ const legacyRedirects = [
   { source: '/members/:rest*', destination: '/about#team' },
   { source: '/znmccregistration', destination: '/work/zaki-nassif-museum#music-school' },
   { source: '/znmregistration.aspx', destination: '/work/zaki-nassif-museum#music-school' },
+  // The older ASP.NET site: Event.aspx?id=NN, mapped through each event's original id.
+  ...legacyEvents
+    .filter((event) => event.legacyId)
+    .map((event) => ({
+      source: '/Event.aspx',
+      has: [{ type: 'query' as const, key: 'id', value: String(event.legacyId) }],
+      destination: `/events/${event.id}`,
+    })),
+  { source: '/Event.aspx', destination: '/journal' },
+  { source: '/News.aspx', destination: '/journal' },
 ];
 
 const nextConfig: NextConfig = {

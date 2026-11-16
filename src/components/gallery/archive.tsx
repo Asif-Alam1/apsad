@@ -40,15 +40,16 @@ export function Archive() {
   }, [inSeries, place, query]);
 
   const shown = filtered.slice(0, limit);
+  // The lightbox walks the plates on screen, so wrapping never mounts the whole archive.
   const lightboxPlates = useMemo(
     () =>
-      filtered.map((p) => ({
+      shown.map((p) => ({
         ...p,
         number: plateNo(p.id),
         caption: p.description || p.place,
         note: `${p.place} · ${p.series}`,
       })),
-    [filtered],
+    [shown],
   );
 
   const reset = (next: () => void) => {
@@ -210,10 +211,7 @@ export function Archive() {
       <PlateLightbox
         plates={lightboxPlates}
         index={open}
-        onIndexChange={(i) => {
-          setOpen(i);
-          if (i >= limit) setLimit(Math.ceil((i + 1) / PAGE) * PAGE);
-        }}
+        onIndexChange={setOpen}
         onClose={() => setOpen(null)}
         title="The APSAD photographic archive"
       />

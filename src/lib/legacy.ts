@@ -5,7 +5,6 @@
 import newsData from "@/data/legacy/news.json";
 import eventsData from "@/data/legacy/events.json";
 import pagesData from "@/data/legacy/pages.json";
-import galleryData from "@/data/legacy/gallery.json";
 import affiliationsData from "@/data/legacy/affiliations.json";
 
 /** `thumb` is a 480px WebP made at import; legacy images skip the host's optimizer (see `unoptimized` uses). */
@@ -20,17 +19,25 @@ export type NewsItem = {
   image: Photo | null;
 };
 
-export type EventItem = NewsItem & { location: string | null; gallery: Photo[] };
+/** `legacyId` is the event's id on the old ASP.NET site (Event.aspx?id=), recovered from its photo filenames. */
+export type EventItem = NewsItem & { location: string | null; gallery: Photo[]; legacyId: number | null };
 
 export type ArchivePlate = Photo & { id: number; description: string; series: string; place: string };
 
-export type Affiliation = { id: number; name: string; description: string; link: string | null; image: Photo | null };
+/** `name` is the body's name; `statement` is the CMS's original sentence title. `link` is a validated http(s) URL. */
+export type Affiliation = {
+  id: number;
+  name: string;
+  statement: string;
+  description: string;
+  link: string | null;
+  image: Photo | null;
+};
 
 export type PageCode = keyof typeof pagesData;
 
 export const news = newsData as NewsItem[];
 export const events = eventsData as EventItem[];
-export const archive = galleryData as ArchivePlate[];
 export const affiliations = affiliationsData as Affiliation[];
 
 export function legacyPage(code: PageCode) {
