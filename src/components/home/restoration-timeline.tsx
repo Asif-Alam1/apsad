@@ -74,7 +74,15 @@ const ENTRIES: TimelineEntry[] = [
   },
 ]
 
-function EntryPanel({ entry, index }: { entry: TimelineEntry; index: number }) {
+function EntryPanel({ entry, index, strip }: { entry: TimelineEntry; index: number; strip: boolean }) {
+  if (strip) {
+    return (
+      <div className="relative shrink-0 w-[78vw] sm:w-[340px] snap-start pt-10 pr-8">
+        <span className="absolute left-0 top-0 -translate-y-1/2 h-2.5 w-2.5 bg-primary" aria-hidden="true" />
+        <EntryText entry={entry} />
+      </div>
+    )
+  }
   const yearAbove = index % 2 === 0
   return (
     <div className="relative shrink-0 w-[78vw] sm:w-[340px] lg:w-[360px] h-[440px] lg:h-[480px] snap-start">
@@ -88,29 +96,35 @@ function EntryPanel({ entry, index }: { entry: TimelineEntry; index: number }) {
           yearAbove ? 'bottom-1/2 pb-9 justify-end' : 'top-1/2 pt-9'
         }`}
       >
-        <p className="font-display text-6xl lg:text-7xl text-foreground leading-none">
-          {entry.year}
-        </p>
-        <p className="font-display text-[11px] uppercase tracking-[0.3em] text-primary mt-4">
-          {entry.place}
-        </p>
-        <h3 className="font-display text-2xl mt-2 text-foreground">{entry.title}</h3>
-        <p className="text-base text-muted-foreground leading-relaxed mt-3 max-w-[30ch]">
-          {entry.description}
-        </p>
+        <EntryText entry={entry} />
       </div>
     </div>
   )
 }
 
-function ClosingPanel() {
+function EntryText({ entry }: { entry: TimelineEntry }) {
   return (
-    <div className="relative shrink-0 w-[78vw] sm:w-[380px] h-[440px] lg:h-[480px] snap-start flex items-center">
+    <>
+      <p className="font-display text-6xl lg:text-7xl text-foreground leading-none">{entry.year}</p>
+      <p className="font-display text-[11px] uppercase tracking-[0.3em] text-primary mt-4">{entry.place}</p>
+      <h3 className="font-display text-2xl mt-2 text-foreground">{entry.title}</h3>
+      <p className="text-base text-muted-foreground leading-relaxed mt-3 max-w-[30ch]">{entry.description}</p>
+    </>
+  )
+}
+
+function ClosingPanel({ strip }: { strip: boolean }) {
+  return (
+    <div
+      className={`relative shrink-0 w-[78vw] sm:w-[380px] snap-start ${
+        strip ? 'pt-10' : 'h-[440px] lg:h-[480px] flex items-center'
+      }`}
+    >
       <span
-        className="absolute left-0 top-1/2 -translate-y-1/2 h-2.5 w-2.5 bg-primary"
+        className={`absolute left-0 -translate-y-1/2 h-2.5 w-2.5 bg-primary ${strip ? 'top-0' : 'top-1/2'}`}
         aria-hidden="true"
       />
-      <div className="pl-8">
+      <div className={strip ? '' : 'pl-8'}>
         <p className="font-display text-6xl lg:text-7xl text-primary leading-none">Today</p>
         <p className="text-lg text-muted-foreground leading-relaxed mt-6 max-w-[26ch]">
           The record is still being written.
@@ -127,9 +141,15 @@ function ClosingPanel() {
   )
 }
 
-function TimelineHeading() {
+function TimelineHeading({ strip = false }: { strip?: boolean }) {
   return (
-    <div className="shrink-0 w-[82vw] sm:w-[420px] lg:w-[460px] pr-12 lg:pr-20 flex flex-col justify-center h-[440px] lg:h-[480px] snap-start">
+    <div
+      className={
+        strip
+          ? 'px-6 md:px-12 max-w-2xl'
+          : 'shrink-0 w-[460px] pr-20 flex flex-col justify-center h-[480px]'
+      }
+    >
       <p className="font-display text-[11px] uppercase tracking-[0.42em] text-primary mb-6">
         The Record · 1960 — Today
       </p>
@@ -225,38 +245,38 @@ export function RestorationTimeline() {
   const track = (
     <div
       ref={trackRef}
-      className={`relative flex items-center pl-6 md:pl-12 pr-12 ${
+      className={`relative flex pl-6 md:pl-12 pr-12 ${
         sticky
-          ? 'will-change-transform'
-          : 'overflow-x-auto snap-x snap-proximity scroll-pl-6 md:scroll-pl-12'
+          ? 'items-center will-change-transform'
+          : 'items-start pt-3 pb-2 overflow-x-auto snap-x snap-mandatory scroll-pl-6 md:scroll-pl-12'
       }`}
       style={sticky ? undefined : { scrollbarWidth: 'thin' }}
       {...(!sticky && {
         role: 'region',
         'aria-label': 'Restoration timeline, scroll horizontally',
         tabIndex: 0,
-        'data-cursor-label': 'Drag',
       })}
     >
       {/* The continuous thread */}
       <div
-        className="absolute left-0 top-1/2 h-px bg-border"
+        className={`absolute left-0 h-px bg-border ${sticky ? 'top-1/2' : 'top-3'}`}
         style={{ width: contentW ? `${contentW}px` : '100%' }}
         aria-hidden="true"
       />
-      <TimelineHeading />
+      {sticky && <TimelineHeading />}
       {ENTRIES.map((entry, i) => (
-        <EntryPanel key={entry.year + entry.title} entry={entry} index={i} />
+        <EntryPanel key={entry.year + entry.title} entry={entry} index={i} strip={!sticky} />
       ))}
-      <ClosingPanel />
+      <ClosingPanel strip={!sticky} />
     </div>
   )
 
   if (!sticky) {
     return (
       <section className="relative py-20 overflow-hidden">
-        {track}
-        <p className="font-display text-[10px] uppercase tracking-[0.3em] text-muted-foreground text-center mt-6 lg:hidden">
+        <TimelineHeading strip />
+        <div className="mt-14">{track}</div>
+        <p className="font-display text-[10px] uppercase tracking-[0.3em] text-muted-foreground text-center mt-10 lg:hidden">
           Swipe to travel the record
         </p>
       </section>

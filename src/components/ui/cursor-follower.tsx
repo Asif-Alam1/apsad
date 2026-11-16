@@ -13,16 +13,25 @@ export function CursorFollower() {
   const target = useRef({ x: -100, y: -100 })
   const hovering = useRef(false)
   const visible = useRef(false)
-  const [mounted, setMounted] = useState(false)
+  const [enabled, setEnabled] = useState(false)
   const [label, setLabel] = useState<string | null>(null)
   const labelRef = useRef<string | null>(null)
 
+  /* Only on large screens driven by a real mouse. Listening for changes keeps a
+     narrowed window or a phone-sized preview from inheriting the desktop cursor. */
   useEffect(() => {
-    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (isTouch || prefersReduced) return
+    const query = window.matchMedia(
+      '(hover: hover) and (pointer: fine) and (min-width: 1024px) and (prefers-reduced-motion: no-preference)'
+    )
+    const update = () => setEnabled(query.matches)
+    update()
+    query.addEventListener('change', update)
+    return () => query.removeEventListener('change', update)
+  }, [])
 
-    setMounted(true)
+  useEffect(() => {
+    if (!enabled) return
+
     document.documentElement.classList.add('custom-cursor')
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -74,9 +83,9 @@ export function CursorFollower() {
       document.documentElement.removeEventListener('mouseleave', handleMouseLeave)
       cancelAnimationFrame(frame)
     }
-  }, [])
+  }, [enabled])
 
-  if (!mounted) return null
+  if (!enabled) return null
 
   const labelled = !!label
 

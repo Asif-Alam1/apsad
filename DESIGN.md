@@ -191,9 +191,9 @@ The chatbot launcher is a hairline umber tab with a gold icon and an "Ask" label
 - **Lenis inertial scroll** (`ui/smooth-scroll.tsx`): duration 1.15, expo easing; disabled under reduced motion.
 - **CharReveal** (`ui/char-reveal.tsx`): per-character carve-in for display type.
 - **Pointer-parallax hero**: photograph drifts −14px against cursor, type +7px with it, over Ken Burns.
-- **The Record timeline** (`home/restoration-timeline.tsx`): 300vh sticky section driving a horizontal track; gold-node thread, alternating entries, live gold year ticker (1960→2016), progress hairline. Falls back to a scroll-snap strip on touch/reduced-motion with a "Drag" cursor label.
+- **The Record timeline** (`home/restoration-timeline.tsx`): 300vh sticky section driving a horizontal track; gold-node thread, alternating entries, live gold year ticker (1960→2016), progress hairline. Below 1024px or under reduced motion it falls back to a mandatory scroll-snap strip, so each swipe rests on a whole entry.
 - **The archive hang** (`home/photography-break.tsx`): four genuine archive plates hung salon-style at staggered heights on the nocturne, each matted, numbered and captioned; colour develops on hover.
-- **Labeled cursor** (`ui/cursor-follower.tsx`): blend-difference dot; grows ×2.8 over interactives; morphs into a 76px gold disc with tracked caps over `[data-cursor-label]` ("View" on gallery cards, "Drag" on the timeline strip).
+- **Labeled cursor** (`ui/cursor-follower.tsx`): blend-difference dot; grows ×2.8 over interactives; morphs into a 76px gold disc with tracked caps over `[data-cursor-label]` ("View" on gallery cards and plates). Mounted only while `(hover: hover) and (pointer: fine) and (min-width: 1024px)` matches with motion allowed, and unmounts live when that stops being true.
 - **Marquee band**: trilingual (FR/EN/AR) gold tracked caps on the nocturne.
 - **Film grain**: fixed SVG turbulence at 2.8%, `z-index: var(--z-grain)`.
 
