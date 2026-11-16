@@ -1,0 +1,4682 @@
+[
+  {
+    "id": 1,
+    "description": "Vue Aérienne Le Fleuve de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/1.jpg",
+    "thumb": "/legacy/thumbs/gallery/1.webp",
+    "width": 800,
+    "height": 529
+  },
+  {
+    "id": 2,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/2.jpg",
+    "thumb": "/legacy/thumbs/gallery/2.webp",
+    "width": 800,
+    "height": 517
+  },
+  {
+    "id": 3,
+    "description": "Vue Aérienne le Port de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/3.jpg",
+    "thumb": "/legacy/thumbs/gallery/3.webp",
+    "width": 800,
+    "height": 484
+  },
+  {
+    "id": 4,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/4.jpg",
+    "thumb": "/legacy/thumbs/gallery/4.webp",
+    "width": 800,
+    "height": 524
+  },
+  {
+    "id": 5,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/5.jpg",
+    "thumb": "/legacy/thumbs/gallery/5.webp",
+    "width": 800,
+    "height": 520
+  },
+  {
+    "id": 6,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/6.jpg",
+    "thumb": "/legacy/thumbs/gallery/6.webp",
+    "width": 800,
+    "height": 548
+  },
+  {
+    "id": 7,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/7.jpg",
+    "thumb": "/legacy/thumbs/gallery/7.webp",
+    "width": 800,
+    "height": 521
+  },
+  {
+    "id": 8,
+    "description": "Vue Aérienne Le fleuve de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/8.jpg",
+    "thumb": "/legacy/thumbs/gallery/8.webp",
+    "width": 800,
+    "height": 562
+  },
+  {
+    "id": 9,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/9.jpg",
+    "thumb": "/legacy/thumbs/gallery/9.webp",
+    "width": 800,
+    "height": 424
+  },
+  {
+    "id": 10,
+    "description": "Vue Aérienne de Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/10.jpg",
+    "thumb": "/legacy/thumbs/gallery/10.webp",
+    "width": 800,
+    "height": 606
+  },
+  {
+    "id": 11,
+    "description": "Vue Aérienne les hotels St. Georges archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/11.jpg",
+    "thumb": "/legacy/thumbs/gallery/11.webp",
+    "width": 800,
+    "height": 518
+  },
+  {
+    "id": 12,
+    "description": "Vue Aérienne Centre Ville archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/12.jpg",
+    "thumb": "/legacy/thumbs/gallery/12.webp",
+    "width": 800,
+    "height": 546
+  },
+  {
+    "id": 13,
+    "description": "Souk des Bijoutiers actuellement détruit . L'APSAD a présenté un plan de restauration accepté par la Municipalité en 1966 Fiche établie par J. Liger-Belair 12/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/13.jpg",
+    "thumb": "/legacy/thumbs/gallery/13.webp",
+    "width": 800,
+    "height": 503
+  },
+  {
+    "id": 14,
+    "description": "Souk des Bijoutiers actuellement détruit . L'APSAD a présenté un plan de restauration accepté par la Municipalité en 1966 Fiche établie par J. Liger-Belair 12/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/14.jpg",
+    "thumb": "/legacy/thumbs/gallery/14.webp",
+    "width": 800,
+    "height": 614
+  },
+  {
+    "id": 15,
+    "description": "Souk des Bijoutiers actuellement détruit . L'APSAD a présenté un plan de restauration accepté par la Municipalité en 1966 Fiche établie par J. Liger-Belair 12/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/15.jpg",
+    "thumb": "/legacy/thumbs/gallery/15.webp",
+    "width": 783,
+    "height": 800
+  },
+  {
+    "id": 16,
+    "description": "Souk des Bijoutiers actuellement détruit . L'APSAD a présenté un plan de restauration accepté par la Municipalité en 1966 Fiche établie par J. Liger-Belair 12/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/16.jpg",
+    "thumb": "/legacy/thumbs/gallery/16.webp",
+    "width": 780,
+    "height": 800
+  },
+  {
+    "id": 17,
+    "description": "Souk des Bijoutiers actuellement détruit . L'APSAD a présenté un plan de restauration accepté par la Municipalité en 1966 Fiche établie par J. Liger-Belair 12/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/17.jpg",
+    "thumb": "/legacy/thumbs/gallery/17.webp",
+    "width": 776,
+    "height": 800
+  },
+  {
+    "id": 18,
+    "description": "Souk des Bijoutiers actuellement détruit . L'APSAD a présenté un plan de restauration accepté par la Municipalité en 1966 Fiche établie par J. Liger-Belair 12/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/18.jpg",
+    "thumb": "/legacy/thumbs/gallery/18.webp",
+    "width": 775,
+    "height": 800
+  },
+  {
+    "id": 19,
+    "description": "Souk Ayass-Avant 1975 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/19.jpg",
+    "thumb": "/legacy/thumbs/gallery/19.webp",
+    "width": 800,
+    "height": 608
+  },
+  {
+    "id": 20,
+    "description": "Souk Ayass-pendant la guerre archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/20.jpg",
+    "thumb": "/legacy/thumbs/gallery/20.webp",
+    "width": 603,
+    "height": 800
+  },
+  {
+    "id": 21,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/21.jpg",
+    "thumb": "/legacy/thumbs/gallery/21.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 22,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/22.jpg",
+    "thumb": "/legacy/thumbs/gallery/22.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 23,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/23.jpg",
+    "thumb": "/legacy/thumbs/gallery/23.webp",
+    "width": 594,
+    "height": 800
+  },
+  {
+    "id": 24,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/24.jpg",
+    "thumb": "/legacy/thumbs/gallery/24.webp",
+    "width": 514,
+    "height": 800
+  },
+  {
+    "id": 25,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/25.jpg",
+    "thumb": "/legacy/thumbs/gallery/25.webp",
+    "width": 574,
+    "height": 800
+  },
+  {
+    "id": 26,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/26.jpg",
+    "thumb": "/legacy/thumbs/gallery/26.webp",
+    "width": 796,
+    "height": 523
+  },
+  {
+    "id": 27,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/27.jpg",
+    "thumb": "/legacy/thumbs/gallery/27.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 28,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/28.jpg",
+    "thumb": "/legacy/thumbs/gallery/28.webp",
+    "width": 594,
+    "height": 800
+  },
+  {
+    "id": 29,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/29.jpg",
+    "thumb": "/legacy/thumbs/gallery/29.webp",
+    "width": 514,
+    "height": 800
+  },
+  {
+    "id": 30,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/30.jpg",
+    "thumb": "/legacy/thumbs/gallery/30.webp",
+    "width": 574,
+    "height": 800
+  },
+  {
+    "id": 31,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/31.jpg",
+    "thumb": "/legacy/thumbs/gallery/31.webp",
+    "width": 796,
+    "height": 523
+  },
+  {
+    "id": 32,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/32.jpg",
+    "thumb": "/legacy/thumbs/gallery/32.webp",
+    "width": 562,
+    "height": 800
+  },
+  {
+    "id": 33,
+    "description": "",
+    "series": "Sofar",
+    "place": "Sofar",
+    "src": "/legacy/gallery/33.jpg",
+    "thumb": "/legacy/thumbs/gallery/33.webp",
+    "width": 538,
+    "height": 689
+  },
+  {
+    "id": 34,
+    "description": "Une maison à Zouk Mosbeh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zouk Mousbeh",
+    "src": "/legacy/gallery/34.jpg",
+    "thumb": "/legacy/thumbs/gallery/34.webp",
+    "width": 620,
+    "height": 608
+  },
+  {
+    "id": 35,
+    "description": "Maison Lionel Ghorra à galerie et arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zouk Mousbeh",
+    "src": "/legacy/gallery/35.jpg",
+    "thumb": "/legacy/thumbs/gallery/35.webp",
+    "width": 620,
+    "height": 624
+  },
+  {
+    "id": 36,
+    "description": "Le Souk à Zouk Mikhael archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zouk Mikhael",
+    "src": "/legacy/gallery/36.jpg",
+    "thumb": "/legacy/thumbs/gallery/36.webp",
+    "width": 800,
+    "height": 490
+  },
+  {
+    "id": 37,
+    "description": "Le Vieux Souk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zouk Mikhael",
+    "src": "/legacy/gallery/37.jpg",
+    "thumb": "/legacy/thumbs/gallery/37.webp",
+    "width": 800,
+    "height": 502
+  },
+  {
+    "id": 38,
+    "description": "Le Vieux Souk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zouk Mikhael",
+    "src": "/legacy/gallery/38.jpg",
+    "thumb": "/legacy/thumbs/gallery/38.webp",
+    "width": 800,
+    "height": 501
+  },
+  {
+    "id": 39,
+    "description": "Le Vieux Souk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zouk Mikhael",
+    "src": "/legacy/gallery/39.jpg",
+    "thumb": "/legacy/thumbs/gallery/39.webp",
+    "width": 800,
+    "height": 491
+  },
+  {
+    "id": 40,
+    "description": "Vue Aérienne de Zahlé archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zahle",
+    "src": "/legacy/gallery/40.jpg",
+    "thumb": "/legacy/thumbs/gallery/40.webp",
+    "width": 495,
+    "height": 249
+  },
+  {
+    "id": 41,
+    "description": "Paysage de Zahlé archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zahle",
+    "src": "/legacy/gallery/41.jpg",
+    "thumb": "/legacy/thumbs/gallery/41.webp",
+    "width": 800,
+    "height": 531
+  },
+  {
+    "id": 42,
+    "description": "Vue Générale de Zahlé archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zahle",
+    "src": "/legacy/gallery/42.jpg",
+    "thumb": "/legacy/thumbs/gallery/42.webp",
+    "width": 728,
+    "height": 409
+  },
+  {
+    "id": 43,
+    "description": "Vue Aérienne de Zahlé archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Zahle",
+    "src": "/legacy/gallery/43.jpg",
+    "thumb": "/legacy/thumbs/gallery/43.webp",
+    "width": 800,
+    "height": 533
+  },
+  {
+    "id": 44,
+    "description": "Paysage de Younine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Younine",
+    "src": "/legacy/gallery/44.jpg",
+    "thumb": "/legacy/thumbs/gallery/44.webp",
+    "width": 800,
+    "height": 543
+  },
+  {
+    "id": 45,
+    "description": "Le village archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Younine",
+    "src": "/legacy/gallery/45.jpg",
+    "thumb": "/legacy/thumbs/gallery/45.webp",
+    "width": 508,
+    "height": 343
+  },
+  {
+    "id": 46,
+    "description": "Maison paysanne Moustafa Sayed archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Younine",
+    "src": "/legacy/gallery/46.jpg",
+    "thumb": "/legacy/thumbs/gallery/46.webp",
+    "width": 800,
+    "height": 756
+  },
+  {
+    "id": 47,
+    "description": "Les Fouilles à Tyr archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tyr",
+    "src": "/legacy/gallery/47.jpg",
+    "thumb": "/legacy/thumbs/gallery/47.webp",
+    "width": 343,
+    "height": 409
+  },
+  {
+    "id": 48,
+    "description": "Les Fouilles à Tyr archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tyr",
+    "src": "/legacy/gallery/48.jpg",
+    "thumb": "/legacy/thumbs/gallery/48.webp",
+    "width": 349,
+    "height": 372
+  },
+  {
+    "id": 49,
+    "description": "Ecole des Trois Docteurs construction du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tyr",
+    "src": "/legacy/gallery/49.jpg",
+    "thumb": "/legacy/thumbs/gallery/49.webp",
+    "width": 611,
+    "height": 521
+  },
+  {
+    "id": 50,
+    "description": "Hippodrome antique archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tyr",
+    "src": "/legacy/gallery/50.jpg",
+    "thumb": "/legacy/thumbs/gallery/50.webp",
+    "width": 602,
+    "height": 616
+  },
+  {
+    "id": 51,
+    "description": "Maison Tabet à coté du port de Tyr du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tyr",
+    "src": "/legacy/gallery/51.jpg",
+    "thumb": "/legacy/thumbs/gallery/51.webp",
+    "width": 800,
+    "height": 416
+  },
+  {
+    "id": 52,
+    "description": "Vue générale et le fleuve Abou Ali archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/52.jpg",
+    "thumb": "/legacy/thumbs/gallery/52.webp",
+    "width": 800,
+    "height": 594
+  },
+  {
+    "id": 53,
+    "description": "Maison Najwa Alamuddin. Grande maison à arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/53.jpg",
+    "thumb": "/legacy/thumbs/gallery/53.webp",
+    "width": 800,
+    "height": 609
+  },
+  {
+    "id": 54,
+    "description": "El-Mina Tour des Lions construite par Emir Julban en 1441-42. Fiche établie par J. Liger-Belair. 25/11/66 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/54.jpg",
+    "thumb": "/legacy/thumbs/gallery/54.webp",
+    "width": 800,
+    "height": 671
+  },
+  {
+    "id": 55,
+    "description": "Ensemble d'anciennes maisons archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/55.jpg",
+    "thumb": "/legacy/thumbs/gallery/55.webp",
+    "width": 800,
+    "height": 541
+  },
+  {
+    "id": 56,
+    "description": "El-Mina Tour des Lions construite par Emir Julban en 1441-42. Fiche établie par J. Liger-Belair. 25/11/66 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/56.jpg",
+    "thumb": "/legacy/thumbs/gallery/56.webp",
+    "width": 400,
+    "height": 343
+  },
+  {
+    "id": 57,
+    "description": "La Mosquée Abou Ali archives APSAD+D202",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/57.jpg",
+    "thumb": "/legacy/thumbs/gallery/57.webp",
+    "width": 400,
+    "height": 394
+  },
+  {
+    "id": 58,
+    "description": "Gravure de Tripoli archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/58.jpg",
+    "thumb": "/legacy/thumbs/gallery/58.webp",
+    "width": 562,
+    "height": 347
+  },
+  {
+    "id": 59,
+    "description": "Château Croisé construit par les croisés. Restauré par Soliman en 1521. Fiche établie par J. Liger-Belair. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/59.jpg",
+    "thumb": "/legacy/thumbs/gallery/59.webp",
+    "width": 652,
+    "height": 800
+  },
+  {
+    "id": 60,
+    "description": "Château Croisé construit par les croisés. Restauré par Soliman en 1521. Fiche établie par J. Liger-Belair. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/60.jpg",
+    "thumb": "/legacy/thumbs/gallery/60.webp",
+    "width": 678,
+    "height": 678
+  },
+  {
+    "id": 61,
+    "description": "La Coupole des bains turcs archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/61.jpg",
+    "thumb": "/legacy/thumbs/gallery/61.webp",
+    "width": 800,
+    "height": 583
+  },
+  {
+    "id": 62,
+    "description": "Café-trottoir archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/62.jpg",
+    "thumb": "/legacy/thumbs/gallery/62.webp",
+    "width": 800,
+    "height": 795
+  },
+  {
+    "id": 63,
+    "description": "Le Moulin archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tannourine",
+    "src": "/legacy/gallery/63.jpg",
+    "thumb": "/legacy/thumbs/gallery/63.webp",
+    "width": 546,
+    "height": 800
+  },
+  {
+    "id": 64,
+    "description": "La rivière archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tannourine",
+    "src": "/legacy/gallery/64.jpg",
+    "thumb": "/legacy/thumbs/gallery/64.webp",
+    "width": 545,
+    "height": 800
+  },
+  {
+    "id": 65,
+    "description": "Paysage de Tannourine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Tannourine",
+    "src": "/legacy/gallery/65.jpg",
+    "thumb": "/legacy/thumbs/gallery/65.webp",
+    "width": 800,
+    "height": 508
+  },
+  {
+    "id": 66,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Sofar",
+    "src": "/legacy/gallery/66.jpg",
+    "thumb": "/legacy/thumbs/gallery/66.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 67,
+    "description": "Vue générale de Salima archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Salima",
+    "src": "/legacy/gallery/67.jpg",
+    "thumb": "/legacy/thumbs/gallery/67.webp",
+    "width": 800,
+    "height": 464
+  },
+  {
+    "id": 68,
+    "description": "Une vue de Salima archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Salima",
+    "src": "/legacy/gallery/68.jpg",
+    "thumb": "/legacy/thumbs/gallery/68.webp",
+    "width": 800,
+    "height": 416
+  },
+  {
+    "id": 69,
+    "description": "Le Khan Français construit par Fakhr ed-Dine. Très belle bâtisse à cour intérieur à deux niveaux. Fiche établie par J. Liger-Belair 20/4/68 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/69.jpg",
+    "thumb": "/legacy/thumbs/gallery/69.webp",
+    "width": 628,
+    "height": 511
+  },
+  {
+    "id": 70,
+    "description": "Palais Joumblat archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/70.jpg",
+    "thumb": "/legacy/thumbs/gallery/70.webp",
+    "width": 646,
+    "height": 542
+  },
+  {
+    "id": 71,
+    "description": "Palais N. Joumblat archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/71.jpg",
+    "thumb": "/legacy/thumbs/gallery/71.webp",
+    "width": 644,
+    "height": 500
+  },
+  {
+    "id": 72,
+    "description": "Le Souk et la fontaine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/72.jpg",
+    "thumb": "/legacy/thumbs/gallery/72.webp",
+    "width": 800,
+    "height": 522
+  },
+  {
+    "id": 73,
+    "description": "Le Souk et la fontaine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/73.jpg",
+    "thumb": "/legacy/thumbs/gallery/73.webp",
+    "width": 800,
+    "height": 550
+  },
+  {
+    "id": 74,
+    "description": "La Grande Mosquée construite par les croisés 13e siècle. Fiche établie par J. Liger-Belair 15/4/68. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/74.jpg",
+    "thumb": "/legacy/thumbs/gallery/74.webp",
+    "width": 541,
+    "height": 800
+  },
+  {
+    "id": 75,
+    "description": "Le Khan Français construit par Fakhr ed-Dine. Très belle bâtisse à cour intérieur à deux niveaux. Fiche établie par J. Liger-Belair 20/4/68 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/75.jpg",
+    "thumb": "/legacy/thumbs/gallery/75.webp",
+    "width": 800,
+    "height": 465
+  },
+  {
+    "id": 76,
+    "description": "Ancien Souk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/76.jpg",
+    "thumb": "/legacy/thumbs/gallery/76.webp",
+    "width": 544,
+    "height": 800
+  },
+  {
+    "id": 77,
+    "description": "Gravure de Saïda archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/77.jpg",
+    "thumb": "/legacy/thumbs/gallery/77.webp",
+    "width": 800,
+    "height": 519
+  },
+  {
+    "id": 78,
+    "description": "Le Palais Chehab et ses environs. Vaste construction de pierre du 18e siècle, à grande cour intérieur de deux et trois niveaux, à triple arcades Fiche établie par J. Liger-Belair 15/11/68. archives APSAD.",
+    "series": "The Regional Survey",
+    "place": "Saida",
+    "src": "/legacy/gallery/78.jpg",
+    "thumb": "/legacy/thumbs/gallery/78.webp",
+    "width": 795,
+    "height": 508
+  },
+  {
+    "id": 79,
+    "description": "Une maison archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Sahel Alma",
+    "src": "/legacy/gallery/79.jpg",
+    "thumb": "/legacy/thumbs/gallery/79.webp",
+    "width": 746,
+    "height": 747
+  },
+  {
+    "id": 80,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Sahel Alma",
+    "src": "/legacy/gallery/80.jpg",
+    "thumb": "/legacy/thumbs/gallery/80.webp",
+    "width": 733,
+    "height": 800
+  },
+  {
+    "id": 81,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Salima",
+    "src": "/legacy/gallery/81.jpg",
+    "thumb": "/legacy/thumbs/gallery/81.webp",
+    "width": 415,
+    "height": 434
+  },
+  {
+    "id": 82,
+    "description": "Deux belles maisons libanaises archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Salima",
+    "src": "/legacy/gallery/82.jpg",
+    "thumb": "/legacy/thumbs/gallery/82.webp",
+    "width": 420,
+    "height": 359
+  },
+  {
+    "id": 83,
+    "description": "Route Laklouk Nahr Ibrahim archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Laklouk-Nahr Ibrahim",
+    "src": "/legacy/gallery/83.jpg",
+    "thumb": "/legacy/thumbs/gallery/83.webp",
+    "width": 420,
+    "height": 429
+  },
+  {
+    "id": 84,
+    "description": "Eglise St. Falkz et Estéphane. Petite église de montagne à trois nefs et colonnes trapues voûtés en berceaux. Eglise signalée par J. Liger-Belair20/7/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Laklouk-Nahr Ibrahim",
+    "src": "/legacy/gallery/84.jpg",
+    "thumb": "/legacy/thumbs/gallery/84.webp",
+    "width": 419,
+    "height": 394
+  },
+  {
+    "id": 85,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Laklouk-Nahr Ibrahim",
+    "src": "/legacy/gallery/85.jpg",
+    "thumb": "/legacy/thumbs/gallery/85.webp",
+    "width": 420,
+    "height": 381
+  },
+  {
+    "id": 86,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Laklouk",
+    "src": "/legacy/gallery/86.jpg",
+    "thumb": "/legacy/thumbs/gallery/86.webp",
+    "width": 415,
+    "height": 414
+  },
+  {
+    "id": 87,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Laklouk",
+    "src": "/legacy/gallery/87.jpg",
+    "thumb": "/legacy/thumbs/gallery/87.webp",
+    "width": 415,
+    "height": 356
+  },
+  {
+    "id": 88,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Route Becharre-Kadisha",
+    "src": "/legacy/gallery/88.jpg",
+    "thumb": "/legacy/thumbs/gallery/88.webp",
+    "width": 415,
+    "height": 419
+  },
+  {
+    "id": 89,
+    "description": "Une belle maison libanaise archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Rashmaya",
+    "src": "/legacy/gallery/89.jpg",
+    "thumb": "/legacy/thumbs/gallery/89.webp",
+    "width": 800,
+    "height": 588
+  },
+  {
+    "id": 90,
+    "description": "Grande maison libanaise à arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Rashmaya",
+    "src": "/legacy/gallery/90.jpg",
+    "thumb": "/legacy/thumbs/gallery/90.webp",
+    "width": 800,
+    "height": 529
+  },
+  {
+    "id": 91,
+    "description": "Vue d'une groupe de maisons archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Rashmaya",
+    "src": "/legacy/gallery/91.jpg",
+    "thumb": "/legacy/thumbs/gallery/91.webp",
+    "width": 800,
+    "height": 513
+  },
+  {
+    "id": 92,
+    "description": "Ensemble d'anciennes maisons archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Rashmaya",
+    "src": "/legacy/gallery/92.jpg",
+    "thumb": "/legacy/thumbs/gallery/92.webp",
+    "width": 800,
+    "height": 540
+  },
+  {
+    "id": 93,
+    "description": "Le Lac archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Qaraoun",
+    "src": "/legacy/gallery/93.jpg",
+    "thumb": "/legacy/thumbs/gallery/93.webp",
+    "width": 329,
+    "height": 474
+  },
+  {
+    "id": 94,
+    "description": "Maison Kanso archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Moukhtara",
+    "src": "/legacy/gallery/94.jpg",
+    "thumb": "/legacy/thumbs/gallery/94.webp",
+    "width": 424,
+    "height": 368
+  },
+  {
+    "id": 95,
+    "description": "Maison Cheikh Adel Hasn el Din archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Moukhtara",
+    "src": "/legacy/gallery/95.jpg",
+    "thumb": "/legacy/thumbs/gallery/95.webp",
+    "width": 714,
+    "height": 800
+  },
+  {
+    "id": 96,
+    "description": "Palais Kamal Joumblat archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Moukhtara",
+    "src": "/legacy/gallery/96.jpg",
+    "thumb": "/legacy/thumbs/gallery/96.webp",
+    "width": 624,
+    "height": 618
+  },
+  {
+    "id": 97,
+    "description": "Vue générale",
+    "series": "The Regional Survey",
+    "place": "Moukhtara",
+    "src": "/legacy/gallery/97.jpg",
+    "thumb": "/legacy/thumbs/gallery/97.webp",
+    "width": 800,
+    "height": 559
+  },
+  {
+    "id": 98,
+    "description": "Palais Kamal Joumblat archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Moukhtara",
+    "src": "/legacy/gallery/98.jpg",
+    "thumb": "/legacy/thumbs/gallery/98.webp",
+    "width": 800,
+    "height": 512
+  },
+  {
+    "id": 99,
+    "description": "Temple romain restauration à partir du 1968 Fiche établie par J. Liger-Belair 10/11/6/archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Niha Nakad",
+    "src": "/legacy/gallery/99.jpg",
+    "thumb": "/legacy/thumbs/gallery/99.webp",
+    "width": 760,
+    "height": 800
+  },
+  {
+    "id": 100,
+    "description": "L'Eglise archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Niha Nakad",
+    "src": "/legacy/gallery/100.jpg",
+    "thumb": "/legacy/thumbs/gallery/100.webp",
+    "width": 800,
+    "height": 554
+  },
+  {
+    "id": 101,
+    "description": "Nahr Ibrahim à Chouène archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Nahr Ibrahim",
+    "src": "/legacy/gallery/101.jpg",
+    "thumb": "/legacy/thumbs/gallery/101.webp",
+    "width": 800,
+    "height": 562
+  },
+  {
+    "id": 102,
+    "description": "Vue de la Vallée et le Pont archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Nahr El Kalb",
+    "src": "/legacy/gallery/102.jpg",
+    "thumb": "/legacy/thumbs/gallery/102.webp",
+    "width": 599,
+    "height": 800
+  },
+  {
+    "id": 103,
+    "description": "Pont à dos d'âne et à trois arches Fiche établie par J. Liger-Belair 8/12/69. archives APSAD.",
+    "series": "The Regional Survey",
+    "place": "Nahr El Kalb",
+    "src": "/legacy/gallery/103.jpg",
+    "thumb": "/legacy/thumbs/gallery/103.webp",
+    "width": 800,
+    "height": 494
+  },
+  {
+    "id": 104,
+    "description": "Vue de la Vallée et Yessouh el Malak archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Nahr El Kalb",
+    "src": "/legacy/gallery/104.jpg",
+    "thumb": "/legacy/thumbs/gallery/104.webp",
+    "width": 624,
+    "height": 779
+  },
+  {
+    "id": 105,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Nabeh Safa",
+    "src": "/legacy/gallery/105.jpg",
+    "thumb": "/legacy/thumbs/gallery/105.webp",
+    "width": 800,
+    "height": 586
+  },
+  {
+    "id": 106,
+    "description": "La Place de Nabatiyeh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Nabatiye",
+    "src": "/legacy/gallery/106.jpg",
+    "thumb": "/legacy/thumbs/gallery/106.webp",
+    "width": 755,
+    "height": 462
+  },
+  {
+    "id": 107,
+    "description": "Maison Toufic H.el Kantar Bâtisse rectangulaire à trois niveaux à véranda et à arcades. Ex palais Abillama Fiche établie par J. Liger-Belair 30/10/69. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Mtein",
+    "src": "/legacy/gallery/107.jpg",
+    "thumb": "/legacy/thumbs/gallery/107.webp",
+    "width": 800,
+    "height": 503
+  },
+  {
+    "id": 108,
+    "description": "La place de Mtein et les palais Abillama archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Mtein",
+    "src": "/legacy/gallery/108.jpg",
+    "thumb": "/legacy/thumbs/gallery/108.webp",
+    "width": 800,
+    "height": 390
+  },
+  {
+    "id": 109,
+    "description": "Le Château région Batroun archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Moussaylha",
+    "src": "/legacy/gallery/109.jpg",
+    "thumb": "/legacy/thumbs/gallery/109.webp",
+    "width": 726,
+    "height": 449
+  },
+  {
+    "id": 110,
+    "description": "Grand monastère classique à cloître rectangulaire. Construction 18e siècle. Fiche établie par J. Liger-Belair 28/7/67. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Meyfouk",
+    "src": "/legacy/gallery/110.jpg",
+    "thumb": "/legacy/thumbs/gallery/110.webp",
+    "width": 420,
+    "height": 366
+  },
+  {
+    "id": 111,
+    "description": "Grand monastère classique à cloître rectangulaire. Construction du 18e siècle. Fiche établie par J. Liger-Belair 28/7/67. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Meyfouk",
+    "src": "/legacy/gallery/111.jpg",
+    "thumb": "/legacy/thumbs/gallery/111.webp",
+    "width": 800,
+    "height": 767
+  },
+  {
+    "id": 112,
+    "description": "Une Maison à arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Majdal",
+    "src": "/legacy/gallery/112.jpg",
+    "thumb": "/legacy/thumbs/gallery/112.webp",
+    "width": 620,
+    "height": 628
+  },
+  {
+    "id": 113,
+    "description": "L'Eglise St. Michel archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Maasser El Chouf",
+    "src": "/legacy/gallery/113.jpg",
+    "thumb": "/legacy/thumbs/gallery/113.webp",
+    "width": 635,
+    "height": 536
+  },
+  {
+    "id": 114,
+    "description": "Une très belle maison à arcades du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Maad",
+    "src": "/legacy/gallery/114.jpg",
+    "thumb": "/legacy/thumbs/gallery/114.webp",
+    "width": 800,
+    "height": 523
+  },
+  {
+    "id": 115,
+    "description": "Une ancienne église archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Lehfed",
+    "src": "/legacy/gallery/115.jpg",
+    "thumb": "/legacy/thumbs/gallery/115.webp",
+    "width": 800,
+    "height": 794
+  },
+  {
+    "id": 116,
+    "description": "Le collège: la construction ancienne et actuelle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kornet Chehwan",
+    "src": "/legacy/gallery/116.jpg",
+    "thumb": "/legacy/thumbs/gallery/116.webp",
+    "width": 800,
+    "height": 446
+  },
+  {
+    "id": 117,
+    "description": "Vue à partir de l'Archevêché archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kornet Chehwan",
+    "src": "/legacy/gallery/117.jpg",
+    "thumb": "/legacy/thumbs/gallery/117.webp",
+    "width": 414,
+    "height": 294
+  },
+  {
+    "id": 118,
+    "description": "Une maison paysanne archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kobayatt",
+    "src": "/legacy/gallery/118.jpg",
+    "thumb": "/legacy/thumbs/gallery/118.webp",
+    "width": 424,
+    "height": 366
+  },
+  {
+    "id": 119,
+    "description": "Vue aérienne de Khounchara le Couvent archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Khounshara",
+    "src": "/legacy/gallery/119.jpg",
+    "thumb": "/legacy/thumbs/gallery/119.webp",
+    "width": 793,
+    "height": 800
+  },
+  {
+    "id": 120,
+    "description": "Maison Allam. Grande maison de 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kfour",
+    "src": "/legacy/gallery/120.jpg",
+    "thumb": "/legacy/thumbs/gallery/120.webp",
+    "width": 800,
+    "height": 486
+  },
+  {
+    "id": 121,
+    "description": "Une maison libanaise du 19e siècle à Kfour archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kfour",
+    "src": "/legacy/gallery/121.jpg",
+    "thumb": "/legacy/thumbs/gallery/121.webp",
+    "width": 800,
+    "height": 539
+  },
+  {
+    "id": 122,
+    "description": "La Place de Kfar Matta archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kfar Matta",
+    "src": "/legacy/gallery/122.jpg",
+    "thumb": "/legacy/thumbs/gallery/122.webp",
+    "width": 800,
+    "height": 532
+  },
+  {
+    "id": 123,
+    "description": "Une maison à Kfar Matta archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kfar Matta",
+    "src": "/legacy/gallery/123.jpg",
+    "thumb": "/legacy/thumbs/gallery/123.webp",
+    "width": 800,
+    "height": 518
+  },
+  {
+    "id": 124,
+    "description": "Une groupe de maisons archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kfar Matta",
+    "src": "/legacy/gallery/124.jpg",
+    "thumb": "/legacy/thumbs/gallery/124.webp",
+    "width": 800,
+    "height": 523
+  },
+  {
+    "id": 125,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kahlounieh",
+    "src": "/legacy/gallery/125.jpg",
+    "thumb": "/legacy/thumbs/gallery/125.webp",
+    "width": 800,
+    "height": 579
+  },
+  {
+    "id": 126,
+    "description": "Maison Fouad el-Ali maison à arcades et mandalounes archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kahlounieh",
+    "src": "/legacy/gallery/126.jpg",
+    "thumb": "/legacy/thumbs/gallery/126.webp",
+    "width": 800,
+    "height": 456
+  },
+  {
+    "id": 127,
+    "description": "Une maison libanaise à double arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Kadisha",
+    "src": "/legacy/gallery/127.jpg",
+    "thumb": "/legacy/thumbs/gallery/127.webp",
+    "width": 800,
+    "height": 473
+  },
+  {
+    "id": 128,
+    "description": "Rue principale de Jounieh à droite très belles maisons libanaises archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/128.jpg",
+    "thumb": "/legacy/thumbs/gallery/128.webp",
+    "width": 800,
+    "height": 649
+  },
+  {
+    "id": 129,
+    "description": "Maison abandonnée à Maameltein archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/129.jpg",
+    "thumb": "/legacy/thumbs/gallery/129.webp",
+    "width": 800,
+    "height": 644
+  },
+  {
+    "id": 130,
+    "description": "A Maameltein Grande construction à arcade du 20e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/130.jpg",
+    "thumb": "/legacy/thumbs/gallery/130.webp",
+    "width": 655,
+    "height": 800
+  },
+  {
+    "id": 131,
+    "description": "La magnanerie à Jounieh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/131.jpg",
+    "thumb": "/legacy/thumbs/gallery/131.webp",
+    "width": 691,
+    "height": 800
+  },
+  {
+    "id": 132,
+    "description": "Une partie du souk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/132.jpg",
+    "thumb": "/legacy/thumbs/gallery/132.webp",
+    "width": 800,
+    "height": 658
+  },
+  {
+    "id": 133,
+    "description": "La côte archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/133.jpg",
+    "thumb": "/legacy/thumbs/gallery/133.webp",
+    "width": 800,
+    "height": 739
+  },
+  {
+    "id": 134,
+    "description": "Maison Hobeika. Construction du 19e siècle Fiche établie par Bichara el Bacha 20/7/71. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/134.jpg",
+    "thumb": "/legacy/thumbs/gallery/134.webp",
+    "width": 595,
+    "height": 533
+  },
+  {
+    "id": 135,
+    "description": "Maison Khazen grande construction à galerie et arcades à Jounieh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/135.jpg",
+    "thumb": "/legacy/thumbs/gallery/135.webp",
+    "width": 760,
+    "height": 474
+  },
+  {
+    "id": 136,
+    "description": "La côte de Jounieh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/136.jpg",
+    "thumb": "/legacy/thumbs/gallery/136.webp",
+    "width": 800,
+    "height": 534
+  },
+  {
+    "id": 137,
+    "description": "La côte de Jounieh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/137.jpg",
+    "thumb": "/legacy/thumbs/gallery/137.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 138,
+    "description": "Souk de Jounieh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/138.jpg",
+    "thumb": "/legacy/thumbs/gallery/138.webp",
+    "width": 558,
+    "height": 356
+  },
+  {
+    "id": 139,
+    "description": "Le Pont archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jisr El-Kady",
+    "src": "/legacy/gallery/139.jpg",
+    "thumb": "/legacy/thumbs/gallery/139.webp",
+    "width": 800,
+    "height": 588
+  },
+  {
+    "id": 140,
+    "description": "Le Couvent de Jisr El Kady archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jisr El-Kady",
+    "src": "/legacy/gallery/140.jpg",
+    "thumb": "/legacy/thumbs/gallery/140.webp",
+    "width": 800,
+    "height": 469
+  },
+  {
+    "id": 141,
+    "description": "Maison Méouchy. Habitation à arcades. Fiche établie par J. Liger-Belair 20/2/70. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jezzine",
+    "src": "/legacy/gallery/141.jpg",
+    "thumb": "/legacy/thumbs/gallery/141.webp",
+    "width": 800,
+    "height": 760
+  },
+  {
+    "id": 142,
+    "description": "La Cascade archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jezzine",
+    "src": "/legacy/gallery/142.jpg",
+    "thumb": "/legacy/thumbs/gallery/142.webp",
+    "width": 800,
+    "height": 508
+  },
+  {
+    "id": 143,
+    "description": "Une vue archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jdeidet-El-Metn",
+    "src": "/legacy/gallery/143.jpg",
+    "thumb": "/legacy/thumbs/gallery/143.webp",
+    "width": 744,
+    "height": 371
+  },
+  {
+    "id": 144,
+    "description": "Harat Assad Raji à Gherfin (Jbeil) Maison à hall centrale et à triple arcades du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil-Gherfin",
+    "src": "/legacy/gallery/144.jpg",
+    "thumb": "/legacy/thumbs/gallery/144.webp",
+    "width": 800,
+    "height": 529
+  },
+  {
+    "id": 145,
+    "description": "Harat Neehmeh à Gherfin (Jbeil) Grande maison à galeire et à arcades du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil-Gherfin",
+    "src": "/legacy/gallery/145.jpg",
+    "thumb": "/legacy/thumbs/gallery/145.webp",
+    "width": 800,
+    "height": 527
+  },
+  {
+    "id": 146,
+    "description": "Couvent St. Antoine du 4e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil",
+    "src": "/legacy/gallery/146.jpg",
+    "thumb": "/legacy/thumbs/gallery/146.webp",
+    "width": 515,
+    "height": 800
+  },
+  {
+    "id": 147,
+    "description": "Ain El Kaffer archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil",
+    "src": "/legacy/gallery/147.jpg",
+    "thumb": "/legacy/thumbs/gallery/147.webp",
+    "width": 800,
+    "height": 531
+  },
+  {
+    "id": 148,
+    "description": "Eglise croisée St. Jean-Baptiste construite par les Croisés au 12e siècle signalée par J. Liger-Belair 20/8/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil",
+    "src": "/legacy/gallery/148.jpg",
+    "thumb": "/legacy/thumbs/gallery/148.webp",
+    "width": 779,
+    "height": 800
+  },
+  {
+    "id": 149,
+    "description": "Les Souks . Boutiques voûtées et jolis dallages rustiques des ruelles. Signalés par J. Liger-Belair 25/7/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil",
+    "src": "/legacy/gallery/149.jpg",
+    "thumb": "/legacy/thumbs/gallery/149.webp",
+    "width": 800,
+    "height": 573
+  },
+  {
+    "id": 150,
+    "description": "Le Site archéologique fouillé par Maurice Dunant. Signalée par J. Liger-Belair 20/7/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Jbeil",
+    "src": "/legacy/gallery/150.jpg",
+    "thumb": "/legacy/thumbs/gallery/150.webp",
+    "width": 667,
+    "height": 686
+  },
+  {
+    "id": 151,
+    "description": "Maison Ghassan Zeydan restaurée en 1994 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Hbelin",
+    "src": "/legacy/gallery/151.jpg",
+    "thumb": "/legacy/thumbs/gallery/151.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 152,
+    "description": "Sayidet el Najat construction fin du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Hbelin",
+    "src": "/legacy/gallery/152.jpg",
+    "thumb": "/legacy/thumbs/gallery/152.webp",
+    "width": 562,
+    "height": 800
+  },
+  {
+    "id": 153,
+    "description": "Maison Ghassan Zeydan restaurée en 1994 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Hbelin",
+    "src": "/legacy/gallery/153.jpg",
+    "thumb": "/legacy/thumbs/gallery/153.webp",
+    "width": 800,
+    "height": 483
+  },
+  {
+    "id": 154,
+    "description": "Maison Tannous Yazbeck. Rectangulaire à galerie et arcades construction du 19e siécle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Hbelin",
+    "src": "/legacy/gallery/154.jpg",
+    "thumb": "/legacy/thumbs/gallery/154.webp",
+    "width": 800,
+    "height": 481
+  },
+  {
+    "id": 155,
+    "description": "Chateau de Saïda - gravure - archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Gravures Sites Libanais",
+    "src": "/legacy/gallery/155.jpg",
+    "thumb": "/legacy/thumbs/gallery/155.webp",
+    "width": 800,
+    "height": 499
+  },
+  {
+    "id": 156,
+    "description": "Deir el Kamar - gravure - archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Gravures Sites Libanais",
+    "src": "/legacy/gallery/156.jpg",
+    "thumb": "/legacy/thumbs/gallery/156.webp",
+    "width": 800,
+    "height": 505
+  },
+  {
+    "id": 157,
+    "description": "Maison Lady Hester Stanhope archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Gravures Sites Libanais",
+    "src": "/legacy/gallery/157.jpg",
+    "thumb": "/legacy/thumbs/gallery/157.webp",
+    "width": 800,
+    "height": 521
+  },
+  {
+    "id": 158,
+    "description": "Deir el Kreim archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ghosta",
+    "src": "/legacy/gallery/158.jpg",
+    "thumb": "/legacy/thumbs/gallery/158.webp",
+    "width": 488,
+    "height": 685
+  },
+  {
+    "id": 159,
+    "description": "Congrégation Maronite archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ghosta",
+    "src": "/legacy/gallery/159.jpg",
+    "thumb": "/legacy/thumbs/gallery/159.webp",
+    "width": 720,
+    "height": 355
+  },
+  {
+    "id": 160,
+    "description": "Maison Bitar. Grosse habitration rectangulaire à trois niveaux et toiture pyramidale. Fiche établie par J. Liger-Belair 13/10/69. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ghosta",
+    "src": "/legacy/gallery/160.jpg",
+    "thumb": "/legacy/thumbs/gallery/160.webp",
+    "width": 549,
+    "height": 369
+  },
+  {
+    "id": 161,
+    "description": "Deir el Kreim archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ghosta",
+    "src": "/legacy/gallery/161.jpg",
+    "thumb": "/legacy/thumbs/gallery/161.webp",
+    "width": 728,
+    "height": 330
+  },
+  {
+    "id": 162,
+    "description": "Congrégation Maronite archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ghosta",
+    "src": "/legacy/gallery/162.jpg",
+    "thumb": "/legacy/thumbs/gallery/162.webp",
+    "width": 701,
+    "height": 350
+  },
+  {
+    "id": 163,
+    "description": "Vue d'ensemble du village archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Geba'a",
+    "src": "/legacy/gallery/163.jpg",
+    "thumb": "/legacy/thumbs/gallery/163.webp",
+    "width": 800,
+    "height": 700
+  },
+  {
+    "id": 164,
+    "description": "Route Reyfoun Faraya archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Feytroun Faraya",
+    "src": "/legacy/gallery/164.jpg",
+    "thumb": "/legacy/thumbs/gallery/164.webp",
+    "width": 800,
+    "height": 602
+  },
+  {
+    "id": 165,
+    "description": "Construction à Faraya archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Feytroun Faraya",
+    "src": "/legacy/gallery/165.jpg",
+    "thumb": "/legacy/thumbs/gallery/165.webp",
+    "width": 800,
+    "height": 603
+  },
+  {
+    "id": 166,
+    "description": "Borj el Fidar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Fidar",
+    "src": "/legacy/gallery/166.jpg",
+    "thumb": "/legacy/thumbs/gallery/166.webp",
+    "width": 800,
+    "height": 468
+  },
+  {
+    "id": 167,
+    "description": "Paysage de Feyrtoun archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Feytroun",
+    "src": "/legacy/gallery/167.jpg",
+    "thumb": "/legacy/thumbs/gallery/167.webp",
+    "width": 769,
+    "height": 465
+  },
+  {
+    "id": 168,
+    "description": "Paysage à Ferhet archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ferhet",
+    "src": "/legacy/gallery/168.jpg",
+    "thumb": "/legacy/thumbs/gallery/168.webp",
+    "width": 619,
+    "height": 800
+  },
+  {
+    "id": 169,
+    "description": "Maison Sheikh Antoun el Khazen rectangulaire à galerie et arcades du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Faraya",
+    "src": "/legacy/gallery/169.jpg",
+    "thumb": "/legacy/thumbs/gallery/169.webp",
+    "width": 388,
+    "height": 346
+  },
+  {
+    "id": 170,
+    "description": "Site Romain. Important champ de ruines romaines situé dans un site en forme de cirque d'une grande beauté. Les ruines comprennent plusieurs temples et une église byzantine. Fiche établie par J. Liger-Belair 15/10/69. archives APSAD.",
+    "series": "The Regional Survey",
+    "place": "Fakra",
+    "src": "/legacy/gallery/170.jpg",
+    "thumb": "/legacy/thumbs/gallery/170.webp",
+    "width": 756,
+    "height": 800
+  },
+  {
+    "id": 171,
+    "description": "La côte de Enfeh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Enfeh",
+    "src": "/legacy/gallery/171.jpg",
+    "thumb": "/legacy/thumbs/gallery/171.webp",
+    "width": 800,
+    "height": 424
+  },
+  {
+    "id": 172,
+    "description": "Sayidat el Rih . La chapelle N.D. du vent est partiellement enterrée avec une abside étroite et un narthex carré. Elle possède des restes illisibles de fresques byzantines . Fiche établie par J. Liger-Belair 4/11/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Enfeh",
+    "src": "/legacy/gallery/172.jpg",
+    "thumb": "/legacy/thumbs/gallery/172.webp",
+    "width": 567,
+    "height": 800
+  },
+  {
+    "id": 173,
+    "description": "La Tranchée d'Enfeh archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Enfeh",
+    "src": "/legacy/gallery/173.jpg",
+    "thumb": "/legacy/thumbs/gallery/173.webp",
+    "width": 800,
+    "height": 428
+  },
+  {
+    "id": 174,
+    "description": "Maison Talhouk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Eitat",
+    "src": "/legacy/gallery/174.jpg",
+    "thumb": "/legacy/thumbs/gallery/174.webp",
+    "width": 800,
+    "height": 393
+  },
+  {
+    "id": 175,
+    "description": "Source d'eau de St. Sarkis à Ehden archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ehden",
+    "src": "/legacy/gallery/175.jpg",
+    "thumb": "/legacy/thumbs/gallery/175.webp",
+    "width": 800,
+    "height": 584
+  },
+  {
+    "id": 176,
+    "description": "Quelques maisons libanaises et une ancienne ruelle. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ehden",
+    "src": "/legacy/gallery/176.jpg",
+    "thumb": "/legacy/thumbs/gallery/176.webp",
+    "width": 800,
+    "height": 586
+  },
+  {
+    "id": 177,
+    "description": "Le Midan et Daraj al Koubra archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ehden",
+    "src": "/legacy/gallery/177.jpg",
+    "thumb": "/legacy/thumbs/gallery/177.webp",
+    "width": 800,
+    "height": 594
+  },
+  {
+    "id": 178,
+    "description": "Le Palais et son site Ensemble de la plupart des éléments architecturaux traditionnels libanais: arcades ,liwane , cours intérieurs. Construction du 19e siècle. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/178.jpg",
+    "thumb": "/legacy/thumbs/gallery/178.webp",
+    "width": 800,
+    "height": 557
+  },
+  {
+    "id": 179,
+    "description": "Une vue générale de Deir el Kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/179.jpg",
+    "thumb": "/legacy/thumbs/gallery/179.webp",
+    "width": 800,
+    "height": 413
+  },
+  {
+    "id": 180,
+    "description": "Vue Aérienne de Deir el Kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/180.jpg",
+    "thumb": "/legacy/thumbs/gallery/180.webp",
+    "width": 800,
+    "height": 486
+  },
+  {
+    "id": 181,
+    "description": "La Place de Deir el Kamar vue générale le soir archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/181.jpg",
+    "thumb": "/legacy/thumbs/gallery/181.webp",
+    "width": 660,
+    "height": 522
+  },
+  {
+    "id": 182,
+    "description": "Une maison libanaise à mandalounes et bac à fleurs à Deir el kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/182.jpg",
+    "thumb": "/legacy/thumbs/gallery/182.webp",
+    "width": 620,
+    "height": 580
+  },
+  {
+    "id": 183,
+    "description": "Une ruelle à Deir el kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/183.jpg",
+    "thumb": "/legacy/thumbs/gallery/183.webp",
+    "width": 748,
+    "height": 504
+  },
+  {
+    "id": 184,
+    "description": "Une vue aérienne de Deir el Kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/184.jpg",
+    "thumb": "/legacy/thumbs/gallery/184.webp",
+    "width": 624,
+    "height": 580
+  },
+  {
+    "id": 185,
+    "description": "Paysage à Deir el Kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/185.jpg",
+    "thumb": "/legacy/thumbs/gallery/185.webp",
+    "width": 620,
+    "height": 608
+  },
+  {
+    "id": 186,
+    "description": "Maisons à mandalounes et arcades à Deir el kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/186.jpg",
+    "thumb": "/legacy/thumbs/gallery/186.webp",
+    "width": 424,
+    "height": 399
+  },
+  {
+    "id": 187,
+    "description": "Une ancienne maison à Deir El Kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/187.jpg",
+    "thumb": "/legacy/thumbs/gallery/187.webp",
+    "width": 800,
+    "height": 583
+  },
+  {
+    "id": 188,
+    "description": "Une ancienne maison à Deir El Kamar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/188.jpg",
+    "thumb": "/legacy/thumbs/gallery/188.webp",
+    "width": 664,
+    "height": 586
+  },
+  {
+    "id": 189,
+    "description": "Groupe de maisons du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Douma",
+    "src": "/legacy/gallery/189.jpg",
+    "thumb": "/legacy/thumbs/gallery/189.webp",
+    "width": 800,
+    "height": 428
+  },
+  {
+    "id": 190,
+    "description": "Maisons libanaises à Douma fin du 19e et début 20e siècle. archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Douma",
+    "src": "/legacy/gallery/190.jpg",
+    "thumb": "/legacy/thumbs/gallery/190.webp",
+    "width": 800,
+    "height": 435
+  },
+  {
+    "id": 191,
+    "description": "Le Souk de Douma 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Douma",
+    "src": "/legacy/gallery/191.jpg",
+    "thumb": "/legacy/thumbs/gallery/191.webp",
+    "width": 668,
+    "height": 457
+  },
+  {
+    "id": 192,
+    "description": "Paysage de Douma archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Douma",
+    "src": "/legacy/gallery/192.jpg",
+    "thumb": "/legacy/thumbs/gallery/192.webp",
+    "width": 800,
+    "height": 350
+  },
+  {
+    "id": 193,
+    "description": "Deir El Saydé archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Chouweir",
+    "src": "/legacy/gallery/193.jpg",
+    "thumb": "/legacy/thumbs/gallery/193.webp",
+    "width": 710,
+    "height": 800
+  },
+  {
+    "id": 194,
+    "description": "Vue à Chnanir archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Chnan'ir",
+    "src": "/legacy/gallery/194.jpg",
+    "thumb": "/legacy/thumbs/gallery/194.webp",
+    "width": 656,
+    "height": 474
+  },
+  {
+    "id": 195,
+    "description": "Le Couvent archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Chnan'ir",
+    "src": "/legacy/gallery/195.jpg",
+    "thumb": "/legacy/thumbs/gallery/195.webp",
+    "width": 658,
+    "height": 501
+  },
+  {
+    "id": 196,
+    "description": "Maison Caroline Chartouni archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Chartoun",
+    "src": "/legacy/gallery/196.jpg",
+    "thumb": "/legacy/thumbs/gallery/196.webp",
+    "width": 765,
+    "height": 800
+  },
+  {
+    "id": 197,
+    "description": "Vue des maisons archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/197.jpg",
+    "thumb": "/legacy/thumbs/gallery/197.webp",
+    "width": 800,
+    "height": 532
+  },
+  {
+    "id": 198,
+    "description": "Les bains Turcs au Palais de Beit ed Dine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/198.jpg",
+    "thumb": "/legacy/thumbs/gallery/198.webp",
+    "width": 800,
+    "height": 524
+  },
+  {
+    "id": 199,
+    "description": "Vue générale du palais, belle situation dominant la vallée Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/199.jpg",
+    "thumb": "/legacy/thumbs/gallery/199.webp",
+    "width": 800,
+    "height": 569
+  },
+  {
+    "id": 200,
+    "description": "La cour intérieure du palais et le haramlik Complexe de constructions à arcades , liwans et cours intérieures du 18e et 19e siècle. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/200.jpg",
+    "thumb": "/legacy/thumbs/gallery/200.webp",
+    "width": 684,
+    "height": 658
+  },
+  {
+    "id": 201,
+    "description": "Ancien Souk de Batroun archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Batroun",
+    "src": "/legacy/gallery/201.jpg",
+    "thumb": "/legacy/thumbs/gallery/201.webp",
+    "width": 800,
+    "height": 513
+  },
+  {
+    "id": 202,
+    "description": "L'èglise St. Ethienne à trois nefs en voutes d'arêtes construite en 19e siècle. Fiche établie par J. Liger-Belair 28/8/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Batroun",
+    "src": "/legacy/gallery/202.jpg",
+    "thumb": "/legacy/thumbs/gallery/202.webp",
+    "width": 798,
+    "height": 800
+  },
+  {
+    "id": 203,
+    "description": "Le Mur des Phéniciens. Taillé dans le rocher du 12e siècle avant J..C Fiche établie par J. Liger-Belair 3/6/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Batroun",
+    "src": "/legacy/gallery/203.jpg",
+    "thumb": "/legacy/thumbs/gallery/203.webp",
+    "width": 644,
+    "height": 246
+  },
+  {
+    "id": 204,
+    "description": "Le Souk de Batroun archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Batroun",
+    "src": "/legacy/gallery/204.jpg",
+    "thumb": "/legacy/thumbs/gallery/204.webp",
+    "width": 800,
+    "height": 591
+  },
+  {
+    "id": 205,
+    "description": "Le Couvent de Bzoummar Rass Bzoummar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bzoumar",
+    "src": "/legacy/gallery/205.jpg",
+    "thumb": "/legacy/thumbs/gallery/205.webp",
+    "width": 414,
+    "height": 383
+  },
+  {
+    "id": 206,
+    "description": "Maison libanaise archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Btater",
+    "src": "/legacy/gallery/206.jpg",
+    "thumb": "/legacy/thumbs/gallery/206.webp",
+    "width": 800,
+    "height": 511
+  },
+  {
+    "id": 207,
+    "description": "Maisons paysannes archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Brital",
+    "src": "/legacy/gallery/207.jpg",
+    "thumb": "/legacy/thumbs/gallery/207.webp",
+    "width": 800,
+    "height": 493
+  },
+  {
+    "id": 208,
+    "description": "L'intérieur du Sérail la cour et la fontaine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/208.jpg",
+    "thumb": "/legacy/thumbs/gallery/208.webp",
+    "width": 637,
+    "height": 800
+  },
+  {
+    "id": 209,
+    "description": "Maison libanaise du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/209.jpg",
+    "thumb": "/legacy/thumbs/gallery/209.webp",
+    "width": 800,
+    "height": 618
+  },
+  {
+    "id": 210,
+    "description": "Le Sérail archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/210.jpg",
+    "thumb": "/legacy/thumbs/gallery/210.webp",
+    "width": 426,
+    "height": 294
+  },
+  {
+    "id": 211,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/211.jpg",
+    "thumb": "/legacy/thumbs/gallery/211.webp",
+    "width": 800,
+    "height": 486
+  },
+  {
+    "id": 212,
+    "description": "L'église archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/212.jpg",
+    "thumb": "/legacy/thumbs/gallery/212.webp",
+    "width": 800,
+    "height": 428
+  },
+  {
+    "id": 213,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/213.jpg",
+    "thumb": "/legacy/thumbs/gallery/213.webp",
+    "width": 800,
+    "height": 487
+  },
+  {
+    "id": 214,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bekaa-Nord",
+    "src": "/legacy/gallery/214.jpg",
+    "thumb": "/legacy/thumbs/gallery/214.webp",
+    "width": 408,
+    "height": 355
+  },
+  {
+    "id": 215,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bekaa-Nord",
+    "src": "/legacy/gallery/215.jpg",
+    "thumb": "/legacy/thumbs/gallery/215.webp",
+    "width": 408,
+    "height": 363
+  },
+  {
+    "id": 216,
+    "description": "Vue d'une maison dans le souk archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Becharre",
+    "src": "/legacy/gallery/216.jpg",
+    "thumb": "/legacy/thumbs/gallery/216.webp",
+    "width": 764,
+    "height": 421
+  },
+  {
+    "id": 217,
+    "description": "Palais Joumblat archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baadaran",
+    "src": "/legacy/gallery/217.jpg",
+    "thumb": "/legacy/thumbs/gallery/217.webp",
+    "width": 615,
+    "height": 502
+  },
+  {
+    "id": 218,
+    "description": "Maison à Bouwar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bouwar",
+    "src": "/legacy/gallery/218.jpg",
+    "thumb": "/legacy/thumbs/gallery/218.webp",
+    "width": 684,
+    "height": 421
+  },
+  {
+    "id": 219,
+    "description": "Couvent Deir Mar Gerios Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bherdok",
+    "src": "/legacy/gallery/219.jpg",
+    "thumb": "/legacy/thumbs/gallery/219.webp",
+    "width": 800,
+    "height": 381
+  },
+  {
+    "id": 220,
+    "description": "Couvent Deir Mar Gerios Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bherdok",
+    "src": "/legacy/gallery/220.jpg",
+    "thumb": "/legacy/thumbs/gallery/220.webp",
+    "width": 800,
+    "height": 442
+  },
+  {
+    "id": 221,
+    "description": "Couvent Deir Mar Gerios Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bherdok",
+    "src": "/legacy/gallery/221.jpg",
+    "thumb": "/legacy/thumbs/gallery/221.webp",
+    "width": 800,
+    "height": 485
+  },
+  {
+    "id": 222,
+    "description": "Maison libanaise à arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bekaa",
+    "src": "/legacy/gallery/222.jpg",
+    "thumb": "/legacy/thumbs/gallery/222.webp",
+    "width": 416,
+    "height": 388
+  },
+  {
+    "id": 223,
+    "description": "La montagne archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bekaa",
+    "src": "/legacy/gallery/223.jpg",
+    "thumb": "/legacy/thumbs/gallery/223.webp",
+    "width": 424,
+    "height": 368
+  },
+  {
+    "id": 224,
+    "description": "Une vue à Bekaa archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bekaa",
+    "src": "/legacy/gallery/224.jpg",
+    "thumb": "/legacy/thumbs/gallery/224.webp",
+    "width": 425,
+    "height": 365
+  },
+  {
+    "id": 225,
+    "description": "Une ruelle à Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/225.jpg",
+    "thumb": "/legacy/thumbs/gallery/225.webp",
+    "width": 546,
+    "height": 800
+  },
+  {
+    "id": 226,
+    "description": "Le village de Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/226.jpg",
+    "thumb": "/legacy/thumbs/gallery/226.webp",
+    "width": 800,
+    "height": 401
+  },
+  {
+    "id": 227,
+    "description": "Une maison moderne à Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/227.jpg",
+    "thumb": "/legacy/thumbs/gallery/227.webp",
+    "width": 800,
+    "height": 445
+  },
+  {
+    "id": 228,
+    "description": "Ancienne maison à Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/228.jpg",
+    "thumb": "/legacy/thumbs/gallery/228.webp",
+    "width": 800,
+    "height": 372
+  },
+  {
+    "id": 229,
+    "description": "Ecole à Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/229.jpg",
+    "thumb": "/legacy/thumbs/gallery/229.webp",
+    "width": 800,
+    "height": 488
+  },
+  {
+    "id": 230,
+    "description": "Eglise à Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/230.jpg",
+    "thumb": "/legacy/thumbs/gallery/230.webp",
+    "width": 800,
+    "height": 497
+  },
+  {
+    "id": 231,
+    "description": "Vue aérienne de Beit Chabab archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Beit-Chabab",
+    "src": "/legacy/gallery/231.jpg",
+    "thumb": "/legacy/thumbs/gallery/231.webp",
+    "width": 800,
+    "height": 480
+  },
+  {
+    "id": 232,
+    "description": "Une église à Bee Ed Dine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Bee Ed Dine",
+    "src": "/legacy/gallery/232.jpg",
+    "thumb": "/legacy/thumbs/gallery/232.webp",
+    "width": 792,
+    "height": 800
+  },
+  {
+    "id": 233,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Barouk",
+    "src": "/legacy/gallery/233.jpg",
+    "thumb": "/legacy/thumbs/gallery/233.webp",
+    "width": 800,
+    "height": 512
+  },
+  {
+    "id": 234,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Barouk",
+    "src": "/legacy/gallery/234.jpg",
+    "thumb": "/legacy/thumbs/gallery/234.webp",
+    "width": 800,
+    "height": 424
+  },
+  {
+    "id": 235,
+    "description": "Les Cèdres de Barouk Archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Barouk",
+    "src": "/legacy/gallery/235.jpg",
+    "thumb": "/legacy/thumbs/gallery/235.webp",
+    "width": 769,
+    "height": 800
+  },
+  {
+    "id": 236,
+    "description": "Maison paysanne Archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baskinta",
+    "src": "/legacy/gallery/236.jpg",
+    "thumb": "/legacy/thumbs/gallery/236.webp",
+    "width": 408,
+    "height": 322
+  },
+  {
+    "id": 237,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Baskinta",
+    "src": "/legacy/gallery/237.jpg",
+    "thumb": "/legacy/thumbs/gallery/237.webp",
+    "width": 728,
+    "height": 467
+  },
+  {
+    "id": 238,
+    "description": "Le Couvent. Type de couvent à cloître central et diverses ailes. Fondée par l'Ordre Cistérien en 1157. signalé par J. Liger-Belair 27/8/67archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Balamand",
+    "src": "/legacy/gallery/238.jpg",
+    "thumb": "/legacy/thumbs/gallery/238.webp",
+    "width": 399,
+    "height": 367
+  },
+  {
+    "id": 239,
+    "description": "Les ruines apsad APSAD",
+    "series": "The Regional Survey",
+    "place": "Balamand",
+    "src": "/legacy/gallery/239.jpg",
+    "thumb": "/legacy/thumbs/gallery/239.webp",
+    "width": 426,
+    "height": 362
+  },
+  {
+    "id": 240,
+    "description": "Une cascade Archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Balamand",
+    "src": "/legacy/gallery/240.jpg",
+    "thumb": "/legacy/thumbs/gallery/240.webp",
+    "width": 416,
+    "height": 423
+  },
+  {
+    "id": 241,
+    "description": "Les ruines archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baalbeck",
+    "src": "/legacy/gallery/241.jpg",
+    "thumb": "/legacy/thumbs/gallery/241.webp",
+    "width": 424,
+    "height": 390
+  },
+  {
+    "id": 242,
+    "description": "Vue de Baakline archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baakline",
+    "src": "/legacy/gallery/242.jpg",
+    "thumb": "/legacy/thumbs/gallery/242.webp",
+    "width": 751,
+    "height": 509
+  },
+  {
+    "id": 243,
+    "description": "Vue de Baakline archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baakline",
+    "src": "/legacy/gallery/243.jpg",
+    "thumb": "/legacy/thumbs/gallery/243.webp",
+    "width": 763,
+    "height": 474
+  },
+  {
+    "id": 244,
+    "description": "Maison Labaki archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/244.jpg",
+    "thumb": "/legacy/thumbs/gallery/244.webp",
+    "width": 800,
+    "height": 576
+  },
+  {
+    "id": 245,
+    "description": "Maison Labaki archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/245.jpg",
+    "thumb": "/legacy/thumbs/gallery/245.webp",
+    "width": 800,
+    "height": 743
+  },
+  {
+    "id": 246,
+    "description": "Maison Labaki archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/246.jpg",
+    "thumb": "/legacy/thumbs/gallery/246.webp",
+    "width": 800,
+    "height": 781
+  },
+  {
+    "id": 247,
+    "description": "Maison Labaki archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/247.jpg",
+    "thumb": "/legacy/thumbs/gallery/247.webp",
+    "width": 800,
+    "height": 744
+  },
+  {
+    "id": 248,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabda",
+    "src": "/legacy/gallery/248.jpg",
+    "thumb": "/legacy/thumbs/gallery/248.webp",
+    "width": 644,
+    "height": 800
+  },
+  {
+    "id": 249,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabda",
+    "src": "/legacy/gallery/249.jpg",
+    "thumb": "/legacy/thumbs/gallery/249.webp",
+    "width": 800,
+    "height": 557
+  },
+  {
+    "id": 250,
+    "description": "Le Sérail archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Baabda",
+    "src": "/legacy/gallery/250.jpg",
+    "thumb": "/legacy/thumbs/gallery/250.webp",
+    "width": 585,
+    "height": 800
+  },
+  {
+    "id": 251,
+    "description": "Maison Chawkate Choucair. Maison traditionelle libanaise du 19e siècle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Arsoun",
+    "src": "/legacy/gallery/251.jpg",
+    "thumb": "/legacy/thumbs/gallery/251.webp",
+    "width": 800,
+    "height": 611
+  },
+  {
+    "id": 252,
+    "description": "Le Village archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Aramoun",
+    "src": "/legacy/gallery/252.jpg",
+    "thumb": "/legacy/thumbs/gallery/252.webp",
+    "width": 748,
+    "height": 429
+  },
+  {
+    "id": 253,
+    "description": "Vestiges de la ville d'Anjar archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Anjar",
+    "src": "/legacy/gallery/253.jpg",
+    "thumb": "/legacy/thumbs/gallery/253.webp",
+    "width": 800,
+    "height": 565
+  },
+  {
+    "id": 254,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Anfa",
+    "src": "/legacy/gallery/254.jpg",
+    "thumb": "/legacy/thumbs/gallery/254.webp",
+    "width": 800,
+    "height": 530
+  },
+  {
+    "id": 255,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Amshit",
+    "src": "/legacy/gallery/255.jpg",
+    "thumb": "/legacy/thumbs/gallery/255.webp",
+    "width": 800,
+    "height": 771
+  },
+  {
+    "id": 256,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Amshit",
+    "src": "/legacy/gallery/256.jpg",
+    "thumb": "/legacy/thumbs/gallery/256.webp",
+    "width": 384,
+    "height": 581
+  },
+  {
+    "id": 257,
+    "description": "Maison Farès Lahoud du 19e siècle l'entrée à triple arcades dentelées archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Amshit",
+    "src": "/legacy/gallery/257.jpg",
+    "thumb": "/legacy/thumbs/gallery/257.webp",
+    "width": 800,
+    "height": 393
+  },
+  {
+    "id": 258,
+    "description": "Maison Alice Francis type de maison à hall central du 19e siècle Fiche signalée par J. Liger-Belair 5/7/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Amshit",
+    "src": "/legacy/gallery/258.jpg",
+    "thumb": "/legacy/thumbs/gallery/258.webp",
+    "width": 583,
+    "height": 349
+  },
+  {
+    "id": 259,
+    "description": "Café - trottoir archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Akkar",
+    "src": "/legacy/gallery/259.jpg",
+    "thumb": "/legacy/thumbs/gallery/259.webp",
+    "width": 561,
+    "height": 546
+  },
+  {
+    "id": 260,
+    "description": "Paysage archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Akkar",
+    "src": "/legacy/gallery/260.jpg",
+    "thumb": "/legacy/thumbs/gallery/260.webp",
+    "width": 800,
+    "height": 453
+  },
+  {
+    "id": 261,
+    "description": "Paysage de Kammouha archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Akkar",
+    "src": "/legacy/gallery/261.jpg",
+    "thumb": "/legacy/thumbs/gallery/261.webp",
+    "width": 800,
+    "height": 494
+  },
+  {
+    "id": 262,
+    "description": "Une ancienne ruelle archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Akkar",
+    "src": "/legacy/gallery/262.jpg",
+    "thumb": "/legacy/thumbs/gallery/262.webp",
+    "width": 604,
+    "height": 593
+  },
+  {
+    "id": 263,
+    "description": "Maison Sheikh Nassim Rameh à hall central ouvert et arcades du 19e siècle signalée par Liger-Belair archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ajaltoun",
+    "src": "/legacy/gallery/263.jpg",
+    "thumb": "/legacy/thumbs/gallery/263.webp",
+    "width": 800,
+    "height": 470
+  },
+  {
+    "id": 264,
+    "description": "Ain Saadé L'archevêché. Couvent classique à cour centrale du 19e siècle Fiche établie par J. Liger-Belair 20/11/67 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Saade",
+    "src": "/legacy/gallery/264.jpg",
+    "thumb": "/legacy/thumbs/gallery/264.webp",
+    "width": 760,
+    "height": 564
+  },
+  {
+    "id": 265,
+    "description": "La Grotte archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Afka",
+    "src": "/legacy/gallery/265.jpg",
+    "thumb": "/legacy/thumbs/gallery/265.webp",
+    "width": 761,
+    "height": 800
+  },
+  {
+    "id": 266,
+    "description": "Maison Chalhoub. Maison rectangulaire à arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Araya",
+    "src": "/legacy/gallery/266.jpg",
+    "thumb": "/legacy/thumbs/gallery/266.webp",
+    "width": 763,
+    "height": 456
+  },
+  {
+    "id": 267,
+    "description": "Le Village. Une groupe de maisons à arcades",
+    "series": "The Regional Survey",
+    "place": "Araya",
+    "src": "/legacy/gallery/267.jpg",
+    "thumb": "/legacy/thumbs/gallery/267.webp",
+    "width": 800,
+    "height": 454
+  },
+  {
+    "id": 268,
+    "description": "Ancienne et nouvelle maison construction mixte archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Araya",
+    "src": "/legacy/gallery/268.jpg",
+    "thumb": "/legacy/thumbs/gallery/268.webp",
+    "width": 800,
+    "height": 429
+  },
+  {
+    "id": 269,
+    "description": "Une maison à double arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Amatour",
+    "src": "/legacy/gallery/269.jpg",
+    "thumb": "/legacy/thumbs/gallery/269.webp",
+    "width": 421,
+    "height": 245
+  },
+  {
+    "id": 270,
+    "description": "Vue gémérale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Amatour",
+    "src": "/legacy/gallery/270.jpg",
+    "thumb": "/legacy/thumbs/gallery/270.webp",
+    "width": 739,
+    "height": 528
+  },
+  {
+    "id": 271,
+    "description": "La fontaine archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Amatour",
+    "src": "/legacy/gallery/271.jpg",
+    "thumb": "/legacy/thumbs/gallery/271.webp",
+    "width": 800,
+    "height": 580
+  },
+  {
+    "id": 272,
+    "description": "Vue générale archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Aley",
+    "src": "/legacy/gallery/272.jpg",
+    "thumb": "/legacy/thumbs/gallery/272.webp",
+    "width": 604,
+    "height": 319
+  },
+  {
+    "id": 273,
+    "description": "Une maison archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Aley",
+    "src": "/legacy/gallery/273.jpg",
+    "thumb": "/legacy/thumbs/gallery/273.webp",
+    "width": 614,
+    "height": 584
+  },
+  {
+    "id": 274,
+    "description": "Une maison libanaise à arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Aley",
+    "src": "/legacy/gallery/274.jpg",
+    "thumb": "/legacy/thumbs/gallery/274.webp",
+    "width": 616,
+    "height": 370
+  },
+  {
+    "id": 275,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Akoura",
+    "src": "/legacy/gallery/275.jpg",
+    "thumb": "/legacy/thumbs/gallery/275.webp",
+    "width": 492,
+    "height": 492
+  },
+  {
+    "id": 276,
+    "description": "St. Pierre et Paul à Akoura archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Akoura",
+    "src": "/legacy/gallery/276.jpg",
+    "thumb": "/legacy/thumbs/gallery/276.webp",
+    "width": 492,
+    "height": 492
+  },
+  {
+    "id": 277,
+    "description": "L'Eglise archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Zhalta",
+    "src": "/legacy/gallery/277.jpg",
+    "thumb": "/legacy/thumbs/gallery/277.webp",
+    "width": 800,
+    "height": 574
+  },
+  {
+    "id": 278,
+    "description": "Une vue archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Zhalta",
+    "src": "/legacy/gallery/278.jpg",
+    "thumb": "/legacy/thumbs/gallery/278.webp",
+    "width": 800,
+    "height": 498
+  },
+  {
+    "id": 279,
+    "description": "Le Pont à double arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Aar",
+    "src": "/legacy/gallery/279.jpg",
+    "thumb": "/legacy/thumbs/gallery/279.webp",
+    "width": 800,
+    "height": 532
+  },
+  {
+    "id": 280,
+    "description": "Maison Habib Bacha el Saad archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Traz",
+    "src": "/legacy/gallery/280.jpg",
+    "thumb": "/legacy/thumbs/gallery/280.webp",
+    "width": 800,
+    "height": 591
+  },
+  {
+    "id": 281,
+    "description": "Maison Zeineddin archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain El-Kene",
+    "src": "/legacy/gallery/281.jpg",
+    "thumb": "/legacy/thumbs/gallery/281.webp",
+    "width": 800,
+    "height": 792
+  },
+  {
+    "id": 282,
+    "description": "Ensembles de maisons archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain El-Kene",
+    "src": "/legacy/gallery/282.jpg",
+    "thumb": "/legacy/thumbs/gallery/282.webp",
+    "width": 800,
+    "height": 450
+  },
+  {
+    "id": 283,
+    "description": "",
+    "series": "The Regional Survey",
+    "place": "Ain El-Kene",
+    "src": "/legacy/gallery/283.jpg",
+    "thumb": "/legacy/thumbs/gallery/283.webp",
+    "width": 747,
+    "height": 484
+  },
+  {
+    "id": 284,
+    "description": "Vue générale de Ayn Dara archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Dara",
+    "src": "/legacy/gallery/284.jpg",
+    "thumb": "/legacy/thumbs/gallery/284.webp",
+    "width": 800,
+    "height": 445
+  },
+  {
+    "id": 285,
+    "description": "Maison à triple arcades et mandalounes archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Dara",
+    "src": "/legacy/gallery/285.jpg",
+    "thumb": "/legacy/thumbs/gallery/285.webp",
+    "width": 800,
+    "height": 573
+  },
+  {
+    "id": 286,
+    "description": "Maison Mohamad Arslan maison à galerie et arcades archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Anoub",
+    "src": "/legacy/gallery/286.jpg",
+    "thumb": "/legacy/thumbs/gallery/286.webp",
+    "width": 800,
+    "height": 473
+  },
+  {
+    "id": 287,
+    "description": "le Sérail archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Anoub",
+    "src": "/legacy/gallery/287.jpg",
+    "thumb": "/legacy/thumbs/gallery/287.webp",
+    "width": 418,
+    "height": 394
+  },
+  {
+    "id": 288,
+    "description": "le Sérail archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Anoub",
+    "src": "/legacy/gallery/288.jpg",
+    "thumb": "/legacy/thumbs/gallery/288.webp",
+    "width": 583,
+    "height": 428
+  },
+  {
+    "id": 289,
+    "description": "le Sérail archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Ain Anoub",
+    "src": "/legacy/gallery/289.jpg",
+    "thumb": "/legacy/thumbs/gallery/289.webp",
+    "width": 531,
+    "height": 616
+  },
+  {
+    "id": 290,
+    "description": "Maison C. Nakade. Construction du 19e siècle restaurée en 1969 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/290.jpg",
+    "thumb": "/legacy/thumbs/gallery/290.webp",
+    "width": 800,
+    "height": 729
+  },
+  {
+    "id": 291,
+    "description": "Vue générale Abey archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/291.jpg",
+    "thumb": "/legacy/thumbs/gallery/291.webp",
+    "width": 680,
+    "height": 445
+  },
+  {
+    "id": 292,
+    "description": "Maison Négib Nakade construite au XIX siècle, verrière restaurée en 1969, vue intérieure après restauration archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/292.jpg",
+    "thumb": "/legacy/thumbs/gallery/292.webp",
+    "width": 800,
+    "height": 781
+  },
+  {
+    "id": 293,
+    "description": "Ambassade Britanique ex-maison Riad Amine rd Dine 31/10/61 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/293.jpg",
+    "thumb": "/legacy/thumbs/gallery/293.webp",
+    "width": 641,
+    "height": 576
+  },
+  {
+    "id": 294,
+    "description": "Maisons à Abey photo 29/9/1969 archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/294.jpg",
+    "thumb": "/legacy/thumbs/gallery/294.webp",
+    "width": 800,
+    "height": 535
+  },
+  {
+    "id": 295,
+    "description": "Ecole El Hekmat archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/295.jpg",
+    "thumb": "/legacy/thumbs/gallery/295.webp",
+    "width": 800,
+    "height": 453
+  },
+  {
+    "id": 296,
+    "description": "Ex maison Riad Amine Eddine résidence Ambassadeur Britanique après restauration 31/10/61archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/296.jpg",
+    "thumb": "/legacy/thumbs/gallery/296.webp",
+    "width": 760,
+    "height": 800
+  },
+  {
+    "id": 297,
+    "description": "Ex maison Riad Amine Eddine résidence Ambassadeur Britanique après restauration 31/10/61archives APSAD",
+    "series": "The Regional Survey",
+    "place": "Abey",
+    "src": "/legacy/gallery/297.jpg",
+    "thumb": "/legacy/thumbs/gallery/297.webp",
+    "width": 392,
+    "height": 402
+  },
+  {
+    "id": 298,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Zahle",
+    "src": "/legacy/gallery/298.jpg",
+    "thumb": "/legacy/thumbs/gallery/298.webp",
+    "width": 800,
+    "height": 489
+  },
+  {
+    "id": 299,
+    "description": "Groupe de maisons à Zahlé. . Fiche établie par J. Liger-Belair 20/11/68 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Zahle",
+    "src": "/legacy/gallery/299.jpg",
+    "thumb": "/legacy/thumbs/gallery/299.webp",
+    "width": 800,
+    "height": 548
+  },
+  {
+    "id": 300,
+    "description": "Le Vieux Moulin. Belle petite bâtisse de pierre à un niveau bâtie par dessus un cour d'eau. Fiche établie par J. Liger-Belair 20/11/68 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Zahle",
+    "src": "/legacy/gallery/300.jpg",
+    "thumb": "/legacy/thumbs/gallery/300.webp",
+    "width": 800,
+    "height": 585
+  },
+  {
+    "id": 301,
+    "description": "Le Vieux Sérail. Grosse bâtisse en pierre à deux niveaux sur plan carré avec une cour carrée sur laquelle donnent 4 petites façades à galeries et arcades. Fiche établie par J. Liger-Belair 20/11/68. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Zahle",
+    "src": "/legacy/gallery/301.jpg",
+    "thumb": "/legacy/thumbs/gallery/301.webp",
+    "width": 800,
+    "height": 605
+  },
+  {
+    "id": 302,
+    "description": "Le Vieux Quartier en contre-bas du Sérail . Ensemble pittoresque de maisons assez populaires à terrasse souvent chaulées parfois à galeries et arcades . Fiche établie par J. Liger-Belair 20/11/68 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Zahle",
+    "src": "/legacy/gallery/302.jpg",
+    "thumb": "/legacy/thumbs/gallery/302.webp",
+    "width": 800,
+    "height": 574
+  },
+  {
+    "id": 303,
+    "description": "Le Health hotel situé à l'entrée du Wadi Fiche établie par J. Liger-Belair 20/11/68. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Zahle",
+    "src": "/legacy/gallery/303.jpg",
+    "thumb": "/legacy/thumbs/gallery/303.webp",
+    "width": 800,
+    "height": 527
+  },
+  {
+    "id": 304,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/304.jpg",
+    "thumb": "/legacy/thumbs/gallery/304.webp",
+    "width": 533,
+    "height": 800
+  },
+  {
+    "id": 305,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/305.jpg",
+    "thumb": "/legacy/thumbs/gallery/305.webp",
+    "width": 573,
+    "height": 800
+  },
+  {
+    "id": 306,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/306.jpg",
+    "thumb": "/legacy/thumbs/gallery/306.webp",
+    "width": 800,
+    "height": 605
+  },
+  {
+    "id": 307,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/307.jpg",
+    "thumb": "/legacy/thumbs/gallery/307.webp",
+    "width": 560,
+    "height": 800
+  },
+  {
+    "id": 308,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/308.jpg",
+    "thumb": "/legacy/thumbs/gallery/308.webp",
+    "width": 576,
+    "height": 800
+  },
+  {
+    "id": 309,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/309.jpg",
+    "thumb": "/legacy/thumbs/gallery/309.webp",
+    "width": 800,
+    "height": 479
+  },
+  {
+    "id": 310,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/310.jpg",
+    "thumb": "/legacy/thumbs/gallery/310.webp",
+    "width": 800,
+    "height": 575
+  },
+  {
+    "id": 311,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/311.jpg",
+    "thumb": "/legacy/thumbs/gallery/311.webp",
+    "width": 800,
+    "height": 585
+  },
+  {
+    "id": 312,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/312.jpg",
+    "thumb": "/legacy/thumbs/gallery/312.webp",
+    "width": 599,
+    "height": 800
+  },
+  {
+    "id": 313,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/313.jpg",
+    "thumb": "/legacy/thumbs/gallery/313.webp",
+    "width": 800,
+    "height": 470
+  },
+  {
+    "id": 314,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/314.jpg",
+    "thumb": "/legacy/thumbs/gallery/314.webp",
+    "width": 800,
+    "height": 571
+  },
+  {
+    "id": 315,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/315.jpg",
+    "thumb": "/legacy/thumbs/gallery/315.webp",
+    "width": 800,
+    "height": 612
+  },
+  {
+    "id": 316,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Tripoli",
+    "src": "/legacy/gallery/316.jpg",
+    "thumb": "/legacy/thumbs/gallery/316.webp",
+    "width": 483,
+    "height": 313
+  },
+  {
+    "id": 317,
+    "description": "Le Chateau. Construction du 11e siècle. En grande partie creusée dans le rocher à d'immenses citernes encore remplies d'eau. Fiche établie par J. Liger-Belair 3/6/67.archives APSAD",
+    "series": "The Green Folders",
+    "place": "Smar Jbeil",
+    "src": "/legacy/gallery/317.jpg",
+    "thumb": "/legacy/thumbs/gallery/317.webp",
+    "width": 800,
+    "height": 543
+  },
+  {
+    "id": 318,
+    "description": "Les temples et leur site. Au dessus du village de Sfiré construits. par les romains. .Fiche établie par J. Liger-Belair 5/9/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Sfire",
+    "src": "/legacy/gallery/318.jpg",
+    "thumb": "/legacy/thumbs/gallery/318.webp",
+    "width": 800,
+    "height": 581
+  },
+  {
+    "id": 319,
+    "description": "Les maisons Torbey. La maison isolée est une grande construction rectangulaire à deux niveaux. Construction du 17e et 20e siècle. Fiche établie par J. Liger-Belair 5/9/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Sebaal",
+    "src": "/legacy/gallery/319.jpg",
+    "thumb": "/legacy/thumbs/gallery/319.webp",
+    "width": 800,
+    "height": 547
+  },
+  {
+    "id": 320,
+    "description": "Maison Nagib Asmar. Ex palais Abillama avec cours intérieures.Fiche établie par J. Liger-belair 8/12/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Salima",
+    "src": "/legacy/gallery/320.jpg",
+    "thumb": "/legacy/thumbs/gallery/320.webp",
+    "width": 616,
+    "height": 800
+  },
+  {
+    "id": 321,
+    "description": "Mosquée el Kikhia voutée à plusieurs coupoles et à pilliers . Fiche établie par J. Liger-Belair 5/5/68. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Saida",
+    "src": "/legacy/gallery/321.jpg",
+    "thumb": "/legacy/thumbs/gallery/321.webp",
+    "width": 800,
+    "height": 566
+  },
+  {
+    "id": 322,
+    "description": "Le Chateau de la mer construit par les croisés en 1228. Fiche établie par J. Liger-Belair 25/4/68. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Saida",
+    "src": "/legacy/gallery/322.jpg",
+    "thumb": "/legacy/thumbs/gallery/322.webp",
+    "width": 800,
+    "height": 346
+  },
+  {
+    "id": 323,
+    "description": "Le Chateau Croisée. Vaste enceinte rectangulaire avec fossés à demi comblés, flanquée d'un donjon. Fiche établie par J. Liger-Belair 4/11/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Rmoul",
+    "src": "/legacy/gallery/323.jpg",
+    "thumb": "/legacy/thumbs/gallery/323.webp",
+    "width": 800,
+    "height": 321
+  },
+  {
+    "id": 324,
+    "description": "Pyramide Qamwât el Hermel construit par les syriens au 1er ou 2e siécle. Petite pyramyde reposant sur deux blocs cubiques superposés Fiche établie par J. Liger-Belair. Archives APSAD",
+    "series": "The Green Folders",
+    "place": "Region du Hermel",
+    "src": "/legacy/gallery/324.jpg",
+    "thumb": "/legacy/thumbs/gallery/324.webp",
+    "width": 800,
+    "height": 534
+  },
+  {
+    "id": 325,
+    "description": "Le Temple Romain. Enorme base de temple avec son puissant soubasement et ses escaliers. Fiche établie par J. Liger-Belair 20/11/68. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Qsarnaba",
+    "src": "/legacy/gallery/325.jpg",
+    "thumb": "/legacy/thumbs/gallery/325.webp",
+    "width": 800,
+    "height": 593
+  },
+  {
+    "id": 326,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Qammoua",
+    "src": "/legacy/gallery/326.jpg",
+    "thumb": "/legacy/thumbs/gallery/326.webp",
+    "width": 800,
+    "height": 455
+  },
+  {
+    "id": 327,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Qammoua",
+    "src": "/legacy/gallery/327.jpg",
+    "thumb": "/legacy/thumbs/gallery/327.webp",
+    "width": 800,
+    "height": 537
+  },
+  {
+    "id": 328,
+    "description": "Pont à dos d'âne à une arche principale. Fiche établie par J. Liger-Belair 15/10/69. archives APSAD.",
+    "series": "The Green Folders",
+    "place": "Nahr Ibrahim",
+    "src": "/legacy/gallery/328.jpg",
+    "thumb": "/legacy/thumbs/gallery/328.webp",
+    "width": 800,
+    "height": 593
+  },
+  {
+    "id": 329,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Nahr El Kalb",
+    "src": "/legacy/gallery/329.jpg",
+    "thumb": "/legacy/thumbs/gallery/329.webp",
+    "width": 800,
+    "height": 576
+  },
+  {
+    "id": 330,
+    "description": "Le Mausolée à coupole et galerie couverte. Fiche établie par J. Liger-Belair 24/11/68. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Nabi Ayla",
+    "src": "/legacy/gallery/330.jpg",
+    "thumb": "/legacy/thumbs/gallery/330.webp",
+    "width": 800,
+    "height": 532
+  },
+  {
+    "id": 331,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Mtein",
+    "src": "/legacy/gallery/331.jpg",
+    "thumb": "/legacy/thumbs/gallery/331.webp",
+    "width": 800,
+    "height": 605
+  },
+  {
+    "id": 332,
+    "description": "Tombeau Abillama Petit tombeau à plan carrée surmonté d'une coupole. Fiche établie par J. Liger-Belair 4/11/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Mtein",
+    "src": "/legacy/gallery/332.jpg",
+    "thumb": "/legacy/thumbs/gallery/332.webp",
+    "width": 800,
+    "height": 584
+  },
+  {
+    "id": 333,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Mtein",
+    "src": "/legacy/gallery/333.jpg",
+    "thumb": "/legacy/thumbs/gallery/333.webp",
+    "width": 583,
+    "height": 800
+  },
+  {
+    "id": 334,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Moghaira",
+    "src": "/legacy/gallery/334.jpg",
+    "thumb": "/legacy/thumbs/gallery/334.webp",
+    "width": 800,
+    "height": 570
+  },
+  {
+    "id": 335,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Moghaira",
+    "src": "/legacy/gallery/335.jpg",
+    "thumb": "/legacy/thumbs/gallery/335.webp",
+    "width": 800,
+    "height": 554
+  },
+  {
+    "id": 336,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Machnaka et Chir El Meida",
+    "src": "/legacy/gallery/336.jpg",
+    "thumb": "/legacy/thumbs/gallery/336.webp",
+    "width": 800,
+    "height": 561
+  },
+  {
+    "id": 337,
+    "description": "Tour Ancienne-Borj el Mouhaich Construite par les arabes.Tour carrée à deux niveaux. Fiche établie par J. Liger-Belair 4/11/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Maaitiq",
+    "src": "/legacy/gallery/337.jpg",
+    "thumb": "/legacy/thumbs/gallery/337.webp",
+    "width": 800,
+    "height": 552
+  },
+  {
+    "id": 338,
+    "description": "Paysage de Montagne et maison de Mgr. Akl. Curieuse habitation aménagées dans des grottes. 20e siècle. Fiche établie [ar J. Liger-Belair 5/8/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Laklouk",
+    "src": "/legacy/gallery/338.jpg",
+    "thumb": "/legacy/thumbs/gallery/338.webp",
+    "width": 800,
+    "height": 323
+  },
+  {
+    "id": 339,
+    "description": "Maison Jean Zoghbi. Maison à galerie et arcades.Fiche établie par J. Liger-Belair 25/6/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Koubba",
+    "src": "/legacy/gallery/339.jpg",
+    "thumb": "/legacy/thumbs/gallery/339.webp",
+    "width": 800,
+    "height": 539
+  },
+  {
+    "id": 340,
+    "description": "Le Village et l'Eglise. Village en gradins au pied du plateau de Hamat. Assez jolies maisons.Fiche établie par J. Liger-Belair 25/5/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Koubba",
+    "src": "/legacy/gallery/340.jpg",
+    "thumb": "/legacy/thumbs/gallery/340.webp",
+    "width": 800,
+    "height": 522
+  },
+  {
+    "id": 341,
+    "description": "Ecole Al Nasser. Construction de pierre, à cour intérieure. Galerie à arcades vers la cour. La date de la construction 1832 figure au dessus de l'entrée de l'église. Fiche établie par J. Liger-Belair 20/5/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Kfifane",
+    "src": "/legacy/gallery/341.jpg",
+    "thumb": "/legacy/thumbs/gallery/341.webp",
+    "width": 800,
+    "height": 599
+  },
+  {
+    "id": 342,
+    "description": "Le Monastère. Couvent à cour centrale. Construction 1200-1300 environ. Fiche établie par J. Liger-Belair 20/5/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Kfifane",
+    "src": "/legacy/gallery/342.jpg",
+    "thumb": "/legacy/thumbs/gallery/342.webp",
+    "width": 800,
+    "height": 533
+  },
+  {
+    "id": 343,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Kesrouan",
+    "src": "/legacy/gallery/343.jpg",
+    "thumb": "/legacy/thumbs/gallery/343.webp",
+    "width": 607,
+    "height": 800
+  },
+  {
+    "id": 344,
+    "description": "Le Site de la Vallee. Profonde vallée où coule la rivière de la Kadicha.. Fiche établie par J. Liger-Belair 13/6/67. archives APSAD.",
+    "series": "The Green Folders",
+    "place": "Kadisha",
+    "src": "/legacy/gallery/344.jpg",
+    "thumb": "/legacy/thumbs/gallery/344.webp",
+    "width": 800,
+    "height": 571
+  },
+  {
+    "id": 345,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Kadisha",
+    "src": "/legacy/gallery/345.jpg",
+    "thumb": "/legacy/thumbs/gallery/345.webp",
+    "width": 800,
+    "height": 405
+  },
+  {
+    "id": 346,
+    "description": "Deir Qannoubine. Construit par Théodore le Grand en 379-395. L'église est taillée dans une grotte.Fiche établie par J. Liger-Belair 12/8/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Kadisha",
+    "src": "/legacy/gallery/346.jpg",
+    "thumb": "/legacy/thumbs/gallery/346.webp",
+    "width": 800,
+    "height": 566
+  },
+  {
+    "id": 347,
+    "description": "La Baie de Jounieh. Cette baie représente une des principales attraction touristique du Liban. Fiche établie par . Iger-Belair 27/9/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/347.jpg",
+    "thumb": "/legacy/thumbs/gallery/347.webp",
+    "width": 800,
+    "height": 638
+  },
+  {
+    "id": 348,
+    "description": "Maisons le long de la mer. Habitations à hall central et arcades sur rez-de-chaussée voûté. Fiche établie par J. Liger-Belair 27/9/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Jounieh",
+    "src": "/legacy/gallery/348.jpg",
+    "thumb": "/legacy/thumbs/gallery/348.webp",
+    "width": 800,
+    "height": 430
+  },
+  {
+    "id": 349,
+    "description": "Maison Aziz à hall central et plan rectangulaire à deux niveaux d'habitation. Terrasse couverte à arcades..Fiche établie par J. Liget-Belair 28/2/70. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Jezzine",
+    "src": "/legacy/gallery/349.jpg",
+    "thumb": "/legacy/thumbs/gallery/349.webp",
+    "width": 800,
+    "height": 574
+  },
+  {
+    "id": 350,
+    "description": "Citadelle de M. Agha Barbar. assez gramde complexe à haut mur d'enceinte . Construction de1810. Fiche établie par J. Liger-Belair 5/9/67. archives APSAS",
+    "series": "The Green Folders",
+    "place": "Iaal",
+    "src": "/legacy/gallery/350.jpg",
+    "thumb": "/legacy/thumbs/gallery/350.webp",
+    "width": 800,
+    "height": 532
+  },
+  {
+    "id": 351,
+    "description": "La ville et ses ruelles. Maisons à toitures de tuiles , caractéristique du village Les ruelles sont pittoresques. Fiche établie par J. Liger-Belair 1/9/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Hasroun",
+    "src": "/legacy/gallery/351.jpg",
+    "thumb": "/legacy/thumbs/gallery/351.webp",
+    "width": 800,
+    "height": 555
+  },
+  {
+    "id": 352,
+    "description": "Le Palais Chehab et ses environs. Vaste construction de pierre du 18e siècle,à grande cour intérieur de deux et trois niveaux, à triple arcades . Fiche établie par J. Liger-Belair 15/11/68. archives APSAD.",
+    "series": "The Green Folders",
+    "place": "Hasbaya",
+    "src": "/legacy/gallery/352.jpg",
+    "thumb": "/legacy/thumbs/gallery/352.webp",
+    "width": 800,
+    "height": 515
+  },
+  {
+    "id": 353,
+    "description": "Hasbaya. Gros village bâti en amphitéatre avec, à l'interieur, le palais des émirs Chéhab. Fiche établie par J. Liger-Belair 15/11/68.archives APSAD",
+    "series": "The Green Folders",
+    "place": "Hasbaya",
+    "src": "/legacy/gallery/353.jpg",
+    "thumb": "/legacy/thumbs/gallery/353.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 354,
+    "description": "Le Monastère et le Moulin. Très belle construction de la vallée de Kadicha. Vue générale Fiche établie par J. Liger-Belair 1/9/67. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Hamatoura",
+    "src": "/legacy/gallery/354.jpg",
+    "thumb": "/legacy/thumbs/gallery/354.webp",
+    "width": 800,
+    "height": 617
+  },
+  {
+    "id": 355,
+    "description": "Deir El Nourieh et Mar Semaan. Couvent à cour centrale à un niveau du 18e siècle. Fiche établie par J. Liger-Belair . Archives APSAD20/5/67",
+    "series": "The Green Folders",
+    "place": "Hamat",
+    "src": "/legacy/gallery/355.jpg",
+    "thumb": "/legacy/thumbs/gallery/355.webp",
+    "width": 800,
+    "height": 594
+  },
+  {
+    "id": 356,
+    "description": "Le site architectural du village. Type de maisons: divers : hall central, rectangulaire, à galerie, construite par la famille Ghorfin en fin de 19e siècle. Fishe établie par J. Liger-Belair. Archives APSAD",
+    "series": "The Green Folders",
+    "place": "Ghorfin",
+    "src": "/legacy/gallery/356.jpg",
+    "thumb": "/legacy/thumbs/gallery/356.webp",
+    "width": 800,
+    "height": 487
+  },
+  {
+    "id": 357,
+    "description": "Couvent San Antonio. Fort beau et imposant bâtiment dominant la baie de Jounieh. . Fiche établie par J. Liger-Belair 8/12/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Ghazir",
+    "src": "/legacy/gallery/357.jpg",
+    "thumb": "/legacy/thumbs/gallery/357.webp",
+    "width": 800,
+    "height": 538
+  },
+  {
+    "id": 358,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Ghazir",
+    "src": "/legacy/gallery/358.jpg",
+    "thumb": "/legacy/thumbs/gallery/358.webp",
+    "width": 800,
+    "height": 574
+  },
+  {
+    "id": 359,
+    "description": "Couvent San Antonio. Fort beau et imposant bâtiment dominant la baie de Jounieh. . Fiche établie par J. Liger-Belair 8/12/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Ghazir",
+    "src": "/legacy/gallery/359.jpg",
+    "thumb": "/legacy/thumbs/gallery/359.webp",
+    "width": 800,
+    "height": 574
+  },
+  {
+    "id": 360,
+    "description": "Ruelle à paliers bordées de galeries à arcades. Fiche établie par J. Liger-Belair 15/10/69. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Ghazir",
+    "src": "/legacy/gallery/360.jpg",
+    "thumb": "/legacy/thumbs/gallery/360.webp",
+    "width": 800,
+    "height": 670
+  },
+  {
+    "id": 361,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Dhour Choueyr",
+    "src": "/legacy/gallery/361.jpg",
+    "thumb": "/legacy/thumbs/gallery/361.webp",
+    "width": 800,
+    "height": 585
+  },
+  {
+    "id": 362,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Dhour Choueyr",
+    "src": "/legacy/gallery/362.jpg",
+    "thumb": "/legacy/thumbs/gallery/362.webp",
+    "width": 565,
+    "height": 800
+  },
+  {
+    "id": 363,
+    "description": "La place du marché. Ensemble de boutiques en pierre , grossières et vétustés mais pittoresques, tapies contre la base des palais et entourant la place de Deir.. La plupart datent du 19e siècle. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/363.jpg",
+    "thumb": "/legacy/thumbs/gallery/363.webp",
+    "width": 800,
+    "height": 550
+  },
+  {
+    "id": 364,
+    "description": "Le Serail . Type de maison Khan à cour centrale. Construite par Melhem Chehab au 18e siècle. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/364.jpg",
+    "thumb": "/legacy/thumbs/gallery/364.webp",
+    "width": 800,
+    "height": 608
+  },
+  {
+    "id": 365,
+    "description": "Le Souk de la soie. Type architectural:khan Construit durant l'époque Maan. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/365.jpg",
+    "thumb": "/legacy/thumbs/gallery/365.webp",
+    "width": 800,
+    "height": 592
+  },
+  {
+    "id": 366,
+    "description": "Maison Boustany. . Type de maison Khan à hall central et liwans Construite par le pôete de l'Emir Bechir . Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/366.jpg",
+    "thumb": "/legacy/thumbs/gallery/366.webp",
+    "width": 800,
+    "height": 455
+  },
+  {
+    "id": 367,
+    "description": "Maison Baz-Heneiné. Type de maison à cour centrale construite sous le règne d'Emir Béchir. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Deir El Kamar",
+    "src": "/legacy/gallery/367.jpg",
+    "thumb": "/legacy/thumbs/gallery/367.webp",
+    "width": 800,
+    "height": 569
+  },
+  {
+    "id": 368,
+    "description": "Le Temple Romain. Construction en grosses pières. La façade est ornée d'un beau portique dont 3 colonnes sur 4 sont encore debout . Signalé par J. Liger-Belair 28/8/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Bziza",
+    "src": "/legacy/gallery/368.jpg",
+    "thumb": "/legacy/thumbs/gallery/368.webp",
+    "width": 619,
+    "height": 800
+  },
+  {
+    "id": 369,
+    "description": "Couvent de N.D. de la Délivrance construit par le père. Daniel el Hadathi en 1875. Signalé par J. Liger-Belair 5/9/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Bsarma",
+    "src": "/legacy/gallery/369.jpg",
+    "thumb": "/legacy/thumbs/gallery/369.webp",
+    "width": 800,
+    "height": 463
+  },
+  {
+    "id": 370,
+    "description": "Sérail Addour Pacha. Construite par Ali Pacha en 1720 environ. Maison signalée par J. Liger-Belair. 25/10/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Borj Akkar",
+    "src": "/legacy/gallery/370.jpg",
+    "thumb": "/legacy/thumbs/gallery/370.webp",
+    "width": 800,
+    "height": 540
+  },
+  {
+    "id": 371,
+    "description": "Complexe de trois maisons construites par la famille Morabé au 13e, 17e et fin 18e siècles. Signalée par J. Liger-Belair. 2/11/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Bire",
+    "src": "/legacy/gallery/371.jpg",
+    "thumb": "/legacy/thumbs/gallery/371.webp",
+    "width": 800,
+    "height": 566
+  },
+  {
+    "id": 372,
+    "description": "Maison Adib Abou Nakad. Grosse maison à arcades, beau spécimen d'architecture bourgeoise. Signalée par J. Liger-Belair. 20e siècle. 8/12/69 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Bikfaya",
+    "src": "/legacy/gallery/372.jpg",
+    "thumb": "/legacy/thumbs/gallery/372.webp",
+    "width": 606,
+    "height": 800
+  },
+  {
+    "id": 373,
+    "description": "Le Site archéologique. Fouillé par Maurice Dunant. Site signalée par J. Liger-Belair 20/7/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Biblos",
+    "src": "/legacy/gallery/373.jpg",
+    "thumb": "/legacy/thumbs/gallery/373.webp",
+    "width": 800,
+    "height": 395
+  },
+  {
+    "id": 374,
+    "description": "Eglise croisée St, Jean-Baptiste. Construite par les Croisés au 12e siècle Eglise signalée par J. Liger-Belair 20/8/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Biblos",
+    "src": "/legacy/gallery/374.jpg",
+    "thumb": "/legacy/thumbs/gallery/374.webp",
+    "width": 727,
+    "height": 800
+  },
+  {
+    "id": 375,
+    "description": "Le Port: Formé d'une crique déterminée par deux récifs plats et deux jetées aux extrémités desquelles étaient bâties deux tours. Site signalé par J. Liger-Belair 28/7/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Biblos",
+    "src": "/legacy/gallery/375.jpg",
+    "thumb": "/legacy/thumbs/gallery/375.webp",
+    "width": 800,
+    "height": 571
+  },
+  {
+    "id": 376,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/376.jpg",
+    "thumb": "/legacy/thumbs/gallery/376.webp",
+    "width": 800,
+    "height": 616
+  },
+  {
+    "id": 377,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/377.jpg",
+    "thumb": "/legacy/thumbs/gallery/377.webp",
+    "width": 800,
+    "height": 622
+  },
+  {
+    "id": 378,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/378.jpg",
+    "thumb": "/legacy/thumbs/gallery/378.webp",
+    "width": 617,
+    "height": 800
+  },
+  {
+    "id": 379,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/379.jpg",
+    "thumb": "/legacy/thumbs/gallery/379.webp",
+    "width": 614,
+    "height": 800
+  },
+  {
+    "id": 380,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/380.jpg",
+    "thumb": "/legacy/thumbs/gallery/380.webp",
+    "width": 800,
+    "height": 519
+  },
+  {
+    "id": 381,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/381.jpg",
+    "thumb": "/legacy/thumbs/gallery/381.webp",
+    "width": 546,
+    "height": 800
+  },
+  {
+    "id": 382,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/382.jpg",
+    "thumb": "/legacy/thumbs/gallery/382.webp",
+    "width": 800,
+    "height": 605
+  },
+  {
+    "id": 383,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/383.jpg",
+    "thumb": "/legacy/thumbs/gallery/383.webp",
+    "width": 800,
+    "height": 410
+  },
+  {
+    "id": 384,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/384.jpg",
+    "thumb": "/legacy/thumbs/gallery/384.webp",
+    "width": 800,
+    "height": 596
+  },
+  {
+    "id": 385,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/385.jpg",
+    "thumb": "/legacy/thumbs/gallery/385.webp",
+    "width": 800,
+    "height": 580
+  },
+  {
+    "id": 386,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/386.jpg",
+    "thumb": "/legacy/thumbs/gallery/386.webp",
+    "width": 800,
+    "height": 591
+  },
+  {
+    "id": 387,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/387.jpg",
+    "thumb": "/legacy/thumbs/gallery/387.webp",
+    "width": 800,
+    "height": 583
+  },
+  {
+    "id": 388,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/388.jpg",
+    "thumb": "/legacy/thumbs/gallery/388.webp",
+    "width": 800,
+    "height": 561
+  },
+  {
+    "id": 389,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/389.jpg",
+    "thumb": "/legacy/thumbs/gallery/389.webp",
+    "width": 800,
+    "height": 625
+  },
+  {
+    "id": 390,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/390.jpg",
+    "thumb": "/legacy/thumbs/gallery/390.webp",
+    "width": 800,
+    "height": 579
+  },
+  {
+    "id": 391,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/391.jpg",
+    "thumb": "/legacy/thumbs/gallery/391.webp",
+    "width": 585,
+    "height": 800
+  },
+  {
+    "id": 392,
+    "description": "Le Palais de l'Emir Amine. Construite par le fils de l'Emir Béchir , au début du 19e siècle. Palais à cour centrale. Fiche établie par J. Liger-Belair. archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/392.jpg",
+    "thumb": "/legacy/thumbs/gallery/392.webp",
+    "width": 800,
+    "height": 495
+  },
+  {
+    "id": 393,
+    "description": "Le Palais et son site Ensemble de la plupart des éléments architecturaux traditionnels libanais: arcades ,liwane , cours intérieurs. Construction du 19e siècle. Fiche établie par J. Liger-Belair 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/393.jpg",
+    "thumb": "/legacy/thumbs/gallery/393.webp",
+    "width": 800,
+    "height": 483
+  },
+  {
+    "id": 394,
+    "description": "Le Palais , la fontaine et le haramlik. Construction du 19e Siècle. Fiche établie par J. Liger-Belair. 16/11/66 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beiteddine",
+    "src": "/legacy/gallery/394.jpg",
+    "thumb": "/legacy/thumbs/gallery/394.webp",
+    "width": 800,
+    "height": 772
+  },
+  {
+    "id": 395,
+    "description": "Vue générale et maisons-types. Fiche établie par J. Liger-Belair 20/11/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beit-Mery",
+    "src": "/legacy/gallery/395.jpg",
+    "thumb": "/legacy/thumbs/gallery/395.webp",
+    "width": 800,
+    "height": 589
+  },
+  {
+    "id": 396,
+    "description": "Deir El Kalaa. Un couvent bâti des vestiges romains et des vestiges récemment mis à jour ou en valeur; d'installations urbains et de temples romains. Site signalé par J. Liger-Belair 25/11/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beit-Mery",
+    "src": "/legacy/gallery/396.jpg",
+    "thumb": "/legacy/thumbs/gallery/396.webp",
+    "width": 800,
+    "height": 578
+  },
+  {
+    "id": 397,
+    "description": "Deir El Kalaa. Un couvent bâti des vestiges romains et des vestiges récemment mis à jour ou en valeur d'installations urbains et de temples romains. Site signalé par J. Liger-Belair 25/11/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beit-Mery",
+    "src": "/legacy/gallery/397.jpg",
+    "thumb": "/legacy/thumbs/gallery/397.webp",
+    "width": 800,
+    "height": 526
+  },
+  {
+    "id": 398,
+    "description": "Municipalité et maison voisine. Construite par les familles Hamdan et Rachid fin du 19e siècle. Maison signalée par J. Liger--Belair 18/11/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Beit-Mery",
+    "src": "/legacy/gallery/398.jpg",
+    "thumb": "/legacy/thumbs/gallery/398.webp",
+    "width": 800,
+    "height": 538
+  },
+  {
+    "id": 399,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Beit-Mery",
+    "src": "/legacy/gallery/399.jpg",
+    "thumb": "/legacy/thumbs/gallery/399.webp",
+    "width": 800,
+    "height": 535
+  },
+  {
+    "id": 400,
+    "description": "Nouveau monastère St. Elicha construit par les Aleppins maronites en 1880. Signalé par J. Liger-Belaie 10/8/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Bcharre",
+    "src": "/legacy/gallery/400.jpg",
+    "thumb": "/legacy/thumbs/gallery/400.webp",
+    "width": 800,
+    "height": 470
+  },
+  {
+    "id": 401,
+    "description": "L'Eglise St. Ethienne. Eglise à trois nefs en voutes d'arêtes construite en 19e siècle. Fiche établie par J. Liger-Belair 28/8/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Batroun",
+    "src": "/legacy/gallery/401.jpg",
+    "thumb": "/legacy/thumbs/gallery/401.webp",
+    "width": 584,
+    "height": 800
+  },
+  {
+    "id": 402,
+    "description": "L'Eglise Orthodoxe St. Georges. Construite en 18e siècle. Maçonnerie voûtée; coupole enduite et peinte en blanc. Fiche établie par J. Liger-Belair 3/6/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Batroun",
+    "src": "/legacy/gallery/402.jpg",
+    "thumb": "/legacy/thumbs/gallery/402.webp",
+    "width": 800,
+    "height": 578
+  },
+  {
+    "id": 403,
+    "description": "Maisons en ruine, rues, details. Beaux détails de maçonnerie de pierres, voutes et arcs robustes et soignés. Maisons signalées par J. Liger-Belair 25/5/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Batroun",
+    "src": "/legacy/gallery/403.jpg",
+    "thumb": "/legacy/thumbs/gallery/403.webp",
+    "width": 585,
+    "height": 800
+  },
+  {
+    "id": 404,
+    "description": "Maisons en ruine, rues, details. Beaux détails de maçonnerie de pierres, voutes et arcs robustes et soignés. Maisons signalées par J. Liger-Belair 25/5/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Batroun",
+    "src": "/legacy/gallery/404.jpg",
+    "thumb": "/legacy/thumbs/gallery/404.webp",
+    "width": 800,
+    "height": 566
+  },
+  {
+    "id": 405,
+    "description": "Le Mur des Phéniciens : mur taillé dans le rocher du 12e siècle avant J..C Fiche établie par J. Liger-Belair 3/6/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Batroun",
+    "src": "/legacy/gallery/405.jpg",
+    "thumb": "/legacy/thumbs/gallery/405.webp",
+    "width": 800,
+    "height": 445
+  },
+  {
+    "id": 406,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Batroun",
+    "src": "/legacy/gallery/406.jpg",
+    "thumb": "/legacy/thumbs/gallery/406.webp",
+    "width": 800,
+    "height": 600
+  },
+  {
+    "id": 407,
+    "description": "Le Centre. Ruelle bordée de maisons anciennes à toitures pyramidales formant le souk central de Baskinta Signalé par J. Liger-Belair 8/12/69 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Baskinta",
+    "src": "/legacy/gallery/407.jpg",
+    "thumb": "/legacy/thumbs/gallery/407.webp",
+    "width": 614,
+    "height": 800
+  },
+  {
+    "id": 408,
+    "description": "Le Centre. Ensemble de maisons signalées par J. Liger-Belair 8/12/69 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Baskinta",
+    "src": "/legacy/gallery/408.jpg",
+    "thumb": "/legacy/thumbs/gallery/408.webp",
+    "width": 800,
+    "height": 709
+  },
+  {
+    "id": 409,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Balamand",
+    "src": "/legacy/gallery/409.jpg",
+    "thumb": "/legacy/thumbs/gallery/409.webp",
+    "width": 800,
+    "height": 277
+  },
+  {
+    "id": 410,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Balamand",
+    "src": "/legacy/gallery/410.jpg",
+    "thumb": "/legacy/thumbs/gallery/410.webp",
+    "width": 634,
+    "height": 800
+  },
+  {
+    "id": 411,
+    "description": "Maison Toufic Naijam Labaki. Construite à la fin du 19e siècle . Signalée par J. Liger-Belair 20/4/68 Archives APSAD",
+    "series": "The Green Folders",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/411.jpg",
+    "thumb": "/legacy/thumbs/gallery/411.webp",
+    "width": 800,
+    "height": 380
+  },
+  {
+    "id": 412,
+    "description": "Maison Alexandre Banayout construite à la fin du 19e siècle signalee par Liger-Belair 5/5/68 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/412.jpg",
+    "thumb": "/legacy/thumbs/gallery/412.webp",
+    "width": 800,
+    "height": 611
+  },
+  {
+    "id": 413,
+    "description": "Maison Selim Lahoud Construction (probablement) début du 20e siècle signalée par Liger-Belair 5/5/68 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Baabdat",
+    "src": "/legacy/gallery/413.jpg",
+    "thumb": "/legacy/thumbs/gallery/413.webp",
+    "width": 800,
+    "height": 556
+  },
+  {
+    "id": 414,
+    "description": "Ensemble du village, quelques groupes de maison et la grotte. Village signalé par J. Liger-Belair. 2/8/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Aqoura",
+    "src": "/legacy/gallery/414.jpg",
+    "thumb": "/legacy/thumbs/gallery/414.webp",
+    "width": 800,
+    "height": 565
+  },
+  {
+    "id": 415,
+    "description": "Eglise St. Jean. Eglise à coupole et iconostase. Construction à l'époque phénico-romaine. Signalée par Liger-Belair. 28/8/67 archives APSAD",
+    "series": "The Green Folders",
+    "place": "Amioun",
+    "src": "/legacy/gallery/415.jpg",
+    "thumb": "/legacy/thumbs/gallery/415.webp",
+    "width": 800,
+    "height": 640
+  },
+  {
+    "id": 416,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Ajaltoun",
+    "src": "/legacy/gallery/416.jpg",
+    "thumb": "/legacy/thumbs/gallery/416.webp",
+    "width": 800,
+    "height": 426
+  },
+  {
+    "id": 417,
+    "description": "",
+    "series": "The Green Folders",
+    "place": "Ain Saade",
+    "src": "/legacy/gallery/417.jpg",
+    "thumb": "/legacy/thumbs/gallery/417.webp",
+    "width": 800,
+    "height": 537
+  },
+  {
+    "id": 418,
+    "description": "Fouilles au Centre Ville 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/418.jpg",
+    "thumb": "/legacy/thumbs/gallery/418.webp",
+    "width": 800,
+    "height": 542
+  },
+  {
+    "id": 419,
+    "description": "Bains Romains 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/419.jpg",
+    "thumb": "/legacy/thumbs/gallery/419.webp",
+    "width": 800,
+    "height": 495
+  },
+  {
+    "id": 420,
+    "description": "Les ruines Phéniciennes 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/420.jpg",
+    "thumb": "/legacy/thumbs/gallery/420.webp",
+    "width": 800,
+    "height": 483
+  },
+  {
+    "id": 421,
+    "description": "Bains Romains 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/421.jpg",
+    "thumb": "/legacy/thumbs/gallery/421.webp",
+    "width": 800,
+    "height": 529
+  },
+  {
+    "id": 422,
+    "description": "Découverte au Centre Ville 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/422.jpg",
+    "thumb": "/legacy/thumbs/gallery/422.webp",
+    "width": 800,
+    "height": 471
+  },
+  {
+    "id": 423,
+    "description": "Le Tall Phenicien-Chateau des Croisés 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/423.jpg",
+    "thumb": "/legacy/thumbs/gallery/423.webp",
+    "width": 800,
+    "height": 555
+  },
+  {
+    "id": 424,
+    "description": "Ville Phénicienne 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/424.jpg",
+    "thumb": "/legacy/thumbs/gallery/424.webp",
+    "width": 800,
+    "height": 534
+  },
+  {
+    "id": 425,
+    "description": "Immeuble à Bab Edriss archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/425.jpg",
+    "thumb": "/legacy/thumbs/gallery/425.webp",
+    "width": 595,
+    "height": 800
+  },
+  {
+    "id": 426,
+    "description": "Ville Phénicienne 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/426.jpg",
+    "thumb": "/legacy/thumbs/gallery/426.webp",
+    "width": 800,
+    "height": 443
+  },
+  {
+    "id": 427,
+    "description": "Ville Phénicienne 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/427.jpg",
+    "thumb": "/legacy/thumbs/gallery/427.webp",
+    "width": 800,
+    "height": 521
+  },
+  {
+    "id": 428,
+    "description": "Les Ruines au Centre Ville Place des Martyres 1995 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/428.jpg",
+    "thumb": "/legacy/thumbs/gallery/428.webp",
+    "width": 800,
+    "height": 471
+  },
+  {
+    "id": 429,
+    "description": "Beyrouth Ayn el Mreissé archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/429.jpg",
+    "thumb": "/legacy/thumbs/gallery/429.webp",
+    "width": 800,
+    "height": 505
+  },
+  {
+    "id": 430,
+    "description": "Beyrouth Ayn el Mreissé archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/430.jpg",
+    "thumb": "/legacy/thumbs/gallery/430.webp",
+    "width": 800,
+    "height": 528
+  },
+  {
+    "id": 431,
+    "description": "Beyrouth Ayn el Mreissé archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/431.jpg",
+    "thumb": "/legacy/thumbs/gallery/431.webp",
+    "width": 800,
+    "height": 444
+  },
+  {
+    "id": 432,
+    "description": "Beyrouth Ayn el Mreissé archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/432.jpg",
+    "thumb": "/legacy/thumbs/gallery/432.webp",
+    "width": 800,
+    "height": 522
+  },
+  {
+    "id": 433,
+    "description": "Maison Jean Trad. Maison à hall central et à triple arcades construite vers 1870 par Jean Chakour Trad. Fiche établie par J. Liger-Belair 1966 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/433.jpg",
+    "thumb": "/legacy/thumbs/gallery/433.webp",
+    "width": 800,
+    "height": 523
+  },
+  {
+    "id": 434,
+    "description": "Maison Jean Trad. Maison à hall central et à triple arcades construite vers 1870 par Jean Chakour Trad. Fiche établie par J. Liger-Belair 1966 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/434.jpg",
+    "thumb": "/legacy/thumbs/gallery/434.webp",
+    "width": 457,
+    "height": 800
+  },
+  {
+    "id": 435,
+    "description": "Palais Sursock. Construit par Moussa Sursock en 1860. Grande construction à deux niveaux très hauts . L'éscalier qui mène à l'étage, monumental, est très beau. La maison évoque les palais italiens par certaines ornementations et décorations intérieures.Fiche établie par J. Liger-Belair 15/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/435.jpg",
+    "thumb": "/legacy/thumbs/gallery/435.webp",
+    "width": 584,
+    "height": 800
+  },
+  {
+    "id": 436,
+    "description": "Côte de Chiyah St. Simon à Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/436.jpg",
+    "thumb": "/legacy/thumbs/gallery/436.webp",
+    "width": 800,
+    "height": 508
+  },
+  {
+    "id": 437,
+    "description": "Place de l'Etoile archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/437.jpg",
+    "thumb": "/legacy/thumbs/gallery/437.webp",
+    "width": 800,
+    "height": 535
+  },
+  {
+    "id": 438,
+    "description": "Vue aérienne de Beyrouth et le Grand Sérail archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/438.jpg",
+    "thumb": "/legacy/thumbs/gallery/438.webp",
+    "width": 800,
+    "height": 550
+  },
+  {
+    "id": 439,
+    "description": "Le Château Fakhreddine. Gravure. archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/439.jpg",
+    "thumb": "/legacy/thumbs/gallery/439.webp",
+    "width": 800,
+    "height": 481
+  },
+  {
+    "id": 440,
+    "description": "Beyrouth Arts et Métiers Jardin Public archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/440.jpg",
+    "thumb": "/legacy/thumbs/gallery/440.webp",
+    "width": 409,
+    "height": 364
+  },
+  {
+    "id": 441,
+    "description": "Beyrouth Forêt des Pins archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/441.jpg",
+    "thumb": "/legacy/thumbs/gallery/441.webp",
+    "width": 628,
+    "height": 800
+  },
+  {
+    "id": 442,
+    "description": "Beyrouth Ain el Mreissé archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/442.jpg",
+    "thumb": "/legacy/thumbs/gallery/442.webp",
+    "width": 800,
+    "height": 530
+  },
+  {
+    "id": 443,
+    "description": "Beyrouth Ain el Mreissé archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/443.jpg",
+    "thumb": "/legacy/thumbs/gallery/443.webp",
+    "width": 800,
+    "height": 454
+  },
+  {
+    "id": 444,
+    "description": "Palais Sursock. Construit par Moussa Sursock en 1860. Grande construction à deux niveaux très hauts . L'éscalier qui mène à l'étage, monumental, est très beau. La maison évoque les palais italiens par certaines ornementations et décorations intérieures.Fiche établie par J. Liger-Belair 15/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/444.jpg",
+    "thumb": "/legacy/thumbs/gallery/444.webp",
+    "width": 519,
+    "height": 499
+  },
+  {
+    "id": 445,
+    "description": "Maison Ibrahim SursocK à hall central de la fin du 19e siècle on y voit de très belles boiseries de Damas du 14eme siècle.Fiche établie par J. Liger-Belair 1966 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/445.jpg",
+    "thumb": "/legacy/thumbs/gallery/445.webp",
+    "width": 800,
+    "height": 528
+  },
+  {
+    "id": 446,
+    "description": "Maison Ibrahim SursocK à hall central de la fin du 19e siècle on y voit de très belles boiseries de Damas du 14eme siècle.Fiche établie par J. Liger-Belair 1966 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/446.jpg",
+    "thumb": "/legacy/thumbs/gallery/446.webp",
+    "width": 800,
+    "height": 527
+  },
+  {
+    "id": 447,
+    "description": "Palais Sursock. Construit par Moussa Sursock en 1860. Grande construction à deux niveaux très hauts . L'éscalier qui mène à l'étage, monumental, est très beau. La maison évoque les palais italiens par certaines ornementations et décorations intérieures.Fiche établie par J. Liger-Belair 15/10/66 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/447.jpg",
+    "thumb": "/legacy/thumbs/gallery/447.webp",
+    "width": 800,
+    "height": 487
+  },
+  {
+    "id": 448,
+    "description": "Maison Ibrahim SursocK à hall central de la fin du 19e siècle on y voit de très belles boiseries de Damas du 14eme siècle.Fiche établie par J. Liger-Belair 1966 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/448.jpg",
+    "thumb": "/legacy/thumbs/gallery/448.webp",
+    "width": 800,
+    "height": 587
+  },
+  {
+    "id": 449,
+    "description": "Maison Maurice Sursock actuellement détruite . Cette maison qui aurait été la première du quartier a été bâtie vers les années 1880 une architecture mixte Libano Italienne. archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/449.jpg",
+    "thumb": "/legacy/thumbs/gallery/449.webp",
+    "width": 729,
+    "height": 800
+  },
+  {
+    "id": 450,
+    "description": "Maison Michel Sursock rue Sursock actuellement déruite du 19e siècle archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/450.jpg",
+    "thumb": "/legacy/thumbs/gallery/450.webp",
+    "width": 800,
+    "height": 450
+  },
+  {
+    "id": 451,
+    "description": "Vue de maisons à Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/451.jpg",
+    "thumb": "/legacy/thumbs/gallery/451.webp",
+    "width": 800,
+    "height": 756
+  },
+  {
+    "id": 452,
+    "description": "Une maison libanaise au quartier St. Nicolas archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/452.jpg",
+    "thumb": "/legacy/thumbs/gallery/452.webp",
+    "width": 526,
+    "height": 800
+  },
+  {
+    "id": 453,
+    "description": "Grande construction du 20e siècle au quartier St. Nicolas archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/453.jpg",
+    "thumb": "/legacy/thumbs/gallery/453.webp",
+    "width": 537,
+    "height": 800
+  },
+  {
+    "id": 454,
+    "description": "Grande bâtiment du 20e siècle à la rue Chucri Assly Achrafieh archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/454.jpg",
+    "thumb": "/legacy/thumbs/gallery/454.webp",
+    "width": 580,
+    "height": 337
+  },
+  {
+    "id": 455,
+    "description": "Centre ville Vue Aérienne archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/455.jpg",
+    "thumb": "/legacy/thumbs/gallery/455.webp",
+    "width": 800,
+    "height": 473
+  },
+  {
+    "id": 456,
+    "description": "Ensemble du Grand Sérail et ex-Palais de Justice construites par les turcs vers 1850 actuellement le Palais du Gouvernement Fiche établie par J. Liger-Belair 1966 archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/456.jpg",
+    "thumb": "/legacy/thumbs/gallery/456.webp",
+    "width": 800,
+    "height": 483
+  },
+  {
+    "id": 457,
+    "description": "ex Place des Canons archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/457.jpg",
+    "thumb": "/legacy/thumbs/gallery/457.webp",
+    "width": 800,
+    "height": 448
+  },
+  {
+    "id": 458,
+    "description": "Rue Foch Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/458.jpg",
+    "thumb": "/legacy/thumbs/gallery/458.webp",
+    "width": 800,
+    "height": 509
+  },
+  {
+    "id": 459,
+    "description": "Sanayeh le Jardin Public archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/459.jpg",
+    "thumb": "/legacy/thumbs/gallery/459.webp",
+    "width": 670,
+    "height": 537
+  },
+  {
+    "id": 460,
+    "description": "Grande construction du 20e siècle au Centre Ville archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/460.jpg",
+    "thumb": "/legacy/thumbs/gallery/460.webp",
+    "width": 530,
+    "height": 800
+  },
+  {
+    "id": 461,
+    "description": "Grande bâtiment du 20e siècle à la rue Chucri Assly Achrafieh archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/461.jpg",
+    "thumb": "/legacy/thumbs/gallery/461.webp",
+    "width": 800,
+    "height": 510
+  },
+  {
+    "id": 462,
+    "description": "Hippodrome de Beyrouth fondé par Alfred Sursock en 1916 arch.APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/462.jpg",
+    "thumb": "/legacy/thumbs/gallery/462.webp",
+    "width": 800,
+    "height": 491
+  },
+  {
+    "id": 463,
+    "description": "Haygazian University Clémenceau archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/463.jpg",
+    "thumb": "/legacy/thumbs/gallery/463.webp",
+    "width": 604,
+    "height": 800
+  },
+  {
+    "id": 464,
+    "description": "Mosquée à Beyrouth archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/464.jpg",
+    "thumb": "/legacy/thumbs/gallery/464.webp",
+    "width": 614,
+    "height": 800
+  },
+  {
+    "id": 465,
+    "description": "Beyrouth Rue Georges Picot archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/465.jpg",
+    "thumb": "/legacy/thumbs/gallery/465.webp",
+    "width": 595,
+    "height": 800
+  },
+  {
+    "id": 466,
+    "description": "Hotel St. Georges Ayn el Mreisseh archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/466.jpg",
+    "thumb": "/legacy/thumbs/gallery/466.webp",
+    "width": 800,
+    "height": 557
+  },
+  {
+    "id": 467,
+    "description": "Rue Emir Bechir Beyrouth - le tramway - archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/467.jpg",
+    "thumb": "/legacy/thumbs/gallery/467.webp",
+    "width": 800,
+    "height": 532
+  },
+  {
+    "id": 468,
+    "description": "Beyrouth Place Assour actuellement Place Riad el Solh archives APSAD",
+    "series": "Beirut",
+    "place": "Beyrouth",
+    "src": "/legacy/gallery/468.jpg",
+    "thumb": "/legacy/thumbs/gallery/468.webp",
+    "width": 800,
+    "height": 478
+  }
+]

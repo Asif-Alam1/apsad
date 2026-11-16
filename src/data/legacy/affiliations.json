@@ -1,0 +1,62 @@
+[
+  {
+    "id": 5,
+    "name": "Also APSAD collaborated with the World Monument Fund organization",
+    "description": "<p dir=\"auto\">APSAD worked with the World Monument Fund organization in order to classify the region of Enfeh (Lebanon) on the list of the most 100 endangered sites of the world.</p>",
+    "link": "http://www.wmf.org",
+    "image": {
+      "src": "/legacy/affiliations/5.jpg",
+      "thumb": "/legacy/thumbs/affiliations/5.webp",
+      "width": 314,
+      "height": 232
+    }
+  },
+  {
+    "id": 6,
+    "name": "APSAD is member of EUROPA NOSTRA",
+    "description": "<p dir=\"auto\">Since its foundation in 1963. Many national, regional and local authorities, cultural and educational bodies, support this pan-European federation of more than 200 non-governmental heritage organizations. The Council of Europe appointed Europa Nostra as a number 1-category consultant. Europa Nostra encourages the protection and enhancement of European heritage in all its elements. With APSAD, Lebanon is the only non-European country member of this federation.</p><p dir=\"auto\">APSAD used to participate to the annual general assembly and conferences held by Europa Nostra and Civitas Nostra around the world.</p>",
+    "link": "http://www.europanostra.org/",
+    "image": {
+      "src": "/legacy/affiliations/6.jpg",
+      "thumb": "/legacy/thumbs/affiliations/6.webp",
+      "width": 436,
+      "height": 486
+    }
+  },
+  {
+    "id": 7,
+    "name": "Member and partner of Patrimoine Sans Frontières",
+    "description": "<p dir=\"auto\">APSAD is a member and partner of Patrimoine Sans Frontières in Lebanon:</p><p dir=\"auto\">APSAD has been a member since 1996. This well-known French association locates and announces all threats weighing on the old heritage, and encourages the establishment of solutions and the execution of specific actions.</p>",
+    "link": "http://www.patrimsf.org/projet/index.php",
+    "image": {
+      "src": "/legacy/affiliations/7.jpg",
+      "thumb": "/legacy/thumbs/affiliations/7.webp",
+      "width": 424,
+      "height": 416
+    }
+  },
+  {
+    "id": 8,
+    "name": "APSAD is partner of ICOMOS in Lebanon",
+    "description": "<p dir=\"auto\">APSAD is partner of ICOMOS in Lebanon:</p><p dir=\"auto\">The International Council on Monuments and Sites is an international non-governmental organization of professionals dedicated to the conservation of the world's historic monuments and sites. The organization was founded in 1965, as a result of the international adoption of the Venice Charter. Today the organization has national committees in over 107 countries. ICOMOS is UNESCO's principal advisor in matters concerning the conservation and protection of monuments and sites. With IUCN the Wold Conservation Unions, Icomos has an international role under the world heritage conservation to advise the World Heritage Committee and UNESCO on the nomination of new sites to the world heritage list.</p><p dir=\"auto\">Furthermore, APSAD is the official partner of the International Council on Monuments and Sites (ICOMOS) in Lebanon. ICOMOS is charged by UNESCO for choosing sites to be included on the World Heritage list.</p><p dir=\"auto\">Also APSAD worked with the World Monument Fund organization in order to classify the region of Enfeh on the list of the most 100 endangered sites of the world.</p>",
+    "link": " http://www.patrimsf.org",
+    "image": {
+      "src": "/legacy/affiliations/8.jpg",
+      "thumb": "/legacy/thumbs/affiliations/8.webp",
+      "width": 428,
+      "height": 400
+    }
+  },
+  {
+    "id": 9,
+    "name": "Furthermore, APSAD is member of Civitas Nostra",
+    "description": "<p dir=\"auto\">Since 1961, APSAD used to participate to the annual general assembly and conferences held by Europa Nostra and Civitas Nostra around the world.</p>",
+    "link": "http://civitas-nostra.over-blog.org/",
+    "image": {
+      "src": "/legacy/affiliations/9.jpg",
+      "thumb": "/legacy/thumbs/affiliations/9.webp",
+      "width": 252,
+      "height": 198
+    }
+  }
+]
