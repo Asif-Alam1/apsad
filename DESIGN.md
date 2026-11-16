@@ -163,7 +163,7 @@ Ruled rows beat cards. Lists (aims, affiliations, regions, privileges) are hairl
 1px hairline stroke, ground-colored fill, square, h-10+; gold/bronze focus ring; destructive red reserved for validation.
 
 ### Navigation
-Fixed transparent header; after 50px of scroll it becomes a near-opaque ground-colour bar (95-96%) with a hairline bottom border. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Nav links carry a hairline that draws in from the left on hover and focus and stays under the active item. Gold 2px scroll-progress bar. Mobile: a full-height nocturne index — gold 01-04 numerals, large Marcellus caps links between hairline rules, the member button full-width at the foot, then the address, telephone and email.
+Fixed transparent header; after 50px of scroll it becomes a near-opaque ground-colour bar (95-96%) with a hairline bottom border. Route-aware chrome: nocturne pages (home, gallery) get ivory/gold chrome, daylight pages get ink/bronze. Nav links carry a hairline that draws in from the left on hover and focus and stays under the active item. Gold 2px scroll-progress bar. Four links (The Association · The Work · The Sites · Journal); Home is the wordmark and Get Involved is the CTA. Mobile: a full-height nocturne index — gold 01-05 numerals (Home first), large Marcellus caps links between hairline rules, the member button full-width at the foot, then the address, telephone and email.
 
 ### Assistant
 The chatbot launcher is a hairline umber tab with a gold icon and an "Ask" label (gold fill on hover only). The panel is square and unshadowed: Marcellus caps title, Garamond messages (visitor in a hairline box, assistant with a thin gold left rule), suggestions as ruled text rows, a `.field-line` input with a text "Send".
@@ -177,6 +177,14 @@ The chatbot launcher is a hairline umber tab with a gold icon and an "Ask" label
 - `--ease-expo` — `cubic-bezier(0.16, 1, 0.3, 1)`, the house easing for hovers and reveals.
 - Figures: body text uses old-style figures; Marcellus display and labels use lining figures.
 - Page openers are asymmetric: monumental left-aligned title, standfirst in the right column, hairline, then an index or colophon strip. Centred stacks are reserved for the closing invitation.
+
+### Archive pages (content imported from the old apsad.net CMS)
+- **Data:** `src/data/legacy/*.json` + `public/legacy/`, written by `scripts/import-legacy.mjs`; typed access in `src/lib/legacy.ts`. HTML is sanitized at import, rendered with `LegacyProse`.
+- **`.legacy-prose`** — long-form CMS text: 66ch measure, `dir="auto"` per paragraph so Arabic sets RTL in Amiri at a taller leading, lists as a hairline-ruled ledger, links bronze/gold with a quiet underline.
+- **`PageOpener`** (`components/editorial/page-opener.tsx`) — the asymmetric opener as a component: title (SplitText for Latin monuments, plain for Arabic, never letter-spaced), standfirst right, colophon `dl` left.
+- **Journal ledger** (`JournalRow`) — year numeral sticky at left, ruled rows of date/kind, Marcellus title, italic place, two-line summary, small matted plate.
+- **`PlateSheet` / `PlateLightbox`** — an event's photographs as a matted contact sheet on a nocturne band; the lightbox is the gallery's catalogue spread generalised (arrows, keys, counter, plate number + caption).
+- **The Archive** (`components/gallery/archive.tsx`) — all 468 legacy plates under the curated wall: series as a text index, place as a ruled native select, search as a ruled line, 60 plates per page.
 
 ### Signature Components
 - **Preloader curtain** (`ui/preloader.tsx`): once per session — APSAD carves in gold on black, hairline draws, curtain lifts (1.05s expo). Dispatches `apsad:preloader-done`; the hero holds its entrance for it.

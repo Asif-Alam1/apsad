@@ -6,9 +6,18 @@ const columns = [
     heading: 'The Association',
     links: [
       { href: '/about', label: 'Who We Are' },
-      { href: '/about#history', label: 'Our History' },
+      { href: '/about/record', label: 'From the Record' },
+      { href: '/affiliations', label: 'Affiliations' },
       { href: '/about#team', label: 'Leadership' },
+    ],
+  },
+  {
+    heading: 'The Work',
+    links: [
+      { href: '/work', label: 'Fields of Work' },
+      { href: '/work/zaki-nassif-museum', label: 'Zaki Nassif Museum' },
       { href: '/gallery', label: 'The Sites' },
+      { href: '/journal', label: 'The Journal' },
     ],
   },
   {
@@ -44,9 +53,9 @@ export function Footer() {
       </div>
 
       <div className="container max-w-7xl mx-auto px-6 pt-8 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Brand */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-4 space-y-6">
             <Link href="/" className="flex items-center gap-3">
               <Image src="/logo.png" alt="APSAD" width={40} height={40} className="rounded-full brightness-110" />
               <span className="font-display text-xl tracking-[0.18em]">APSAD</span>
@@ -98,7 +107,7 @@ export function Footer() {
           ))}
 
           {/* Visit */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-2">
             <h4 className="font-display text-[12px] tracking-[0.25em] uppercase mb-6 text-primary">
               The Salon
             </h4>

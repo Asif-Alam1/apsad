@@ -4,7 +4,9 @@ import { ArrowRight } from "lucide-react";
 const routes = [
   { href: "/", label: "Home" },
   { href: "/about", label: "The Association" },
+  { href: "/work", label: "The Work" },
   { href: "/gallery", label: "The Sites" },
+  { href: "/journal", label: "The Journal" },
   { href: "/get-involved", label: "Get Involved" },
 ];
 

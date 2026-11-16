@@ -1,0 +1,26 @@
+[
+  {
+    "src": "/legacy/slider/080.jpg",
+    "thumb": "/legacy/thumbs/slider/080.webp",
+    "width": 1050,
+    "height": 303
+  },
+  {
+    "src": "/legacy/slider/081.jpg",
+    "thumb": "/legacy/thumbs/slider/081.webp",
+    "width": 1050,
+    "height": 303
+  },
+  {
+    "src": "/legacy/slider/082.jpg",
+    "thumb": "/legacy/thumbs/slider/082.webp",
+    "width": 1050,
+    "height": 303
+  },
+  {
+    "src": "/legacy/slider/083.jpg",
+    "thumb": "/legacy/thumbs/slider/083.webp",
+    "width": 1050,
+    "height": 303
+  }
+]

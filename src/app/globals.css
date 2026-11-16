@@ -240,6 +240,104 @@
   border-bottom-color: hsl(var(--destructive));
 }
 
+/*
+ * Legacy prose — long-form text imported from the old apsad.net CMS.
+ * Paragraphs carry dir="auto", so Arabic sets itself right-to-left in Amiri.
+ * Lists in that record are mostly dated entries, so they read as a ruled ledger.
+ */
+.legacy-prose {
+  max-width: 66ch;
+  font-size: 1.1875rem;
+  line-height: 1.7;
+  color: hsl(var(--foreground) / 0.88);
+}
+
+.legacy-prose > * + *,
+.legacy-prose li > * + * {
+  margin-top: 1.05em;
+}
+
+.legacy-prose :is(p, li, h3, h4):dir(rtl) {
+  font-size: 1.06em;
+  line-height: 1.95;
+}
+
+.legacy-prose :is(strong, b) {
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.legacy-prose :is(h3, h4) {
+  font-family: var(--font-marcellus), var(--font-arabic), Georgia, serif;
+  font-weight: 400;
+  color: hsl(var(--foreground));
+  line-height: 1.25;
+}
+
+.legacy-prose h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.01em;
+  margin-top: 2.2em;
+}
+
+.legacy-prose h4 {
+  font-size: 1.2rem;
+  margin-top: 1.6em;
+}
+
+.legacy-prose a {
+  color: hsl(var(--primary));
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: hsl(var(--primary) / 0.35);
+  transition: text-decoration-color 0.4s var(--ease-expo), color 0.3s ease;
+  overflow-wrap: anywhere;
+}
+
+.legacy-prose a:hover {
+  color: hsl(var(--accent));
+  text-decoration-color: currentColor;
+}
+
+.legacy-prose ul {
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.legacy-prose ul > li {
+  border-top: 1px solid hsl(var(--border));
+  padding: 0.95em 0;
+  margin: 0;
+}
+
+.legacy-prose ol {
+  list-style: decimal;
+  padding-inline-start: 1.4em;
+}
+
+.legacy-prose ol > li + li {
+  margin-top: 0.5em;
+}
+
+.legacy-prose li > p:first-child {
+  margin-top: 0;
+}
+
+.legacy-prose blockquote {
+  font-style: italic;
+  padding-inline-start: 1.25em;
+  border-inline-start: 1px solid hsl(var(--primary));
+}
+
+.legacy-prose img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid hsl(var(--border));
+  padding: 0.5rem;
+}
+
 /* Scroll-triggered animation */
 @keyframes fade-up {
   from {
